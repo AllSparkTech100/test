@@ -211,7 +211,6 @@ header {
   }
   .secondBlock .inne .dim {
     display: none;
-    visibility: hidden;
   }
   .secondBlock .inner {
     height: 50vh;
