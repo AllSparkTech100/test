@@ -500,18 +500,18 @@ body{
             color: $whitt;
 
             .leftt{
-                font-size:18px;
+                font-size:16px;
                 font-weight: bold;
                 text-transform: uppercase;
                 color: $whitt;
             }
             button{
-                padding: 15px 18px;
+                padding: 10px 15px;
                 border-radius: 50px;
                 border: none;
                 background: $yel;
                 a{
-                    font-size: 14px;
+                    font-size: 13px;
                     font-weight: bold;
                     color: $dark;
                 }
@@ -568,7 +568,6 @@ body{
                 color: $whitt;
                 background-color: $light;
                 gap: 2px;
-                margin-top: 5px;
                 .lefft{
                     grid-column: 1 / 2;
                 }
