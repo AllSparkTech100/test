@@ -443,6 +443,7 @@ header {
     list-style: none;
   }
   .secondBlock .inne .dim {
+    display: none;
     margin-top: 40px;
     display: flex;
     justify-content: center;
