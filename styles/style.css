@@ -65,6 +65,11 @@ body {
   scroll-behavior: smooth;
 }
 
+header {
+  position: sticky;
+  top: 0;
+}
+
 @media screen and (max-width: 320px) {
   .desktop {
     background-color: #1A1E23;
