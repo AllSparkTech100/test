@@ -1,0 +1,76 @@
+$yel:#FFB600;
+$dark:#1A1E23;
+$light:#888888;
+$grey:#C5C5C5;
+$whitt:#F8F8F8;
+$primary:#FFFFFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    font-family: 'Plus Jakarta Sans';
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+
+@keyframes zoom-in-zoom-out{
+    0%{
+        opacity: 10%;
+        transform: scale(1,1);
+    }
+    50%{
+        opacity: 100%;
+        transform: scale(1.5,1.5);
+    }
+    100%{
+        opacity: 10%;
+       transform: scale(1,1);
+    }
+}
+
+@keyframes slide-animation{
+    0%{
+        transform: translate(0px);
+    }
+
+    10%{
+        transform: translate(0px);
+    }
+
+    20%{
+        transform: translate(1200px);
+    }
+
+    30%{
+        transform: translate(1200px);
+    }
+
+    40%{
+        transform: translate(2400px);
+    }
+
+    50%{
+        transform: translate(2400px);
+    }
+
+    60%{
+        transform: translate(1200px);
+    }
+
+    70%{
+        transform: translate(1200px);
+    }
+
+    80%{
+        transform: translate(0px);
+    }
+
+    90%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
