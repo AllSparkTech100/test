@@ -1,19 +1,9 @@
-// //slider
-// let slideIndex = 1;
-// showDivs(slideIndex);
+var images = document.querySelectorAll('.slider img');
+    var currentIndex = 0;
+    var interval = setInterval(changeImage, 4000); // Change image every 4 seconds
 
-// function plusDivs(n) {
-//     showDivs(slideIndex += n);
-// }
-
-// function showDivs(n) {
-//     let i;
-//     let x = document.getElementsByClassName('slides');
-//     if (n > x.length) { slideIndex = 1 };
-//     if (n < 1) { slideIndex = x.length };
-//     for (i = 0; i < x.length; i++) {
-//         x[i].style.display = "none";
-//     }
-
-//     x[slideIndex - 1].style.display = "block";
-// }
+    function changeImage() {
+      images[currentIndex].style.display = 'none';
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].style.display = 'block';
+    }

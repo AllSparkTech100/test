@@ -26,41 +26,17 @@
     transform: scale(1, 1);
   }
 }
-@keyframes slide-animation {
-  0% {
-    transform: translate(0px);
-  }
-  10% {
-    transform: translate(0px);
-  }
-  20% {
-    transform: translate(1200px);
-  }
-  30% {
-    transform: translate(1200px);
-  }
-  40% {
-    transform: translate(2400px);
-  }
-  50% {
-    transform: translate(2400px);
-  }
-  60% {
-    transform: translate(1200px);
-  }
-  70% {
-    transform: translate(1200px);
-  }
-  80% {
-    transform: translate(0px);
-  }
-  90% {
-    transform: translate(0px);
-  }
-  100% {
-    transform: translate(0px);
-  }
+.slider {
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
 }
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
 body {
   scroll-behavior: smooth;
 }
@@ -224,21 +200,6 @@ header {
     display: flex;
     height: 100%;
   }
-  .secondBlock .inner .projects .slider-frame {
-    overflow: hidden;
-    height: 80%;
-    width: 100%;
-  }
-  .secondBlock .inner .projects .slider-frame .slider-images {
-    height: 100%;
-    width: 100%;
-    animation: slide-animation 2s infinite alternate running;
-  }
-  .secondBlock .inner .projects .slider-frame .slider-images .img-container {
-    height: 100%;
-    margin-left: 12px;
-    width: 100%;
-  }
   footer {
     height: 51vh;
     width: 100%;
@@ -301,28 +262,9 @@ header {
     color: #FFFFFF;
   }
   footer .copyright {
-    height: 10vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    grid-template-rows: 1fr 10px 1fr;
+    font-size: 16px;
     text-transform: capitalize;
-    font-size: 11px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: #F8F8F8;
     background-color: #888888;
-    gap: 2px;
-  }
-  footer .copyright .lefft {
-    grid-column: 1/2;
-  }
-  footer .copyright .center {
-    grid-column: 2/3;
-  }
-  footer .copyright .lasts {
-    grid-column: 3/4;
   }
 }
 @media screen and (max-width: 480px) {
@@ -427,10 +369,12 @@ header {
     font-weight: 400;
   }
   .secondBlock .inne {
-    margin: 12px 12px;
     position: relative;
     top: 6%;
-    height: 62vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
   }
   .secondBlock .inne h2 {
     position: relative;
@@ -443,69 +387,18 @@ header {
   .secondBlock .inne h2 li {
     list-style: none;
   }
-  .secondBlock .inne .dim {
-    display: none;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    height: 60%;
-  }
-  .secondBlock .inne .dim .img-1, .secondBlock .inne .dim .img-2, .secondBlock .inne .dim .img-3 {
-    margin-left: 4px;
-    height: 28vh;
-    width: 34vw;
-    border: none;
-    border-radius: 50%;
-  }
-  .secondBlock .inne .dim .img-1 figcaption, .secondBlock .inne .dim .img-2 figcaption, .secondBlock .inne .dim .img-3 figcaption {
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .secondBlock .inne .dim .img-1 figcaption a, .secondBlock .inne .dim .img-2 figcaption a, .secondBlock .inne .dim .img-3 figcaption a {
-    color: #888888;
-  }
-  .secondBlock .inne .dim .img-1 img, .secondBlock .inne .dim .img-2 img, .secondBlock .inne .dim .img-3 img {
-    -o-object-fit: fill;
-       object-fit: fill;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-  }
   .secondBlock .inner {
     height: 25%;
     width: 95%;
     margin: 25vh 0 0 10px;
   }
-  .secondBlock .inner .projects {
-    width: 100%;
-    height: 100%;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .secondBlock .inner .projects .slider-frame {
+  .secondBlock .inner .project {
+    margin-top: 20px;
     overflow: hidden;
-    height: 80%;
-    width: 100%;
-  }
-  .secondBlock .inner .projects .slider-frame .slider-images {
-    height: 100%;
-    width: 100%;
-    animation: slide-animation 2s infinite alternate running;
-  }
-  .secondBlock .inner .projects .slider-frame .slider-images .img-container {
-    height: 100%;
-    margin-left: 12px;
-    width: 100%;
+    display: flex;
   }
   footer {
-    height: 60vh;
+    height: 55vh;
     width: 100%;
     background: #1A1E23;
   }
@@ -536,14 +429,13 @@ header {
     color: #1A1E23;
   }
   footer .footmain {
-    background-color: red;
+    background-color: #1A1E23;
     color: #FFFFFF;
     width: 100%;
     height: 28vh;
   }
   footer .footmain .inside {
     height: 28dvh;
-    background: #000;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -561,28 +453,60 @@ header {
   footer .footmain .inside .social ul li a {
     color: #FFFFFF;
   }
-  .copyright {
-    height: 9vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 200px 1fr;
-    grid-template-rows: 1fr 10px 1fr;
+  footer .copyright {
+    font-size: 14px;
     text-transform: capitalize;
-    font-size: 11px;
-    text-align: center;
+    display: flex;
     align-items: center;
     justify-content: center;
-    color: #F8F8F8;
+    height: 10vh;
+    margin: 5px 0 0 0;
+    color: #FFFFFF;
+    font-weight: bold;
     background-color: #888888;
-    gap: 2px;
   }
-  .copyright .lefft {
-    grid-column: 1/2;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .firstBlock {
+    height: 90vh;
+    width: 100%;
+    background: #1A1E23;
+    color: #F8F8F8;
   }
-  .copyright .center {
-    grid-column: 2/3;
+  .firstBlock .thoughts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 40%;
+    width: 100vw;
+    position: relative;
+    top: 30px;
+    background: #000;
   }
-  .copyright .lasts {
-    grid-column: 3/4;
+  .firstBlock .thoughts .left {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 12px;
+    line-height: 1.7;
+    color: #F8F8F8;
+  }
+  .firstBlock .thoughts .right {
+    text-align: left;
+  }
+  .firstBlock .thoughts .right h2 {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  .firstBlock .thoughts .right p {
+    font-size: 9px;
+    font-weight: normal;
+    margin-top: 2px;
+  }
+  .firstBlock .thoughts .right h3 {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
   }
 }/*# sourceMappingURL=style.css.map */

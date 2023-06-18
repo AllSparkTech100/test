@@ -30,47 +30,14 @@ $primary:#FFFFFF;
     }
 }
 
-@keyframes slide-animation{
-    0%{
-        transform: translate(0px);
-    }
+.slider {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+  }
 
-    10%{
-        transform: translate(0px);
-    }
-
-    20%{
-        transform: translate(1200px);
-    }
-
-    30%{
-        transform: translate(1200px);
-    }
-
-    40%{
-        transform: translate(2400px);
-    }
-
-    50%{
-        transform: translate(2400px);
-    }
-
-    60%{
-        transform: translate(1200px);
-    }
-
-    70%{
-        transform: translate(1200px);
-    }
-
-    80%{
-        transform: translate(0px);
-    }
-
-    90%{
-        transform: translate(0px);
-    }
-    100%{
-        transform: translate(0px);
-    }
-}
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  

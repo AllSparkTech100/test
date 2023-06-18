@@ -146,14 +146,10 @@ header{
         }
 
         .inne{
-            // margin: 10px 10px;
             position: relative;
             top: 5%;
             left:22px;
             height: 20vh;
-            // align-items: center;
-            // justify-content: center;
-            // display: inline-block;
             width: 80%;
             h2{
                 text-align: center;
@@ -180,22 +176,6 @@ header{
                 justify-content: center;
                 display: flex;
                 height: 100%;
-
-                .slider-frame{
-                    overflow: hidden;
-                    height: 80%;
-                    width: 100%;
-                    .slider-images{
-                        height: 100%;
-                        width: 100%;
-                        animation: slide-animation 2s infinite alternate running;
-                        .img-container{
-                            height: 100%;
-                            margin-left: 12px;
-                            width: 100%;
-                        }
-                    }
-                }
             }
         }
     }
@@ -268,31 +248,9 @@ header{
         }
 
         .copyright{
-            height: 10vh;
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 200px 1fr;
-            grid-template-rows: 1fr 10px 1fr;
-            text-transform: capitalize;
-            font-size: 11px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            color: $whitt;
-            background-color: $light;
-            gap: 2px;
-            .lefft{
-                grid-column: 1 / 2;
-            }
-
-            .center{
-                grid-column: 2 / 3;
-            }
-
-            .lasts{
-                grid-column: 3 / 4;
-            }
-
+           font-size: 16px;
+           text-transform: capitalize;
+           background-color: $light;
         }
 
     }
@@ -409,10 +367,12 @@ header{
         }
 
         .inne{
-            margin: 12px 12px;
             position: relative;
             top:6%;
-            height: 62vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 25vh;
 
             h2{
                 position: relative;
@@ -425,75 +385,22 @@ header{
                     list-style: none;
                 }
             }
-
-            .dim{
-                display: none;
-                margin-top: 40px;
-                display: flex;
-                justify-content: center;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
-                height: 60%;
-
-                .img-1, .img-2, .img-3{
-                    margin-left: 4px;
-                    height: 28vh;
-                    width: 34vw;
-                    border: none;
-                    border-radius: 50%;
-                    
-                    figcaption{
-                        text-align: center;
-                        text-transform: capitalize;
-                        font-size: 14px;
-                        font-weight: bold;
-                        a{
-                            color: $light;
-                        }
-                    }
-                  img{
-                    object-fit:fill;
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 50%;
-                    }
-                }
-            }
         }
 
         .inner{
            height: 25%;
            width: 95%;
            margin: 25vh 0 0 10px;
-           .projects{
-            width: 100%;
-            height: 100%;
-            flex-wrap: wrap;
+           .project{
+            margin-top: 20px;
+            overflow: hidden;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            .slider-frame{
-                overflow: hidden;
-                height: 80%;
-                width: 100%;
-                .slider-images{
-                    height: 100%;
-                    width: 100%;
-                    animation: slide-animation 2s infinite alternate running;
-                    .img-container{
-                        height: 100%;
-                        margin-left: 12px;
-                        width: 100%;
-                    }
-                }
-            }
            }
         }
     }
 
     footer{
-        height:60vh;
+        height:55vh;
         width: 100%;
         background: $dark;
         .contact{
@@ -525,13 +432,12 @@ header{
         }
 
         .footmain{
-            background-color: red;
+            background-color: $dark;
             color: $primary;
             width: 100%;
             height: 28vh;
             .inside{
                 height: 28dvh;
-                background: #000;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
@@ -558,38 +464,69 @@ header{
 
             
         }
+        
+        .copyright{
+        font-size: 14px;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        margin: 5px 0 0 0;
+        color: $primary;
+        font-weight: bold;
+        background-color: $light;
+  }
     }
-    
-    .copyright{
-                height: 9vh;
-                width: 100%;
-                display: grid;
-                grid-template-columns: 1fr 200px 1fr;
-                grid-template-rows: 1fr 10px 1fr;
-                text-transform: capitalize;
-                font-size: 11px;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-                color: $whitt;
-                background-color: $light;
-                gap: 2px;
-                .lefft{
-                    grid-column: 1 / 2;
-                }
-    
-                .center{
-                    grid-column: 2 / 3;
-                }
-    
-                .lasts{
-                    grid-column: 3 / 4;
-                }
-    
-    }
+  
 }
 
-// @media screen and (min-width:481px) and (max-width:768px){
-    
-// }
+@media screen and (min-width:481px) and (max-width:768px){
+    .firstBlock{
+        height: 90vh;
+        width: 100%;
+        background: $dark;
+        color: $whitt;
+        .thoughts{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 40%;
+            width: 100vw;
+            position: relative;
+            top: 30px;
+            background: #000;
 
+            .left{
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 12px;
+                line-height: 1.7;
+                color: $whitt;
+            }
+
+            .right{
+                // margin: 20px;
+                text-align: left;
+                h2{
+                    text-transform:uppercase;
+                    font-size: 12px;
+                }
+
+                p{
+                    font-size: 9px;
+                    font-weight: normal;
+                    margin-top: 2px;
+                }
+
+                h3{
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
