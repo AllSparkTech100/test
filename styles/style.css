@@ -14,27 +14,11 @@
   text-decoration: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
 .lin {
   background-color: #FFFFFF;
-}
-
-@-webkit-keyframes zoom-in-zoom-out {
-  0% {
-    opacity: 10%;
-    transform: scale(1, 1);
-  }
-  50% {
-    opacity: 100%;
-    transform: scale(1.5, 1.5);
-  }
-  100% {
-    opacity: 10%;
-    transform: scale(1, 1);
-  }
 }
 
 @keyframes zoom-in-zoom-out {
@@ -53,15 +37,47 @@
 }
 .slider {
   width: 500px;
-  height: 300px;
+  height: 200px;
   overflow: hidden;
 }
-
 .slider img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
+@media screen and (max-width: 320px) {
+  .slider {
+    width: 320px;
+    height: 180px;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider {
+    width: 480px;
+    height: 250px;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 681px) {
+  .slider {
+    width: 681px;
+    height: 350px;
+    overflow: hidden;
+  }
+  .slider img {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .slider {
     width: 100%;
@@ -78,7 +94,6 @@ body {
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 99;
@@ -158,7 +173,7 @@ header {
     width: 39px;
   }
   .secondBlock {
-    height: 200vh;
+    height: 100vh;
     margin-top: 30vh;
     width: 100%;
     background: #F8F8F8;
@@ -194,13 +209,13 @@ header {
     padding: 10px;
   }
   .secondBlock .inn .reasons .box h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #1A1E23;
   }
   .secondBlock .inn .reasons .box h3 span {
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
     color: #C5C5C5;
   }
   .secondBlock .inn .reasons .box p {
@@ -218,8 +233,7 @@ header {
   .secondBlock .inne h2 {
     text-align: center;
     font-weight: bolder;
-    -webkit-animation: zoom-in-zoom-out 5s infinite alternate;
-            animation: zoom-in-zoom-out 5s infinite alternate;
+    animation: zoom-in-zoom-out 5s infinite alternate;
     font-size: 12px;
   }
   .secondBlock .inne h2 li {
@@ -230,78 +244,78 @@ header {
     visibility: hidden;
   }
   .secondBlock .inner {
-    height: 50vh;
-    margin: 20vh 0 0 10px;
+    height: 25%;
+    width: 95%;
+    margin: 25vh 0 0 10px;
   }
-  .secondBlock .inner .projects {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+  .secondBlock .inner .project {
+    margin-top: 20px;
+    overflow: hidden;
     display: flex;
-    height: 100%;
   }
-  footer {
+  .secondBlock footer {
+    margin-top: 10vh;
     height: 51vh;
     width: 100%;
     background: #1A1E23;
   }
-  footer .contact {
+  .secondBlock footer .contact {
     height: 30%;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-  footer .contact .leftt {
+  .secondBlock footer .contact .leftt {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #F8F8F8;
   }
-  footer .contact button {
+  .secondBlock footer .contact button {
     padding: 10px 15px;
     border-radius: 50px;
     border: none;
     background: #FFB600;
   }
-  footer .contact button a {
+  .secondBlock footer .contact button a {
     color: #1A1E23;
     font-weight: bold;
     font-size: 12px;
   }
-  footer .footmain {
+  .secondBlock footer .footmain {
     background-color: #1A1E23;
     color: #FFFFFF;
     width: 100%;
     height: 25vh;
   }
-  footer .footmain .inside {
+  .secondBlock footer .footmain .inside {
     height: 20vh;
     width: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
   }
-  footer .footmain .inside .name {
+  .secondBlock footer .footmain .inside .name {
     font-size: 14px;
     font-weight: bold;
   }
-  footer .footmain .inside .add {
+  .secondBlock footer .footmain .inside .add {
     font-size: 12px;
   }
-  footer .footmain .inside .social {
+  .secondBlock footer .footmain .inside .social {
     display: flex;
     font-size: 12px;
   }
-  footer .footmain .inside .social ul {
+  .secondBlock footer .footmain .inside .social ul {
     margin: 9px;
   }
-  footer .footmain .inside .social ul li {
+  .secondBlock footer .footmain .inside .social ul li {
     list-style: none;
   }
-  footer .footmain .inside .social ul li a {
+  .secondBlock footer .footmain .inside .social ul li a {
     color: #FFFFFF;
   }
-  footer .copyright {
+  .secondBlock footer .copyright {
     font-size: 16px;
     text-transform: capitalize;
     background-color: #888888;
@@ -362,8 +376,9 @@ header {
   }
   .secondBlock {
     margin-top: 40vh;
-    height: 250vh;
+    height: 210vh;
     width: 100%;
+    background-color: #F8F8F8;
   }
   .secondBlock h2 {
     color: #1A1E23;
@@ -377,7 +392,7 @@ header {
     position: relative;
     top: 3%;
     height: 95vh;
-    width: 94vw;
+    width: 95vw;
     margin: 12px 12px;
     display: flex;
     flex-wrap: wrap;
@@ -387,12 +402,35 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    height: 75%;
+    position: relative;
+    top: 20px;
+  }
+  .secondBlock .inn .reasons .square_1 {
+    height: 100%;
+  }
+  .secondBlock .inn .reasons .square_1 .box {
+    margin-top: 40px;
+  }
+  .secondBlock .inn .reasons .square_1 .box h3,
+  .secondBlock .inn .reasons .square_1 .box p {
+    margin-left: 6px;
+  }
+  .secondBlock .inn .reasons .square_2 {
+    height: 100%;
+  }
+  .secondBlock .inn .reasons .square_2 .box {
+    margin-top: 40px;
+  }
+  .secondBlock .inn .reasons .square_2 .box h3,
+  .secondBlock .inn .reasons .square_2 .box p {
+    margin-left: 6px;
   }
   .secondBlock .inn .reasons .box {
     color: #1A1E23;
-    height: 17vh;
-    width: 90%;
+    height: 25vh;
+    width: 93%;
     margin: 3px 0;
     padding: 10px;
   }
@@ -424,8 +462,7 @@ header {
     font-size: 12px;
     text-align: center;
     font-weight: bolder;
-    -webkit-animation: zoom-in-zoom-out 5s infinite alternate ease-in-out;
-            animation: zoom-in-zoom-out 5s infinite alternate ease-in-out;
+    animation: zoom-in-zoom-out 5s infinite alternate ease-in-out;
   }
   .secondBlock .inne h2 li {
     list-style: none;
@@ -441,6 +478,8 @@ header {
     display: flex;
   }
   footer {
+    position: relative;
+    top: 40px;
     height: 55vh;
     width: 100%;
     background: #1A1E23;
@@ -452,6 +491,245 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    color: #F8F8F8;
+  }
+  footer .contact .leftt {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F8F8F8;
+  }
+  footer .contact button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    background: #FFB600;
+  }
+  footer .contact button a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1A1E23;
+  }
+  footer .footmain {
+    background-color: #1A1E23;
+    color: #FFFFFF;
+    width: 100%;
+    height: 28vh;
+  }
+  footer .footmain .inside {
+    height: 28dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer .footmain .inside .name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  footer .footmain .inside .add {
+    font-size: 14px;
+  }
+  footer .footmain .inside .social ul li {
+    list-style: none;
+  }
+  footer .footmain .inside .social ul li a {
+    color: #FFFFFF;
+  }
+  footer .copyright {
+    font-size: 14px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 5px 0 0 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #888888;
+  }
+}
+@media screen and (min-width: 681px) {
+  .secondBlock .inn .reasons .box h3 {
+    font-size: 18px;
+  }
+  .secondBlock .inn .reasons .box p {
+    font-size: 18px;
+  }
+  footer {
+    margin-top: 5rem;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 681px) {
+  .firstBlock {
+    height: 95vh;
+    width: 100%;
+    background: #1A1E23;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .firstBlock img {
+    display: none;
+  }
+  .firstBlock .thoughts {
+    text-align: center;
+    height: 70%;
+    width: 100vw;
+    margin-top: 20px;
+  }
+  .firstBlock .thoughts .left {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 12px;
+    color: #F8F8F8;
+  }
+  .firstBlock .thoughts .right {
+    margin-top: 44px;
+    color: #FFFFFF;
+  }
+  .firstBlock .thoughts .right h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .firstBlock .thoughts .right p {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 12px 8px;
+  }
+  .firstBlock .thoughts .right h3 {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .firstBlock .thoughts .right h3 .lin {
+    height: 3px;
+    width: 39px;
+  }
+  .secondBlock {
+    margin-top: 40vh;
+    height: 210vh;
+    width: 100%;
+    background-color: #F8F8F8;
+  }
+  .secondBlock h2 {
+    color: #1A1E23;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .secondBlock h2 li {
+    list-style: square;
+  }
+  .secondBlock .inn {
+    position: relative;
+    top: 3%;
+    height: 95vh;
+    width: 95vw;
+    margin: 12px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .secondBlock .inn .reasons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 75%;
+    position: relative;
+    top: 20px;
+  }
+  .secondBlock .inn .reasons .square_1 {
+    height: 100%;
+  }
+  .secondBlock .inn .reasons .square_1 .box {
+    margin-top: 40px;
+  }
+  .secondBlock .inn .reasons .square_1 .box h3,
+  .secondBlock .inn .reasons .square_1 .box p {
+    margin-left: 6px;
+  }
+  .secondBlock .inn .reasons .square_2 {
+    height: 100%;
+  }
+  .secondBlock .inn .reasons .square_2 .box {
+    margin-top: 40px;
+  }
+  .secondBlock .inn .reasons .square_2 .box h3,
+  .secondBlock .inn .reasons .square_2 .box p {
+    margin-left: 6px;
+  }
+  .secondBlock .inn .reasons .box {
+    color: #1A1E23;
+    height: 30vh;
+    width: 93%;
+    margin: 3px 0;
+    padding: 10px;
+  }
+  .secondBlock .inn .reasons .box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .secondBlock .inn .reasons .box h3 span {
+    font-weight: normal;
+    font-size: 14px;
+    color: #C5C5C5;
+  }
+  .secondBlock .inn .reasons .box p {
+    font-size: 13px;
+    margin-top: 7px;
+    font-weight: 400;
+  }
+  .secondBlock .inne {
+    position: relative;
+    top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+  }
+  .secondBlock .inne h2 {
+    position: relative;
+    top: 12px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bolder;
+    animation: zoom-in-zoom-out 5s infinite alternate ease-in-out;
+  }
+  .secondBlock .inne h2 li {
+    list-style: none;
+  }
+  .secondBlock .inner {
+    height: 25%;
+    width: 95%;
+    margin: 25vh 0 0 10px;
+  }
+  .secondBlock .inner .project {
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+  }
+  footer {
+    position: relative;
+    top: 40px;
+    height: 55vh;
+    width: 100%;
+    background: #1A1E23;
+  }
+  footer .contact {
+    height: auto;
+    width: auto;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     color: #F8F8F8;
   }
   footer .contact .leftt {
