@@ -13,6 +13,7 @@ $primary: #FFFFFF;
     margin: 0;
     text-decoration: none;
     user-select: none;
+    scroll-snap-type: proximity;
 
     .box {
         h3 {

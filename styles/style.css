@@ -15,6 +15,7 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  scroll-snap-type: proximity;
 }
 * .box h3 {
   text-transform: uppercase;
@@ -546,7 +547,7 @@ header {
     height: 28vh;
   }
   footer .footmain .inside {
-    height: 28dvh;
+    height: 28vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
