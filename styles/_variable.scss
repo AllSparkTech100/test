@@ -13,6 +13,12 @@ $primary: #FFFFFF;
     margin: 0;
     text-decoration: none;
     user-select: none;
+
+    .box {
+        h3 {
+            text-transform: uppercase;
+        }
+    }
 }
 
 .lin {
@@ -37,8 +43,8 @@ $primary: #FFFFFF;
 }
 
 .slider {
-    width: 500px;
-    height: 200px;
+    width: 100vw;
+    height: 50vh;
     overflow: hidden;
 
     img {
@@ -46,7 +52,6 @@ $primary: #FFFFFF;
         height: 100%;
     }
 }
-
 
 
 @media screen and (max-width:320px) {
@@ -77,12 +82,12 @@ $primary: #FFFFFF;
 
 }
 
-
 @media screen and (min-width:681px) {
     .slider {
         width: 681px;
         height: 350px;
         overflow: hidden;
+        margin-left: 12px;
 
         img {
             width: 100%;
