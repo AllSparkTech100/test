@@ -26,6 +26,10 @@ $primary: #FFFFFF;
     background-color: $primary;
 }
 
+
+.firstBlock{
+    animation: gradient ease-in 10s infinite running;
+}
 @keyframes zoom-in-zoom-out {
     0% {
         opacity: 10%;
@@ -40,6 +44,33 @@ $primary: #FFFFFF;
     100% {
         opacity: 10%;
         transform: scale(1, 1);
+    }
+}
+
+@keyframes gradient{
+    0%{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+    25%{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgb(11, 9, 47) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    }
+
+    50%{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(7, 63, 74) 100%);
+    }
+
+    75%{
+        background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(7, 63, 74) 100%);
+    }
+
+
+    100%{
+        background-color: $dark;
     }
 }
 
