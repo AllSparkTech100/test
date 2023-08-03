@@ -1166,7 +1166,7 @@ header {
 }
 
 
-@media screen and (min-width:883px) and (max-width:1082px){
+@media screen and (min-width:883px) and (max-width:1082px) {
     .firstBlock {
         height: 100vh;
         width: 100%;
@@ -1447,10 +1447,279 @@ header {
 // @media screen and (min-width:2500px) {}
 
 
-@media screen and (min-width:1083px) and (max-width:1200px){
-
-}
-
-// @media screen and (min-width:1400px){
+// @media screen and (min-width:1083px) and (max-width:1200px){
 
 // }
+
+
+
+@media screen and (min-width:1400px) {
+    .firstBlock {
+        height: 100vh;
+        width: 100%;
+        background: $dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .thoughts {
+            height: 90%;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .left {
+                font-size: 4rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $whitt;
+            }
+
+            .right {
+                color: $primary;
+                text-align: center;
+
+                h2 {
+                    text-transform: uppercase;
+                    font-size: 26px;
+                    font-weight: normal;
+                }
+
+                p {
+                    font-size: 22px;
+                    font-weight: normal;
+                    margin: 12px 8px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 20px;
+
+                    .lin {
+                        height: 3px;
+                        width: 39px;
+                    }
+                }
+            }
+        }
+    }
+
+.secondBlock {
+    margin-top: 30vh;
+    height: 242vh;
+    width: 100%;
+
+    h2 {
+        color: $dark;
+        font-size: 28px;
+        text-transform: uppercase;
+
+        li {
+            list-style: square;
+        }
+    }
+
+    .inn {
+        position: relative;
+        top: 3%;
+        height: 95vh;
+        width: 97vw;
+        margin: 12px 12px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .reasons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            height: 85%;
+            width: 100%;
+            position: relative;
+            top: 20px;
+
+            .square_1 {
+                height: 100%;
+
+                .box {
+                    margin-top: 10px;
+
+                    h3,
+                    p {
+                        margin-left: 6px;
+                    }
+                }
+            }
+
+            .square_2 {
+                height: 100%;
+                margin-left: 10px;
+
+                .box {
+                    margin-top: 10px;
+
+                    h3,
+                    p {
+                        margin-left: 6px;
+                    }
+                }
+            }
+
+            .box {
+                color: $dark;
+                height: 30vh;
+                width: 93%;
+                margin: 3px 0;
+                padding: 10px;
+
+                h3 {
+                    font-size: 26px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+
+                    span {
+                        font-weight: normal;
+                        font-size: 18px;
+                        color: $grey;
+                    }
+                }
+
+                p {
+                    font-size: 22px;
+                    margin-top: 7px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .inne {
+        position: relative;
+        top: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 25vh;
+
+        h2 {
+            position: relative;
+            top: -3px;
+            font-size: 14px;
+            text-align: center;
+            font-weight: bolder;
+            animation: zoom-in-zoom-out 8s infinite alternate ease-in-out;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+
+    .inner {
+        height: 38%;
+        width: 98%;
+        margin: 25vh 0 0 10px;
+
+        .project {
+            margin-top: 10px;
+            overflow: hidden;
+            display: flex;
+            height: 90%;
+            width: 98.8%;
+        }
+    }
+}
+
+footer {
+    position: relative;
+    top: 15rem;
+    height: 50vh;
+    width: 100%;
+    background: $dark;
+
+    .contact {
+        height: auto;
+        width: auto;
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: $whitt;
+
+        .leftt {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $whitt;
+        }
+
+        button {
+            padding: 10px 15px;
+            border-radius: 50px;
+            border: none;
+            background: $yel;
+
+            a {
+                font-size: 16px;
+                font-weight: bold;
+                color: $dark;
+            }
+        }
+    }
+
+    .footmain {
+        background-color: $dark;
+        color: $primary;
+        width: 100%;
+        height: 28vh;
+
+        .inside {
+            height: 28vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .name {
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .add {
+                font-size: 16px;
+            }
+
+            .social {
+                ul {
+                    li {
+                        list-style: none;
+
+                        a {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .copyright {
+        font-size: 16px;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+        margin: 5px 0 0 0;
+        color: $primary;
+        font-weight: bold;
+        background-color: $light;
+    }
+}
+}
