@@ -24,9 +24,9 @@
         font-family: "Poppins";
       }
     </style>
-    <header>
+    <header class="sticky-top">
       <div
-        class="navbar navbar-expand-sm|md|lg|xl|xxl bg-success navbar-dark sticky-top justify-content-center"
+        class="navbar navbar-expand-sm|md|lg|xl|xxl bg-dark border-bottom navbar-dark justify-content-center"
       >
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
@@ -38,6 +38,35 @@
             />
           </a>
 
+          <span class="col-4 d-flex justify-content-evenly">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="text-decoration-none text-white"
+              ><i
+                class="fa-brands fa-facebook fa-beat fa-x"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="text-decoration-none text-white"
+              ><i
+                class="fa-brands fa-instagram fa-beat fa-x"
+                style="color: #ffffff"
+              ></i
+            ></a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              class="text-decoration-none text-white"
+              ><i
+                class="fa-brands fa-twitter fa-beat fa-x"
+                style="color: #ffffff"
+              ></i
+            ></a>
+          </span>
           <button
             class="navbar-toggler"
             type="button"
@@ -59,6 +88,10 @@
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Us</a>
               </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#project">Our Projects</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -67,19 +100,19 @@
 
     <main class="my-0.3">
       <div
-        class="container-fluid d-flex p-5 bg-dark text-white justify-content-center"
+        class="container-fluid d-flex d-row flex-sm-column p-5 bg-dark text-white justify-content-center"
       >
         <div class="row">
           <div class="col-md-7">
-            <h1 class="text-uppercase fw-bold text-center my-md-4">
+            <h1 class="text-uppercase text-center fw-bold fs-3 fs-md-2 my-md-4">
               Build Your Dream <br />
               Property With <br />
               New Experience
             </h1>
           </div>
-          <div class="col-md-5 text-center">
-            <h4 class="fw-normal fs-3">ABOUT US</h4>
-            <p class="fs-6 fw-normal">
+          <div class="col-md-5 text-center mt-4">
+            <h4 class="fw-light fs-5">ABOUT US</h4>
+            <p class="fw-light" style="font-size: 14px">
               Drive Performance and your cross-functional collaboration with
               easy-to-use dashboards, data visualizations and automated insights
               in one Click.
@@ -88,7 +121,7 @@
               350+ Projects &nbsp;
               <hr
                 class="rounded"
-                style="height: 8px; width: 50px; background-color: white"
+                style="height: 8px; width: 50px; background-color: #fff"
               />
               &nbsp; 280+ Clients
             </h3>
@@ -96,7 +129,7 @@
         </div>
       </div>
 
-      <div class="container" style="list-style-type: square; margin-top: 250px">
+      <div class="container" id="about" style="list-style-type: square; margin-top: 250px">
         <li class="h1 text-uppercase fs-6 fs-3 fw-bold text-center m-5">
           Why Choose Us
         </li>
@@ -194,9 +227,11 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="row p-3" style="margin-top: 150px">
-          <li class="text-uppercase h1 fs-6 fs-3">Some Of Our Projects</li>
+      <div class="container" id="project">
+        <div class="row p-3"  style="margin-top: 150px">
+          <li class="text-uppercase h1 fs-6 fs-3" id="project">Some Of Our Projects</li>
           <div
             id="carouselExampleCaptions"
             class="carousel slide"
@@ -289,22 +324,33 @@
       </div>
     </main>
 
-    <div class="container-fluid bg-dark"  style="margin-top: 9rem;">
-      <footer class="d-flex flex-wrap justify-content-around align-items-center p-3 my-4">
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <a href="#" class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1">
-            <h4>P-R-O</h4>
-          </a>
-          <span class="mb-3 mb-md-0 text-white">&copy; 2023 Company, Inc</span>
+    <footer class="footer py-3 bg-dark" id="contact" style="margin-top: 10rem">
+      <div
+        class="container p-4 d-flex justify-content-between align-items-center"
+      >
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3>
+              <a
+                href="#"
+                class="text-decoration-none text-white"
+                style="font-size: 14px"
+                >PRO-Const.</a
+              >
+            </h3>
+            <span class="text-light" style="font-size: 14px"
+              >No. 32 Azikiwe Avenue, Greenland Estate Mile 3 Diobu,
+              Port-Harcourt Rivers State.</span
+            >
+            <p class="text-white">+234-912-234-4424</p>
+            <p><a href="" class="">hello@gmail.com</a></p>
+          </div>
         </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-white text-decoration-none" href="#">Instagram</a></li>
-          <li class="ms-3"><a class="text-white text-decoration-none" href="#">Facebook</a></li>
-          <li class="ms-3"><a class="text-white text-decoration-none" href="#">Twitter</a></li>
-        </ul>
-      </footer>
-    </div>
+        <div class="col-6">
+          <span class="text-white" style="font-size: 14px">SINCE 2020</span>
+        </div>
+      </div>
+    </footer>
     <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
