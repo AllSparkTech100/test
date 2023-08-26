@@ -14,4 +14,18 @@ body {
   width: 50px;
   height: 2px;
   background-color: red;
+}
+
+#thou {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.633), rgba(0, 0, 0, 0.633)), url("https://media.wired.co.uk/photos/606da390d8817d4fe4c508c5/master/w_1600%2Cc_limit/iStock-475673037.jpg");
+  background-repeat: no-repeat;
+  height: 85vh;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=txt.css.map */
