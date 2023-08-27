@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/styles/txt.css" />
     <title>UEC-D</title>
   </head>
-  <body class="scrollspy-example" tabindex="0" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="0">
+  <body>
 
     <header class="fixed-top ">
       <nav class="navbar navbar-expand-sm|md|xl|lg|xxl bg-success navbar-dark p-2">
@@ -43,7 +43,7 @@
       </nav>
     </header>
 
-    <main class="scrollspy-example my-4" tabindex="0" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="0">
+    <main id="main" class="scrollspy-example my-5">
       <div class="container-fluid">
         <div
           id="carouselExampleCaptions"
@@ -114,7 +114,7 @@
         </div>
       </div>
 
-      <div class="container-fluid p-5 mt-5" style="background-color: rgb(222, 202, 202)";>
+      <div class="container-fluid p-5" id="about" style="background-color: rgb(222, 202, 202); margin-top: 4rem;">
         <div class="row">
           <div class="col-sm-3 col-12 mb-5">
             <p class="mb-2"><i class="fa-solid fa-church fa-2xl"></i></p>
@@ -159,10 +159,10 @@
         </div>
       </div>
 
-        <div class="container bg-light"  id="about" style="margin-top: 13rem;">
-          <div class="row">
+        <div class="container bg-light"   style="margin-top: 5rem;">
+          <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-5">
-              <img src="/images/Powerful-Prayer.jpg" class="img-fluid" alt="" />
+              <img src="https://t3.ftcdn.net/jpg/03/67/35/72/360_F_367357209_BG07SVnnB4HSHSaMiHajfZhrZZAE859A.jpg" class="img-fluid border-success border-5 mt-3" alt="" />
             </div>
 
             <div class="col-md-7 mt-3">
@@ -224,12 +224,12 @@
            
            <div class="row mt-5">
             <div class="col d-flex justify-content-center">
-              <button class="btn bg-success rounded-3"><a href="/audio.html" class="text-white text-center fs-4 text-decoration-none">See More</a></button>
+              <button class="btn bg-success rounded-3 shadow-none h6"><a href="/audio.html" class="text-white text-center fw-normal text-decoration-none">See More</a></button>
             </div>
            </div>
         </div>
 
-        <div class="container" id="events" style="margin-top: 13rem;">
+        <div class="container" id="events" style="margin-top: 10rem;">
           <h5 class="h6 text-center text-danger fw-bold text-uppercase">Events</h5>
            <h3 class="text-center text-uppercase fw-bold">Upcoming Events</h3>
          <div class="row mt-5">
@@ -267,7 +267,6 @@
        </div>
     </main>
 
-
     <div class="container-fluid p-4 text-white bg-dark" id="contact" style="margin-top: 13rem;">
       <footer class="row d-flex flex-column flex-md-row justify-content-center align-items-center my-5">
         <div class="col">
@@ -277,7 +276,7 @@
           <p class="text-light">The Cathedral of Grace, Mercy and Peace.</p>
         </div>
     
-        <div class="col mt-4">
+        <div class="col mt-5">
           <h5 class="fw-bold">OUR DAYS OF ACTIVITIES</h5>
           <ul class="flex-column">
             <li class="text-light"><strong class="text-success">Monday:</strong>&nbsp;Women/Youth Fellowship</li>
@@ -311,19 +310,16 @@
         <div class="row my-5">
           <div class="col text-center">
             <h6>&copy; 2023 United Evangelical Church</h6>
-            <p class="text-danger">Designed Abasiono Alexander</p>
+            <p class="text-danger">Designed by Allspark Technologies</p>
           </div>
         </div>
       </footer>
     </div>
 
-    <!-- <div class="loader-wrapper">
-  <h1>
-        <a href="" class="typewrite" data-period="2000" data-type='[ "UNITED EVANGELICAL CHURCH - DIOBU", "THE CATHEDRAL OF GRACE,", "MERCY AND PEACE." ]'>
-          <span class="wrap">nn</span>
-        </a>
-      </h1>
-</div> -->
+<div class="loader-wrapper">
+  <i class="fa-solid fa-church fa-beat fa-6x"></i>
+  <h5 class="mt-5 text-success fs-1 fw-bold">UEC-Diobu</h5>
+</div>
     <script src="index.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
   </body>
