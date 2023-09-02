@@ -1,28 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Oswald', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
 }
 
- header{
-        background: yellow;
-    }
-    
-    .stop{
-        background-color: yellowgreen;
-        height: 50vh;
-    }
-    
-    .food{
-        background-image: url("https://i0.wp.com/nairarush.com.ng/wp-content/uploads/2022/08/load-2806852_640.jpg?resize=640%2C438&ssl=1");
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
+header {
+  background: snow;
+}
 
-@media screen and (max-width:320px){
-    .stop{
-        height: 65vh;
-    }
+.stop {
+  background-color: yellow;
+  padding: 2rem;
+}
+
+.food {
+  background-image: url("https://i0.wp.com/nairarush.com.ng/wp-content/uploads/2022/08/load-2806852_640.jpg?resize=640%2C438&ssl=1");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 320px) {
+  //   .stop {
+  //     // height: 65vh;
+  //   }
+
+  .food {
+    height: 40vh;
+  }
 }

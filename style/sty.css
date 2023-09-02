@@ -2,15 +2,16 @@
   margin: 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
+  text-decoration: none;
 }
 
 header {
-  background: yellow;
+  background: snow;
 }
 
 .stop {
-  background-color: yellowgreen;
-  height: 50vh;
+  background-color: yellow;
+  padding: 2rem;
 }
 
 .food {
@@ -22,7 +23,7 @@ header {
 }
 
 @media screen and (max-width: 320px) {
-  .stop {
-    height: 65vh;
+  .food {
+    height: 40vh;
   }
 }/*# sourceMappingURL=sty.css.map */
