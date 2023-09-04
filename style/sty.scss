@@ -7,55 +7,59 @@ header {
   background: snow;
 }
 
-.card{
+.card {
   cursor: pointer;
-  .card-img-wrap{
+  .card-img-wrap {
     overflow: hidden;
     position: relative;
-    &::after{
-      content: ' ';
+    &::after {
+      content: " ";
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       opacity: 0;
-      transition: opacity .25s;
+      transition: opacity 0.25s;
     }
-    img{
-      transition: transform .25s;
+    img {
+      transition: transform 0.25s;
       width: 100%;
     }
-    &:hover{
-      img{
+    &:hover {
+      img {
         transform: scale(1.2);
-        
       }
-      &::after{
+      &::after {
         opacity: 1;
       }
     }
   }
 }
 
-.card-img-wrap{
+.card-img-wrap {
   cursor: pointer;
   overflow: hidden;
   position: relative;
-  &::after{
-    content: ' ';
+  &::after {
+    content: " ";
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     opacity: 0;
-    transition: opacity .25s;
+    transition: opacity 0.25s;
   }
-  img{
-    transition: transform .25s;
+  img {
+    transition: transform 0.25s;
     width: 100%;
   }
-  &:hover{
-    img{
+  &:hover {
+    img {
       transform: scale(1.2);
-      
     }
-    &::after{
+    &::after {
       opacity: 1;
     }
   }
