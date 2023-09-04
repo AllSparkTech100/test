@@ -1,29 +1,73 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
-  text-decoration: none;
 }
 
 header {
   background: snow;
 }
 
+.card {
+  cursor: pointer;
+}
+.card .card-img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.card .card-img-wrap::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.card .card-img-wrap img {
+  transition: transform 0.25s;
+  width: 100%;
+}
+.card .card-img-wrap:hover img {
+  transform: scale(1.2);
+}
+.card .card-img-wrap:hover::after {
+  opacity: 1;
+}
+
+.card-img-wrap {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.card-img-wrap::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.card-img-wrap img {
+  transition: transform 0.25s;
+  width: 100%;
+}
+.card-img-wrap:hover img {
+  transform: scale(1.2);
+}
+.card-img-wrap:hover::after {
+  opacity: 1;
+}
+
 .stop {
-  background-color: yellow;
+  background-color: rgb(171, 171, 22);
   padding: 2rem;
 }
 
-.food {
-  background-image: url("https://i0.wp.com/nairarush.com.ng/wp-content/uploads/2022/08/load-2806852_640.jpg?resize=640%2C438&ssl=1");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 @media screen and (max-width: 320px) {
-  .food {
-    height: 40vh;
+  .stop {
+    padding: 1rem;
   }
 }/*# sourceMappingURL=sty.css.map */
