@@ -304,67 +304,34 @@
           </div>
         </div>
       </div>
+    </main>
 
-      <div class="container-fluid d-flex p-5 mt-5 bg-warning">
-        <div class="row d-flex align-items-center justify-content-evenly">
-          <div class="col">
-            <h4 class="fw-normal">Connect With Us</h4>
-            <p class="text-dark fw-light mt-2">
-              Feel free to get in touch with us by filling out the Contact form
-              below. We are here to answer any questions you may have and
-              provide you with the best service possible.
-            </p>
+   
+    
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
-          <div class="col d-none d-md-block">
-            <form>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control w-55"
-                  placeholder="Name"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control w-55"
-                  placeholder="Email"
-                  id="exampleInputEmail1"
-                />
-              </div>
-              <div class="mb-3">
-                <textarea
-                  class="form-control w-55"
-                  name=""
-                  id="exampleInputMessage1"
-                  rows="3"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="btn btn-primary fw-light fs-5 float-end"
-              >
-                Send
-              </button>
-            </form>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            Modal body..
           </div>
-
-          <div class="col d-block d-md-none">
-            <button class="btn bg-warning">
-              <a
-                href="https://mail.google.com"
-                target="_blank"
-                class="text-dark fw-normal fs-3"
-                >Contact Us</a
-              >
-            </button>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           </div>
+    
         </div>
       </div>
-    </main>
+    </div>
 
     <div
       class="container-fluid p-4 bg-warning d-flex justify-content-between align-items-center flex-md-row flex-column"
@@ -389,7 +356,7 @@
           </div>
 
           <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <h5>Section</h5>
+            <h5 class="fw-bold">Links</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-muted">Home</a>
@@ -409,23 +376,17 @@
             </ul>
           </div>
 
-          <div class="col-md-5 offset-md-1 mb-3">
-            <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden"
-                  >Email address</label
-                >
-                <input
-                  id="newsletter1"
-                  type="text"
-                  class="form-control"
-                  placeholder="Email address"
-                />
-                <button class="btn btn-primary" type="button">Subscribe</button>
-              </div>
-            </form>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <h4 class="fw-normal">Connect With Us</h4>
+            <p class="text-dark fw-light mt-2">
+              Feel free to get in touch with us by filling out the Contact form
+              below. We are here to answer any questions you may have and
+              provide you with the best service possible.
+            </p>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+              Contact Us
+            </button>
           </div>
         </div>
 
