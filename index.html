@@ -51,16 +51,15 @@
                   class="nav-link link-dark"
                   data-bs-toggle="collapse"
                   data-bs-target=".navbar-collapse.show"
-                  href="/cat.html"
-                  >Categories</a
+                  href="">Categories</a
                 >
               </li>
               <li class="nav-item fw-normal border-top border-0">
                 <a
                   class="nav-link link-dark"
                   data-bs-toggle="collapse"
-                  data-bs-target=".navbar-collapse.show"
-                  href="#"
+                  data-bs-target="navbar-collapse show"
+                  href="cat.html"
                   >About Us</a
                 >
               </li>
@@ -185,8 +184,8 @@
                   doorstep.
                 </p>
 
-                <button class="btn btn-primary rounded">
-                  <a href="#" class="text-dark text-decoration-none fw-light"
+                <button class="btn btn-secondary rounded">
+                  <a href="#" class="text-light text-decoration-none fw-normal"
                     >More Info</a
                   >
                 </button>
@@ -209,8 +208,8 @@
                   Explore a diverse range of products to meet all your shopping
                   needs.
                 </p>
-                <button class="btn btn-primary rounded">
-                  <a href="#" class="text-dark text-decoration-none fw-light"
+                <button class="btn btn-secondary rounded">
+                  <a href="#" class="text-light text-decoration-none fw-normal"
                     >More Info</a
                   >
                 </button>
@@ -233,8 +232,8 @@
                   Discover a bountiful selection of fresh fruits and vegetables
                   for a healthier lifestyle.
                 </p>
-                <button class="btn btn-primary rounded">
-                  <a href="#" class="text-dark text-decoration-none fw-light"
+                <button class="btn btn-secondary rounded">
+                  <a href="#" class="text-light text-decoration-none fw-normal"
                     >More Info</a
                   >
                 </button>
@@ -308,7 +307,7 @@
 
     <!-- The Modal -->
     <div class="modal mt-5" id="myModal">
-      <div class="modal-dialog">
+      <div class="modal-dialog ">
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
@@ -322,12 +321,12 @@
 
           <!-- Modal body -->
           <div class="modal-body">
-            <form>
+            <form> 
               <div class="mb-3">
                 <label for="fname" class="form-label">Full-Name</label>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control shadow-none"
                   name="fname"
                   value=""
                   id="fname"
@@ -349,7 +348,7 @@
               </div>
 
               <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
+                <label for="message" class="form-label shadow-none">Message</label>
                 <textarea
                   class="form-control shadow-none"
                   name="message"
@@ -516,7 +515,7 @@
 
         set(ref(db, "user/" + document.getElementById("fname").value), {
           email: document.getElementById("email").value,
-          message: document.getElementById("message").value,
+          message: document.getElementById("message").value
         });
         alert("Thanks for Your Feedback");
       });
