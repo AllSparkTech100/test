@@ -51,7 +51,7 @@
                   class="nav-link link-dark"
                   data-bs-toggle="collapse"
                   data-bs-target=".navbar-collapse.show"
-                  href="#"
+                  href="/cat.html"
                   >Categories</a
                 >
               </li>
@@ -322,7 +322,18 @@
 
           <!-- Modal body -->
           <div class="modal-body">
-            <form action="" method="post">
+            <form>
+              <div class="mb-3">
+                <label for="fname" class="form-label">Full-Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="fname"
+                  value=""
+                  id="fname"
+                  placeholder="Enter Fullname"
+                />
+              </div>
               <div class="mb-3">
                 <label for="email" class="form-label fw-normal">E-mail</label>
                 <input
@@ -331,7 +342,7 @@
                   name="email"
                   id="email"
                   value=""
-                  placeholder="Input E-mail"
+                  placeholder="example@you.com"
                   required
                   autocomplete="name"
                 />
@@ -351,7 +362,8 @@
 
               <button
                 type="submit"
-                class="btn btn-primary float-end" id="submit"
+                class="btn btn-primary float-end"
+                id="submit"
               >
                 Submit
               </button>
@@ -475,7 +487,6 @@
 
     <script src="js/bootstrap.bundle.js"></script>
     <script type="module">
-      // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
       import {
         getDatabase,
@@ -484,36 +495,30 @@
         get,
         child,
       } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
 
       // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
       const firebaseConfig = {
-        apiKey: "AIzaSyASaSjYR8zdaI3v7osO30oKXGRGMi8Nj1g",
-        authDomain: "form-data-12ed8.firebaseapp.com",
-        projectId: "form-data-12ed8",
-        storageBucket: "form-data-12ed8.appspot.com",
-        messagingSenderId: "428193591911",
-        appId: "1:428193591911:web:2804308d734dbfd9dc5ac2",
-        measurementId: "G-M0PZ07409L",
+        apiKey: "AIzaSyBaS_7h261UP6T76zT5z4J81-PIZPm055U",
+        authDomain: "pick-up-5bfd8.firebaseapp.com",
+        projectId: "pick-up-5bfd8",
+        storageBucket: "pick-up-5bfd8.appspot.com",
+        messagingSenderId: "923882038801",
+        appId: "1:923882038801:web:697e21a4384b9d93eb73b0",
       };
 
       // Initialize Firebase
       const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
 
       const db = getDatabase(app);
 
-      document.getElementById("submit").addEventListener('click', function (e) {
+      document.getElementById("submit").addEventListener("click", function (e) {
         e.preventDefault();
-        set(ref(db, 'user/' + document.getElementById("email").value), 
-        {
+
+        set(ref(db, "user/" + document.getElementById("fname").value), {
           email: document.getElementById("email").value,
           message: document.getElementById("message").value,
         });
-        alert("Message Sent");
+        alert("Thanks for Your Feedback");
       });
     </script>
   </body>
