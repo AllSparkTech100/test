@@ -36,8 +36,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul
-              class="navbar-nav w-md-100 justify-content-start">
+            <ul class="navbar-nav w-md-100 justify-content-start">
               <li class="nav-item fw-normal">
                 <a
                   class="nav-link link-dark"
@@ -82,20 +81,18 @@
 
     <main class="my-5">
       <div class="container-fluid bg-warning">
-        <div class="row h-100 ">
+        <div class="row h-100">
           <div class="col-md-7 col-12 p-3 p-md-5 text-justify">
-            <h4 class="h1 mt-md-5 mt-4">
-              Convenient Shopping. Fresh Choices.
-            </h4>
+            <h4 class="h1 mt-md-5 mt-4">Convenient Shopping. Fresh Choices.</h4>
             <p class="fw-light h4 text-justify">
               Discover a supermarket where you can Conveniently find fresh and
               diverse choices for all your needs.
             </p>
             <button
               type="button"
-              class="btn bg-white text-dark mt-3 fw-normal fs-4"
+              class="btn bg-white text-dark mt-3 p-1 fw-normal fs-4"
             >
-              <span>Shop Now</span>
+              Shop Now
             </button>
           </div>
         </div>
@@ -152,15 +149,15 @@
           <div class="col-12 p-md-5 p-3 bg-warning">
             <h4 class="fs-2 mb-3">About Us</h4>
             <p class="fw-light fs-md-3 fs-5">
-              Welcome to <strong>Pick-Up</strong>, your premier supermarket in Port-Harcourt,
-              Rivers state. We pride ourselves on providing our customers with a
-              wide selection of high-quality products and exceptional customer
-              service. With a focus on convenience and affordabiltiy, we strive
-              to meet all your grocery needs in ne convenient location. Whether
-              you're looking for fresh produce, pantry staples, or household
-              essentaials,we've got you covered. Visit Pick-Up today and
-              experience the difference of shopping at a supermarket that puts
-              your satisfaction first.
+              Welcome to <strong>Pick-Up</strong>, your premier supermarket in
+              Port-Harcourt, Rivers state. We pride ourselves on providing our
+              customers with a wide selection of high-quality products and
+              exceptional customer service. With a focus on convenience and
+              affordabiltiy, we strive to meet all your grocery needs in ne
+              convenient location. Whether you're looking for fresh produce,
+              pantry staples, or household essentaials,we've got you covered.
+              Visit Pick-Up today and experience the difference of shopping at a
+              supermarket that puts your satisfaction first.
             </p>
           </div>
         </div>
@@ -189,9 +186,10 @@
                 </p>
 
                 <button class="btn btn-primary rounded">
-                   <a href="#" class="text-dark text-decoration-none fw-light"
-                  >More Info</a
-                ></button>
+                  <a href="#" class="text-dark text-decoration-none fw-light"
+                    >More Info</a
+                  >
+                </button>
               </div>
             </div>
           </div>
@@ -213,8 +211,9 @@
                 </p>
                 <button class="btn btn-primary rounded">
                   <a href="#" class="text-dark text-decoration-none fw-light"
-                 >More Info</a
-               ></button>
+                    >More Info</a
+                  >
+                </button>
               </div>
             </div>
           </div>
@@ -236,8 +235,9 @@
                 </p>
                 <button class="btn btn-primary rounded">
                   <a href="#" class="text-dark text-decoration-none fw-light"
-                 >More Info</a
-               ></button>
+                    >More Info</a
+                  >
+                </button>
               </div>
             </div>
           </div>
@@ -306,29 +306,68 @@
       </div>
     </main>
 
-   
-    
     <!-- The Modal -->
-    <div class="modal" id="myModal">
+    <div class="modal mt-5" id="myModal">
       <div class="modal-dialog">
         <div class="modal-content">
-    
           <!-- Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">Modal Heading</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <h4 class="modal-title">Send Us a Message</h4>
+            <button
+              type="button"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+            ></button>
           </div>
-    
+
           <!-- Modal body -->
           <div class="modal-body">
-            Modal body..
+            <form action="" method="post">
+              <div class="mb-3">
+                <label for="email" class="form-label fw-normal">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control shadow-none"
+                  name="email"
+                  id="email"
+                  value=""
+                  placeholder="Input E-mail"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control shadow-none"
+                  name="message"
+                  id="message"
+                  rows="3"
+                  required
+                  autocomplete="message"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary float-end" id="submit"
+              >
+                Submit
+              </button>
+            </form>
           </div>
-    
+
           <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-          </div>
-    
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div> -->
         </div>
       </div>
     </div>
@@ -338,24 +377,47 @@
     >
       <footer class="py-5">
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="col-12 col-sm-6 col-md-2 mb-3">
             <h5 class="fw-bold" style="font-family: Mochiy Pop One">Pick-up</h5>
+            <ul class="list-unstyled flex-inline d-flex">
+              <li class="ms-1">
+                <a
+                  href="https://www.twitter.com"
+                  class="nav-link p-0 text-muted"
+                  ><i class="fa-brands fa-linkedin fa-2x"></i
+                ></a>
+              </li>
+              <li class="ms-1">
+                <a
+                  href="https://www.instagram.com"
+                  class="nav-link p-0 text-muted"
+                  ><i class="fa-brands fa-instagram fa-2x"></i
+                ></a>
+              </li>
+              <li class="ms-1">
+                <a
+                  href="https://www.facebook.com"
+                  class="nav-link p-0 text-muted"
+                  ><i class="fa-brands fa-facebook fa-2x"></i
+                ></a>
+              </li>
+            </ul>
           </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="col-12 col-sm-6 col-md-4 mb-3">
             <h5 class="fw-bold">Opening Hours</h5>
             <ul class="flex-column list-unstyled">
               <li class="mb-2">
                 <p class="fs-5">8am - 10pm</p>
-                <p class="fs-5">Mon. - Sat.</p>
+                <p class="fs-5">Mondays - Saturdays</p>
               </li>
               <li class="mb-2">
                 <p class="fs-5">9am - 9pm</p>
-                <p class="fs-5">Sun. and Public Holidays .</p>
+                <p class="fs-5">Sundays and Public Holidays.</p>
               </li>
             </ul>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="col-12 col-sm-6 col-md-2 mb-3">
             <h5 class="fw-bold">Links</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
@@ -376,7 +438,7 @@
             </ul>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <div class="col-12 col-sm-6 col-md-4 mb-3">
             <h4 class="fw-normal">Connect With Us</h4>
             <p class="text-dark fw-light mt-2">
               Feel free to get in touch with us by filling out the Contact form
@@ -384,7 +446,12 @@
               provide you with the best service possible.
             </p>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            <button
+              type="button"
+              class="btn btn-primary shadow-none"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+            >
               Contact Us
             </button>
           </div>
@@ -392,39 +459,62 @@
 
         <div
           class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
-        >
-          <p class="fw-normal">
+        ></div>
+
+        <div class="col-12">
+          <p class="fw-normal text-center">
             &copy; 2023
             <span class="h6 fw-light" style="font-family: Mochiy Pop One">
               Pick-Up</span
             >, Inc. All rights reserved.
           </p>
-          <ul
-            class="list-unstyled align-items-center justify-content-center d-flex"
-          >
-            <li class="ms-3">
-              <a href="https://www.twitter.com" class="nav-link p-0 text-muted"
-                ><i class="fa-brands fa-linkedin fa-2x"></i
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a
-                href="https://www.instagram.com"
-                class="nav-link p-0 text-muted"
-                ><i class="fa-brands fa-instagram fa-2x"></i
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a href="https://www.facebook.com" class="nav-link p-0 text-muted"
-                ><i class="fa-brands fa-facebook fa-2x"></i
-              ></a>
-            </li>
-          </ul>
         </div>
+        <div class="col-12"></div>
       </footer>
     </div>
 
     <script src="js/bootstrap.bundle.js"></script>
-    <script src="index.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+      import {
+        getDatabase,
+        ref,
+        set,
+        get,
+        child,
+      } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyASaSjYR8zdaI3v7osO30oKXGRGMi8Nj1g",
+        authDomain: "form-data-12ed8.firebaseapp.com",
+        projectId: "form-data-12ed8",
+        storageBucket: "form-data-12ed8.appspot.com",
+        messagingSenderId: "428193591911",
+        appId: "1:428193591911:web:2804308d734dbfd9dc5ac2",
+        measurementId: "G-M0PZ07409L",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+
+      const db = getDatabase(app);
+
+      document.getElementById("submit").addEventListener("click", function (e) {
+        e.preventDefault();
+        set(ref(db, 'user/' + document.getElementById("email").value), 
+        {
+          email: document.getElementById("email").value,
+          message: document.getElementById("message").value,
+        });
+        alert("Message Sent");
+      });
+    </script>
   </body>
 </html>
