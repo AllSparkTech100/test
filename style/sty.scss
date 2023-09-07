@@ -7,10 +7,20 @@
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-stop:always;
+}
+
+.com{
+  background-image: url('https://nextrestaurants.com/wp-content/uploads/2019/10/Restaurant-Instagram-Photography.png');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 
 header {
-  background: snow;
+  background: rgb(223, 202, 202);
   .navbar-nav{
     .nav-item{
       a{
