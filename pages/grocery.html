@@ -15,7 +15,7 @@
     ></script>
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../style/sty.css" />
-    <title>Pick-Up</title>
+    <title>Groceries</title>
   </head>
   <body>
     <header class="fixed-top">
@@ -38,45 +38,91 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav w-md-100 justify-content-start">
               <li class="nav-item fw-normal">
-                <a
-                  class="nav-link link-dark"
-                  href="../index.html"
-                  >Home</a
-                >
+                <a class="nav-link link-dark" href="../index.html">Home</a>
               </li>
               <li class="nav-item fw-normal border-top border-0">
-                <a
-                  class="nav-link link-dark"
-                  href="fruit.html">Fruits</a
-                >
+                <a class="nav-link link-dark" href="fruit.html">Fruits</a>
               </li>
 
               <li class="nav-item fw-normal border-top border-0">
-                <a
-                  class="nav-link link-dark"
-                  href="food.html"
-                  >Foods</a
-                >
+                <a class="nav-link link-dark" href="food.html">Foods</a>
               </li>
 
               <li class="nav-item fw-normal border-top border-0">
-                <a
-                  class="nav-link link-dark"
-                  href="#contact"
-                  >Contact Us</a
-                >
+                <a class="nav-link link-dark" href="#contact">Contact Us</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-<div class="com"></div>
+
     <main class="my-5">
+      <!-- Appeal -->
+      <div id="com" class="bg-image">
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-12 p-3">
+              <h4 class="h1 text-uppercase text-center text-white fw-bold">
+                Delicious Delicases Just For you
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Items -->
+      <div class="container-fluid p-4">
+        <div class="row">
+          <div class="col-6 p-4">
+            <h3 class="fw-bold text-uppercase">All Grocery Items</h3>
+          </div>
+          <div class="col-12 p-2">
+            <h4 class="text-center fw-bold text-uppercase">Breakfast</h4>
+          </div>
+        </div>
+
+        <div class="row mt-5 g-1">
+          <div class="col-12 col-sm-6 col-md-3 mb-2">
+            <div class="card h-100">
+              <img
+                src="https://images.bluevalleypost.com/wp-content/uploads/2023/03/coffee_drinks_black_dog.jpg"
+                class="card-img-top"
+                alt="Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Coffee Drink</h5>
+                <p class="card-text">
+                  moderate coffee intake about 2 &minus; 5 cups a day is linked to a lower likelihood of type 2 diabetes, heart disease, liver and endometrial cancers, Parkinson's disease, and depression. It's even possible that people who drink coffee can reduce their risk of early death.
+                </p>
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-sm-6 col-md-3 mb-2">
+            <div class="card h-100">
+              <img
+                src="https://img-global.cpcdn.com/recipes/b1e2ff26a447b2fd/680x482cq70/cheese-bread-omelette-sandwich-easy-breakfast-idea-recipe-main-photo.jpg"
+                class="card-img-top"
+                alt="Coffee"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bread and Egg</h5>
+                <p class="card-text">
+                  This is a high protein breakfast that is also beneficial for muscle health and helps in body building. Apart from this, it makes you feel full, so you do not feel hungry throughout the day.
+                </p>
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- The Modal -->
     <div class="modal mt-5" id="myModal">
-      <div class="modal-dialog ">
+      <div class="modal-dialog">
         <div class="modal-content">
           <!-- Modal Header -->
           <div class="modal-header">
@@ -90,7 +136,7 @@
 
           <!-- Modal body -->
           <div class="modal-body">
-            <form> 
+            <form>
               <div class="mb-3">
                 <label for="fname" class="form-label">Full-Name</label>
                 <input
@@ -117,7 +163,9 @@
               </div>
 
               <div class="mb-3">
-                <label for="message" class="form-label shadow-none">Message</label>
+                <label for="message" class="form-label shadow-none"
+                  >Message</label
+                >
                 <textarea
                   class="form-control shadow-none"
                   name="message"
@@ -151,9 +199,10 @@
         </div>
       </div>
     </div>
-
+    <!-- Footer -->
     <div
-      class="container-fluid p-4 bg-warning d-flex justify-content-between align-items-center flex-md-row flex-column" style="margin-top: 10rem;"
+      class="container-fluid p-4 bg-warning d-flex justify-content-between align-items-center flex-md-row flex-column"
+      style="margin-top: 10rem"
     >
       <footer class="py-5" id="contact">
         <div class="row">
@@ -283,7 +332,7 @@
 
         set(ref(db, "user/" + document.getElementById("fname").value), {
           email: document.getElementById("email").value,
-          message: document.getElementById("message").value
+          message: document.getElementById("message").value,
         });
         alert("Thanks for Your Feedback");
       });

@@ -6,14 +6,35 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   scroll-snap-type: mandatory;
-  scroll-snap-stop: always;
+  scroll-snap-align: inherit;
+}
+* a {
+  text-decoration: none;
 }
 
-.com {
-  background-image: url("https://nextrestaurants.com/wp-content/uploads/2019/10/Restaurant-Instagram-Photography.png");
+::-webkit-scrollbar-track {
+  height: 3px;
+}
+
+::-webkit-scrollbar {
+  background-color: #000;
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: yellow;
+  border-radius: 12px;
+}
+
+#com {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.612)), url("https://nextrestaurants.com/wp-content/uploads/2019/10/Restaurant-Instagram-Photography.png");
   height: 100vh;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -26,12 +47,13 @@ header .navbar-nav .nav-item a:hover {
   color: red;
 }
 
-.modal .modal-dialog .modal-body form input, .modal .modal-dialog .modal-body form textarea {
+.modal .modal-dialog .modal-body form input,
+.modal .modal-dialog .modal-body form textarea {
   font-size: 14px;
   font-family: "Lobster";
 }
-.modal .modal-dialog .modal-body form input:focus, .modal .modal-dialog .modal-body form textarea:focus {
-  background-color: rgba(58, 7, 112, 0.424);
+.modal .modal-dialog .modal-body form input:focus,
+.modal .modal-dialog .modal-body form textarea:focus {
   border-bottom: 2px solid blue;
 }
 
@@ -92,4 +114,24 @@ header .navbar-nav .nav-item a:hover {
 }
 .card-img-wrap:hover::after {
   opacity: 1;
+}
+
+marquee > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 320px) {
+  #com {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  #com {
+    height: 60vh;
+  }
+}
+.carousel {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.298));
 }/*# sourceMappingURL=sty.css.map */
