@@ -25,6 +25,18 @@
   background-color: yellow;
   border-radius: 12px;
 }
+
+#co{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.612)),
+    url("https://previews.123rf.com/images/liligraphie/liligraphie1407/liligraphie140700795/29758828-mix-of-fresh-fruits-and-berries-raw-food-ingredients-nutrition-background.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #com {
   background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.612)),
     url("https://nextrestaurants.com/wp-content/uploads/2019/10/Restaurant-Instagram-Photography.png");
@@ -147,8 +159,4 @@ marquee > div{
   #com{
     height: 60vh;
   }
-}
-
-.carousel{
-  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.298));
 }
