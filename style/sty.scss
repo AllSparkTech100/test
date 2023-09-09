@@ -85,6 +85,11 @@ header {
   font-family: "Poppins";
 }
 
+.card-img-top{
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
 .card {
   cursor: pointer;
   .card-img-wrap {
@@ -153,10 +158,20 @@ marquee > div{
   #com{
     height: 50vh;
   }
+  #co{
+    height: 50vh;
+  }
 }
 
 @media screen and (max-width:480px){
   #com{
     height: 60vh;
   }
+  #co{
+    height: 60vh;
+  }
 }
+
+.card-img-overlay{
+  background-image: var(--bs-gradient);
+  }

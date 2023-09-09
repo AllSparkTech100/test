@@ -73,6 +73,13 @@ header .navbar-nav .nav-item a:hover {
   font-family: "Poppins";
 }
 
+.card-img-top {
+  height: 40vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .card {
   cursor: pointer;
 }
@@ -137,9 +144,18 @@ marquee > div {
   #com {
     height: 50vh;
   }
+  #co {
+    height: 50vh;
+  }
 }
 @media screen and (max-width: 480px) {
   #com {
     height: 60vh;
   }
+  #co {
+    height: 60vh;
+  }
+}
+.card-img-overlay {
+  background-image: var(--bs-gradient);
 }/*# sourceMappingURL=sty.css.map */
