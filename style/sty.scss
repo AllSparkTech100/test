@@ -27,8 +27,19 @@
 }
 
 #co{
-   background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.612)),
+   background-image: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.735)),
     url("https://previews.123rf.com/images/liligraphie/liligraphie1407/liligraphie140700795/29758828-mix-of-fresh-fruits-and-berries-raw-food-ingredients-nutrition-background.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#coa{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.727), rgba(0, 0, 0, 0.735)),
+    url("https://1.bp.blogspot.com/-qmRRfjITIdY/YNB99ukVlHI/AAAAAAAAFWI/1QF2ERGkXxIysJvHhif0Q8tHCBkVwfgCgCLcBGAsYHQ/s800/household-appliances.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -88,7 +99,7 @@ header {
 .card-img-top{
   height: 40vh;
   width: 100%;
-  object-fit: cover;
+  object-fit:cover;
 }
 .card {
   cursor: pointer;
@@ -174,4 +185,10 @@ marquee > div{
 
 .card-img-overlay{
   background-image: var(--bs-gradient);
+  
+  }
+
+  .bg-dark {
+    --bs-bg-opacity: 67%;
+    // background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
   }
