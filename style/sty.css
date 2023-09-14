@@ -158,12 +158,18 @@ marquee > div {
   #co {
     height: 50vh;
   }
+  #coa {
+    height: 50vh;
+  }
 }
 @media screen and (max-width: 480px) {
   #com {
     height: 60vh;
   }
   #co {
+    height: 60vh;
+  }
+  #coa {
     height: 60vh;
   }
 }
