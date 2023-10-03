@@ -1,0 +1,155 @@
+* ::before,
+::after {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: inherit;
+}
+* ::before a,
+::after a {
+  text-decoration: none;
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.carrier {
+  background-color: #f5f5f5;
+}
+.carrier .about-carrier {
+  box-shadow: -1px -1px 2px #adadad, 2px 2px 1px #adadad;
+}
+
+.card-img-top {
+  height: 40vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  cursor: pointer;
+}
+.card .card-img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.card .card-img-wrap::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.card .card-img-wrap img {
+  transition: transform 0.25s;
+  width: 100%;
+}
+.card .card-img-wrap:hover img {
+  transform: scale(1.2);
+}
+.card .card-img-wrap:hover::after {
+  opacity: 1;
+}
+
+.card-img-wrap {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+.card-img-wrap::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.card-img-wrap img {
+  transition: transform 0.25s;
+  width: 100%;
+}
+.card-img-wrap:hover img {
+  transform: scale(1.2);
+}
+.card-img-wrap:hover::after {
+  opacity: 1;
+}
+
+.line-2 {
+  text-align: center;
+  height: 8px;
+  width: 52px;
+  background-color: #0078FF;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 1.5s;
+  z-index: 999;
+  padding: 20px 0;
+}
+
+#header .logo {
+  font-size: 28px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo img {
+  max-height: 30px;
+}
+
+#header.header-scrolled {
+  background: rgba(92, 56, 56, 0.9);
+  padding: 2px 0;
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #0078ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #298eff;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}/*# sourceMappingURL=port.css.map */

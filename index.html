@@ -3,524 +3,585 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/c4d71c68e7.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="style/sty.css" />
-    <title>Pick-Up</title>
+    <link rel="stylesheet" href="./styles/port.css" />
+    <title>Abasiono Alexander</title>
   </head>
   <body>
-    <header class="fixed-top">
-      <nav class="navbar navbar-expand-sm|md navbar-dark">
-        <div class="container-fluid">
-          <a
-            class="navbar-brand w-50 me-auto d-flex text-dark fs-2 fw-bold"
-            style="font-family: Mochiy Pop One"
-            href="#"
-            >Pick-Up</a
-          >
-          <button
-            class="navbar-toggler bg-dark shadow-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav w-md-100 justify-content-start">
-              <li class="nav-item fw-normal">
-                <a
-                  class="nav-link link-dark"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item fw-normal border-top border-0">
-                <a
-                  class="nav-link link-dark"
-                  href="#about">About Us</a
-                >
-              </li>
-              <li class="nav-item fw-normal border-top border-0">
-                <a
-                  class="nav-link link-dark"
-                  href="#service"
-                  >Services</a
-                >
-              </li>
-              <li class="nav-item fw-normal border-top border-0">
-                <a
-                  class="nav-link link-dark"
-                  href="#gallery"
-                  >Gallery</a
-                >
-              </li>
-
-              <li class="nav-item fw-normal border-top border-0">
-                <a
-                  class="nav-link link-dark"
-                  href="#contact"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
+    <header id="header" class="fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+        <a class="navbar-brand fw-bold text-light" href="#">A.S. Technologies</a>
+        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-md-5 " id="collapsibleNavId">
+          <ul class="navbar-nav mx-lg-auto mx-md-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fs-4 text-uppercase text-light" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 text-uppercase text-light"" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 text-uppercase text-light"" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 text-uppercase text-light"" href="#portfolio">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 text-uppercase text-light"" href="#contact">Contact Us</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+    
     </header>
 
-    <main class="my-5">
-      <!-- intro -->
-      <div class="container-fluid bg-warning">
-        <div class="row h-100">
-          <div class="col-md-7 col-12 p-3 p-md-5 text-justify">
-            <h4 class="h1 mt-md-5 mt-4">Convenient Shopping. Fresh Choices.</h4>
-            <p class="fw-light h4 text-justify">
-              Discover a supermarket where you can Conveniently find fresh and
-              diverse choices for all your needs.
-            </p>
-            <button
-              type="button"
-              class="btn bg-white  mt-3 p-1"
-            >
-             <a href="#service" class="text-dark fw-normal fs-4">Shop Now</a>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Carousel Slide -->
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide"
-        data-bs-ride="carousel"
+    <div
+      class="container-fluid text-center d-flex align-items-center justify-content-center flex-column text-white bg-image"
+      style="background-image: linear-gradient(rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.518)),url(./images/hero-bg.jpg)"
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/disc.png" class="d-block w-100" alt="Shoppers" />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://a.cdn-hotels.com/gdcs/production88/d1000/f1fd2bd5-e90f-48fa-85d1-840e2c4ace3b.jpg"
-              class="d-block w-100"
-              alt="Shopping Bags"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://www.thesun.ie/wp-content/uploads/sites/3/2021/12/MT-SHOPPING-OFF-PLATT.jpg?strip=all&quality=100&w=1200&h=800&crop=1"
-              class="d-block w-100"
-              alt="Shoppers"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://independent.ng/wp-content/uploads/shop-online.jpg"
-              class="d-block w-100"
-              alt="Shopping Trolley"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="https://www.londonperfect.com/cdn-cgi/image/format=auto,width=1256/https://www.londonperfect.com/g/photos/upload/sml_56160603-1502116691-shopping-london.jpg"
-              class="d-block w-100"
-              alt="Shoppers"
-            />
-          </div>
+      <div class="col-12">
+          <h1 class="text-center">Hi, I'm Ikangenyin Abasiono Alexander</h1>
         </div>
-      </div>
+         <div class="col-12">
+          <h5
+            class="text-uppercase text-center text-snow mt-2 fw-bold typewrite"
+            data-period="2500"
+            data-type='["Frontend Developer", "Music Transcriptionist", "Freelancer"]'
+          ></h5>
+        </div>
+    </div>
 
-      <!-- About Section -->
-      <div class="container-fluid" id="about">
-        <div class="row">
-          <div class="col-12 p-md-5 p-4 bg-warning">
-            <h4 class="fw-bold fs-4 mt-5 text-uppercase">
-              About Us
-            </h4>
-            <p class="fw-light fs-md-3 fs-5">
-              Welcome to <strong>Pick-Up</strong>, your premier supermarket in
-              Port-Harcourt, Rivers state. We pride ourselves on providing our
-              customers with a wide selection of high-quality products and
-              exceptional customer service. With a focus on convenience and
-              affordabiltiy, we strive to meet all your grocery needs in ne
-              convenient location. Whether you're looking for fresh produce,
-              pantry staples, or household essentaials,we've got you covered.
-              Visit Pick-Up today and experience the difference of shopping at a
-              supermarket that puts your satisfaction first.
-            </p>
+    <main class="my-3">
+      <!-- Bio -->
+      <div class="container-fluid carrier h-100 p-md-5 p-2" id="about">
+        <div
+          class="container h-100 about-carrier p-md-5 p-4 mt-5 mt-md-3 bg-light"
+        >
+          <div class="row mt-5 mt-md-0">
+            <div class="col-12 col-md-6 col-sm-12">
+              <!-- Image Column -->
+              <div class="row">
+                <div class="col-md-4 mb-md-0 mb-3 col-12">
+                  <img
+                    src="./images/testimonial-2.jpg"
+                    alt=""
+                    class="img-fluid rounded-3"
+                  />
+                </div>
+                <!-- Name Column -->
+                <div class="col-md-8 col-12">
+                  <p class="mt-3 mt-md-0 fw-normal">
+                    <strong>Name:</strong> Ikangenyin Abasiono Alexander
+                  </p>
+                  <p class="mt-3 mt-md-0 fw-normal">
+                    <strong>Profile:</strong> Frontend Developer, Music
+                    Transcriptionist
+                  </p>
+                  <p class="mt-3 mt-md-0 fw-normal">
+                    <strong>Email:</strong> allsparktech@gmail.com
+                  </p>
+                  <p class="mt-3 mt-md-0 fw-normal">
+                    <strong>Phone:</strong> (277)-9032-92394
+                  </p>
+                </div>
+              </div>
+              <!-- Skills -->
+              <div class="col-12 mt-3 mt-md-4">
+                <h5 class="fw-bold mt-5 mb-4">Skills</h5>
+                <!-- Skill Bars -->
+                <div class="">
+                  <span>HTML</span> <span class="pull-right">85%</span>
+                  <div class="progress mb-3">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 85%"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <span>CSS3</span> <span class="pull-right">75%</span>
+                  <div class="progress mb-3">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 75%"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <span>JAVASCRIPT</span> <span class="pull-right">25%</span>
+                  <div class="progress mb-3">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 25%"
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <span>REACT JS</span> <span class="pull-right">30%</span>
+                  <div class="progress mb-3">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 30%"
+                      aria-valuenow="30"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+
+                  <span>MUSIC TRANSCRIPTION</span>
+                  <span class="pull-right">90%</span>
+                  <div class="progress mb-3">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      style="width: 90%"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- About -->
+            <div class="col-12 col-md-6 col-sm-12 mt-5 mt-md-0">
+              <h4 class="text-decoration-underline fw-bold">About Us</h4>
+              <p class="mt-md-4 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit harum cum, ipsum quisquam vel tempora expedita
+                repellat est earum consequuntur officia molestiae doloremque in
+                eveniet enim odio consectetur aperiam dolore maxime aliquam quas
+                quo.
+              </p>
+              <p class="mt-md-4 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit harum cum, ipsum quisquam vel tempora expedita
+                repellat est earum consequuntur officia molestiae doloremque in
+                eveniet enim odio consectetur aperiam dolore maxime aliquam quas
+                quo.
+              </p>
+              <p class="mt-md-4 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit harum cum, ipsum quisquam vel tempora expedita
+                repellat est earum consequuntur officia molestiae doloremque in
+                eveniet enim odio consectetur aperiam dolore maxime aliquam quas
+                quo.
+              </p>
+              <p class="mt-md-4 mt-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit harum cum, ipsum quisquam vel tempora expedita
+                repellat est earum consequuntur officia molestiae doloremque in
+                eveniet enim odio consectetur aperiam dolore maxime aliquam quas
+                quo.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Services -->
-      <div class="container-fluid" id="service" style="margin-top: 10rem;">
-        <div class="row">
-          <div class="col-12 p-4">
-            <h4 class="fw-bold text-uppercase fs-4 mt-5 text-center">
-              Our Services
-            </h4>
+      <div id="service"
+        class="container-fluid carrier h-100 p-md-5 p-2"
+        style="margin-top: 12rem"
+      >
+        <div class="container">
+          <div
+            class="col-12 text-center d-flex align-items-center justify-content-center flex-column p-md-4 p-3"
+          >
+            <h2 class="text-uppercase fw-bold">Services</h2>
+            <p class="fs-6 fw-normal">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <div class="line-2"></div>
           </div>
-          <div class="col-md-4 col-lg-4 col-sm-6 col-12 mt-4">
-            <div class="card h-100">
-              <div class="card-img-wrap">
+          <div class="row mt-md-4">
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card h-100">
                 <img
-                  src="https://foodtank.com/wp-content/uploads/2021/09/gemma-stpjHJGqZyw-unsplash.jpg"
-                  class="card-img-top img-fluid"
-                  alt="Grocery"
+                  class="card-img-top h-100"
+                  src="./images/portfolio-details-1.jpg"
+                  alt="Title"
                 />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Grocery Shopping</h5>
-                <p class="card-text fw-normal">
-                  Conveniently shop from home and recieve groceries at your
-                  doorstep.
-                </p>
 
-                <button class="btn btn-secondary rounded">
-                  <a href="./pages/grocery.html" class="text-light text-decoration-none fw-normal"
-                    >Shop Now</a
-                  >
-                </button>
+                <div class="card-body mt-md-4">
+                  <h4 class="card-title text-center text-uppercase mt-3">
+                    Web Design
+                  </h4>
+                  <p class="card-text text-center mt-3 mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-4 col-lg-4 col-sm-6 col-12 mt-4">
-            <div class="card h-100">
-              <div class="card-img-wrap">
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card h-100">
                 <img
-                  src="https://1.bp.blogspot.com/-qmRRfjITIdY/YNB99ukVlHI/AAAAAAAAFWI/1QF2ERGkXxIysJvHhif0Q8tHCBkVwfgCgCLcBGAsYHQ/s800/household-appliances.jpg"
-                  class="card-img-top img-fluid"
-                  alt="Product"
+                  class="card-img-top h-100"
+                  src="./images/portfolio-details-2.jpg"
+                  alt="Title"
                 />
-              </div>
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Wide Product Variety</h5>
-                <p class="card-text fw-normal">
-                  Explore a diverse range of products to meet all your shopping
-                  needs.
-                </p>
-                <button class="btn btn-secondary rounded">
-                  <a href="./pages/app.html" class="text-light text-decoration-none fw-normal"
-                    >Shop Now</a
-                  >
-                </button>
+                <div class="card-body mt-md-4">
+                  <h4 class="card-title text-center text-uppercase mt-3">
+                    Web Development
+                  </h4>
+                  <p class="card-text text-center mt-3 mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-md-4 col-lg-4 col-sm-6 col-12 mt-4">
-            <div class="card h-100">
-              <div class="card-img-wrap">
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card h-100">
                 <img
-                  src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4"
-                  class="card-img-top img-fluid"
-                  alt="Fruits"
+                  class="card-img-top h-100"
+                  src="./images/portfolio-details-3.jpg"
+                  alt="Title"
                 />
+                <div class="card-body mt-md-4">
+                  <h4 class="card-title text-center text-uppercase mt-3">
+                    Music Transcription
+                  </h4>
+                  <p class="card-text text-center mt-3 mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident
+                  </p>
+                </div>
               </div>
-              <div class="card-body">
-                <h5 class="card-title fw-bold">Fresh Produce Section</h5>
-                <p class="card-text fw-normal">
-                  Discover a bountiful selection of fresh fruits and vegetables
-                  for a healthier lifestyle.
-                </p>
-                <button class="btn btn-secondary rounded">
-                  <a href="./pages/fruit.html" class="text-light text-decoration-none fw-normal"
-                    >Shop Now</a
-                  >
-                </button>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card h-100">
+                <img
+                  class="card-img-top h-100"
+                  src="./images/post-1.jpg"
+                  alt="Title"
+                />
+                <div class="card-body mt-md-4">
+                  <h4 class="card-title text-center text-uppercase mt-3">
+                    Audio Editing
+                  </h4>
+                  <p class="card-text text-center mt-3 mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card h-100">
+                <img
+                  class="card-img-top h-100"
+                  src="./images/post-2.jpg"
+                  alt="Title"
+                />
+                <div class="card-body mt-md-4">
+                  <h4 class="card-title text-center text-uppercase mt-3">
+                    Responsive Design
+                  </h4>
+                  <p class="card-text text-center mt-3 mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card h-100">
+                <img
+                  class="card-img-top h-100"
+                  src="./images/post-3.jpg"
+                  alt="Title"
+                />
+                <div class="card-body mt-md-4">
+                  <h4 class="card-title text-center text-uppercase mt-3">
+                    Sheet-Music Transcription
+                  </h4>
+                  <p class="card-text text-center mt-3 mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magni adipisci eaque autem fugiat! Quia, provident vitae!
+                    Magni tempora perferendis eum non provident
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- Portfolio -->
+      <div class="container-fluid h-100 p-md-5 p-2" id="portfolio" style="margin-top: 12rem">
+        <div class="container">
+          <div
+            class="col-12 text-center d-flex align-items-center justify-content-center flex-column p-md-4 p-3"
+          >
+            <h2 class="text-uppercase fw-bold">Portfolio</h2>
+            <p class="fs-6 fw-normal">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <div class="line-2"></div>
+          </div>
 
-      <!-- Gallery -->
-      <div class="container-fluid" id="gallery" style="margin-top: 10rem;">
-        <div class="row">
-          <div class="col-12 p-4">
-            <h4 class="fw-bold fs-4 mt-5 text-center text-uppercase">
-              Gallery
-            </h4>
+          <div class="row mt-5">
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card-img-wrap">
+                <div class="card h-100">
+                  <img
+                    class="card-img-top h-100"
+                    src="./images/post-2.jpg"
+                    alt="Title"
+                  />
+                </div>
+              </div>
+              <div class="card-body mt-md-2">
+                <h6 class="card-title text-uppercase mt-3">
+                  Pick-up Super-Mart
+                </h6>
+                <p class="card-text mt-3 mb-3">
+                  Web Design / 15th September, 2023
+                </p>
+                <div class="col-12">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://pick-up-alpha.vercel.app/"
+                      class="text-light text-decoration-none"
+                      target="_blank"
+                      >Visit</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card-img-wrap">
+                <div class="card h-100">
+                  <img
+                    class="card-img-top h-100"
+                    src="./images/work-6.jpg"
+                    alt="Title"
+                  />
+                </div>
+              </div>
+              <div class="card-body mt-md-2">
+                <h6 class="card-title text-uppercase mt-3">
+                  United Evangelical Church Website
+                </h6>
+                <p class="card-text mt-3 mb-3">
+                  Web Design / 31st August, 2023
+                </p>
+                <div class="col-12">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://uec-org.vercel.app/"
+                      class="text-light text-decoration-none"
+                      target="_blank"
+                      >Visit</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card-img-wrap">
+                <div class="card h-100">
+                  <img
+                    class="card-img-top h-100"
+                    src="./images/work-2.jpg"
+                    alt="Title"
+                  />
+                </div>
+              </div>
+              <div class="card-body mt-md-2">
+                <h6 class="card-title text-uppercase mt-3">
+                  PRO Construction Website
+                </h6>
+                <p class="card-text mt-3 mb-3">Web Design / 22nd July, 2023</p>
+                <div class="col-12">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://pro-construction.vercel.app/"
+                      class="text-light text-decoration-none"
+                      target="_blank"
+                      >Visit</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card-img-wrap">
+                <div class="card h-100">
+                  <img
+                    class="card-img-top h-100"
+                    src="./images/work-5.jpg"
+                    alt="Title"
+                  />
+                </div>
+              </div>
+              <div class="card-body mt-md-2">
+                <h6 class="card-title text-uppercase mt-3">
+                  Mental Health Website
+                </h6>
+                <p class="card-text mt-3 mb-3">
+                  Web Design / 31st August, 2022
+                </p>
+                <div class="col-12">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://mentalhealth-theta.vercel.app/"
+                      class="text-light text-decoration-none"
+                      target="_blank"
+                      >Visit</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card-img-wrap">
+                <div class="card h-100">
+                  <img
+                    class="card-img-top h-100"
+                    src="./images/work-1.jpg"
+                    alt="Title"
+                  />
+                </div>
+              </div>
+              <div class="card-body mt-md-2">
+                <h6 class="card-title text-uppercase mt-3">Weather Web-App</h6>
+                <p class="card-text mt-3 mb-3">Web Design / Coming Soon</p>
+                <div class="col-12">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://www.google.com"
+                      class="text-light text-decoration-none"
+                      target="_blank"
+                      >Visit</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-12 mb-3 mb-md-0 mt-3">
+              <div class="card-img-wrap">
+                <div class="card h-100">
+                  <img
+                    class="card-img-top h-100"
+                    src="./images/work-4.jpg"
+                    alt="Title"
+                  />
+                </div>
+              </div>
+              <div class="card-body mt-md-2">
+                <h6 class="card-title text-uppercase mt-3">Shopping Web-App</h6>
+                <p class="card-text mt-3 mb-3">Web Design / Coming Soon</p>
+                <div class="col-12">
+                  <button class="btn btn-primary">
+                    <a
+                      href="https://www.google.com"
+                      class="text-light text-decoration-none"
+                      target="_blank"
+                      >Visit</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div class="row mt-3 g-1">
-          <div class="col-12 col-md-4 col-sm-4">
-            <div class="card-img-wrap">
-              <img
-                src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4"
-                alt=""
-                class="img-fluid rounded-3"
-              />
+      <!-- Contact -->
+      <div class="container-fluid bg-image h-100 p-md-5 p-2" id="contact" style="background-image: linear-gradient(rgba(13, 22, 161, 0.4), rgba(13,22,161,0.4)), url(./images/overlay-bg.jpg); margin-top: 12rem;">
+        <div
+          class="container h-100 p-md-5 p-4 mt-5 mt-md-3 bg-light"
+        >
+        <!-- Form -->
+          <div class="row mt-5 mt-md-0">
+            <div class="col-12 col-md-6 col-sm-12">
+              <h3 class="fw-normal mb-4">
+                Send Us A Message
+              </h3>
+              
+              <form action="">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" name="" id="" class="form-control border-3 shadow-none" placeholder="James Holland" aria-describedby="helpId" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" name="" id="" class="form-control border-3 shadow-none" placeholder="Your Email" aria-describedby="helpId" required>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" name="" id="" class="form-control border-3 shadow-none" placeholder="Subject" aria-describedby="helpId" required>
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control border-3 shadow-none" name="" id="" rows="3" placeholder="Message" required></textarea>
+                </div>
+                <button type="button" class="btn btn-primary shadow-none">Send</button>
+              </form>
             </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-4">
-            <div class="card-img-wrap">
-              <img
-                src="https://www.cnet.com/a/img/resize/69256d2623afcbaa911f08edc45fb2d3f6a8e172/hub/2023/02/03/afedd3ee-671d-4189-bf39-4f312248fb27/gettyimages-1042132904.jpg?auto=webp&fit=crop&height=675&width=1200"
-                alt=""
-                class="img-fluid rounded-3"
-              />
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-sm-4">
-            <div class="card-img-wrap">
-              <img
-                src="https://i0.wp.com/businessday.ng/wp-content/uploads/2022/03/grocery-shopping.jpg?fit=700%2C400&ssl=1"
-                alt=""
-                class="img-fluid rounded-3"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="row mt-3 g-1">
-          <div class="col-12 col-md-6">
-            <div class="card-img-wrap">
-              <img
-                src="https://t4.ftcdn.net/jpg/02/62/03/53/360_F_262035364_gGi8uJsPl9uljis8C6oxI0w6AM7MKDLq.jpg"
-                alt=""
-                class="img-fluid rounded-3"
-              />
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="card-img-wrap">
-              <img
-                src="https://i1.wp.com/www.differencebetween.com/wp-content/uploads/2017/12/Difference-Between-Mall-and-Shopping-Center-fig-2.jpg"
-                alt=""
-                class="img-fluid rounded-3"
-              />
+            <!-- Get in Touch -->
+            <div class="col-12 col-md-6 col-sm-12 mt-5 mb-5 mb-md-0 mt-md-0">
+              <h4 class="text-decoration-underline fw-normal">Get in Touch</h4>
+              <p class="mt-md-4 mt-3 text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit harum cum, ipsum quisquam vel tempora expedita
+                repellat est earum consequuntur officia molestiae doloremque in
+                eveniet enim odio consectetur aperiam dolore maxime aliquam quas
+                quo.
+              </p>
+              <p class="mt-md-4 mt-3">
+               <span>Address log</span>&nbsp; 111 Timber street Mile 2 Diobu, PortHarcourt R/S.
+              </p>
+              <p class="mt-md-4 mt-3">
+               <span>Phone Log</span>&nbsp; 111 Timber street Mile 2 Diobu, PortHarcourt R/S.
+              </p>
+              <p class="mt-md-4 mt-3">
+               <span>Email Log</span>&nbsp; allsparktech1@gmail.com
+              </p>
+              <div class="socials">
+                <p class="facebook"></p>
+                <p class="twitter"></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <!-- The Modal -->
-    <div class="modal mt-5" id="myModal">
-      <div class="modal-dialog ">
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Send Us a Message</h4>
-            <button
-              type="button"
-              class="btn-close shadow-none"
-              data-bs-dismiss="modal"
-            ></button>
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <form> 
-              <div class="mb-3">
-                <label for="fname" class="form-label">Full-Name</label>
-                <input
-                  type="text"
-                  class="form-control shadow-none"
-                  name="fname"
-                  value=""
-                  id="fname"
-                  placeholder="Enter Fullname"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label fw-normal">E-mail</label>
-                <input
-                  type="email"
-                  class="form-control shadow-none"
-                  name="email"
-                  id="email"
-                  value=""
-                  placeholder="example@you.com"
-                  required
-                  autocomplete="name"
-                />
-              </div>
-
-              <div class="mb-3">
-                <label for="message" class="form-label shadow-none">Message</label>
-                <textarea
-                  class="form-control shadow-none"
-                  name="message"
-                  id="message"
-                  rows="3"
-                  required
-                  autocomplete="message"
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                class="btn btn-primary float-end"
-                id="submit"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
-
-          <!-- Modal footer -->
-          <!-- <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-danger"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div> -->
+    <div class="container-fluid p-2 p-md-5 bg-dark" style="margin-top: 9rem;">
+      <footer>
+        <div class="col-12 mt-3 mt-md-0">
+          <p class="fw-normal text-center text-white">AllSpark Tech.</p>
         </div>
-      </div>
-    </div>
-
-    <div
-      class="container-fluid p-4 bg-warning d-flex justify-content-between align-items-center flex-md-row flex-column" style="margin-top: 10rem;"
-    >
-      <footer class="py-5" id="contact">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-2 mb-3">
-            <h5 class="fw-bold" style="font-family: Mochiy Pop One">Pick-up</h5>
-            <ul class="list-unstyled flex-inline d-flex">
-              <li class="ms-1">
-                <a
-                  href="https://www.twitter.com"
-                  class="nav-link p-0 text-muted"
-                  ><i class="fa-brands fa-linkedin fa-2x"></i
-                ></a>
-              </li>
-              <li class="ms-1">
-                <a
-                  href="https://www.instagram.com"
-                  class="nav-link p-0 text-muted"
-                  ><i class="fa-brands fa-instagram fa-2x"></i
-                ></a>
-              </li>
-              <li class="ms-1">
-                <a
-                  href="https://www.facebook.com"
-                  class="nav-link p-0 text-muted"
-                  ><i class="fa-brands fa-facebook fa-2x"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <h5 class="fw-bold">Opening Hours</h5>
-            <ul class="flex-column list-unstyled">
-              <li class="mb-2">
-                <p class="fs-5">8am - 10pm</p>
-                <p class="fs-5">Mondays - Saturdays</p>
-              </li>
-              <li class="mb-2">
-                <p class="fs-5">9am - 9pm</p>
-                <p class="fs-5">Sundays and Public Holidays.</p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-2 mb-3">
-            <h5 class="fw-bold">Links</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-muted">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#about" class="nav-link p-0 text-muted">About Us</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#service" class="nav-link p-0 text-muted">Services</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#gallery" class="nav-link p-0 text-muted">Gallery</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 mb-3">
-            <h4 class="fw-normal">Connect With Us</h4>
-            <p class="text-dark fw-light mt-2">
-              Feel free to get in touch with us by filling out the Contact form
-              below. We are here to answer any questions you may have and
-              provide you with the best service possible.
-            </p>
-
-            <button
-              type="button"
-              class="btn btn-primary shadow-none"
-              data-bs-toggle="modal"
-              data-bs-target="#myModal"
-            >
-              Contact Us
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
-        ></div>
-
         <div class="col-12">
-          <p class="fw-normal text-center">
-            &copy; 2023
-            <span class="h6 fw-light" style="font-family: Mochiy Pop One">
-              Pick-Up</span
-            >, Inc. All rights reserved.
-          </p>
+          <p class="fw-normal text-center text-white">&copy; 2023 All Rights Reserved</p>
         </div>
-        <div class="col-12"></div>
       </footer>
     </div>
 
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <script src="js/bootstrap.bundle.js"></script>
-    <script type="module">
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
-      import {
-        getDatabase,
-        ref,
-        set,
-        get,
-        child,
-      } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
-
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyBaS_7h261UP6T76zT5z4J81-PIZPm055U",
-        authDomain: "pick-up-5bfd8.firebaseapp.com",
-        projectId: "pick-up-5bfd8",
-        storageBucket: "pick-up-5bfd8.appspot.com",
-        messagingSenderId: "923882038801",
-        appId: "1:923882038801:web:697e21a4384b9d93eb73b0",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-
-      const db = getDatabase(app);
-
-      document.getElementById("submit").addEventListener("click", function (e) {
-        e.preventDefault();
-
-        set(ref(db, "user/" + document.getElementById("fname").value), {
-          email: document.getElementById("email").value,
-          message: document.getElementById("message").value
-        });
-        alert("Thanks for Your Feedback");
-      });
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>

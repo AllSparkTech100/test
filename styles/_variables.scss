@@ -1,0 +1,11 @@
+* ::before,
+::after {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: inherit;
+  a{
+    text-decoration: none;
+    }
+}
