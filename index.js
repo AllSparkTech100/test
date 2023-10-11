@@ -193,19 +193,8 @@ class TxtType {
   });
 
 
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
-
-  /**
-   * Initiate Pure Counter 
-   */
+// * Initiate Pure Counter 
+   //
   new PureCounter();
 
-})()
+});
