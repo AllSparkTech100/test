@@ -159,4 +159,14 @@
   .logoo {
     width: 175px;
   }
+}
+@media screen and (min-width: 640px) {
+  .navv {
+    font-size: 12px;
+    width: 60%;
+    margin-left: -7rem;
+  }
+  .logoo {
+    width: 150px;
+  }
 }/*# sourceMappingURL=port.css.map */
