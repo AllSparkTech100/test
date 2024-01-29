@@ -10,20 +10,20 @@ img {
   letter-spacing: 10px;
 }
 
-.footer_carrier{
+.footer_carrier {
   background: $foot;
   font-family: $font;
-  .foot_intro{
-    p{
+  .foot_intro {
+    p {
       font-size: 1rem;
     }
   }
-  .circle_socials{
+  .circle_socials {
     width: 65%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    .circle_content{
+    .circle_content {
       margin-right: 10px;
       padding: 10px;
       // height: 30px;
@@ -35,10 +35,20 @@ img {
       background-color: $socials;
     }
   }
-  .btn_sub{
-    // padding: .9rem 6rem;
-    background-color: red;
-    width: 100%;
+
+  .sub_form {
+    text-align: center;
+    input{
+      background: #2C2B2B;
+      color: $pure;
+    }
+    .sub_btn {
+      .btn_sub {
+        padding: 1rem;
+        background-color: $present;
+        width: 100%;
+      }
+    }
   }
 }
 
