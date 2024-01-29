@@ -1,0 +1,253 @@
+@import "../_variable";
+main {
+  p {
+    color: #787878;
+  }
+
+  .good {
+    @include flex;
+    flex-direction: column;
+    .under-text {
+      font-family: $font;
+      text-align: center;
+    }
+  }
+
+  .rest_info {
+    .two_img {
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+
+   .tp{
+    position: relative;
+    top: -40px;
+    h6 {
+      font-family: $fontFamily;
+      color: $present;
+      top: 90px;
+      left: 3px;
+      z-index: -99;
+      font-size: 100px;
+      letter-spacing: 1rem;
+    }
+    h3 {
+      font-size: 70px;
+      font-family: $font;
+    }
+   }
+    p {
+      font-family: $font;
+    }
+
+    h4 {
+      color: $present;
+      font-family: $font;
+    }
+  }
+
+  .stat {
+    font-family: $font;
+    margin-top: 7rem;
+
+    h3 {
+      color: $june;
+      font-size: 44px;
+      color: $present;
+    }
+    p {
+      line-height: auto;
+      color: $june;
+    }
+    h6 {
+      color: $june;
+    }
+  }
+
+  #services {
+    margin-top: 8rem;
+    .head {
+      h4 {
+        font-family: $fontFamily;
+        font-size: 120px;
+        color: $present;
+        z-index: -99;
+        position: relative;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      h2 {
+        font-size: 60px;
+        font-family: $font;
+      }
+    }
+  }
+
+  #menu {
+    .head {
+      h4 {
+        font-family: $fontFamily;
+        font-size: 120px;
+        color: $present;
+        z-index: -99;
+        position: relative;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      h2 {
+        font-size: 60px;
+        font-family: $font;
+      }
+    }
+  }
+
+  .chef {
+    margin-top: 3rem;
+    font-family: $font;
+    .head {
+      h4 {
+        font-family: $fontFamily;
+        font-size: 120px;
+        color: $present;
+        z-index: -99;
+        position: relative;
+        top: 80px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      h2 {
+        font-size: 60px;
+        font-family: $font;
+      }
+    }
+
+    #imges {
+      margin-top: 4rem;
+    }
+  }
+
+  .form_bg {
+    background: url("https://sisijemimah.com/wp-content/uploads/2017/02/Nigerian-suya-recipe.jpg");
+    margin-top: 10rem;
+    box-sizing: border-box;
+    height: 120vh;
+  }
+
+  .testimony {
+    margin-top: 5rem;
+    .info {
+      h4 {
+        font-family: $fontFamily;
+        font-size: 8rem;
+        color: $present;
+      }
+      .info_inner {
+        position: relative;
+        bottom: 5.8rem;
+        h2{
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .blog {
+    margin-top: 5rem;
+    .info {
+      h4 {
+        font-family: $fontFamily;
+        font-size: 8rem;
+        color: $present;
+      }
+      .info_inner {
+        position: relative;
+        bottom: 5.8rem;
+        h2{
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .rest_info {
+    .tp {
+      h6 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    .rest_info {
+      h6 {
+        top: 60px;
+        font-size: 65px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+    #services {
+      .head {
+        h4 {
+          top: 50px;
+          font-size: 66px;
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+    #menu {
+      .head {
+        h4 {
+          top: 50px;
+          font-size: 66px;
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .chef {
+      .head {
+        h4 {
+          top: 50px;
+          font-size: 66px;
+        }
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  main {
+    .rest_info {
+      h6 {
+        font-size: 120px;
+      }
+
+      //   h3 {
+      //     font-size: 45px;
+      //   }
+    }
+  }
+}

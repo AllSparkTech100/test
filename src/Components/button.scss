@@ -1,0 +1,53 @@
+@import "../_variable";
+
+img {
+  height: 100vh;
+  width: 100vw;
+}
+
+.socials {
+  color: $present;
+  letter-spacing: 10px;
+}
+
+.footer_carrier{
+  background: $foot;
+  font-family: $font;
+  .foot_intro{
+    p{
+      font-size: 1rem;
+    }
+  }
+  .circle_socials{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .circle_content{
+      margin-right: 10px;
+      padding: 10px;
+      // height: 30px;
+      // width:30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $socials;
+    }
+  }
+  .btn_sub{
+    // padding: .9rem 6rem;
+    background-color: red;
+    width: 100%;
+  }
+}
+
+Card {
+  font-family: $font;
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
