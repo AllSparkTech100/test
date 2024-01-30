@@ -6,14 +6,13 @@ import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
+import Data from "../Components/data";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 import barr from "../Photos/chef-2.jpg";
 import bar2 from "../Photos/bar-2.jpg";
 import bar1 from "../Photos/wineee.jpg";
 import wine from "../Photos/wines.jpg";
-// import foods from '../Photos/food-1.jpg'
-// import food from '../Photos/food-2.jpeg'
 import chef from "../Photos/chef-1.jpg";
 // import { Splide, SplideSlide } from "@splidejs/react-splide";
 // import "@splidejs/react-splide/css";
@@ -170,6 +169,7 @@ function Home() {
               <h4>Specialties</h4>
               <h2 className="fw-bold">Our Menu</h2>
             </Col>
+            <Data/>
           </section>
         </Container>
 
