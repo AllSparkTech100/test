@@ -76,6 +76,7 @@ $fontFamily: "Great Vibes", cursive;
         top: -2rem;
         font-family: $font;
         font-size: 3rem;
+        font-weight: bold;
       }
     }
   }
@@ -110,6 +111,7 @@ $fontFamily: "Great Vibes", cursive;
   .trust {
     font-family: $font;
     font-weight: bold;
+    color: $pure;
   }
 }
 
@@ -126,17 +128,25 @@ $fontFamily: "Great Vibes", cursive;
       font-size: 5rem;
     }
     .trust {
+      position: relative;
+      top: -40px;
       p {
         font-family: $font;
-        font-size: 7rem;
+        font-size: 4rem;
         font-weight: bold;
+        color: $pure;
       }
     }
+  }
+
+  .form_bg {
+    height: 120vh;
   }
 
   .grill {
     position: relative;
     top: -15rem;
+    z-index: 99;
     bottom: 0;
     left: 0;
     right: 0;
@@ -151,29 +161,43 @@ $fontFamily: "Great Vibes", cursive;
 
 @media screen and (max-width: 480px) {
   .form_bg {
-    // background: red;
-    height: 200vh;
+    height: 160vh;
   }
   .form_carrier {
-    background: #000;
     width: 100%;
-    margin: 0;
-    margin-top: 5rem;
-    // height: 20px;
+    position: relative;
+    top: 4rem;
     .form-intro {
+      position: relative;
+      top: 40px;
       h4 {
-        font-size: 2rem;
+        font-size: 3.5rem;
+        text-wrap: nowrap;
         top: 2rem;
       }
       .intro_inner {
+        top: 0;
         h5 {
-          font-size: 1rem;
-          top: 5rem;
+          font-size: 1.5rem;
+          text-wrap: nowrap;
+          top: -0.4rem;
         }
       }
     }
     .main_form {
       margin: 3rem 0 0 0;
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 0.6rem;
+        margin-bottom: 10px;
+      }
+      .form_btn {
+        .btn-sub {
+          padding: 0.7rem 2rem;
+        }
+      }
     }
   }
 }

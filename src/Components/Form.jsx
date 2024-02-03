@@ -15,7 +15,7 @@ function FormComp() {
           <Form>
             {/* Name and Email */}
             <Row className="mb-3">
-              <Form.Group as={Col} sm={12} controlId="formGridName">
+              <Form.Group as={Col} md={6} sm={12} controlId="formGridName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
                   type="text"
@@ -35,7 +35,7 @@ function FormComp() {
             </Row>
             {/* Phone and Date */}
             <Row className="mb-3">
-              <Form.Group as={Col} controlId="formGridPhone">
+              <Form.Group as={Col} sm={12} md={6} controlId="formGridPhone">
                 <Form.Label>Phone</Form.Label>
                 <Form.Control
                   type="tel"
@@ -55,7 +55,7 @@ function FormComp() {
 
             {/* Time and Persons */}
             <Row className="mb-3">
-              <Form.Group as={Col} sm={12}controlId="formGridTime">
+              <Form.Group as={Col} md={6} sm={12}controlId="formGridTime">
                 <Form.Label>Time</Form.Label>
                 <Form.Control
                   type="time"

@@ -22,7 +22,7 @@ function Home() {
         <Slide />
         </div>
         {/* First Line */}
-        <Container fluid className='grill'>
+        <Container fluid className='grill d-block'>
           <Row className="m-md-0 mt-3">
             <Col sm={3} md={3} className="m-md-0 mb-4 good">
               <CircleImage

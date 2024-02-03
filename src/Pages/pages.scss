@@ -24,7 +24,7 @@ main {
     .rest_info {
       .two_img {
         width: 40rem;
-        height: 30rem;
+        height: 33rem;
         img {
           height: 100%;
           width: 100%;
@@ -143,10 +143,10 @@ main {
   }
 
   .form_bg {
-    // background: url("https://sisijemimah.com/wp-content/uploads/2017/02/Nigerian-suya-recipe.jpg");
+    background: url("https://sisijemimah.com/wp-content/uploads/2017/02/Nigerian-suya-recipe.jpg");
     margin-top: 10rem;
-    box-sizing: border-box;
-    height: 120vh;
+    background-attachment: fixed;
+    background-position: center center;
   }
 
   .testimony {
@@ -280,7 +280,10 @@ main {
   .rest_carrier {
     position: relative;
     top: -8rem;
-
+    .rest_info{
+      gap: 10px;
+    }
+  
     .tp {
       top: -5.4rem;
     }

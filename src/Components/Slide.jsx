@@ -3,10 +3,10 @@ import "./button.scss";
 
 function Slide() {
   return (
-    <div className=''>
-      <Carousel className='h-50 carrier_bag' carousel-fade >
+    <div>
+      <Carousel className='carousel-fade' indicators={false} >
         <Carousel.Item interval={500}>
-          <img
+          <img className='w-100'
             src={
               "https://img.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg?size=626&ext=jpg&ga=GA1.1.1788614524.1704240000&semt=ais"
             }
@@ -19,7 +19,7 @@ function Slide() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={500}>
-          <img
+          <img className='w-100'
             src={
               "https://img.freepik.com/premium-photo/background-cooking-set-spices-fresh-vegetables-top-view-free-space-your-text-black-stone-background_187166-56648.jpg"
             }
@@ -32,7 +32,7 @@ function Slide() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
+          <img className='w-100'
             src={
               "https://img.freepik.com/premium-photo/background-cooking-set-spices-fresh-vegetables-top-view-free-space-your-text-black-stone-background_187166-56648.jpg"
             }
