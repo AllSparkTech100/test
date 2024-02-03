@@ -1,5 +1,6 @@
-import { Col, Row, Button } from "react-bootstrap";
+import { Col, Row, Button, Container } from "react-bootstrap";
 import "./button.scss";
+import wine from "../Photos/wines.jpg";
 
 function Data() {
   const menu = [
@@ -13,7 +14,7 @@ function Data() {
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1259679_8-2ab6a74.jpg?quality=90&resize=440,400",
+      img: { wine },
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
@@ -47,33 +48,25 @@ function Data() {
     },
   ];
   return (
-    <div>
-      <Row>
-        {menu.map((items) => {
-          return (
-            <Col md={4} sm={12} key={items.id} className='p-3' >
-              <div className="big_carrier">
-                <div className="img_cont">
-                  <img
-                    src={items.img}
-                    alt={items.title}
-                    className="img-fluid"
-                  />
-                </div>
-
-                <div className="write">
-                  <h3 className="d-flex">
-                    {items.title} &nbsp;<span>{items.price}</span>
-                  </h3>
-                  <p>{items.ingredients}</p>
-                  <Button className="shadow-none border-0 ">Order Now</Button>
-                </div>
-              </div>
+    <Container fluid className="p-5">
+      {menu.map((items) => {
+        return (
+          <Row key={items.id} className="d-flex" gap={1}>
+            <Col md={2} sm={12}>
+              <img src={items.img} className="img-fluid" alt={items.title} />
+              <h3 className="d-flex">
+                {items.title} <span>{items.price}</span>
+              </h3>
+              <p>{items.title}</p>
+              <Button className="btn">Order Now</Button>
             </Col>
-          );
-        })}
-      </Row>
-    </div>
+            <Col md={2} sm={12}>
+              
+            </Col>
+          </Row>
+        );
+      })}
+    </Container>
   );
 }
 

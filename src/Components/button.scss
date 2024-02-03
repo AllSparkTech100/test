@@ -63,35 +63,6 @@ img {
 }
 
 
-.big_carrier{
-  font-family: $font;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 40vh;
-  width: 30vw;
-  // background: #000;
-  // aspect-ratio: 1/1;
-  .img_cont{
-    width: 15rem;
-    height: 15rem;
-    img{
-    width: 100%;
-    height: 100%;
-    }
-  }
-
-  .write{
-  margin-left: 20px;
-
-    h3{
-      font-size: 1rem;
-      span{
-        color: $present;
-      }
-    }
-  }
-}
 Card {
   font-family: $font;
 }

@@ -3,8 +3,8 @@ import "./button.scss";
 
 function Slide() {
   return (
-    <div>
-      <Carousel>
+    <div className=''>
+      <Carousel className='h-50 carrier_bag' carousel-fade >
         <Carousel.Item interval={500}>
           <img
             src={
@@ -12,9 +12,10 @@ function Slide() {
             }
             alt={""}
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="captions">
             <h3>Feliciano</h3>
-            <p>BEST RESTAURANT.</p>
+            <div className='trust'><p>BEST RESTAURANT.</p>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={500}>
@@ -24,9 +25,10 @@ function Slide() {
             }
             alt={""}
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="captions">
             <h3>Feliciano</h3>
-            <p>NUTIRITOUS AND TASTY</p>
+            <div className='trust'><p>NUTIRITOUS AND TASTY</p>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -36,12 +38,12 @@ function Slide() {
             }
             alt={""}
           />
-          <Carousel.Caption>
+          <Carousel.Caption className="captions">
             <h3>Feliciano</h3>
-            <p>DELICIOUS SPECIALTIES</p>
+            <div className='trust'><p>DELICIOUS SPECIALTIES</p>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
-        {/* <Gradient /> */}
       </Carousel>
     </div>
   );

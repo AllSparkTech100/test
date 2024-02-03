@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
@@ -7,8 +7,6 @@
   align-items: center;
   justify-content: center;
 }
-
-
 
 *,
 ::before,
@@ -22,8 +20,8 @@ $present: #c8a97e;
 $pure: white;
 $para: #898989;
 $june: #787878;
-$socials: #1F1F1F;
-$foot:#141313;
+$socials: #1f1f1f;
+$foot: #141313;
 $font: "Poppins", sans-serif;
 $fontFamily: "Great Vibes", cursive;
 
@@ -48,6 +46,7 @@ $fontFamily: "Great Vibes", cursive;
 
 .form_carrier {
   background: $pure;
+  box-sizing: content-box;
   width: 50%;
   margin: 5rem 0 4rem 0;
   .form-intro {
@@ -84,7 +83,7 @@ $fontFamily: "Great Vibes", cursive;
     padding: 3rem;
     font-family: $font;
     margin-top: -6rem;
-    label{
+    label {
       font-weight: bold;
     }
     input {
@@ -92,12 +91,89 @@ $fontFamily: "Great Vibes", cursive;
         border: 1px solid black;
       }
     }
-    .form_btn{
-     @include flex;
-     margin-top: 2rem;
-     .btn-sub{
-      padding: 1rem 4rem;
-     }
+    .form_btn {
+      @include flex;
+      margin-top: 2rem;
+      .btn-sub {
+        padding: 1rem 4rem;
+      }
+    }
+  }
+}
+
+.captions {
+  :nth-child(1) {
+    color: $present;
+    font-family: $fontFamily;
+  }
+
+  .trust {
+    font-family: $font;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .captions {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+      font-size: 5rem;
+    }
+    .trust {
+      p {
+        font-family: $font;
+        font-size: 7rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .grill {
+    position: relative;
+    top: -15rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $pure;
+    }
+    :nth-child(2) {
+      color: $para;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form_bg {
+    // background: red;
+    height: 200vh;
+  }
+  .form_carrier {
+    background: #000;
+    width: 100%;
+    margin: 0;
+    margin-top: 5rem;
+    // height: 20px;
+    .form-intro {
+      h4 {
+        font-size: 2rem;
+        top: 2rem;
+      }
+      .intro_inner {
+        h5 {
+          font-size: 1rem;
+          top: 5rem;
+        }
+      }
+    }
+    .main_form {
+      margin: 3rem 0 0 0;
     }
   }
 }
