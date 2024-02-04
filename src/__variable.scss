@@ -165,11 +165,10 @@ $fontFamily: "Great Vibes", cursive;
   }
   .form_carrier {
     width: 100%;
-    position: relative;
-    top: 4rem;
     .form-intro {
-      position: relative;
-      top: 40px;
+      // position: relative;
+      // top: 20px;
+      // bottom: 40rem;
       h4 {
         font-size: 3.5rem;
         text-wrap: nowrap;
