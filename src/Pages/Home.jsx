@@ -1,4 +1,5 @@
 import "./pages.scss";
+// import { useState, useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
@@ -15,14 +16,34 @@ import wine from "../Photos/wines.jpg";
 import chef from "../Photos/chef-1.jpg";
 
 function Home() {
+  // const [isVisible, setIsVisible] = useState(false);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY + window.innerHeight;
+  //     const elementPosition =
+  //       document.getElementById("yourElementId").offsetTop;
+
+  //     if (scrollPosition > elementPosition) {
+  //       setIsVisible(true);
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   // Clean up the event listener on component unmount
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <>
       <main className="my-5">
         <div className="absolutes">
-        <Slide />
+          <Slide />
         </div>
         {/* First Line */}
-        <Container fluid className='grill d-block'>
+        <Container fluid className="grill d-block">
           <Row className="m-md-0 mt-3">
             <Col sm={3} md={3} className="m-md-0 mb-4 good">
               <CircleImage
@@ -76,7 +97,7 @@ function Home() {
         </Container>
 
         {/* Info Sect */}
-        <Container fluid className=" rest_carrier h-100">
+        <Container fluid className="rest_carrier h-100">
           {/* About */}
           <Row className="rest_info m-1">
             <Col sm={6} md={7} xl={6} className="two_img mt-2">
@@ -105,7 +126,7 @@ function Home() {
           </Row>
 
           {/* Personnel Count */}
-          <Row className="stat p-md-3 text-md-start text-center">
+          <Row className="stat p-md-5 text-md-start text-center">
             <Col md={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">18</h3>
               <h6>YEARS OF EXPERIENCE</h6>

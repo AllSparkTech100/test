@@ -184,6 +184,38 @@ main {
       }
     }
   }
+
+  .about_intro {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.552),
+        rgba(0, 0, 0, 0.665)
+      ),
+      url("../Photos/food-1.jpg");
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment:scroll;
+    margin-bottom: 15rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    isolation: isolate;
+    .about_text {
+      text-align: center;
+      h3 {
+        height: 30px;
+        position: absolute;
+        top: 70%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: $font;
+        z-index: -3;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -222,7 +254,7 @@ main {
             font-weight: bold;
             text-wrap: nowrap;
             position: relative;
-            top: -.8rem;
+            top: -0.8rem;
           }
           :nth-child(3) {
             text-align: justify;
@@ -287,6 +319,10 @@ main {
           }
         }
       }
+    }
+
+    .about_intro {
+      margin-bottom: 5rem;
     }
   }
 }
