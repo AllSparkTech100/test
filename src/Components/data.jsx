@@ -1,5 +1,6 @@
 import { Col, Row, Container, Card } from "react-bootstrap";
 import "./button.scss";
+import ButtonComp from "./Button";
 
 function Data() {
   const menu = [
@@ -48,23 +49,24 @@ function Data() {
   ];
   return (
     <Container fluid className="p-5">
-      {menu.map((items) => {
-        <Row>
+      <Row>
+        {menu.map((items) => {
           return (
-          <Col key={items.id}>
-            <Card style={{ width: "12rem" }}>
-              <Card.Img variant="top" src={items.img} />
-              <Card.Body>
-                <Card.Title className="d-flex align-items-center justify-content-between">
-                  {items.title} <span>{items.price}</span>
-                </Card.Title>
-                <Card.Text>{items.ingredients}</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
+            <Col key={items.id} md={3} sm={12} classNa>
+              <Card >
+                <Card.Img variant="top"  className="img-fluid h-auto" src={items.img} />
+                <Card.Body>
+                  <Card.Title className="d-flex align-items-center justify-content-between">
+                    {items.title} <span>{items.price}</span>
+                  </Card.Title>
+                  <Card.Text>{items.ingredients}</Card.Text>
+                </Card.Body>
+                <ButtonComp text='Order Now'/>
+              </Card>
+            </Col>
           );
-        </Row>;
-      })}
+        })}
+      </Row>;
     </Container>
   );
 }

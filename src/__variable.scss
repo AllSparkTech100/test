@@ -161,10 +161,14 @@ $fontFamily: "Great Vibes", cursive;
 
 @media screen and (max-width: 480px) {
   .form_bg {
-    height: 160vh;
+    height: 140vh;
   }
   .form_carrier {
     width: 100%;
+    position: relative;
+    top: 30px;
+    right: 0;
+    left: 0;
     .form-intro {
       h4 {
         font-size: 3.5rem;
