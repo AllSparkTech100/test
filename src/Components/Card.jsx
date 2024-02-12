@@ -5,7 +5,7 @@ import "./button.scss";
 function CardComp(props) {
   return (
     <div>
-      <Card className="border-0 text-center cardd">
+      <Card className="border-0 text-center">
         <Card.Body>
           <Card.Title className="text-danger fs-1">{props.icon}</Card.Title>
           <Card.Subtitle className="mb-2 text-dark fs-1">
