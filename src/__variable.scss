@@ -115,6 +115,10 @@ $fontFamily: "Great Vibes", cursive;
   }
 }
 
+.menuu{
+  font-family: $font;
+}
+
 @media screen and (min-width: 1200px) {
   .captions {
     position: absolute;

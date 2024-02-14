@@ -1,72 +1,84 @@
-import { Col, Row, Container, Card } from "react-bootstrap";
+import { Col, Row, Container, Card, Button } from "react-bootstrap";
 import "./button.scss";
-import ButtonComp from "./Button";
+import "../Photos/wines.jpg";
+// import
 
 function Data() {
   const menu = [
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "https://www.foodnetwork.com/content/dam/images/food/fullset/2012/1/27/0/GT0307_Grilled-Rice-Balls_s4x3.jpg",
+      img: "",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "https://www.foodnetwork.com/content/dam/images/food/fullset/2012/1/27/0/GT0307_Grilled-Rice-Balls_s4x3.jpg",
+      img: "../Photos/wines.jpg",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1259679_8-2ab6a74.jpg?quality=90&resize=440,400",
+      img: "wines",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1259679_8-2ab6a74.jpg?quality=90&resize=440,400",
+      img: "../Photos/wines.jpg",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1259679_8-2ab6a74.jpg?quality=90&resize=440,400",
+      img: "../Photos/wines.jpg",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1259679_8-2ab6a74.jpg?quality=90&resize=440,400",
+      img: "../Photos/wines.jpg",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
   ];
+
   return (
-    <Container fluid className="p-5">
-      <Row>
+    <Container fluid className="p-md-5 menuu">
+      <Row gap={1}>
         {menu.map((items) => {
           return (
-            <Col key={items.id} md={3} sm={12} classNa>
-              <Card >
-                <Card.Img variant="top"  className="img-fluid h-auto" src={items.img} />
+            <Col key={items.id} md={4} sm={12} className="mt-4">
+              <Card className="border-0 h-100">
+                <Card.Img
+                  variant="top"
+                  className="img-fluid h-auto"
+                  src={items.img}
+                />
                 <Card.Body>
                   <Card.Title className="d-flex align-items-center justify-content-between">
-                    {items.title} <span>{items.price}</span>
+                    {items.title} &nbsp;{" "}
+                    <span className="fw-bold" style={{ color: "#898989" }}>
+                      {items.price}
+                    </span>
                   </Card.Title>
-                  <Card.Text>{items.ingredients}</Card.Text>
+                  <Card.Text style={{ color: "#787878" }}>
+                    {items.ingredients}
+                  </Card.Text>
                 </Card.Body>
-                <ButtonComp text='Order Now'/>
+                <Button className="w-100 btn border-0">Order Now</Button>
               </Card>
             </Col>
           );
         })}
-      </Row>;
+      </Row>
+      ;
     </Container>
   );
 }
