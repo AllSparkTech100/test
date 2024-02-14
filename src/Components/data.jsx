@@ -8,42 +8,63 @@ function Data() {
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "",
+      img: "https://embed.widencdn.net/img/beef/hkosgtta5l/1120x560px/Beef_230118_0436.tif?keep=c&u=7fueml",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "../Photos/wines.jpg",
+      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "wines",
+      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "../Photos/wines.jpg",
+      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "../Photos/wines.jpg",
+      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
     {
       id: 1,
       title: "Grilled Beef with Potatoes",
-      img: "../Photos/wines.jpg",
+      img: "https://insanelygoodrecipes.com/wp-content/uploads/2020/11/Grilled-Fillet-Steak.png",
+      ingredients: "Meat,Fish, Beef, Potato",
+      price: "$20",
+    },
+    {
+      id: 1,
+      title: "Grilled Beef with Potatoes",
+      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
+      ingredients: "Meat,Fish, Beef, Potato",
+      price: "$20",
+    },
+    {
+      id: 1,
+      title: "Grilled Beef with Potatoes",
+      img: "https://insanelygoodrecipes.com/wp-content/uploads/2020/11/Grilled-Fillet-Steak.png",
+      ingredients: "Meat,Fish, Beef, Potato",
+      price: "$20",
+    },
+    {
+      id: 1,
+      title: "Grilled Beef with Potatoes",
+      img: "https://insanelygoodrecipes.com/wp-content/uploads/2020/11/Grilled-Fillet-Steak.png",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
@@ -51,14 +72,14 @@ function Data() {
 
   return (
     <Container fluid className="p-md-5 menuu">
-      <Row gap={1}>
+      <Row>
         {menu.map((items) => {
           return (
-            <Col key={items.id} md={4} sm={12} className="mt-4">
+            <Col key={items.id} md={4} sm={12} className="mt-sm-4 mt-md-3">
               <Card className="border-0 h-100">
                 <Card.Img
                   variant="top"
-                  className="img-fluid h-auto"
+                  className="img-fluid h-75"
                   src={items.img}
                 />
                 <Card.Body>
