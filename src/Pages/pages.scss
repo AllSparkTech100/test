@@ -223,6 +223,20 @@ main {
       font-family: $font;
     }
   }
+  .last-contact-section{
+    font-family: $font;
+    margin-top: 3rem;
+    p{
+      color: black;
+      display: flex;
+      align-items: center;
+      span{
+        a{
+          color: $present;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 576px) {
