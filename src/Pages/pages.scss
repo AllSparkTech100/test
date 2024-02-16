@@ -194,7 +194,7 @@ main {
     height: 85vh;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment:scroll;
+    background-attachment: scroll;
     margin-bottom: 15rem;
     display: flex;
     align-items: flex-end;
@@ -214,6 +214,13 @@ main {
         font-family: $font;
         z-index: -3;
       }
+    }
+  }
+
+  .inner_info{
+    h2{
+      font-weight: bold;
+      font-family: $font;
     }
   }
 }

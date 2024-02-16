@@ -75,7 +75,7 @@ function Data() {
       <Row>
         {menu.map((items) => {
           return (
-            <Col key={items.id} md={4} sm={12} className="mt-sm-4 mt-md-3">
+            <Col key={items.id} md={4} sm={12} className="mt-4">
               <Card className="border-0 h-100">
                 <Card.Img
                   variant="top"
