@@ -39,7 +39,8 @@ function NavComp() {
 
   return (
     <header style={headerStyle}>
-      <Navbar expand="lg" fixed="top" className="p-3">     <Container>
+      <Navbar expand="lg" fixed="top" className="p-3">
+      <Container>
           <Navbar.Brand href="#home" className="fw-bolder">
             Feliciano
           </Navbar.Brand>
