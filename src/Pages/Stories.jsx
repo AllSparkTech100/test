@@ -17,7 +17,7 @@ function Stories() {
   return (
     <>
     <main className="">
-      <div className="bg-image about_intro">
+      <div className="bg-image story_intro">
         <div className="about_text">
           <h3 className="text-white text-center">Blog</h3>
           <p className="text-center">

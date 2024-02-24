@@ -1,5 +1,4 @@
 import "./pages.scss";
-// import { useState, useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";

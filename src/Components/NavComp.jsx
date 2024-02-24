@@ -29,17 +29,17 @@ function NavComp() {
     zIndex: '900',
     width: '100vw',
     transition: "background-color 0.3s ease",
-    color: isScrolled ? "snow" : "black",
+    textColor: isScrolled ? "black" : "snow",
     display: 'flex',
     alignItems: 'center',
     justifyContents: 'center',
-    height: isScrolled ? '80px' : '80px',
-    borderBottom: isScrolled ? "none" : "1px solid blue",
+    height: isScrolled ? '65px' : '65px',
+    borderBottom: isScrolled ? "none" : "1px solid snow",
   };
 
   return (
     <header style={headerStyle}>
-      <Navbar expand="lg" fixed="top" className="p-3">
+      <Navbar expand="lg" fixed="top" className="">
       <Container>
           <Navbar.Brand href="#home" className="fw-bolder">
             Feliciano
@@ -50,7 +50,7 @@ function NavComp() {
             variant="secondary"
           />
           <Navbar.Collapse id="basic-navbar-nav shadow-none">
-            <Nav className="ms-auto align-items-md-center justify-content-md-around ">
+            <Nav className="ms-auto align-items-md-center justify-content-md-around">
               <Nav.Link href="/" className=" fw-normal fs-5">
                 Home
               </Nav.Link>

@@ -100,7 +100,7 @@ function Home() {
         <Container fluid className="rest_carrier h-100">
           {/* About */}
           <Row className="rest_info m-1">
-            <Col sm={6} md={7} xl={6} className="two_img mt-2">
+            <Col sm={6} md={7} lg={6} className="two_img mt-2">
               <Image
                 src={barr}
                 alt=""
@@ -108,7 +108,7 @@ function Home() {
                 rounded
               />
             </Col>
-            <Col sm={6} md={5} xl={6} className="tp">
+            <Col sm={6} md={5} lg={6} className="tp">
               <h6 className="fw-normal position-relative text-capitalize ">
                 about
               </h6>
@@ -246,25 +246,7 @@ function Home() {
         </Container>
 
         {/* Testimony */}
-        {/* <Container className="testimony">
-          <Col sm={12} md={12} className="text-center info">
-            <h4>Testimony</h4>
-            <div className="info_inner">
-              <h2 className="fw-bold">Happy Customers</h2>
-            </div>
-          </Col>
-          <Splide
-            options={{
-              perPage: 4,
-              arrows: false,
-              pagination: false,
-              drag: `free`,
-              gap: "2rem",
-            }}
-          >
-            <SplideSlide></SplideSlide>
-          </Splide>
-        </Container> */}
+  
 
         {/* Blog */}
         <Container fluid>

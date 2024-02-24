@@ -1,7 +1,5 @@
 import { Col, Row, Container, Card, Button } from "react-bootstrap";
 import "./button.scss";
-import "../Photos/wines.jpg";
-// import
 
 function Data() {
   const menu = [
