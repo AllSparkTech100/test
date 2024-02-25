@@ -1,5 +1,4 @@
 import "./pages.scss";
-// import { useState, useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
 import CircleImage from "../Components/CircleImage";
@@ -16,26 +15,6 @@ import wine from "../Photos/wines.jpg";
 import chef from "../Photos/chef-1.jpg";
 
 function Home() {
-  // const [isVisible, setIsVisible] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollPosition = window.scrollY + window.innerHeight;
-  //     const elementPosition =
-  //       document.getElementById("yourElementId").offsetTop;
-
-  //     if (scrollPosition > elementPosition) {
-  //       setIsVisible(true);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   // Clean up the event listener on component unmount
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
   return (
     <>
       <main className="my-5">
@@ -45,7 +24,7 @@ function Home() {
         {/* First Line */}
         <Container fluid className="grill d-block">
           <Row className="m-md-0 mt-3">
-            <Col sm={3} md={3} className="m-md-0 mb-4 good">
+            <Col sm={3} md={3} className=" mb-4 good">
               <CircleImage
                 imageUrl={
                   "https://www.eatingwell.com/thmb/ngkEIo8XHdZxLcmY-Se-yk3uGjc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(959x678:961x680)/is-grilled-meat-bad-for-you-ba946756dae3432592d0b463941b1917.jpg"
@@ -100,6 +79,7 @@ function Home() {
         <Container fluid className="rest_carrier h-100">
           {/* About */}
           <Row className="rest_info m-1">
+           
             <Col sm={6} md={7} lg={6} className="two_img mt-2">
               <Image
                 src={barr}
@@ -246,7 +226,6 @@ function Home() {
         </Container>
 
         {/* Testimony */}
-  
 
         {/* Blog */}
         <Container fluid>

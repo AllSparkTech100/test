@@ -114,93 +114,120 @@ $fontFamily: "Great Vibes", cursive;
   }
 }
 
-.menuu{
+.menuu {
   font-family: $font;
+  img {
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
 }
 
-@media screen and (min-width: 1200px) {
-  .captions {
-    position: absolute;
-    top: 40%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    :nth-child(1) {
-      color: $present;
-      font-family: $fontFamily;
-      font-size: 5rem;
+.navig {
+  padding: 10px;
+  a{
+    text-decoration: none
+  }
+  .menu_selector {
+    @include flex;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    background-color: $pure;
+    color: #000000;
+    &:hover{
+    background: $present;
+      color: white;
     }
-    .trust {
+    &:active {
+      background: $present;
+      color: white;
+    }
+  }
+}
+
+  @media screen and (min-width: 1200px) {
+    .captions {
+      position: absolute;
+      top: 40%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      :nth-child(1) {
+        color: $present;
+        font-family: $fontFamily;
+        font-size: 5rem;
+      }
+      .trust {
+        position: relative;
+        top: -40px;
+        p {
+          font-family: $font;
+          font-size: 4rem;
+          font-weight: bold;
+          color: $pure;
+        }
+      }
+    }
+
+    .form_bg {
+      height: 120vh;
+    }
+
+    .grill {
       position: relative;
-      top: -40px;
-      p {
-        font-family: $font;
-        font-size: 4rem;
-        font-weight: bold;
+      top: -15rem;
+      z-index: 99;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      :nth-child(1) {
         color: $pure;
       }
-    }
-  }
-
-  .form_bg {
-    height: 120vh;
-  }
-
-  .grill {
-    position: relative;
-    top: -15rem;
-    z-index: 99;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    :nth-child(1) {
-      color: $pure;
-    }
-    :nth-child(2) {
-      color: $para;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .form_bg {
-    height: 140vh;
-  }
-  .form_carrier {
-    width: 100%;
-    position: relative;
-    top: 30px;
-    right: 0;
-    left: 0;
-    .form-intro {
-      h4 {
-        font-size: 3.5rem;
-        text-wrap: nowrap;
-        top: 2rem;
+      :nth-child(2) {
+        color: $para;
       }
-      .intro_inner {
-        top: 0;
-        h5 {
-          font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .form_bg {
+      height: 140vh;
+    }
+    .form_carrier {
+      width: 100%;
+      position: relative;
+      top: 30px;
+      right: 0;
+      left: 0;
+      .form-intro {
+        h4 {
+          font-size: 3.5rem;
           text-wrap: nowrap;
-          top: -0.4rem;
+          top: 2rem;
+        }
+        .intro_inner {
+          top: 0;
+          h5 {
+            font-size: 1.5rem;
+            text-wrap: nowrap;
+            top: -0.4rem;
+          }
         }
       }
-    }
-    .main_form {
-      margin: 3rem 0 0 0;
-      label {
-        margin-bottom: 10px;
-      }
-      input {
-        padding: 0.6rem;
-        margin-bottom: 10px;
-      }
-      .form_btn {
-        .btn-sub {
-          padding: 0.7rem 2rem;
+      .main_form {
+        margin: 3rem 0 0 0;
+        label {
+          margin-bottom: 10px;
+        }
+        input {
+          padding: 0.6rem;
+          margin-bottom: 10px;
+        }
+        .form_btn {
+          .btn-sub {
+            padding: 0.7rem 2rem;
+          }
         }
       }
     }
   }
-}

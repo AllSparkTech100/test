@@ -1,7 +1,6 @@
 import "./pages.scss";
 import Data from "../Components/data";
-// import { Container } from "react-bootstrap";
-import Test from "../Components/Test";
+import Category from "./Category";
 
 function Menu() {
   return (
@@ -18,8 +17,8 @@ function Menu() {
           </div>
         </div>
         <section>
+          <Category />
           <Data />
-          <Test/>
         </section>
       </main>
     </>
