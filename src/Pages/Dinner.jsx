@@ -5,30 +5,30 @@ function Dinner() {
   const menu = [
     {
       id: 1,
-      title: "Grilled Beef with Potatoes",
-      img: "https://embed.widencdn.net/img/beef/hkosgtta5l/1120x560px/Beef_230118_0436.tif?keep=c&u=7fueml",
-      ingredients: "Meat,Fish, Beef, Potato",
-      price: "$20",
+      title: "Delicious Pasta",
+      img: "https://www.allrecipes.com/thmb/5SdUVhHTMs-rta5sOblJESXThEE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11691-tomato-and-garlic-pasta-ddmfs-3x4-1-bf607984a23541f4ad936b33b22c9074.jpg",
+      ingredients: "Tomato and Garlic Pasta",
+      price: "$30",
     },
     {
       id: 2,
-      title: "Grilled Beef with Potatoes",
-      img: "https://www.foodandwine.com/thmb/CqyQH1MrXLynH3iZ0PEEfZ4Ki6Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steak-au-poivre-red-wine-pan-sauce-hero-01-FT-RECIPE1222-c9e1da15f33f4076986b6ce37ae5bbb0.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Jollof Rice",
+      img: "https://i.pinimg.com/originals/c5/f9/47/c5f9471cf4f47e8eb991ec1822b1d24b.jpg",
+      ingredients: "Grilled Fish and Jollof Rice",
       price: "$20",
     },
     {
       id: 3,
-      title: "Grilled Beef with Potatoes",
-      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
-      price: "$20",
+      title: "Fufu and Egusi Soup",
+      img: "https://twistofvegan.com/wp-content/uploads/2023/05/Fufu-002-cropped.jpg",
+      ingredients: "Deliciously prepared for you",
+      price: "$15",
     },
     {
       id: 4,
-      title: "Grilled Beef with Potatoes",
+      title: "Porridge Beans",
       img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      ingredients: "Beans and Plantain",
       price: "$20",
     },
     {
@@ -53,16 +53,9 @@ function Dinner() {
       price: "$20",
     },
     {
-      id: 9,
+      id: 8,
       title: "Grilled Beef with Potatoes",
-      img: "https://insanelygoodrecipes.com/wp-content/uploads/2020/11/Grilled-Fillet-Steak.png",
-      ingredients: "Meat,Fish, Beef, Potato",
-      price: "$20",
-    },
-    {
-      id: 10,
-      title: "Grilled Beef with Potatoes",
-      img: "https://insanelygoodrecipes.com/wp-content/uploads/2020/11/Grilled-Fillet-Steak.png",
+      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
       ingredients: "Meat,Fish, Beef, Potato",
       price: "$20",
     },
@@ -90,7 +83,7 @@ function Dinner() {
                     <Card className="border-0 h-100">
                       <Card.Img
                         variant="top"
-                        className="img-fluid"
+                        className="img-fluid h-75"
                         src={items.img}
                       />
                       <Card.Body>

@@ -10,8 +10,8 @@ img {
   letter-spacing: 10px;
 }
 
-.carrier_in{
- text-align: center;
+.carrier_in {
+  text-align: center;
 }
 .footer_carrier {
   background: $foot;
@@ -65,18 +65,26 @@ img {
   }
 }
 
-Card {
+.card {
   font-family: $font;
 }
 
 @media screen and (max-width: 480px) {
-  .captions{
-    .trust{
-      p{
+  .captions {
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+    }
+    .trust {
+      font-family: $font;
+      font-weight: bold;
+      color: $pure;
+      p {
         color: $pure;
       }
     }
   }
+
   .btn {
     padding: 0.5rem 1rem;
   }

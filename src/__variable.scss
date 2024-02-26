@@ -145,6 +145,32 @@ $fontFamily: "Great Vibes", cursive;
   }
 }
 
+@media screen and (min-width:768px) {
+  .captions {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+      font-size: 3rem;
+    }
+    .trust {
+      position: relative;
+      top: -8%;
+      p {
+        font-family: $font;
+        font-size: 3rem;
+        // text-wrap: nowrap;
+        font-weight: bold;
+        color: $pure;
+      }
+    }
+  }
+}
+
   @media screen and (min-width: 1200px) {
     .captions {
       position: absolute;
@@ -227,6 +253,106 @@ $fontFamily: "Great Vibes", cursive;
           .btn-sub {
             padding: 0.7rem 2rem;
           }
+        }
+      }
+    }
+    .captions {
+      position: absolute;
+      top: 40%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      :nth-child(1) {
+        color: $present;
+        font-family: $fontFamily;
+        font-size: 3rem;
+      }
+      .trust {
+        position: relative;
+        top: -8%;
+        p {
+          font-family: $font;
+          font-size: 32px;
+          text-wrap: nowrap;
+          font-weight: bold;
+          color: $pure;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    .captions {
+      position: absolute;
+      top: 40%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      :nth-child(1) {
+        color: $present;
+        font-family: $fontFamily;
+        font-size: 3rem;
+      }
+      .trust {
+        position: relative;
+        top: -8%;
+        p {
+          font-family: $font;
+          font-size: 18px;
+          text-wrap: nowrap;
+          font-weight: bold;
+          color: $pure;
+        }
+      }
+    }
+  }
+
+  // @media screen and (min-width:576px) {
+  //   .captions {
+  //     position: absolute;
+  //     top: 40%;
+  //     bottom: 0;
+  //     left: 0;
+  //     right: 0;
+  //     :nth-child(1) {
+  //       color: $present;
+  //       font-family: $fontFamily;
+  //       font-size: 3rem;
+  //     }
+  //     .trust {
+  //       position: relative;
+  //       top: -8%;
+  //       p {
+  //         font-family: $font;
+  //         font-size: 32px;
+  //         text-wrap: nowrap;
+  //         font-weight: bold;
+  //         color: $pure;
+  //       }
+  //     }
+  //   }
+  // }
+  @media screen and (max-width:575.98px) {
+    .captions {
+      position: absolute;
+      top: 40%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      :nth-child(1) {
+        color: $present;
+        font-family: $fontFamily;
+        font-size: 3rem;
+      }
+      .trust {
+        position: relative;
+        top: -8%;
+        p {
+          font-family: $font;
+          font-size: 32px;
+          text-wrap: nowrap;
+          font-weight: bold;
+          color: $pure;
         }
       }
     }

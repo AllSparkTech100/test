@@ -24,7 +24,7 @@ function Home() {
         {/* First Line */}
         <Container fluid className="grill d-block">
           <Row className="m-md-0 mt-3">
-            <Col sm={3} md={3} className=" mb-4 good">
+            <Col sm={6} md={6} lg={3} className=" mb-4 good">
               <CircleImage
                 imageUrl={
                   "https://www.eatingwell.com/thmb/ngkEIo8XHdZxLcmY-Se-yk3uGjc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(959x678:961x680)/is-grilled-meat-bad-for-you-ba946756dae3432592d0b463941b1917.jpg"
@@ -35,7 +35,7 @@ function Home() {
                 <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
               </div>
             </Col>
-            <Col sm={3} md={3} className="good mb-4 ">
+            <Col sm={6} md={6} lg={3} className="good mb-4 ">
               <CircleImage
                 imageUrl={
                   "https://hips.hearstapps.com/hmg-prod/images/delish-grilled-potatoes-jpg-1526061594.jpg?crop=1xw:0.9968354430379747xh;center,top"
@@ -48,7 +48,7 @@ function Home() {
                 <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
               </div>
             </Col>
-            <Col sm={3} md={3} className="good mb-4 ">
+            <Col sm={6} md={6} lg={3} className="good mb-4 ">
               <CircleImage
                 imageUrl={
                   "https://img.taste.com.au/pQppG_f4/taste/2016/11/barbecued-japanese-rice-cakes-onigiri-110057-1.jpeg"
@@ -59,7 +59,7 @@ function Home() {
                 <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
               </div>
             </Col>
-            <Col sm={3} md={3} className="mb-4 good">
+            <Col sm={6} md={6} lg={3} className="mb-4 good">
               <CircleImage
                 imageUrl={
                   "https://www.feastingathome.com/wp-content/uploads/2023/06/Grilled-Tomatoes-12.jpg"
@@ -79,8 +79,7 @@ function Home() {
         <Container fluid className="rest_carrier h-100">
           {/* About */}
           <Row className="rest_info m-1">
-           
-            <Col sm={6} md={7} lg={6} className="two_img mt-2">
+            <Col sm={12} md={12} lg={6} className="two_img mt-2">
               <Image
                 src={barr}
                 alt=""
@@ -88,11 +87,11 @@ function Home() {
                 rounded
               />
             </Col>
-            <Col sm={6} md={5} lg={6} className="tp">
+            <Col sm={12} md={12} lg={6} className="tp">
               <h6 className="fw-normal position-relative text-capitalize ">
                 about
               </h6>
-              <h3 className="fw-medium">Feliciano Restaurant</h3>
+              <h3 className="fw-medium fel">Feliciano Restaurant</h3>
               <p className="fw-normal mt-3 fs-4">
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia. It is a paradisematic country, in
@@ -107,23 +106,23 @@ function Home() {
 
           {/* Personnel Count */}
           <Row className="stat p-md-5 text-md-start text-center">
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={4} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">18</h3>
               <h6>YEARS OF EXPERIENCE</h6>
             </Col>
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={4} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">100</h3>
               <h6>MENUS / DISHES</h6>
             </Col>
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={4} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">50</h3>
               <h6>STAFFS</h6>
             </Col>
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={4} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">15,000</h3>
               <h6>HAPPY CUSTOMERS</h6>
             </Col>
-            <Col md={4} sm={12} className="mb-4">
+            <Col md={8} lg={4} sm={12} className="mb-4">
               <p className="fs-5 text-center text-md-start ">
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia.
@@ -137,21 +136,21 @@ function Home() {
               <h2 className="fw-bolder">Catering Services</h2>
             </Col>
             <Row>
-              <Col md={4} sm={12} className="mt-4">
+              <Col md={12} lg={4} sm={12} className="mt-4">
                 <CardComp
                   icon={<FaBirthdayCake />}
                   subtitle="Birthday Party"
                   text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
                 />
               </Col>
-              <Col md={4} sm={12} className="mt-4">
+              <Col md={12} lg={4} sm={12} className="mt-4">
                 <CardComp
                   icon={<FaBusinessTime />}
                   subtitle="Business Meeting"
                   text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
                 />
               </Col>
-              <Col md={4} sm={12} className="mt-4">
+              <Col md={12} lg={4} sm={12} className="mt-4">
                 <CardComp
                   icon={<BiDish />}
                   subtitle="Wedding Party"
@@ -181,14 +180,14 @@ function Home() {
                 <h2 className="fw-bold">Our Master Chef</h2>
               </Col>
               <Row id="imges">
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={chef}
                     name={"John Smooth"}
                     text={"Restaurant Owner"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={
                       "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
@@ -197,7 +196,7 @@ function Home() {
                     text={"Head Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={
                       "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
@@ -206,7 +205,7 @@ function Home() {
                     text={"Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={
                       "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"
