@@ -11,7 +11,7 @@ function Menu() {
             <h3 className="text-white text-center">Specialties</h3>
             <p className="text-center">
               <a href="/" className="text-white fw-normal">
-                Home
+                Home &gt;
               </a>
             </p>
           </div>

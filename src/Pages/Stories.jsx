@@ -28,23 +28,23 @@ function Stories() {
         <Container fluid className="rest_carrier h-100">
           {/* Personnel Count */}
           <Row className="stat p-md-5 text-md-start text-center">
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={4} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">18</h3>
               <h6>YEARS OF EXPERIENCE</h6>
             </Col>
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={4} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">100</h3>
               <h6>MENUS / DISHES</h6>
             </Col>
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={4} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">50</h3>
               <h6>STAFFS</h6>
             </Col>
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={4} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">15,000</h3>
               <h6>HAPPY CUSTOMERS</h6>
             </Col>
-            <Col md={4} sm={12} className="mb-4">
+            <Col md={8} lg={4} sm={12} className="mb-4">
               <p className="fs-5 text-center text-md-start ">
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia.
@@ -58,21 +58,21 @@ function Stories() {
               <h2 className="fw-bolder">Catering Services</h2>
             </Col>
             <Row>
-              <Col md={4} sm={12} className="mt-4">
+              <Col md={12} lg={4} sm={12} className="mt-4">
                 <CardComp
                   icon={<FaBirthdayCake />}
                   subtitle="Birthday Party"
                   text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
                 />
               </Col>
-              <Col md={4} sm={12} className="mt-4">
+              <Col md={12} lg={4} sm={12} className="mt-4">
                 <CardComp
                   icon={<FaBusinessTime />}
                   subtitle="Business Meeting"
                   text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
                 />
               </Col>
-              <Col md={4} sm={12} className="mt-4">
+              <Col md={12} lg={4} sm={12} className="mt-4">
                 <CardComp
                   icon={<BiDish />}
                   subtitle="Wedding Party"
@@ -92,14 +92,14 @@ function Stories() {
                 <h2 className="fw-bold">Our Master Chef</h2>
               </Col>
               <Row id="imges">
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={chef}
                     name={"John Smooth"}
                     text={"Restaurant Owner"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={
                       "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
@@ -108,7 +108,7 @@ function Stories() {
                     text={"Head Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={
                       "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
@@ -117,7 +117,7 @@ function Stories() {
                     text={"Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={
                       "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"
@@ -204,7 +204,7 @@ function Stories() {
               </Row>
             </Container>
           </div>
-        </Container>
+        </Container> 
       </main>
     </>
   );

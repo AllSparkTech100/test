@@ -308,6 +308,7 @@ main {
     .rest_info {
       .two_img {
         height: 20rem;
+        // width: 50rem;
         img {
           width: 100%;
         }
@@ -404,7 +405,7 @@ main {
             font-size: 2rem;
           }
           .fel {
-            font-size: calc(1em + 12px);
+            font-size: calc(1em + 14px);
             position: relative;
             font-weight: bold;
             top: -1.5rem;

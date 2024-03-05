@@ -139,7 +139,7 @@ $fontFamily: "Great Vibes", cursive;
       color: white;
     }
     &:active {
-      background: $present;
+      background-color: $present;
       color: white;
     }
   }
@@ -307,31 +307,6 @@ $fontFamily: "Great Vibes", cursive;
     }
   }
 
-  // @media screen and (min-width:576px) {
-  //   .captions {
-  //     position: absolute;
-  //     top: 40%;
-  //     bottom: 0;
-  //     left: 0;
-  //     right: 0;
-  //     :nth-child(1) {
-  //       color: $present;
-  //       font-family: $fontFamily;
-  //       font-size: 3rem;
-  //     }
-  //     .trust {
-  //       position: relative;
-  //       top: -8%;
-  //       p {
-  //         font-family: $font;
-  //         font-size: 32px;
-  //         text-wrap: nowrap;
-  //         font-weight: bold;
-  //         color: $pure;
-  //       }
-  //     }
-  //   }
-  // }
   @media screen and (max-width:575.98px) {
     .captions {
       position: absolute;

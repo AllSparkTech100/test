@@ -40,8 +40,8 @@ function NavComp() {
   return (
     <header style={headerStyle}>
       <Navbar expand="lg" fixed="top" className="">
-      <Container>
-          <Navbar.Brand href="#home" className="fw-bolder">
+      <Container fluid="sm">
+          <Navbar.Brand href="/" className="small_nav fw-bolder">
             Feliciano
           </Navbar.Brand>
           <Navbar.Toggle
@@ -49,8 +49,8 @@ function NavComp() {
             className="shadow-none"
             variant="secondary"
           />
-          <Navbar.Collapse id="basic-navbar-nav shadow-none">
-            <Nav className="ms-auto align-items-md-center justify-content-md-around">
+          <Navbar.Collapse  id="basic-navbar-nav shadow-none">
+            <Nav className="ms-auto align-items-md-center justify-content-md-around ">
               <Nav.Link href="/" className=" fw-normal fs-5">
                 Home
               </Nav.Link>
