@@ -76,7 +76,7 @@ function Dinner() {
         <section>
           <Category />
           <Container>
-            <Row className="breakfast">
+            <Row className="dinner">
               {menu.map((items) => {
                 return (
                   <Col key={items.id} md={3} sm={12} className="mt-4">
@@ -100,7 +100,7 @@ function Dinner() {
                           {items.ingredients}
                         </Card.Text>
                       </Card.Body>
-                      <Button className="w-100 btn border-0">Order Now</Button>
+                      <Button className="w-100 order_btn btn ">Order Now</Button>
                     </Card>
                   </Col>
                 );

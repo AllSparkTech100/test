@@ -52,6 +52,9 @@ function Contact() {
                     </Form.Group>
                   </Row>
                 </Form>
+                <div className="btn w-100 shadow-none">
+                Send Message
+              </div>
               </div>
             </Col>
           </Row>

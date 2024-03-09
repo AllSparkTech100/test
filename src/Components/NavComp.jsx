@@ -24,24 +24,26 @@ function NavComp() {
 
   const headerStyle = {
     backgroundColor: isScrolled ? "white" : "transparent",
-    position:'fixed',
-    top:'0',
-    zIndex: '900',
-    width: '100vw',
+    position: "fixed",
+    top: "0",
+    zIndex: "900",
+    width: "100vw",
     transition: "background-color 0.3s ease",
-    textColor: isScrolled ? "black" : "snow",
-    display: 'flex',
-    alignItems: 'center',
-    justifyContents: 'center',
-    height: isScrolled ? '65px' : '65px',
+    display: "flex",
+    alignItems: "center",
+    justifyContents: "center",
+    height: isScrolled ? "65px" : "65px",
     borderBottom: isScrolled ? "none" : "1px solid snow",
   };
 
   return (
     <header style={headerStyle}>
-      <Navbar expand="lg" fixed="top" className="">
-      <Container fluid="sm">
-          <Navbar.Brand href="/" className="small_nav fw-bolder">
+      <Navbar expand="lg" fixed="top">
+        <Container fluid="sm">
+          <Navbar.Brand
+            href="/"
+            className={isScrolled ? "text-black fw-bold" : "text-white fw-bold"}
+          >
             Feliciano
           </Navbar.Brand>
           <Navbar.Toggle
@@ -49,25 +51,64 @@ function NavComp() {
             className="shadow-none"
             variant="secondary"
           />
-          <Navbar.Collapse  id="basic-navbar-nav shadow-none">
-            <Nav className="ms-auto align-items-md-center justify-content-md-around ">
-              <Nav.Link href="/" className=" fw-normal fs-5">
+          <Navbar.Collapse id="basic-navbar-nav shadow-none">
+            <Nav className="ms-auto align-items-md-center nav_carrier justify-content-md-around ">
+              <Nav.Link
+                href="/"
+                className={
+                  isScrolled
+                    ? "text-black fw-normal fs-6 me-4"
+                    : "text-white fw-normal fs-6 me-4"
+                }
+              >
                 Home
               </Nav.Link>
-              <Nav.Link href="/about" className=" fw-normal fs-5">
+              <Nav.Link
+                href="/about"
+                className={
+                  isScrolled
+                    ? "text-black fw-normal fs-6 me-4"
+                    : "text-white fw-normal fs-6 me-4"
+                }
+              >
                 About
               </Nav.Link>
-              <Nav.Link href="/menu" className=" fw-normal fs-5">
+              <Nav.Link
+                href="/menu"
+                className={
+                  isScrolled
+                    ? "text-black fw-normal fs-6 me-4"
+                    : "text-white fw-normal fs-6 me-4"
+                }
+              >
                 Menu
               </Nav.Link>
-              <Nav.Link href="/stories" className=" fw-normal fs-5">
+              <Nav.Link
+                href="/stories"
+                className={
+                  isScrolled
+                    ? "text-black fw-normal fs-6 me-4"
+                    : "text-white fw-normal fs-6 me-4"
+                }
+              >
                 Stories
               </Nav.Link>
-              <Nav.Link href="/contact" className=" fw-normal fs-5">
+              <Nav.Link
+                href="/contact"
+                className={
+                  isScrolled
+                    ? "text-black fw-normal fs-6 me-4"
+                    : "text-white fw-normal fs-6 me-4"
+                }
+              >
                 Contact
               </Nav.Link>
-              <div className="btn_carrier">
-              <ButtonComp text="Book a Table" className="btn" />
+              <div
+                className={
+                  isScrolled ? "text-black fw-bold" : "text-white fw-bold"
+                }
+              >
+                <ButtonComp text="Book a Table" className="btn" />
               </div>
             </Nav>
           </Navbar.Collapse>

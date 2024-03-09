@@ -25,6 +25,9 @@ $foot: #141313;
 $font: "Poppins", sans-serif;
 $fontFamily: "Great Vibes", cursive;
 
+.blog_page{
+  margin-top: -10rem;
+}
 .bg-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -122,6 +125,17 @@ $fontFamily: "Great Vibes", cursive;
     object-fit: cover;
   }
 }
+
+.order_btn{
+  border: none;
+  &:hover{
+    border: 1px solid $present;
+    background: $pure;
+    color: $present;
+  }
+}
+
+
 
 .navig {
   padding: 10px;
