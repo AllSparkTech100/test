@@ -3,6 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import bar2 from "../Photos/bar-2.jpg";
 import bar1 from "../Photos/wineee.jpg";
 import wine from "../Photos/wines.jpg";
+import { MdMarkUnreadChatAlt } from "react-icons/md";
 
 function Stories() {
   return (
@@ -37,7 +38,9 @@ function Stories() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
+                    <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
+                     </a>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -55,7 +58,9 @@ function Stories() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
+                    <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
+                     </a>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -73,7 +78,9 @@ function Stories() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
+                    <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
+                     </a>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -93,7 +100,9 @@ function Stories() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
+                    <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
+                     </a>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -111,7 +120,9 @@ function Stories() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
+                    <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
+                     </a>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -120,16 +131,18 @@ function Stories() {
                     <Card.Img
                       variant="top"
                       className="h-75 img fluid"
-                      src={bar1}
+                      src="https://thumbs.dreamstime.com/b/beautiful-modern-wine-cellar-big-house-141570323.jpg"
                     />
                     <Card.Body>
                       <Card.Text style={{ color: "#787878" }}>
                         Sept. 06 2019 Admin
                       </Card.Text>
-                      <Card.Title>Taste the Delicious foods in Asia</Card.Title>
+                      <Card.Title>Taste the Delicious wines in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
+                    <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
+                     </a>
                     </Card.Footer>
                   </Card>
                 </Col>

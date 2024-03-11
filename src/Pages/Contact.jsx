@@ -29,7 +29,7 @@ function Contact() {
                     <Form.Group Col={12} controlId="formGridName">
                       <Form.Control
                         type="text"
-                        className="shadow-none rounded-0 border-3 mb-4 p-3"
+                        className="shadow-none rounded-0 border-2 mb-4 p-3"
                         placeholder="Your Name"
                       />
                     </Form.Group>
@@ -37,24 +37,37 @@ function Contact() {
                     <Form.Group Col={12} controlId="formGridEmail">
                       <Form.Control
                         type="email"
-                        className="shadow-none rounded-0 border-3 mb-4 p-3"
+                        className="shadow-none rounded-0 border-2 mb-4 p-3"
                         placeholder="Your Email"
                         required
                       />
                     </Form.Group>
-                    <Form.Group Col={12} controlId="formGridEmail">
+
+                    <Form.Group Col={12} controlId="formGridSubject">
                       <Form.Control
                         type="email"
-                        className="shadow-none rounded-0 border-3 mb-4 p-3"
+                        className="shadow-none rounded-0 border-2 mb-4 p-3"
                         placeholder="Subject"
                         required
                       />
                     </Form.Group>
+
+                    <Form.Group Col={12} controlId="formGridTextarea">
+                      <Form.Control
+                        type="text"
+                        className="shadow-none h-100 rounded-0 border-2 mb-4 p-3"
+                        placeholder="Message" as="textarea"
+                        required
+                      />
+                    </Form.Group>
                   </Row>
-                </Form>
-                <div className="btn w-100 shadow-none">
+                  <Col sm={6} lg={6} md={6}>
+                <div className="btn w-75 order_btn p-3 shadow-none">
                 Send Message
               </div>
+                </Col>
+                </Form>
+                
               </div>
             </Col>
           </Row>
