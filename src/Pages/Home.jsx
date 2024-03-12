@@ -6,6 +6,7 @@ import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
 import Data from "../Components/data";
+import { MdMarkUnreadChatAlt } from "react-icons/md";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 import barr from "../Photos/chef-2.jpg";
@@ -251,7 +252,9 @@ function Home() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
+                       <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
+                     </a>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -269,7 +272,9 @@ function Home() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
+                      <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
+                     </a>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -287,7 +292,9 @@ function Home() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
+                    <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
+                     </a>
                     </Card.Footer>
                   </Card>
                 </Col>

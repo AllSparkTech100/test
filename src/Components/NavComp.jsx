@@ -1,4 +1,4 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar} from "react-bootstrap";
 import "../app.scss";
 import ButtonComp from "./Button";
 import { useState, useEffect } from "react";
@@ -23,7 +23,7 @@ function NavComp() {
   }, []);
 
   const headerStyle = {
-    backgroundColor: isScrolled ? "white" : "transparent",
+    // backgroundColor: isScrolled ? "white" : "transparent",
     position: "fixed",
     top: "0",
     zIndex: "900",
@@ -37,8 +37,8 @@ function NavComp() {
   };
 
   return (
-    <header style={headerStyle}>
-      <Navbar expand="lg" fixed="top">
+    <header style={headerStyle} className={isScrolled ? "bg-white" : "bg-md-transparent"}>
+      <Navbar expand="lg" fixed="top" >
         <Container fluid="sm">
           <Navbar.Brand
             href="/"
@@ -48,7 +48,7 @@ function NavComp() {
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
-            className="shadow-none"
+            className="shadow-none border-2 border-primary "
             variant="secondary"
           />
           <Navbar.Collapse id="basic-navbar-nav shadow-none">
