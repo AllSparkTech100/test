@@ -1,5 +1,6 @@
 import { Col, Row, Container, Card, Button } from "react-bootstrap";
 import Category from "./Category";
+import "./pages.scss";
 
 function Dinner() {
   const menu = [
@@ -27,36 +28,36 @@ function Dinner() {
     {
       id: 4,
       title: "Porridge Beans",
-      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
+      img: "https://allnigerianfoods.com/wp-content/uploads/2015/02/porridge-beans.jpg",
       ingredients: "Beans and Plantain",
       price: "$20",
     },
     {
       id: 6,
-      title: "Grilled Beef with Potatoes",
-      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Pizza Orzo",
+      img: "https://foodhub.scene7.com/is/image/woolworthsltdprod/2301-vegan-pepperoni-pizza-pasta-bake:Square-1300x1300",
+      ingredients: "Delicious Pizza Orzo",
       price: "$20",
     },
     {
       id: 7,
-      title: "Grilled Beef with Potatoes",
-      img: "https://insanelygoodrecipes.com/wp-content/uploads/2020/11/Grilled-Fillet-Steak.png",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Baked Salmon",
+      img: "https://www.kitchensanctuary.com/wp-content/uploads/2020/05/Honey-Garlic-Baked-Salmon-square-FS-111.jpg",
+      ingredients: "Deliciously Baked Salmon",
       price: "$20",
     },
     {
       id: 8,
-      title: "Grilled Beef with Potatoes",
-      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Smothered Chicken",
+      img: "https://kitchenfunwithmy3sons.com/wp-content/uploads/2021/11/Southern-Smothered-Chicken-65.jpg",
+      ingredients: "Delicious",
       price: "$20",
     },
     {
       id: 8,
-      title: "Grilled Beef with Potatoes",
-      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Chicken Stir-Fry",
+      img: "https://www.halfbakedharvest.com/wp-content/uploads/2021/08/25-Minute-Black-Pepper-Jalapen%CC%83o-Basil-Chicken-Stir-Fry-1.jpg",
+      ingredients: "Chicken stirfry and Rice.",
       price: "$20",
     },
   ];

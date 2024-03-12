@@ -1,6 +1,6 @@
 import { Col, Row, Container, Button } from "react-bootstrap";
 import "./pages.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Category() {
   return (
@@ -8,46 +8,51 @@ function Category() {
       <div className="navig">
         <Row>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <Link to={"/breakfast"} className="">
+            <NavLink
+              exact
+              to="/breakfast"
+              activeStyle={{ backgroundColor: "red" }}
+              className=""
+            >
               <Button className="menu_selector w-100 shadow-none border-0 rounded-0">
                 <h4>Breakfast</h4>
               </Button>
-            </Link>
+            </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <Link to={"/lunch"}>
+            <NavLink to="/lunch">
               <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
                 <h4>Lunch</h4>
               </Button>
-            </Link>
+            </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <Link to={"/dinner"}>
+            <NavLink to="/dinner">
               <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
                 <h4>Dinner</h4>
               </Button>
-            </Link>
+            </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <Link to={"/drinks"}>
+            <NavLink to="/drinks">
               <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
                 <h4>Drinks</h4>
               </Button>
-            </Link>
+            </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <Link to={"/desserts"}>
+            <NavLink to="/desserts">
               <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
                 <h4>Desserts</h4>
               </Button>
-            </Link>
+            </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <Link to={"/wines"}>
+            <NavLink to="/wines">
               <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
                 <h4>Wines</h4>
               </Button>
-            </Link>
+            </NavLink>
           </Col>
         </Row>
       </div>

@@ -1,5 +1,6 @@
 import { Col, Row, Container, Card, Button } from "react-bootstrap";
 import Category from "./Category";
+import "./pages.scss";
 
 function Drinks() {
   const menu = [

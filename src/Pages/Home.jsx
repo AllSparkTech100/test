@@ -226,7 +226,6 @@ function Home() {
         </Container>
 
         {/* Testimony */}
-
         {/* Blog */}
         <Container fluid>
           <div className="blog">
@@ -252,9 +251,19 @@ function Home() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                       <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
-                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
-                     </a>
+                      <a
+                        href="https://www.google.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-decoration-none"
+                      >
+                        <small className="text-muted d-flex align-items-center justify-content-between fs-6">
+                          Read More{" "}
+                          <span>
+                            <MdMarkUnreadChatAlt size={18} />
+                          </span>
+                        </small>
+                      </a>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -272,9 +281,19 @@ function Home() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                      <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
-                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
-                     </a>
+                      <a
+                        href="https://www.google.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-decoration-none"
+                      >
+                        <small className="text-muted d-flex align-items-center justify-content-between fs-6">
+                          Read More{" "}
+                          <span>
+                            <MdMarkUnreadChatAlt size={18} />
+                          </span>
+                        </small>
+                      </a>
                     </Card.Footer>
                   </Card>
                 </Col>
@@ -292,9 +311,19 @@ function Home() {
                       <Card.Title>Taste the Delicious foods in Asia</Card.Title>
                     </Card.Body>
                     <Card.Footer className="border-0">
-                    <a href="https://www.google.com" target="_blank" rel="noreferrer" className="text-decoration-none">
-                     <small className="text-muted d-flex align-items-center justify-content-between fs-6">Read More <span><MdMarkUnreadChatAlt size={18} /></span></small>
-                     </a>
+                      <a
+                        href="https://www.google.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-decoration-none"
+                      >
+                        <small className="text-muted d-flex align-items-center justify-content-between fs-6">
+                          Read More{" "}
+                          <span>
+                            <MdMarkUnreadChatAlt size={18} />
+                          </span>
+                        </small>
+                      </a>
                     </Card.Footer>
                   </Card>
                 </Col>

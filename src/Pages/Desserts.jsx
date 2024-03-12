@@ -1,5 +1,6 @@
 import { Col, Row, Container, Card, Button } from "react-bootstrap";
 import Category from "./Category";
+import "./pages.scss";
 
 function Dessert() {
   const menu = [
@@ -75,13 +76,11 @@ function Dessert() {
         </div>
         <section>
           <Category />
-          
-        </section>
-        <Container>
+           <Container>
             <Row className="desserts">
               {menu.map((items) => {
                 return (
-                  <Col key={items.id} md={3} sm={12} className="mt-4">
+                  <Col key={items.id} md={4} lg={3} sm={12} className="mt-4">
                     <Card className="border-0 h-100">
                       <Card.Img
                         variant="top"
@@ -109,6 +108,8 @@ function Dessert() {
               })}
             </Row>
           </Container>
+        </section>
+       
       </main>
     </div>
   );

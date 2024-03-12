@@ -1,20 +1,21 @@
 import { Col, Row, Container, Card, Button } from "react-bootstrap";
 import Category from "./Category";
+import "./pages.scss";
 
 function Lunch() {
     const menu = [
         {
           id: 1,
-          title: "Grilled Beef with Potatoes",
-          img: "https://embed.widencdn.net/img/beef/hkosgtta5l/1120x560px/Beef_230118_0436.tif?keep=c&u=7fueml",
-          ingredients: "Meat,Fish, Beef, Potato",
+          title: "Egg Salad",
+          img: "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/04/Egg-Salad-main-1.jpg",
+          ingredients: "Tasty Egg Salad",
           price: "$20",
         },
         {
           id: 2,
-          title: "Grilled Beef with Potatoes",
-          img: "https://www.foodandwine.com/thmb/CqyQH1MrXLynH3iZ0PEEfZ4Ki6Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steak-au-poivre-red-wine-pan-sauce-hero-01-FT-RECIPE1222-c9e1da15f33f4076986b6ce37ae5bbb0.jpg",
-          ingredients: "Meat,Fish, Beef, Potato",
+          title: "Pasta Salad",
+          img: "https://tastesbetterfromscratch.com/wp-content/uploads/2023/05/Italian-Pasta-Salad-23-3.jpg",
+          ingredients: "Salad made from pasta",
           price: "$20",
         },
         {

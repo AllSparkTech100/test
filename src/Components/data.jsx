@@ -6,58 +6,58 @@ function Data() {
   const menu = [
     {
       id: 1,
-      title: "Grilled Beef with Potatoes",
-      img: "https://embed.widencdn.net/img/beef/hkosgtta5l/1120x560px/Beef_230118_0436.tif?keep=c&u=7fueml",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Pancakes",
+      img: "https://www.allrecipes.com/thmb/WqWggh6NwG-r8PoeA3OfW908FUY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/21014-Good-old-Fashioned-Pancakes-mfs_001-1fa26bcdedc345f182537d95b6cf92d8.jpg",
+      ingredients: "Delicious Pancakes made for you",
       price: "$20",
     },
     {
       id: 2,
-      title: "Grilled Beef with Potatoes",
-      img: "https://www.foodandwine.com/thmb/CqyQH1MrXLynH3iZ0PEEfZ4Ki6Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steak-au-poivre-red-wine-pan-sauce-hero-01-FT-RECIPE1222-c9e1da15f33f4076986b6ce37ae5bbb0.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Cinnamon Rolls",
+      img: "https://plantbasedonabudget.com/wp-content/uploads/2014/05/Vegan-Cinnamon-Rolls-Plant-Based-on-a-Budget-1-2.jpg",
+      ingredients: "Delicious Vegan Cinnamon Rolls",
       price: "$20",
     },
     {
       id: 3,
-      title: "Grilled Beef with Potatoes",
-      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Tomato Omelletes",
+      img: "https://realfood.tesco.com/media/images/1400x919-Tesco-5For15-13273-RainbowOmelette-b3f0c3cc-2f15-40a7-98b1-07af0609f99e-0-1400x919.jpg",
+      ingredients: "Tomatoes",
       price: "$20",
     },
     {
       id: 4,
-      title: "Grilled Beef with Potatoes",
-      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Fried Eggs",
+      img: "https://garlicdelight.com/wp-content/uploads/20210411-pan-fried-egg-sandwich-8.jpg",
+      ingredients: "Delicious Fried eggs",
       price: "$20",
     },
     {
       id: 5,
-      title: "Grilled Beef with Potatoes",
-      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Coffee",
+      img: "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1710201600&semt=sph",
+      ingredients: "Healthy Morning Coffee",
       price: "$20",
     },
     {
       id: 6,
-      title: "Grilled Beef with Potatoes",
-      img: "https://insanelygoodrecipes.com/wp-content/uploads/2020/11/Grilled-Fillet-Steak.png",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Cinnamon Toast",
+      img: "https://ketogenic.com/wp-content/uploads/2019/09/keto-cinnamon-toast-crunch.jpg",
+      ingredients: "Specially made to fill you",
       price: "$20",
     },
     {
       id: 7,
-      title: "Grilled Beef with Potatoes",
-      img: "https://veganinthefreezer.com/wp-content/uploads/2021/05/Grilled-Potato-Wedges-angled-square-sp.jpg",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Granola",
+      img: "https://www.culinaryhill.com/wp-content/uploads/2021/01/How-to-Make-Granola-Culinary-Hill-1200x800-1.jpg",
+      ingredients: "Granola and Strawberries",
       price: "$20",
     },
     {
       id: 8,
-      title: "Grilled Beef with Potatoes",
-      img: "https://insanelygoodrecipes.com/wp-content/uploads/2020/11/Grilled-Fillet-Steak.png",
-      ingredients: "Meat,Fish, Beef, Potato",
+      title: "Egg Muffins",
+      img: "https://mommachef.com/wp-content/uploads/2017/02/BlogDelEGGMuffins.jpg",
+      ingredients: "Delicious Egg Muffins",
       price: "$20",
     },
   ];
@@ -69,7 +69,7 @@ function Data() {
         <Row className="breakfast">
           {menu.map((items) => {
             return (
-              <Col key={items.id} md={3} sm={12} className="mt-4">
+              <Col key={items.id} md={3} lg={3} sm={12} className="mt-4">
                 <Card className="border-0 h-100">
                   <Card.Img
                     variant="top"
@@ -87,7 +87,7 @@ function Data() {
                       {items.ingredients}
                     </Card.Text>
                   </Card.Body>
-                  <Button className="w-100 btn border-0">Order Now</Button>
+                  <Button className="w-100 btn order_btn ">Order Now</Button>
                 </Card>
               </Col>
             );
