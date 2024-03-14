@@ -1,5 +1,7 @@
 import { Container, Row, Col, Form } from "react-bootstrap";
 import "./pages.scss";
+import bike from "../Photos/bike.gif"
+
 
 function Contact() {
   return (
@@ -19,7 +21,9 @@ function Contact() {
         <Container fluid="sm" className="first-contact-section">
           <Row>
             <Col md={6} sm={12}>
-              <div className="left_map"></div>
+              <div className="left_map ">
+              <img src={bike} alt="" />
+              </div>
             </Col>
             <Col md={6} sm={12}>
               <div className="right_form">

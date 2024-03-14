@@ -149,7 +149,6 @@ function Stories() {
               </Row>
             </Container>
           </div>
-          <Col></Col>
         </Container>
       </main>
     </>

@@ -28,6 +28,21 @@ $fontFamily: "Great Vibes", cursive;
 .blog_page {
   margin-top: -10rem;
 }
+
+#new{
+  height: 30px;
+  font-family: $font;
+  background-color: red;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  .new_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .bg-image {
   background-repeat: no-repeat;
   background-size: cover;
