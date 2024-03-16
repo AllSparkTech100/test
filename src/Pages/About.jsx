@@ -13,7 +13,7 @@ function About() {
     <>
       <main className="">
         <div className="bg-image about_intro">
-          <div className="about_text">
+          <div className="contact_text">
             <h3 className="text-white text-center">About</h3>
             <p className="text-center">
               <a href="/" className="text-white fw-normal">
@@ -109,7 +109,7 @@ function About() {
         </Container>       
 
         {/* Chefs */}
-        <Container fluid>
+        <Container fluid >
           <Container>
             <section className="chef">
               <Col sm={12} md={12} className="text-center head">

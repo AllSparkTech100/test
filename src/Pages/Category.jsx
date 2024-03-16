@@ -1,57 +1,62 @@
-import { Col, Row, Container, Button } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import "./pages.scss";
 import { NavLink } from "react-router-dom";
+// import { useState } from "react";
 
 function Category() {
+  // const [isActive setIsActive] = useState(false);
+
   return (
     <Container className="mb-5">
       <div className="navig">
         <Row>
-          <Col md={2} sm={12} className="mb-3 mb-md-0">
+          <Col md={2} sm={12} className="mb-3 shadow-none mb-md-0">
             <NavLink
               exact
               to="/breakfast"
-              activeStyle={{ backgroundColor: "red" }}
-              className=""
+              className="menu_selector w-100 shadow-none border-0 rounded-0"
             >
-              <Button className="menu_selector w-100 shadow-none border-0 rounded-0">
-                <h4>Breakfast</h4>
-              </Button>
+              <h4>Breakfast</h4>
             </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <NavLink to="/lunch">
-              <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
-                <h4>Lunch</h4>
-              </Button>
+            <NavLink
+              to="/lunch"
+              className="menu_selector w-100 shadow-none border-0 rounded-0"
+            >
+              <h4>Lunch</h4>
             </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <NavLink to="/dinner">
-              <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
-                <h4>Dinner</h4>
-              </Button>
+            <NavLink
+              to="/dinner"
+              className="menu_selector w-100 shadow-none border-0 rounded-0"
+            >
+              <h4>Dinner</h4>
             </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <NavLink to="/drinks">
-              <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
-                <h4>Drinks</h4>
-              </Button>
+            <NavLink
+              to="/drinks"
+              className="menu_selector w-100 shadow-none border-0 rounded-0"
+            >
+              <h4>Drinks</h4>
             </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <NavLink to="/desserts">
-              <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
-                <h4>Desserts</h4>
-              </Button>
+            <NavLink
+              to="/desserts"
+              className="menu_selector w-100 shadow-none border-0 rounded-0"
+            >
+              <h4>Desserts</h4>
             </NavLink>
           </Col>
           <Col md={2} sm={12} className="mb-3 mb-md-0">
-            <NavLink to="/wines">
-              <Button className="menu_selector w-100  shadow-none border-0 rounded-0 ">
-                <h4>Wines</h4>
-              </Button>
+            <NavLink
+              to="/wines"
+              className="menu_selector w-100 shadow-none border-0 rounded-0"
+            >
+              <h4>Wines</h4>
             </NavLink>
           </Col>
         </Row>

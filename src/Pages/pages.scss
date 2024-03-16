@@ -198,6 +198,7 @@ main {
     align-items: flex-end;
     justify-content: center;
     isolation: isolate;
+    font-family: $font;
     .about_text {
       text-align: center;
       h3 {
@@ -266,7 +267,7 @@ main {
     }
   }
   .first-contact-section {
-    margin-top: 5rem;
+    margin-top: -4rem;
     font-family: $font;
 
     .left_map {
@@ -298,7 +299,7 @@ main {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 575px) {
   .rest_info {
     .tp {
       h6 {
@@ -309,6 +310,72 @@ main {
         top: -15px;
         font-size: 2rem;
       }
+    }
+  }
+
+  .contact_intro {
+    .contact_text {
+      h3 {
+        height: 30px;
+        position: absolute;
+        top: 62%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: $font;
+        z-index: -3;
+      }
+
+      p {
+        position: relative;
+        top: -40px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        a {
+          text-decoration: underline;
+          text-decoration-style: dotted;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 4px;
+        }
+      }
+    }
+  }
+  .story_intro, .menu_intro, .about_intro {
+    .contact_text {
+      h3 {
+        height: 30px;
+        position: absolute;
+        top: 62%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 3rem;
+        font-weight: 900;
+        font-family: $font;
+        z-index: -3;
+      }
+
+      p {
+        position: relative;
+        top: -40px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        a {
+          text-decoration: underline;
+          text-decoration-style: dotted;
+          text-decoration-thickness: 2px;
+          text-underline-offset: 4px;
+        }
+      }
+    }
+  }
+  .first-contact-section {
+    .left_map {
+      display: none;
     }
   }
 }
@@ -436,6 +503,74 @@ main {
         }
       }
     }
+
+    .contact_intro {
+      .contact_text {
+        text-align: center;
+        h3 {
+          height: 30px;
+          position: absolute;
+          top: 65%;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          font-size: 2.5rem;
+          font-weight: 900;
+          font-family: $font;
+          z-index: -3;
+        }
+  
+        p {
+          position: relative;
+          top: -20px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          a {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+          }
+        }
+      }
+    }
+    .story_intro, .about_intro, .menu_intro {
+      .contact_text {
+        text-align: center;
+        h3 {
+          height: 30px;
+          position: absolute;
+          top: 70%;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          font-size: 2.5rem;
+          font-weight: 900;
+          font-family: $font;
+          z-index: -3;
+        }
+  
+        p {
+          position: relative;
+          top: -20px;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          a {
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+          }
+        }
+      }
+    }
+    .first-contact-section {
+      .left_map {
+        display: none;
+      }
+    }
   }
 }
 
@@ -451,3 +586,4 @@ main {
     }
   }
 }
+

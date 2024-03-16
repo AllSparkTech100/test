@@ -14,6 +14,9 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  a{
+    text-decoration: none;
+  }
 }
 
 $present: #c8a97e;
@@ -29,7 +32,7 @@ $fontFamily: "Great Vibes", cursive;
   margin-top: -10rem;
 }
 
-#new{
+#new {
   height: 30px;
   font-family: $font;
   background-color: red;
@@ -37,7 +40,7 @@ $fontFamily: "Great Vibes", cursive;
   position: fixed;
   top: 0;
   z-index: 99999;
-  .new_inner{
+  .new_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +67,7 @@ $fontFamily: "Great Vibes", cursive;
 .form_carrier {
   background: $pure;
   box-sizing: content-box;
-  width: 50%;
+  width: 80%;
   margin: 5rem 0 4rem 0;
   .form-intro {
     width: 100%;
@@ -149,23 +152,27 @@ $fontFamily: "Great Vibes", cursive;
 
 .navig {
   padding: 10px;
-  a {
-    text-decoration: none;
-  }
   .menu_selector {
     @include flex;
-    padding: 0.8rem 2rem;
     text-align: center;
     background-color: $pure;
     color: #000000;
-    &:hover {
-      background: $present;
-      color: white;
-    }
-    &:active {
-      background-color: $present;
-      color: white;
-    }
+    padding: 1rem 2rem;
+    text-decoration: none;
+      &.active {
+        background-color: $present;
+        color: white;
+      }
+      &:hover {
+        background: $present;
+        color: white;
+      }
+    // a {
+      
+    //   text-decoration: none;
+    //   color: black;
+    
+    // }
   }
 }
 
@@ -187,9 +194,51 @@ $fontFamily: "Great Vibes", cursive;
       p {
         font-family: $font;
         font-size: 3rem;
-        // text-wrap: nowrap;
         font-weight: bold;
         color: $pure;
+      }
+    }
+  }
+  .form_bg {
+    height: 165vh;
+
+    padding: 0;
+  }
+  .form_carrier {
+    width: 70%;
+    position: relative;
+    top: 30px;
+    right: 0;
+    margin-left: 0;
+    left: 0;
+    .form-intro {
+      h4 {
+        font-size: 4rem;
+        text-wrap: nowrap;
+        top: 2rem;
+      }
+      .intro_inner {
+        top: 0;
+        h5 {
+          font-size: 2rem;
+          text-wrap: nowrap;
+          top: -0.4rem;
+        }
+      }
+    }
+    .main_form {
+      margin: 3rem 0 0 0;
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 0.6rem;
+        margin-bottom: 10px;
+      }
+      .form_btn {
+        .btn-sub {
+          padding: 0.7rem 2rem;
+        }
       }
     }
   }
@@ -241,10 +290,11 @@ $fontFamily: "Great Vibes", cursive;
 
 @media screen and (max-width: 480px) {
   .form_bg {
-    height: 140vh;
+    height: 175vh;
+    padding: 0;
   }
   .form_carrier {
-    width: 100%;
+    width: 100vw;
     position: relative;
     top: 30px;
     right: 0;
@@ -331,7 +381,7 @@ $fontFamily: "Great Vibes", cursive;
   }
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 575px) {
   .captions {
     position: absolute;
     top: 40%;
@@ -352,6 +402,73 @@ $fontFamily: "Great Vibes", cursive;
         text-wrap: nowrap;
         font-weight: bold;
         color: $pure;
+      }
+    }
+  }
+  .form_bg {
+    height: 175vh;
+    padding: 0;
+  }
+  .form_carrier {
+    width: 100%;
+    position: relative;
+    top: 40px;
+    right: 0;
+    left: 0;
+    .form-intro {
+      h4 {
+        font-size: 4rem;
+        text-wrap: nowrap;
+        top: 2rem;
+      }
+      .intro_inner {
+        top: 0;
+        h5 {
+          font-size: 2rem;
+          text-wrap: nowrap;
+          top: -0.4rem;
+        }
+      }
+    }
+    .main_form {
+      margin: -1rem 0 0 0;
+      label {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .form_bg {
+    height: 160vh;
+    padding: 0;
+  }
+  .form_carrier {
+    // width: 100%;
+    position: relative;
+    top: 40px;
+    right: 0;
+    left: 0;
+    .form-intro {
+      h4 {
+        font-size: 4rem;
+        text-wrap: nowrap;
+        top: 2rem;
+      }
+      .intro_inner {
+        top: 0;
+        h5 {
+          font-size: 2rem;
+          text-wrap: nowrap;
+          top: -0.4rem;
+        }
+      }
+    }
+    .main_form {
+      margin: -1rem 0 0 0;
+      label {
+        margin-bottom: 10px;
       }
     }
   }

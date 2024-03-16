@@ -8,11 +8,11 @@ function Contact() {
     <>
       <main className="">
         <div className="bg-image contact_intro">
-          <div className="about_text">
+          <div className="contact_text">
             <h3 className="text-white text-center fw-bold">Contact</h3>
             <p className="text-center">
               <a href="/" className="text-white fw-normal">
-                Home
+                Home &gt;
               </a>
             </p>
           </div>
