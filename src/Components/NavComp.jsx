@@ -64,7 +64,7 @@ function NavComp() {
             />
 
             <Navbar.Collapse id="basic-navbar-nav shadow-none">
-              <Nav className="ms-auto align-items-md-center justify-content-md-between naav">
+              <Nav className="ms-auto align-items-md-center justify-content-md-between">
                 <Nav.Link
                   href="/"
                   className={

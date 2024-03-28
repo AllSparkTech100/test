@@ -1,17 +1,22 @@
 @import "../_variable";
 
+.fly-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fly-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 img {
   height: 100vh;
   width: 100vw;
 }
 
-.naav{
-  a{
-    &:active{
-      color: red;
-    }
-  }
-}
 
 .socials {
   color: $present;
