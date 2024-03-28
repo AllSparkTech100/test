@@ -3,7 +3,7 @@ import "./button.scss";
 
 function Slide() {
   return (
-    <div>
+    <div className="carousel ">
       <Carousel className="carousel-fade" indicators={false}>
         <Carousel.Item interval={500}>
           <img

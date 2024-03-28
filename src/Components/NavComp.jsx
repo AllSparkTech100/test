@@ -1,10 +1,16 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import "../app.scss";
 import ButtonComp from "./Button";
 import { useState, useEffect } from "react";
+// import { IoCallSharp } from "react-icons/io5";
 
 function NavComp() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuVisible(!isMenuVisible);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,18 +43,10 @@ function NavComp() {
 
   return (
     <>
-      {/* <div id="new d-none">
-        <div className="new_inner">
-          <p>+234-123-4782-90</p>
-          <p>youremail@me.com</p>
-          <p>Open Hours: Monday - Saturday 8:00AM - 9:00PM</p>
-        </div>
-      </div> */}
       <header
         style={headerStyle}
         className={isScrolled ? "bg-white" : "bg-transparent"}
       >
-      
         <Navbar expand="lg" fixed="top">
           <Container fluid="sm">
             <Navbar.Brand
@@ -61,11 +59,12 @@ function NavComp() {
             </Navbar.Brand>
             <Navbar.Toggle
               aria-controls="basic-navbar-nav"
-              className="shadow-none border-2 border-primary "
+              className="shadow-none d-none border-2 border-primary "
               variant="secondary"
             />
+
             <Navbar.Collapse id="basic-navbar-nav shadow-none">
-              <Nav className="ms-auto align-items-md-center justify-content-md-between ">
+              <Nav className="ms-auto align-items-md-center justify-content-md-between naav">
                 <Nav.Link
                   href="/"
                   className={
@@ -121,12 +120,38 @@ function NavComp() {
                     isScrolled ? "text-black fw-bold" : "text-white fw-bold"
                   }
                 >
-                  <ButtonComp text="Book a Table" className="btn" />
+                  <ButtonComp text="Book a Table" />
                 </div>
               </Nav>
             </Navbar.Collapse>
+            <Button className="d-md-none d-sm-block shadow-none border-0 rounded-5 " variant="secondary" onClick={toggleMenu}>
+              {isMenuVisible ? "X" : "Menu"}
+            </Button>
           </Container>
         </Navbar>
+        <Container fluid className="menu_carrier">
+          {isMenuVisible && (
+            <div>
+              <ul>
+                <Nav.Link href="/" className="">
+                  Home
+                </Nav.Link>
+                <Nav.Link href="/about" className="">
+                  About
+                </Nav.Link>
+                <Nav.Link href="/menu" className="">
+                  Menu
+                </Nav.Link>
+                <Nav.Link href="/stories" className="">
+                  Stories
+                </Nav.Link>
+                <Nav.Link href="/contact" className="">
+                  Contact
+                </Nav.Link>
+              </ul>
+            </div>
+          )}
+        </Container>
       </header>
     </>
   );

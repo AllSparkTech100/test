@@ -5,6 +5,14 @@ img {
   width: 100vw;
 }
 
+.naav{
+  a{
+    &:active{
+      color: red;
+    }
+  }
+}
+
 .socials {
   color: $present;
   letter-spacing: 10px;

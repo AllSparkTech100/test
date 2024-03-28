@@ -2,23 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
-@mixin flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  a{
-    text-decoration: none;
-  }
-}
-
 $present: #c8a97e;
 $pure: white;
 $para: #898989;
@@ -28,24 +11,32 @@ $foot: #141313;
 $font: "Poppins", sans-serif;
 $fontFamily: "Great Vibes", cursive;
 
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    &.active{
+      color: $june;
+    }
+  }
+}
+
+
 .blog_page {
   margin-top: -10rem;
 }
 
-#new {
-  height: 30px;
-  font-family: $font;
-  background-color: red;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 99999;
-  .new_inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 .bg-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -159,20 +150,14 @@ $fontFamily: "Great Vibes", cursive;
     color: #000000;
     padding: 1rem 2rem;
     text-decoration: none;
-      &.active {
-        background-color: $present;
-        color: white;
-      }
-      &:hover {
-        background: $present;
-        color: white;
-      }
-    // a {
-      
-    //   text-decoration: none;
-    //   color: black;
-    
-    // }
+    &.active {
+      background-color: $present;
+      color: white;
+    }
+    &:hover {
+      background: $present;
+      color: white;
+    }
   }
 }
 
@@ -473,3 +458,5 @@ $fontFamily: "Great Vibes", cursive;
     }
   }
 }
+
+

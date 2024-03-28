@@ -226,6 +226,7 @@ function Home() {
         </Container>
 
         {/* Testimony */}
+
         {/* Blog */}
         <Container fluid>
           <div className="blog">

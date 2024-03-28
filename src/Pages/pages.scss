@@ -271,8 +271,7 @@ main {
     font-family: $font;
 
     .left_map {
-      background-color: red;
-      height: 100vh;
+      height: 80vh;
       width: 100%;
       img {
         height: 100%;
@@ -373,11 +372,7 @@ main {
       }
     }
   }
-  .first-contact-section {
-    .left_map {
-      display: none;
-    }
-  }
+  
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -570,6 +565,11 @@ main {
       .left_map {
         display: none;
       }
+    }
+  }
+  .first-contact-section {
+    .left_map {
+      display: none;
     }
   }
 }
