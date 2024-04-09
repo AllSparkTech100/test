@@ -342,7 +342,9 @@ main {
       }
     }
   }
-  .story_intro, .menu_intro, .about_intro {
+  .story_intro,
+  .menu_intro,
+  .about_intro {
     .contact_text {
       h3 {
         height: 30px;
@@ -372,7 +374,6 @@ main {
       }
     }
   }
-  
 }
 
 @media screen and (max-width: 1199.98px) {
@@ -514,7 +515,7 @@ main {
           font-family: $font;
           z-index: -3;
         }
-  
+
         p {
           position: relative;
           top: -20px;
@@ -530,7 +531,9 @@ main {
         }
       }
     }
-    .story_intro, .about_intro, .menu_intro {
+    .story_intro,
+    .about_intro,
+    .menu_intro {
       .contact_text {
         text-align: center;
         h3 {
@@ -545,7 +548,7 @@ main {
           font-family: $font;
           z-index: -3;
         }
-  
+
         p {
           position: relative;
           top: -20px;
