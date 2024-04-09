@@ -124,14 +124,18 @@ function NavComp() {
                 </div>
               </Nav>
             </Navbar.Collapse>
-            <Button className="d-md-none d-sm-block shadow-none border-0 rounded-5 " variant="secondary" onClick={toggleMenu}>
+            <Button
+              className="d-lg-none d-sm-block shadow-none border-0 rounded-5 menu_iconn "
+              variant="secondary"
+              onClick={toggleMenu}
+            >
               {isMenuVisible ? "X" : "Menu"}
             </Button>
           </Container>
         </Navbar>
         <Container fluid className="menu_carrier">
           {isMenuVisible && (
-            <div>
+            <div className="menu_inner">
               <ul>
                 <Nav.Link href="/" className="">
                   Home
