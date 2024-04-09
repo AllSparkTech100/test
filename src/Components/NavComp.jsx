@@ -2,7 +2,6 @@ import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import "../app.scss";
 import ButtonComp from "./Button";
 import { useState, useEffect } from "react";
-// import { IoCallSharp } from "react-icons/io5";
 
 function NavComp() {
   const [isScrolled, setIsScrolled] = useState(false);

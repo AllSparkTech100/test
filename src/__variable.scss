@@ -17,7 +17,6 @@ $fontFamily: "Great Vibes", cursive;
   justify-content: center;
 }
 
-
 *,
 ::before,
 ::after {
@@ -26,21 +25,10 @@ $fontFamily: "Great Vibes", cursive;
   text-decoration: none;
   a {
     text-decoration: none;
-    &.active{
+    &.active {
       color: $june;
     }
   }
-}
-
-.fly-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.fly-in.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .blog_page {
@@ -374,6 +362,10 @@ $fontFamily: "Great Vibes", cursive;
       }
     }
   }
+  .jumbo {
+    font-size: 32px;
+  }
+
 }
 
 @media screen and (max-width: 575px) {

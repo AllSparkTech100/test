@@ -19,23 +19,7 @@ function Home() {
   // const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollPosition = window.scrollY + window.innerHeight;
-  //     const elementPosition =
-  //       document.getElementById("yourElementId").offsetTop;
-
-  //     if (scrollPosition > elementPosition) {
-  //       setIsVisible(true);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   // Clean up the event listener on component unmount
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+ 
   return (
     <>
       <main className="my-5">
@@ -112,7 +96,7 @@ function Home() {
               <h6 className="fw-normal position-relative text-capitalize ">
                 about
               </h6>
-              <h3 className="fw-medium">Feliciano Restaurant</h3>
+              <h3 className="fw-medium jumbo">Feliciano Restaurant</h3>
               <p className="fw-normal mt-3 fs-4">
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia. It is a paradisematic country, in
