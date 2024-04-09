@@ -84,11 +84,11 @@ function Home() {
         <Container fluid className="rest_carrier h-100">
           {/* About */}
           <Row className="rest_info m-1">
-            <Col sm={6} md={7} xl={6} className="two_img mt-2">
+            <Col sm={12} md={7} xl={6} className="two_img mt-2">
               <Image
                 src={barr}
                 alt=""
-                className="h-100 w-100 object-fit-cover"
+                className=""
                 rounded
               />
             </Col>
@@ -96,7 +96,7 @@ function Home() {
               <h6 className="fw-normal position-relative text-capitalize ">
                 about
               </h6>
-              <h3 className="fw-medium jumbo">Feliciano Restaurant</h3>
+              <h3 className="fw-medium brand_name">Feliciano Restaurant</h3>
               <p className="fw-normal mt-3 fs-4">
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia. It is a paradisematic country, in
