@@ -298,7 +298,7 @@ main {
   }
 }
 
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
   .rest_info {
     .tp {
       h6 {
@@ -313,7 +313,7 @@ main {
   }
 
   .contact_intro {
-    .contact_text {
+    .contact_text{
       h3 {
         height: 30px;
         position: absolute;
@@ -349,7 +349,7 @@ main {
       h3 {
         height: 30px;
         position: absolute;
-        top: 62%;
+        top: 55%;
         bottom: 0;
         left: 0;
         right: 0;

@@ -1,11 +1,8 @@
 import { Col, Row, Container } from "react-bootstrap";
 import "./pages.scss";
 import { NavLink } from "react-router-dom";
-// import { useState } from "react";
 
 function Category() {
-  // const [isActive setIsActive] = useState(false);
-
   return (
     <Container className="mb-5">
       <div className="navig">

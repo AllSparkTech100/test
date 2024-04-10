@@ -336,6 +336,46 @@ $fontFamily: "Great Vibes", cursive;
       }
     }
   }
+  main {
+    .rest_carrier {
+      .rest_info {
+        .two_img {
+          width: 100%;
+          height: 18rem;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .tp {
+          h6 {
+            font-size: 2rem;
+          }
+          .brand_name {
+            position: relative;
+            bottom: 0;
+            top: -1.5rem;
+            left: 0;
+            right: 0;
+            font-size: 2.4rem;
+          }
+        }
+      }
+      #services {
+        .head {
+          h4 {
+            font-size: 5em;
+            top: 60px;
+          }
+
+          h2{
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -362,34 +402,61 @@ $fontFamily: "Great Vibes", cursive;
       }
     }
   }
- main{
-  .rest_carrier {
-    .rest_info {
-      .two_img{
-        width: 100%;
-        height: 15rem;
-        img{
+  main {
+    .rest_carrier {
+      .rest_info {
+        .two_img {
           width: 100%;
-          height: 100%;
-          object-fit: cover;
+          height: 15rem;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .tp {
+          h6 {
+            font-size: 2rem;
+          }
+          .brand_name {
+            position: relative;
+            bottom: 0;
+            top: -1.5rem;
+            left: 0;
+            right: 0;
+            font-size: 1.7rem;
+          }
         }
       }
-      .tp {
-        h6 {
-          font-size: 2rem;
-        }
-        .brand_name {
-          position: relative;
-          bottom: 0;
-          top: -1.5rem;
-          left:0;
-          right:0;
-          font-size: 1.7rem;
+
+      #services {
+        .head {
+          h4 {
+            font-size: 4rem;
+            top: 45px;
+          }
         }
       }
     }
   }
- }
+
+  .contact_intro {
+    .contact_text {
+      text-align: center;
+      h3 {
+        height: 30px;
+        position: absolute;
+        top: 65%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 2.5rem;
+        font-weight: 900;
+        font-family: $font;
+        z-index: -3;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -448,6 +515,24 @@ $fontFamily: "Great Vibes", cursive;
       }
     }
   }
+  // .about_intro {
+  //   .about_text {
+  //     text-align: center;
+  //     h3 {
+  //       height: 30px;
+  //       position: absolute;
+  //       top: 25%;
+  //       bottom: 0;
+  //       left: 0;
+  //       right: 0;
+  //       font-size: 2.5rem;
+  //       font-weight: 900;
+  //       font-family: $font;
+  //       z-index: -3;
+  //     }
+  //   }
+  // }
+  
 }
 
 @media screen and (min-width: 576px) {
@@ -484,3 +569,4 @@ $fontFamily: "Great Vibes", cursive;
     }
   }
 }
+
