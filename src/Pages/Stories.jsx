@@ -10,7 +10,7 @@ function Stories() {
     <>
       <main className="">
         <div className="bg-image story_intro">
-          <div className="contact_text">
+          <div className="about_text">
             <h3 className="text-white text-center">Blog</h3>
             <p className="text-center">
               <a href="/" className="text-white fw-normal">

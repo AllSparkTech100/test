@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
+
 $present: #c8a97e;
 $pure: white;
 $para: #898989;
@@ -358,7 +359,7 @@ $fontFamily: "Great Vibes", cursive;
             top: -1.5rem;
             left: 0;
             right: 0;
-            font-size: 2.4rem;
+            font-size: 2rem;
           }
         }
       }
@@ -370,7 +371,7 @@ $fontFamily: "Great Vibes", cursive;
           }
 
           h2{
-            font-size: 2.5rem;
+            font-size: 2rem;
           }
         }
       }
@@ -424,7 +425,7 @@ $fontFamily: "Great Vibes", cursive;
             top: -1.5rem;
             left: 0;
             right: 0;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
           }
         }
       }
@@ -432,7 +433,7 @@ $fontFamily: "Great Vibes", cursive;
       #services {
         .head {
           h4 {
-            font-size: 4rem;
+            font-size: 3rem;
             top: 45px;
           }
         }
@@ -514,25 +515,7 @@ $fontFamily: "Great Vibes", cursive;
         margin-bottom: 8px;
       }
     }
-  }
-  // .about_intro {
-  //   .about_text {
-  //     text-align: center;
-  //     h3 {
-  //       height: 30px;
-  //       position: absolute;
-  //       top: 25%;
-  //       bottom: 0;
-  //       left: 0;
-  //       right: 0;
-  //       font-size: 2.5rem;
-  //       font-weight: 900;
-  //       font-family: $font;
-  //       z-index: -3;
-  //     }
-  //   }
-  // }
-  
+  }  
 }
 
 @media screen and (min-width: 576px) {
@@ -569,4 +552,3 @@ $fontFamily: "Great Vibes", cursive;
     }
   }
 }
-

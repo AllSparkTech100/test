@@ -59,6 +59,15 @@ function Footer() {
             <Col md={3} sm={12}  className="mb-5">
               <h4 className="mb-4 fw-bold text-white">Instagram</h4>
              
+             <div className="image_carrier">
+              <div className="image_inner">
+               <div className="images">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7O6RKDYCyPq-10N93Lq1fX_R-2OoK1K_1_A3MLhBhog&s" alt="" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7O6RKDYCyPq-10N93Lq1fX_R-2OoK1K_1_A3MLhBhog&s" alt="" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7O6RKDYCyPq-10N93Lq1fX_R-2OoK1K_1_A3MLhBhog&s" alt="" />
+               </div>
+              </div>
+             </div>
             </Col>
 
             <Col md={3} sm={12} className="mb-5">

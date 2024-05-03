@@ -209,7 +209,7 @@ main {
         left: 0;
         right: 0;
         font-size: 3rem;
-        font-weight: 900;
+        font-weight: bold;
         font-family: $font;
         z-index: -3;
       }
@@ -313,7 +313,7 @@ main {
   }
 
   .contact_intro {
-    .contact_text{
+    .about_text{
       h3 {
         height: 30px;
         position: absolute;
@@ -344,9 +344,8 @@ main {
   }
   .story_intro,
   .menu_intro,
-  .about_intro {
-    .contact_text {
-      h3 {
+  .about_intro, .contact_intro{
+          h3 {
         height: 30px;
         position: absolute;
         top: 55%;
@@ -373,7 +372,6 @@ main {
         }
       }
     }
-  }
 }
 
 @media screen and (max-width: 1199.98px) {

@@ -12,27 +12,24 @@ import Dinner from "./Dinner";
 import Wines from "./Wines";
 import Drinks from "./Drinks";
 import { Routes, Route } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 
 function Pages() {
   return (
     <Main>
-      <AnimatePresence mode="wait">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/stories" element={<Stories />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/breakfast" element={<Breakfast />} />
-          <Route path="/lunch" element={<Lunch />} />
-          <Route path="/desserts" element={<Dessert />} />
-          <Route path="/dinner" element={<Dinner />} />
-          <Route path="/wines" element={<Wines />} />
-          <Route path="/drinks" element={<Drinks />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-      </AnimatePresence>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/stories" element={<Stories />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/breakfast" element={<Breakfast />} />
+        <Route path="/lunch" element={<Lunch />} />
+        <Route path="/desserts" element={<Dessert />} />
+        <Route path="/dinner" element={<Dinner />} />
+        <Route path="/wines" element={<Wines />} />
+        <Route path="/drinks" element={<Drinks />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
     </Main>
   );
 }

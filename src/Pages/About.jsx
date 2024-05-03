@@ -3,6 +3,7 @@ import ImgCard from "../Components/ImgCard";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
+import Test from "../Components/Test";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 import barr from "../Photos/chef-2.jpg";
@@ -30,12 +31,7 @@ function About() {
           {/* About */}
           <Row className="rest_info m-1">
             <Col sm={12} md={7} xl={6} className="two_img mt-2">
-              <Image
-                src={barr}
-                alt=""
-                className=""
-                rounded
-              />
+              <Image src={barr} alt="" className="" rounded />
             </Col>
             <Col sm={6} md={5} xl={6} className="tp">
               <h6 className="fw-normal position-relative text-capitalize ">
@@ -165,25 +161,9 @@ function About() {
         </Container>
 
         {/* Testimony */}
-        {/* <Container className="testimony">
-          <Col sm={12} md={12} className="text-center info">
-            <h4>Testimony</h4>
-            <div className="info_inner">
-              <h2 className="fw-bold">Happy Customers</h2>
-            </div>
-          </Col>
-          <Splide
-            options={{
-              perPage: 4,
-              arrows: false,
-              pagination: false,
-              drag: `free`,
-              gap: "2rem",
-            }}
-          >
-            <SplideSlide></SplideSlide>
-          </Splide>
-        </Container> */}
+        <Container>
+          <Test />
+        </Container>
 
         {/* Blog */}
         <Container fluid>
