@@ -63,7 +63,12 @@ function Footer() {
               <div className="image_inner">
                <div className="images">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7O6RKDYCyPq-10N93Lq1fX_R-2OoK1K_1_A3MLhBhog&s" alt="" />
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7O6RKDYCyPq-10N93Lq1fX_R-2OoK1K_1_A3MLhBhog&s" alt="" />
+                <img src="https://lh5.googleusercontent.com/proxy/Y92K9AEx2MvccjftpR5WGQ8ywWcwa_fxjpGKwQ87Edao4HEr1m0GcX8uqyfD0dB5v6WzxfMwXSwJhQ-2VOJPVpFTXjS0j_11uLHOMnVdFMJ7l-8GHQIC" alt="" />
+                <img src="https://www.diplomacyandcommerce.hr/wp-content/uploads/2020/09/PET8163-1200x801.jpg" alt="" />
+               </div>
+               <div className="images_2">
+                <img src="https://www.baccoestate.co.za/wp-content/uploads/2023/06/bacco-family-of-wines.jpg" alt="" />
+                <img src="https://visitowa.com/wp-content/uploads/2021/02/Cest-Le-Vin-Wine-Bar-and-Shop-scaled.jpg" alt="" />
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7O6RKDYCyPq-10N93Lq1fX_R-2OoK1K_1_A3MLhBhog&s" alt="" />
                </div>
               </div>
