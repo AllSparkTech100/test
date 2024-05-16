@@ -2,8 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
-
-$present: #c8a97e;
+$present: #C8A97E;
 $pure: white;
 $para: #898989;
 $june: #787878;
@@ -24,12 +23,6 @@ $fontFamily: "Great Vibes", cursive;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  a {
-    text-decoration: none;
-    &.active {
-      color: $june;
-    }
-  }
 }
 
 .blog_page {
@@ -132,6 +125,7 @@ $fontFamily: "Great Vibes", cursive;
 }
 
 .order_btn {
+  z-index: 999;
   border: none;
   &:hover {
     border: 1px solid $present;
@@ -142,7 +136,9 @@ $fontFamily: "Great Vibes", cursive;
 
 .navig {
   padding: 10px;
+  z-index: 9999 !important;
   .menu_selector {
+    z-index: 9999 !important;
     @include flex;
     text-align: center;
     background-color: $pure;
@@ -370,7 +366,7 @@ $fontFamily: "Great Vibes", cursive;
             top: 60px;
           }
 
-          h2{
+          h2 {
             font-size: 2rem;
           }
         }
@@ -515,7 +511,7 @@ $fontFamily: "Great Vibes", cursive;
         margin-bottom: 8px;
       }
     }
-  }  
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -524,7 +520,6 @@ $fontFamily: "Great Vibes", cursive;
     padding: 0;
   }
   .form_carrier {
-    // width: 100%;
     position: relative;
     top: 40px;
     right: 0;
