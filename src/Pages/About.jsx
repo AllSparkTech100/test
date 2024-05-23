@@ -2,8 +2,8 @@ import "./pages.scss";
 import ImgCard from "../Components/ImgCard";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
+import Test from "../Components/Test"
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
-import Test from "../Components/Test";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
 import barr from "../Photos/chef-2.jpg";
@@ -21,7 +21,7 @@ function About() {
             <h3 className="text-white text-center">About</h3>
             <p className="text-center">
               <a href="/" className="text-white fw-normal">
-                Home
+                Home &gt;
               </a>
             </p>
           </div>
@@ -161,7 +161,7 @@ function About() {
         </Container>
 
         {/* Testimony */}
-        <Container>
+        <Container fluid>
           <Test />
         </Container>
 

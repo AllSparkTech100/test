@@ -7,7 +7,7 @@ function CardComp(props) {
     <div>
       <Card className="border-0 text-center">
         <Card.Body>
-          <Card.Title className="text-danger fs-1">{props.icon}</Card.Title>
+          <Card.Title className="text-danger d-flex justify-content-center fs-1">{props.icon}</Card.Title>
           <Card.Subtitle className="mb-2 text-dark fs-1">
             <h6 className="fs-3">{props.subtitle}</h6>
           </Card.Subtitle>
