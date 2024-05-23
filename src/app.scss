@@ -10,8 +10,7 @@ header {
 
 .menu_carrier {
   width: 100%;
-  height: 150vh;
-  z-index: 99;
+  max-height: 100vh;
   text-transform: uppercase;
   font-weight: medium;
   .menu_inner {
@@ -22,7 +21,7 @@ header {
     bottom: 0;
     width: 100%;
     height: 100vh;
-    font-family: "Poppins";
+    font-family: $font;
     padding: 30px;
     align-items: center;
     justify-content: center;

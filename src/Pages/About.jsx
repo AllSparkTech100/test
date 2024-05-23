@@ -2,7 +2,7 @@ import "./pages.scss";
 import ImgCard from "../Components/ImgCard";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
-import Test from "../Components/Test"
+import Test from "../Components/Test";
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
@@ -29,7 +29,7 @@ function About() {
         {/* Info Sect */}
         <Container fluid className="rest_carrier h-100">
           {/* About */}
-          <Row className="rest_info m-1">
+          <Row className=" rest_info m-1">
             <Col sm={12} md={7} xl={6} className="two_img mt-2">
               <Image src={barr} alt="" className="" rounded />
             </Col>
@@ -52,23 +52,23 @@ function About() {
 
           {/* Personnel Count */}
           <Row className="stat p-md-5 text-md-start text-center">
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={3} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">18</h3>
               <h6>YEARS OF EXPERIENCE</h6>
             </Col>
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={3} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">100</h3>
               <h6>MENUS / DISHES</h6>
             </Col>
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={3} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">50</h3>
               <h6>STAFFS</h6>
             </Col>
-            <Col md={2} sm={12} className="mb-4">
+            <Col md={3} lg={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">15,000</h3>
               <h6>HAPPY CUSTOMERS</h6>
             </Col>
-            <Col md={4} sm={12} className="mb-4">
+            <Col md={6} lg={4} sm={12} className="mb-4 text-md-center ">
               <p className="fs-5 text-center text-md-start ">
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia.
@@ -116,14 +116,14 @@ function About() {
                 <h2 className="fw-bold">Our Master Chef</h2>
               </Col>
               <Row id="imges">
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={chef}
                     name={"John Smooth"}
                     text={"Restaurant Owner"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={
                       "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
@@ -132,7 +132,7 @@ function About() {
                     text={"Head Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={
                       "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
@@ -141,7 +141,7 @@ function About() {
                     text={"Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={6} lg={3} sm={12}>
                   <ImgCard
                     imgUrl={
                       "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"
@@ -161,8 +161,16 @@ function About() {
         </Container>
 
         {/* Testimony */}
-        <Container fluid>
+        <Container className="testimony">
+          <Col sm={12} md={12} className="text-center infoo">
+            <h4>Testimony</h4>
+            <div className="infoo_inner">
+              <h2 className="fw-bold">Happy Customers</h2>
+            </div>
+          </Col>
+          <Container fluid>
           <Test />
+        </Container>
         </Container>
 
         {/* Blog */}

@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
+// import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
 import "./button.scss";
 import CircleImage from "./CircleImage";
@@ -82,7 +82,7 @@ function Test() {
     },
   ];
   return (
-    <div className="testimony ">
+    <div className="testimonial ">
       <Splide
         options={{
           perPage: 3,
@@ -93,31 +93,26 @@ function Test() {
             320: {
               perPage: 1,
             },
+            768: {
+              perPage: 2,
+            },
           },
           gap: "10px",
           arrows: false,
+          pagination: true,
           drag: `free`,
-          pagination: false,
           type: `loop`,
-          autoScroll: {
-            pauseOnHover: true,
-            pauseOnFocus: true,
-            speed: 1,
-            rewind: false,
-          },
         }}
-        extensions={{ AutoScroll }}
       >
         {UserTestimony.map((testimony) => {
           return (
             <SplideSlide key={testimony.id}>
               <Card className="border-0 justify-content-center d-flex align-items-center  text-center">
                 <CircleImage
-                  className="object-fit-cover test_img img-fluid"
+                  className="test_img img-fluid"
                   imageUrl={testimony.image}
                 />
-
-                <div className="aps_carreir">
+                <div className="aps_carrier">
                   <div className="circle_inner">
                     <h3>&ldquo;</h3>
                   </div>

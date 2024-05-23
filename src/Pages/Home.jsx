@@ -2,6 +2,7 @@ import "./pages.scss";
 // import { useState, useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
+import Test from "../Components/Test";
 import CircleImage from "../Components/CircleImage";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
@@ -19,7 +20,7 @@ function Home() {
   // const [isVisible, setIsVisible] = useState(false);
 
   // useEffect(() => {
- 
+
   return (
     <>
       <main className="my-5">
@@ -83,31 +84,36 @@ function Home() {
         {/* Info Sect */}
         <Container fluid className="rest_carrier h-100">
           {/* About */}
-          <Row className="rest_info m-1">
-            <Col sm={12} md={7} xl={6} className="two_img mt-2">
-              <Image
-                src={barr}
-                alt=""
-                className=""
-                rounded
-              />
-            </Col>
-            <Col sm={6} md={5} xl={6} className="tp">
-              <h6 className="fw-normal position-relative text-capitalize ">
-                about
-              </h6>
-              <h3 className="fw-medium brand_name">Feliciano Restaurant</h3>
-              <p className="fw-normal mt-3 fs-4">
-                A small river named Duden flows by their place and supplies it
-                with the necessary regelialia. It is a paradisematic country, in
-                which roasted parts of sentences fly into your mouth.
-              </p>
-              <p className="fw-normal fs-4 mt-4">
-                Mon -Fri &nbsp; <span className="fw-bold">8AM - 11PM</span>
-              </p>
-              <h4 className="fw-bold fs-1">+234-9027-91057</h4>
-            </Col>
-          </Row>
+          <div className="container-fluid mt-5">
+            <Row className=" show_case">
+              <Col>
+                <div className="double_images">
+                  <div className="item_1">
+                    <Image src={chef} alt="" className="chef_cooks" rounded />
+                  </div>
+                  <div className="item_2">
+                    <Image src={barr} alt="" className="chef_cooks" rounded />
+                  </div>
+                </div>
+              </Col>
+              <Col>
+              <div className="shop_time">
+                  <h6 className="fw-normal text-capitalize ">about</h6>
+                  <h3 className="fw-medium brand_name">Feliciano Restaurant</h3>
+                  <p className="fw-normal mt-3 fs-4">
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                  <p className="fw-normal fs-4 mt-4">
+                    Mon -Fri &nbsp; <span className="fw-bold">8AM - 11PM</span>
+                  </p>
+                  <h4 className="fw-bold fs-1">+234-9027-91057</h4>
+                </div>
+              </Col>
+            </Row>
+          </div>
 
           {/* Personnel Count */}
           <Row className="stat p-md-5 text-md-start text-center">
@@ -230,25 +236,17 @@ function Home() {
         </Container>
 
         {/* Testimony */}
-        {/* <Container className="testimony">
-          <Col sm={12} md={12} className="text-center info">
+        <Container className="testimony">
+          <Col sm={12} md={12} className="text-center infoo">
             <h4>Testimony</h4>
-            <div className="info_inner">
+            <div className="infoo_inner">
               <h2 className="fw-bold">Happy Customers</h2>
             </div>
           </Col>
-          <Splide
-            options={{
-              perPage: 4,
-              arrows: false,
-              pagination: false,
-              drag: `free`,
-              gap: "2rem",
-            }}
-          >
-            <SplideSlide></SplideSlide>
-          </Splide>
-        </Container> */}
+          <Container fluid>
+            <Test />
+          </Container>
+        </Container>
 
         {/* Blog */}
         <Container fluid>

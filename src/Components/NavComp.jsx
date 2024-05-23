@@ -30,7 +30,7 @@ function NavComp() {
   const headerStyle = {
     position: "fixed",
     top: "0",
-    zIndex: "900",
+    zIndex: "9999",
     width: "100vw",
     transition: "background-color 0.3s ease",
     display: "flex",

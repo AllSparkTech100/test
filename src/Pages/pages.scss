@@ -20,42 +20,7 @@ main {
       text-align: center;
     }
   }
-  .rest_carrier {
-    .rest_info {
-      .two_img {
-        width: 40rem;
-        height: 33rem;
-        img {
-          height: 100%;
-          width: 100%;
-        }
-      }
-
-      .tp {
-        position: relative;
-        h6 {
-          font-family: $fontFamily;
-          color: $present;
-          top: 90px;
-          left: 3px;
-          z-index: -99;
-          font-size: 100px;
-          letter-spacing: 1rem;
-        }
-        h3 {
-          font-size: 70px;
-          font-family: $font;
-        }
-        p {
-          font-family: $font;
-        }
-        h4 {
-          color: $present;
-          font-family: $font;
-        }
-      }
-    }
-  }
+}
 
   .stat {
     font-family: $font;
@@ -150,14 +115,14 @@ main {
   }
 
   .testimony {
-    margin-top: 5rem;
-    .info {
+    margin-top: 7rem;
+    .infoo {
       h4 {
         font-family: $fontFamily;
         font-size: 8rem;
         color: $present;
       }
-      .info_inner {
+      .infoo_inner {
         position: relative;
         bottom: 5.8rem;
         h2 {
@@ -296,24 +261,10 @@ main {
       }
     }
   }
-}
 
 @media screen and (max-width: 575px) {
-  .rest_info {
-    .tp {
-      h6 {
-        font-size: 2rem;
-      }
-      h3 {
-        position: relative;
-        top: -15px;
-        font-size: 2rem;
-      }
-    }
-  }
-
   .contact_intro {
-    .about_text{
+    .about_text {
       h3 {
         height: 30px;
         position: absolute;
@@ -344,73 +295,41 @@ main {
   }
   .story_intro,
   .menu_intro,
-  .about_intro, .contact_intro{
-          h3 {
-        height: 30px;
-        position: absolute;
-        top: 55%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        font-size: 3rem;
-        font-weight: 900;
-        font-family: $font;
-        z-index: -3;
-      }
-
-      p {
-        position: relative;
-        top: -40px;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        a {
-          text-decoration: underline;
-          text-decoration-style: dotted;
-          text-decoration-thickness: 2px;
-          text-underline-offset: 4px;
-        }
-      }
+  .about_intro,
+  .contact_intro {
+    h3 {
+      height: 30px;
+      position: absolute;
+      top: 55%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-size: 3rem;
+      font-weight: 900;
+      font-family: $font;
+      z-index: -3;
     }
-}
 
-@media screen and (max-width: 1199.98px) {
-  .rest_carrier {
-    .rest_info {
-      .two_img {
-        height: 20rem;
-        // width: 50rem;
-        img {
-          width: 100%;
-        }
-      }
-      .tp {
-        top: -2rem;
-        :nth-of-type(1) {
-          top: 60px;
-          font-size: 5rem;
-          margin-bottom: 30px;
-        }
-        :nth-child(2) {
-          font-size: 2.5rem;
-          font-weight: bold;
-          text-wrap: nowrap;
-          position: relative;
-          top: -0.8rem;
-        }
-        :nth-child(3) {
-          text-align: justify;
-        }
-        :nth-child(4) {
-          font-size: 1.7rem;
-          span {
-            font-size: 2rem;
-          }
-        }
+    p {
+      position: relative;
+      top: -40px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      a {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
       }
     }
   }
 }
+
+@media screen and (max-width: 1199.98px) {
+
+}
+
 @media screen and (max-width: 480px) {
   main {
     .stat {
@@ -468,7 +387,27 @@ main {
     .about_intro {
       margin-bottom: 5rem;
     }
-    
+    .testimony {
+      margin-top: 7rem;
+      .infoo {
+        h4 {
+          font-family: $fontFamily;
+          font-size: 4rem;
+          color: $present;
+        }
+        .infoo_inner {
+          position: relative;
+          bottom: 1rem;
+          right: 0;
+          top: -3.5rem;
+          left: 0;
+          h2 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
     .about_intro,
     .contact_intro,
     .menu_intro,
@@ -561,14 +500,4 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-  .rest_carrier {
-    position: relative;
-    top: -8rem;
-    .rest_info {
-      gap: 10px;
-      .tp {
-        top: -5.4rem;
-      }
-    }
-  }
 }

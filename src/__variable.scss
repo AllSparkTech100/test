@@ -2,7 +2,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
-$present: #C8A97E;
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap");
+
+$present: #c8a97e;
 $pure: white;
 $para: #898989;
 $june: #787878;
@@ -10,6 +12,7 @@ $socials: #1f1f1f;
 $foot: #141313;
 $font: "Poppins", sans-serif;
 $fontFamily: "Great Vibes", cursive;
+$apsFont: "Montagu Slab";
 
 @mixin flex {
   display: flex;
@@ -117,6 +120,28 @@ $fontFamily: "Great Vibes", cursive;
   }
 }
 
+.show_case {
+  gap: 10px;
+  .double_images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    img {
+      width: 300px;
+      object-fit: cover;
+    }
+    .item_1 {
+      grid-column: auto;
+    }
+    .item_2 {
+      grid-column: auto;
+      margin-top: 30px;
+    }
+  }
+  .shop_time {
+    grid-column: auto;
+  }
+}
+
 .menuu {
   font-family: $font;
   img {
@@ -125,7 +150,7 @@ $fontFamily: "Great Vibes", cursive;
 }
 
 .order_btn {
-  z-index: 999;
+  z-index: 999 !important;
   border: none;
   &:hover {
     border: 1px solid $present;
@@ -136,9 +161,7 @@ $fontFamily: "Great Vibes", cursive;
 
 .navig {
   padding: 10px;
-  z-index: 9999 !important;
   .menu_selector {
-    z-index: 9999 !important;
     @include flex;
     text-align: center;
     background-color: $pure;
@@ -155,7 +178,6 @@ $fontFamily: "Great Vibes", cursive;
     }
   }
 }
-
 @media screen and (min-width: 768px) {
   .captions {
     position: absolute;
@@ -181,7 +203,6 @@ $fontFamily: "Great Vibes", cursive;
   }
   .form_bg {
     height: 165vh;
-
     padding: 0;
   }
   .form_carrier {
@@ -273,104 +294,64 @@ $fontFamily: "Great Vibes", cursive;
     height: 175vh;
     padding: 0;
   }
-  .form_carrier {
-    width: 100vw;
+}
+.form_carrier {
+  width: 100%;
+  position: relative;
+  top: 30px;
+  right: 0;
+  left: 0;
+  .form-intro {
+    h4 {
+      font-size: 3.5rem;
+      text-wrap: nowrap;
+      top: 2rem;
+    }
+    .intro_inner {
+      top: 0;
+      h5 {
+        font-size: 1.5rem;
+        text-wrap: nowrap;
+        top: -0.4rem;
+      }
+    }
+  }
+  .main_form {
+    margin: 3rem 0 0 0;
+    label {
+      margin-bottom: 10px;
+    }
+    input {
+      padding: 0.6rem;
+      margin-bottom: 10px;
+    }
+    .form_btn {
+      .btn-sub {
+        padding: 0.7rem 2rem;
+      }
+    }
+  }
+}
+.captions {
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  :nth-child(1) {
+    color: $present;
+    font-family: $fontFamily;
+    font-size: 5rem;
+  }
+  .trust {
     position: relative;
-    top: 30px;
-    right: 0;
-    left: 0;
-    .form-intro {
-      h4 {
-        font-size: 3.5rem;
-        text-wrap: nowrap;
-        top: 2rem;
-      }
-      .intro_inner {
-        top: 0;
-        h5 {
-          font-size: 1.5rem;
-          text-wrap: nowrap;
-          top: -0.4rem;
-        }
-      }
-    }
-    .main_form {
-      margin: 3rem 0 0 0;
-      label {
-        margin-bottom: 10px;
-      }
-      input {
-        padding: 0.6rem;
-        margin-bottom: 10px;
-      }
-      .form_btn {
-        .btn-sub {
-          padding: 0.7rem 2rem;
-        }
-      }
-    }
-  }
-  .captions {
-    position: absolute;
-    top: 40%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    :nth-child(1) {
-      color: $present;
-      font-family: $fontFamily;
-      font-size: 3rem;
-    }
-    .trust {
-      position: relative;
-      top: -8%;
-      p {
-        font-family: $font;
-        font-size: 32px;
-        text-wrap: nowrap;
-        font-weight: bold;
-        color: $pure;
-      }
-    }
-  }
-  main {
-    .rest_carrier {
-      .rest_info {
-        .two_img {
-          width: 100%;
-          height: 18rem;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-        .tp {
-          h6 {
-            font-size: 2rem;
-          }
-          .brand_name {
-            position: relative;
-            bottom: 0;
-            top: -1.5rem;
-            left: 0;
-            right: 0;
-            font-size: 2rem;
-          }
-        }
-      }
-      #services {
-        .head {
-          h4 {
-            font-size: 5em;
-            top: 60px;
-          }
-
-          h2 {
-            font-size: 2rem;
-          }
-        }
-      }
+    top: -8%;
+    p {
+      font-family: $font;
+      font-size: 4rem;
+      text-wrap: nowrap;
+      font-weight: bold;
+      color: $pure;
     }
   }
 }
@@ -400,38 +381,11 @@ $fontFamily: "Great Vibes", cursive;
     }
   }
   main {
-    .rest_carrier {
-      .rest_info {
-        .two_img {
-          width: 100%;
-          height: 15rem;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
-        }
-        .tp {
-          h6 {
-            font-size: 2rem;
-          }
-          .brand_name {
-            position: relative;
-            bottom: 0;
-            top: -1.5rem;
-            left: 0;
-            right: 0;
-            font-size: 1.5rem;
-          }
-        }
-      }
-
-      #services {
-        .head {
-          h4 {
-            font-size: 3rem;
-            top: 45px;
-          }
+    #services {
+      .head {
+        h4 {
+          font-size: 3rem;
+          top: 45px;
         }
       }
     }
@@ -516,7 +470,7 @@ $fontFamily: "Great Vibes", cursive;
 
 @media screen and (min-width: 576px) {
   .form_bg {
-    height: 160vh;
+    height: 150vh;
     padding: 0;
   }
   .form_carrier {
