@@ -121,12 +121,14 @@ $apsFont: "Montagu Slab";
 }
 
 .show_case {
-  gap: 10px;
   .double_images {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
     img {
       width: 300px;
+      height: 500px;
+      min-height: 50dvh;
       object-fit: cover;
     }
     .item_1 {
@@ -138,7 +140,31 @@ $apsFont: "Montagu Slab";
     }
   }
   .shop_time {
+    margin-left: -1rem;
     grid-column: auto;
+    margin-top: 40px;
+    p {
+      margin-top: -90px;
+      text-align: justify;
+    }
+    .thime {
+      color: $present;
+    }
+    .brand_header {
+      text-transform: capitalize;
+      font-size: 6rem;
+      font-family: $fontFamily;
+      color: $present;
+    }
+    .brand_name {
+      font-family: $font;
+      font-size: 5rem;
+      position: relative;
+      top: -5rem;
+      left: 0;
+      right: 0;
+      bottom: 5rem;
+    }
   }
 }
 
@@ -294,64 +320,95 @@ $apsFont: "Montagu Slab";
     height: 175vh;
     padding: 0;
   }
-}
-.form_carrier {
-  width: 100%;
-  position: relative;
-  top: 30px;
-  right: 0;
-  left: 0;
-  .form-intro {
-    h4 {
-      font-size: 3.5rem;
-      text-wrap: nowrap;
-      top: 2rem;
+  .show_case {
+    .double_images {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 9px;
+      margin-left: -10px;
+      img {
+        width: 180px;
+        height: 300px;
+      }
+      .item_1 {
+        grid-column: auto;
+      }
+      .item_2 {
+        grid-column: auto;
+      }
     }
-    .intro_inner {
-      top: 0;
-      h5 {
-        font-size: 1.5rem;
-        text-wrap: nowrap;
-        top: -0.4rem;
+    .shop_time {
+      margin: 40px 0 0 0;
+      grid-column: auto;
+      p{
+        margin-top: 10px;
+      }
+      .brand_name {
+        font-size: 2rem;
+        top: -4rem;
       }
     }
   }
-  .main_form {
-    margin: 3rem 0 0 0;
-    label {
-      margin-bottom: 10px;
-    }
-    input {
-      padding: 0.6rem;
-      margin-bottom: 10px;
-    }
-    .form_btn {
-      .btn-sub {
-        padding: 0.7rem 2rem;
-      }
-    }
-  }
-}
-.captions {
-  position: absolute;
-  top: 40%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  :nth-child(1) {
-    color: $present;
-    font-family: $fontFamily;
-    font-size: 5rem;
-  }
-  .trust {
+
+  .form_carrier {
+    width: 100%;
     position: relative;
-    top: -8%;
-    p {
-      font-family: $font;
-      font-size: 4rem;
-      text-wrap: nowrap;
-      font-weight: bold;
-      color: $pure;
+    top: 30px;
+    right: 0;
+    left: 0;
+    .form-intro {
+      h4 {
+        font-size: 3.5rem;
+        text-wrap: nowrap;
+        top: 2rem;
+      }
+      .intro_inner {
+        top: 0;
+        h5 {
+          font-size: 1.5rem;
+          text-wrap: nowrap;
+          top: -0.4rem;
+        }
+      }
+    }
+    .main_form {
+      margin: 3rem 0 0 0;
+      label {
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 0.6rem;
+        margin-bottom: 10px;
+      }
+      .form_btn {
+        .btn-sub {
+          padding: 0.7rem 2rem;
+        }
+      }
+    }
+  }
+  .captions {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+      font-size: 5rem;
+    }
+    .trust {
+      position: relative;
+      top: -8%;
+      p {
+        font-family: $font;
+        font-size: 4rem;
+        text-wrap: nowrap;
+        font-weight: bold;
+        color: $pure;
+      }
     }
   }
 }
@@ -380,6 +437,7 @@ $apsFont: "Montagu Slab";
       }
     }
   }
+
   main {
     #services {
       .head {

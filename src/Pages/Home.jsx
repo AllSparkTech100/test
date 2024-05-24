@@ -1,4 +1,5 @@
 import "./pages.scss";
+// import {motion as m } from "framer-motion";
 // import { useState, useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
@@ -17,10 +18,6 @@ import wine from "../Photos/wines.jpg";
 import chef from "../Photos/chef-1.jpg";
 
 function Home() {
-  // const [isVisible, setIsVisible] = useState(false);
-
-  // useEffect(() => {
-
   return (
     <>
       <main className="my-5">
@@ -85,22 +82,25 @@ function Home() {
         <Container fluid className="rest_carrier h-100">
           {/* About */}
           <div className="container-fluid mt-5">
+            <div className="container-sm-fluid">
             <Row className=" show_case">
               <Col>
                 <div className="double_images">
                   <div className="item_1">
-                    <Image src={chef} alt="" className="chef_cooks" rounded />
+                    <Image src={chef} alt=""/>
                   </div>
                   <div className="item_2">
-                    <Image src={barr} alt="" className="chef_cooks" rounded />
+                    <Image src={barr} alt=""/>
                   </div>
                 </div>
               </Col>
               <Col>
-              <div className="shop_time">
-                  <h6 className="fw-normal text-capitalize ">about</h6>
-                  <h3 className="fw-medium brand_name">Feliciano Restaurant</h3>
-                  <p className="fw-normal mt-3 fs-4">
+                <div className="shop_time">
+                  <h6 className="fw-normal brand_header">
+                    about
+                  </h6>
+                  <h3 className="fw-medium brand_name ">Feliciano Restaurant</h3>
+                  <p className="fw-normal fs-4 ">
                     A small river named Duden flows by their place and supplies
                     it with the necessary regelialia. It is a paradisematic
                     country, in which roasted parts of sentences fly into your
@@ -109,10 +109,11 @@ function Home() {
                   <p className="fw-normal fs-4 mt-4">
                     Mon -Fri &nbsp; <span className="fw-bold">8AM - 11PM</span>
                   </p>
-                  <h4 className="fw-bold fs-1">+234-9027-91057</h4>
+                  <h4 className="fw-bold thime fs-1">+234-9027-91057</h4>
                 </div>
               </Col>
             </Row>
+            </div>
           </div>
 
           {/* Personnel Count */}

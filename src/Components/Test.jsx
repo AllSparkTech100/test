@@ -2,7 +2,7 @@ import { Card } from "react-bootstrap";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 // import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import "@splidejs/splide/dist/css/splide.min.css";
+// import "@splidejs/splide/dist/css/splide.min.css";
 import "./button.scss";
 import CircleImage from "./CircleImage";
 
@@ -98,9 +98,10 @@ function Test() {
             },
           },
           gap: "10px",
-          arrows: false,
+          arrows: true,
           pagination: true,
           drag: `free`,
+          focus: "center",
           type: `loop`,
         }}
       >
