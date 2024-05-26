@@ -92,16 +92,18 @@ img {
 }
 
 .testimonial {
-   .customer_desc {
+  .customer_desc {
     color: $para;
+    text-align: center;
   }
   .test_img {
-    height: 5rem;
-    width: 5rem;
+    height: 6rem;
+    width: 6rem;
     overflow: hidden;
     img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .aps_carrier {
@@ -144,26 +146,23 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .captions {
-    :nth-child(1) {
-      color: $present;
-      font-family: $fontFamily;
-    }
-    .trust {
-      font-family: $font;
-      font-weight: bold;
-      color: $pure;
-      p {
-        color: $pure;
-      }
-    }
-  }
+  // .captions {
+  //   :nth-child(1) {
+  //     color: $present;
+  //     font-family: $fontFamily;
+  //   }
+  //   .trust {
+  //     font-family: $font;
+  //     font-weight: bold;
+  //     color: $pure;
+  //     p {
+  //       color: $pure;
+  //       font-size: 2rem;
+  //     }
+  //   }
+  // }
 
   .btn {
     padding: 0.5rem 1rem;
   }
-}
-
-.test_carrier {
-  @include flex;
 }
