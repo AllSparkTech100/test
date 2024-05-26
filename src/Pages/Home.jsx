@@ -27,7 +27,7 @@ function Home() {
         {/* First Line */}
         <Container fluid className="grill d-block">
           <Row className="m-md-0 mt-3">
-            <Col sm={3} md={3} className="m-md-0 mb-4 good">
+            <Col sm={3} md={3} className="mb-md-4 mb-4 good">
               <CircleImage
                 imageUrl={
                   "https://www.eatingwell.com/thmb/ngkEIo8XHdZxLcmY-Se-yk3uGjc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(959x678:961x680)/is-grilled-meat-bad-for-you-ba946756dae3432592d0b463941b1917.jpg"
@@ -83,36 +83,37 @@ function Home() {
           {/* About */}
           <div className="container-fluid mt-5">
             <div className="container-sm-fluid">
-            <Row className=" show_case">
-              <Col>
-                <div className="double_images">
-                  <div className="item_1">
-                    <Image src={chef} alt=""/>
+              <Row className=" show_case">
+                <Col>
+                  <div className="double_images">
+                    <div className="item_1">
+                      <Image src={chef} alt="" />
+                    </div>
+                    <div className="item_2">
+                      <Image src={barr} alt="" />
+                    </div>
                   </div>
-                  <div className="item_2">
-                    <Image src={barr} alt=""/>
+                </Col>
+                <Col>
+                  <div className="shop_time">
+                    <h6 className="fw-normal brand_header">about</h6>
+                    <h3 className="fw-medium brand_name ">
+                      Feliciano Restaurant
+                    </h3>
+                    <p className="fw-normal fs-4 ">
+                      A small river named Duden flows by their place and
+                      supplies it with the necessary regelialia. It is a
+                      paradisematic country, in which roasted parts of sentences
+                      fly into your mouth.
+                    </p>
+                    <p className="fw-normal fs-4 mt-4">
+                      Mon -Fri &nbsp;{" "}
+                      <span className="fw-bold">8AM - 11PM</span>
+                    </p>
+                    <h4 className="fw-bold thime fs-1">+234-9027-91057</h4>
                   </div>
-                </div>
-              </Col>
-              <Col>
-                <div className="shop_time">
-                  <h6 className="fw-normal brand_header">
-                    about
-                  </h6>
-                  <h3 className="fw-medium brand_name ">Feliciano Restaurant</h3>
-                  <p className="fw-normal fs-4 ">
-                    A small river named Duden flows by their place and supplies
-                    it with the necessary regelialia. It is a paradisematic
-                    country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </p>
-                  <p className="fw-normal fs-4 mt-4">
-                    Mon -Fri &nbsp; <span className="fw-bold">8AM - 11PM</span>
-                  </p>
-                  <h4 className="fw-bold thime fs-1">+234-9027-91057</h4>
-                </div>
-              </Col>
-            </Row>
+                </Col>
+              </Row>
             </div>
           </div>
 
@@ -173,9 +174,8 @@ function Home() {
           </section>
 
           {/* Special Menu */}
-
           <section id="menu">
-            <Col sm={12} md={12} className="text-center head">
+            <Col sm={12} md={12} className="text-center menu_head">
               <h4>Specialties</h4>
               <h2 className="fw-bold">Our Menu</h2>
             </Col>
@@ -185,21 +185,21 @@ function Home() {
 
         {/* Chefs */}
         <Container fluid>
-          <Container>
+          <Container fluid="md">
             <section className="chef">
-              <Col sm={12} md={12} className="text-center head">
+              <Col sm={12} md={12} className="text-center chef_head">
                 <h4>Chef</h4>
                 <h2 className="fw-bold">Our Master Chef</h2>
               </Col>
               <Row id="imges">
-                <Col md={3} sm={12}>
+                <Col md={3} sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={chef}
                     name={"John Smooth"}
                     text={"Restaurant Owner"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={3} sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={
                       "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
@@ -208,7 +208,7 @@ function Home() {
                     text={"Head Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={3} sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={
                       "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
@@ -217,7 +217,7 @@ function Home() {
                     text={"Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12}>
+                <Col md={3} sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={
                       "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"
@@ -237,11 +237,11 @@ function Home() {
         </Container>
 
         {/* Testimony */}
-        <Container className="testimony">
+        <Container fluid className="testimony">
           <Col sm={12} md={12} className="text-center infoo">
             <h4>Testimony</h4>
-            <div className="infoo_inner">
-              <h2 className="fw-bold">Happy Customers</h2>
+            <div className="infoo_inner text-center">
+              <h2 className="fw-bold text-center">Happy Customers</h2>
             </div>
           </Col>
           <Container fluid>

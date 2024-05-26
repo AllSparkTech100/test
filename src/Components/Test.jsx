@@ -1,8 +1,7 @@
 import { Card } from "react-bootstrap";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-// import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-// import "@splidejs/splide/dist/css/splide.min.css";
+import man from "../Photos/man.png";
 import "./button.scss";
 import CircleImage from "./CircleImage";
 
@@ -10,75 +9,66 @@ function Test() {
   const UserTestimony = [
     {
       id: 1,
-      image:
-        "https://www.pennmedicine.org/-/media/images/miscellaneous/random%20generic%20photos/smiling_man_with_beard.ashx?mw=620&mh=408",
+      image: man ,
       name: "Ian Boner",
       position: "Customer",
       description:
-        " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+        " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
     {
       id: 2,
-      image:
-        "https://cdn.tatlerasia.com/tatlerasia/i/2022/04/12001134-mandarin-oriental-hong-kong-general-manager-amanda-hyndman-lr-3_cover_1500x1179.jpg",
+      image: man,
       name: "Rose Henderson",
       position: "Customer",
       description:
-        " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+        " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
     {
       id: 3,
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKjaVWn7PSmh69vXpys6T81EjXeUn4dYH_bn1PqbWp7A&s",
+      image: man,
       name: "Jackson McClean",
       position: "Customer",
       description:
-        " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+        " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
     {
       id: 4,
-      image:
-        "https://www.lovepanky.com/wp-content/uploads/2020/11/what-makes-a-man-a-man-1.jpg",
+      image: man,
       name: "Mark Stevenson",
       position: "Customer",
       description:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
     {
       id: 5,
-      image:
-        "https://img.freepik.com/premium-photo/portrait-handsome-african-american-man-suit_1114948-16336.jpg",
+      image: man,
       name: "Art Leonard",
       position: "Customer",
       description:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
     {
       id: 6,
-      image:
-        "https://img.freepik.com/photos-premium/homme-affaires-senior-ia-generative_431161-15326.jpg",
-      name: "Morgan Williams",
+      image: man,
       position: "Customer",
       description:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
     {
       id: 7,
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW1lcmljYW4lMjBtYW58ZW58MHx8MHx8fDA%3D",
+      image: man,
       name: "Henry Ferguson",
       position: "Customer",
       description:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
     {
       id: 8,
-      image:
-        "https://media.istockphoto.com/id/1290599844/photo/advertising-concept-confident-and-smiling-young-african-american-woman-crossed-hands-on-chest.jpg?s=612x612&w=0&k=20&c=CpVm72r8hHobjHSvkR-AE0Nws5YuQmp-jL_tgQhyTvM=",
+      image: man,
       name: "Peter Rose",
       position: "Customer",
       description:
-        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+        "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
   ];
   return (

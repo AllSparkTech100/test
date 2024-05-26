@@ -22,245 +22,233 @@ main {
   }
 }
 
-  .stat {
-    font-family: $font;
-    margin-top: 7rem;
+.stat {
+  font-family: $font;
+  margin-top: 7rem;
 
-    h3 {
-      color: $june;
-      font-size: 44px;
+  h3 {
+    color: $june;
+    font-size: 44px;
+    color: $present;
+  }
+  p {
+    line-height: auto;
+    color: $june;
+  }
+  h6 {
+    color: $june;
+  }
+}
+
+#services {
+  margin-top: 8rem;
+  .head {
+    h4 {
+      font-family: $fontFamily;
+      font-size: 5rem;
+      color: $present;
+      z-index: -99;
+      position: relative;
+      top: 65px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    h2 {
+      font-size: 3rem;
+      font-family: $font;
+    }
+  }
+}
+
+#menu {
+  .menu_head {
+    h4 {
+      font-family: $fontFamily;
+      font-size: 5rem;
+      color: $present;
+      z-index: -99;
+      position: relative;
+      top: 80px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    h2 {
+      font-size: 3rem;
+      font-family: $font;
+    }
+  }
+}
+
+.chef {
+  margin-top: 1rem;
+  font-family: $font;
+  .chef_head {
+    h4 {
+      font-family: $fontFamily;
+      font-size: 5rem;
+      color: $present;
+      z-index: -99;
+      position: relative;
+      top: 80px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    h2 {
+      font-size: 3rem;
+      font-family: $font;
+    }
+  }
+
+  #imges {
+    margin-top: 4rem;
+  }
+}
+
+.form_bg {
+  background: url("https://sisijemimah.com/wp-content/uploads/2017/02/Nigerian-suya-recipe.jpg");
+  margin-top: 10rem;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.testimony {
+  margin-top: 7rem;
+  .infoo {
+    h4 {
+      font-family: $fontFamily;
+      font-size: 8rem;
       color: $present;
     }
-    p {
-      line-height: auto;
-      color: $june;
-    }
-    h6 {
-      color: $june;
-    }
-  }
-
-  #services {
-    margin-top: 8rem;
-    .head {
-      h4 {
-        font-family: $fontFamily;
-        font-size: 120px;
-        color: $present;
-        z-index: -99;
-        position: relative;
-        top: 80px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
+    .infoo_inner {
+      position: relative;
+      bottom: 5.8rem;
       h2 {
-        font-size: 60px;
-        font-family: $font;
+        font-size: 4rem;
       }
     }
   }
+}
 
-  #menu {
-    .head {
-      h4 {
-        font-family: $fontFamily;
-        font-size: 120px;
-        color: $present;
-        z-index: -99;
-        position: relative;
-        top: 80px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
+.blog {
+  margin-top: 5rem;
+  .info {
+    h4 {
+      font-family: $fontFamily;
+      font-size: 8rem;
+      color: $present;
+    }
+    .info_inner {
+      position: relative;
+      bottom: 5.8rem;
       h2 {
-        font-size: 60px;
-        font-family: $font;
+        font-size: 4rem;
       }
     }
   }
+}
 
-  .chef {
-    margin-top: 1rem;
-    font-family: $font;
-    .head {
-      h4 {
-        font-family: $fontFamily;
-        font-size: 120px;
-        color: $present;
-        z-index: -99;
-        position: relative;
-        top: 80px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-      h2 {
-        font-size: 60px;
-        font-family: $font;
-      }
-    }
-
-    #imges {
-      margin-top: 4rem;
-    }
-  }
-
-  .form_bg {
-    background: url("https://sisijemimah.com/wp-content/uploads/2017/02/Nigerian-suya-recipe.jpg");
-    margin-top: 10rem;
-    background-attachment: fixed;
-    background-position: center center;
-  }
-
-  .testimony {
-    margin-top: 7rem;
-    .infoo {
-      h4 {
-        font-family: $fontFamily;
-        font-size: 8rem;
-        color: $present;
-      }
-      .infoo_inner {
-        position: relative;
-        bottom: 5.8rem;
-        h2 {
-          font-size: 4rem;
-        }
-      }
-    }
-  }
-
-  .blog {
-    margin-top: 5rem;
-    .info {
-      h4 {
-        font-family: $fontFamily;
-        font-size: 8rem;
-        color: $present;
-      }
-      .info_inner {
-        position: relative;
-        bottom: 5.8rem;
-        h2 {
-          font-size: 4rem;
-        }
-      }
-    }
-  }
-
-  .about_intro,
-  .menu_intro,
-  .contact_intro,
-  .story_intro {
-    height: 85vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    margin-bottom: 15rem;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    isolation: isolate;
-    font-family: $font;
-    .about_text {
-      text-align: center;
-      h3 {
-        height: 30px;
-        position: absolute;
-        top: 65%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        font-size: 3rem;
-        font-weight: bold;
-        font-family: $font;
-        z-index: -3;
-      }
-
-      p {
-        position: relative;
-        top: -40px;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        a {
-          text-decoration: underline;
-          text-decoration-style: dotted;
-          text-decoration-thickness: 2px;
-          text-underline-offset: 4px;
-        }
-      }
-    }
-  }
-  .about_intro {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.552),
-        rgba(0, 0, 0, 0.665)
-      ),
-      url("../Photos/wineee.jpg");
-    background-position: top center;
-  }
-  .contact_intro {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.515),
-        rgba(0, 0, 0, 0.413)
-      ),
-      url("../Photos/bar-1.jpg");
-  }
-  .menu_intro {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.552),
-        rgba(0, 0, 0, 0.665)
-      ),
-      url("../Photos/food-2.jpeg");
-    background-color: #cccccc;
-  }
-  .story_intro {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.552),
-        rgba(0, 0, 0, 0.665)
-      ),
-      url("../Photos/wines.jpg");
-    background-position: center center;
-  }
-  .inner_info {
-    h2 {
+.about_intro,
+.menu_intro,
+.contact_intro,
+.story_intro {
+  height: 85vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  margin-bottom: 15rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  isolation: isolate;
+  font-family: $font;
+  .about_text {
+    text-align: center;
+    h3 {
+      height: 30px;
+      position: absolute;
+      top: 65%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-size: 3rem;
       font-weight: bold;
       font-family: $font;
+      z-index: -3;
     }
-  }
-  .first-contact-section {
-    margin-top: -4rem;
-    font-family: $font;
 
-    .left_map {
-      height: 80vh;
-      width: 100%;
-      img {
-        height: 100%;
-        width: 100%;
+    p {
+      position: relative;
+      top: -40px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      a {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 4px;
       }
     }
   }
-  .last_carrier {
-    margin-top: 5rem;
-    .last-contact-section {
-      font-family: $font;
-      margin-top: 3rem;
-      p {
-        color: black;
-        display: flex;
-        align-items: center;
-        span {
-          a {
-            color: $present;
-          }
+}
+.about_intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.552), rgba(0, 0, 0, 0.665)),
+    url("../Photos/wineee.jpg");
+  background-position: top center;
+}
+.contact_intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.515), rgba(0, 0, 0, 0.413)),
+    url("../Photos/bar-1.jpg");
+}
+.menu_intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.552), rgba(0, 0, 0, 0.665)),
+    url("../Photos/food-2.jpeg");
+  background-color: #cccccc;
+}
+.story_intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.552), rgba(0, 0, 0, 0.665)),
+    url("../Photos/wines.jpg");
+  background-position: center center;
+}
+.inner_info {
+  h2 {
+    font-weight: bold;
+    font-family: $font;
+  }
+}
+.first-contact-section {
+  margin-top: -4rem;
+  font-family: $font;
+
+  .left_map {
+    height: 80vh;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.last_carrier {
+  margin-top: 5rem;
+  .last-contact-section {
+    font-family: $font;
+    margin-top: 3rem;
+    p {
+      color: black;
+      display: flex;
+      align-items: center;
+      span {
+        a {
+          color: $present;
         }
       }
     }
   }
+}
 
 @media screen and (max-width: 575px) {
   .contact_intro {
@@ -327,7 +315,6 @@ main {
 }
 
 @media screen and (max-width: 1199.98px) {
-
 }
 
 @media screen and (max-width: 480px) {
@@ -339,46 +326,46 @@ main {
       margin-top: 3rem;
       .head {
         h4 {
-          top: 34px;
-          font-size: 3rem;
+          top: 3.2rem;
+          font-size: 3.5rem;
         }
         h2 {
-          font-size: 1.4rem;
+          font-size: 2rem;
         }
       }
     }
     #menu {
-      .head {
+      .menu_head {
         h4 {
-          top: 35px;
-          font-size: 3rem;
+          top: 45px;
+          font-size: 3.5rem;
         }
         h2 {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
       }
     }
 
     .chef {
-      .head {
+      .chef_head {
         h4 {
-          top: 50px;
-          font-size: 66px;
+          top: 45px;
+          font-size: 3.5rem;
         }
         h2 {
-          font-size: 30px;
+          font-size: 2rem;
         }
       }
     }
     .blog {
       .info {
         h4 {
-          font-size: 5rem;
+          font-size: 3.5rem;
         }
         .info_inner {
-          bottom: 4.4rem;
+          bottom: 3.5rem;
           h2 {
-            font-size: 3rem;
+            font-size: 2rem;
           }
         }
       }
