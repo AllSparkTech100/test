@@ -146,23 +146,42 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  // .captions {
-  //   :nth-child(1) {
-  //     color: $present;
-  //     font-family: $fontFamily;
-  //   }
-  //   .trust {
-  //     font-family: $font;
-  //     font-weight: bold;
-  //     color: $pure;
-  //     p {
-  //       color: $pure;
-  //       font-size: 2rem;
-  //     }
-  //   }
-  // }
+  .captions {
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+    }
+    .trust {
+      font-family: $font;
+      font-weight: bold;
+      color: $pure;
+      p {
+        color: $pure;
+        font-size: 2rem;
+      }
+    }
+  }
 
   .btn {
     padding: 0.5rem 1rem;
   }
 }
+
+@media screen and (max-width:320px) {
+   .captions {
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+    }
+    .trust {
+      font-family: $font;
+      font-weight: bold;
+      color: $pure;
+      p {
+        color: $pure;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+

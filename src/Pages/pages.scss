@@ -150,6 +150,9 @@ main {
   }
 }
 
+// .about_text{
+
+// }
 .about_intro,
 .menu_intro,
 .contact_intro,
@@ -251,70 +254,7 @@ main {
 }
 
 @media screen and (max-width: 575px) {
-  .contact_intro {
-    .about_text {
-      h3 {
-        height: 30px;
-        position: absolute;
-        top: 62%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        font-size: 3rem;
-        font-weight: 900;
-        font-family: $font;
-        z-index: -3;
-      }
 
-      p {
-        position: relative;
-        top: -40px;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        a {
-          text-decoration: underline;
-          text-decoration-style: dotted;
-          text-decoration-thickness: 2px;
-          text-underline-offset: 4px;
-        }
-      }
-    }
-  }
-  .story_intro,
-  .menu_intro,
-  .about_intro,
-  .contact_intro {
-    h3 {
-      height: 30px;
-      position: absolute;
-      top: 55%;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      font-size: 3rem;
-      font-weight: 900;
-      font-family: $font;
-      z-index: -3;
-    }
-
-    p {
-      position: relative;
-      top: -40px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      a {
-        text-decoration: underline;
-        text-decoration-style: dotted;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 4px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 1199.98px) {
 }
 
 @media screen and (max-width: 480px) {
@@ -371,9 +311,6 @@ main {
       }
     }
 
-    .about_intro {
-      margin-bottom: 5rem;
-    }
     .testimony {
       margin-top: 7rem;
       .infoo {
@@ -395,84 +332,6 @@ main {
       }
     }
 
-    .about_intro,
-    .contact_intro,
-    .menu_intro,
-    .story_intro {
-      .about_text {
-        h3 {
-          top: 63%;
-        }
-        p {
-          top: -20px;
-        }
-      }
-    }
-
-    .contact_intro {
-      .contact_text {
-        text-align: center;
-        h3 {
-          height: 30px;
-          position: absolute;
-          top: 65%;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          font-size: 2.5rem;
-          font-weight: 900;
-          font-family: $font;
-          z-index: -3;
-        }
-
-        p {
-          position: relative;
-          top: -20px;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          a {
-            text-decoration: underline;
-            text-decoration-style: dotted;
-            text-decoration-thickness: 2px;
-            text-underline-offset: 4px;
-          }
-        }
-      }
-    }
-    .story_intro,
-    .about_intro,
-    .menu_intro {
-      .contact_text {
-        text-align: center;
-        h3 {
-          height: 30px;
-          position: absolute;
-          top: 70%;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          font-size: 2.5rem;
-          font-weight: 900;
-          font-family: $font;
-          z-index: -3;
-        }
-
-        p {
-          position: relative;
-          top: -20px;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          a {
-            text-decoration: underline;
-            text-decoration-style: dotted;
-            text-decoration-thickness: 2px;
-            text-underline-offset: 4px;
-          }
-        }
-      }
-    }
     .first-contact-section {
       .left_map {
         display: none;
