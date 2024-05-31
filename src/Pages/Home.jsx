@@ -230,6 +230,8 @@ function Home() {
             </section>
           </Container>
         </Container>
+        
+        {/* Form */}
         <Container fluid className="bg-image form_bg p-md-5">
           <div>
             <FormComp />

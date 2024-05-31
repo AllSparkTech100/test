@@ -132,8 +132,9 @@ function NavComp() {
             </Button>
           </Container>
         </Navbar>
-        <Container fluid className="menu_carrier">
-          {isMenuVisible && (
+
+        {isMenuVisible && (
+          <Container fluid className="menu_carrier">
             <div className="menu_inner">
               <ul>
                 <Nav.Link href="/" className="">
@@ -151,10 +152,13 @@ function NavComp() {
                 <Nav.Link href="/contact" className="">
                   Contact
                 </Nav.Link>
+                <Nav.Link href="" className="w-100 btn">
+                  <ButtonComp text="Book a Table" />
+                </Nav.Link>
               </ul>
             </div>
-          )}
-        </Container>
+          </Container>
+        )}
       </header>
     </>
   );

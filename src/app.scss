@@ -10,35 +10,42 @@ header {
 .menu_carrier {
   width: 100%;
   max-height: 100vh;
-  text-transform: uppercase;
-  font-weight: medium;
+  text-align: left;
+transition: all ease-in 2s;
   .menu_inner {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -3rem;
     right: 0;
     bottom: 0;
-    width: 100%;
-    height: 100vh;
     font-family: $font;
     padding: 30px;
     align-items: center;
     justify-content: center;
-    background-color: $pure;
-    a {
-      list-style: none;
-      border-bottom: 1px solid #000;
-      padding: 20px 0;
-      text-align: center;
-      left: -4px;
-      position: relative;
-      &:last-child {
-        border-bottom: none;
+    background-color: $foot;
+    height: 75dvh;
+    ul {
+      margin-top: 1rem;
+      a {
+        list-style: none;
+        padding: 20px 0;
+        text-align: left;
+        transition: font-weight 0.2s;
+        color: $pure;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        display:block;
+        align-items: flex-start;
+        justify-content: left;
+      &:last-child{
+        margin-top: 20px;
+        .btn {
+          padding:.2rem 1rem;
+          text-align: left;
+        }
       }
-      transition: font-weight 0.2s;
-      color: $socials;
-      text-decoration: none;
-      font-size: 1.3rem;
+      }
     }
   }
 }

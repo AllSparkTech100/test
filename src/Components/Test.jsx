@@ -9,7 +9,7 @@ function Test() {
   const UserTestimony = [
     {
       id: 1,
-      image: man ,
+      image: man,
       name: "Ian Boner",
       position: "Customer",
       description:
@@ -72,7 +72,7 @@ function Test() {
     },
   ];
   return (
-    <div className="testimonial ">
+    <div className="testimonial">
       <Splide
         options={{
           perPage: 3,
