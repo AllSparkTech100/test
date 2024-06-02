@@ -1,6 +1,4 @@
-// import styled from "styled-components";
-
-// eslint-disable-next-line react/prop-types
+/* eslint-disable react/prop-types */
 function CircleImage({ imageUrl }) {
   const circleStyle = {
     width: "100px",
@@ -20,9 +18,9 @@ function CircleImage({ imageUrl }) {
   };
 
   return (
-      <div style={circleStyle}>
-        <img src={imageUrl} alt="Profile" style={imageStyle} />
-      </div>
+    <div style={circleStyle}>
+      <img src={imageUrl} alt="Profile" style={imageStyle} />
+    </div>
   );
 }
 

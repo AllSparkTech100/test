@@ -1,5 +1,8 @@
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import "../app.scss";
+import { IoCallSharp } from "react-icons/io5";
+import { SiMinutemailer } from "react-icons/si";
+import { MdAccessTime } from "react-icons/md";
 import ButtonComp from "./Button";
 import { useState, useEffect } from "react";
 
@@ -34,10 +37,10 @@ function NavComp() {
     width: "100vw",
     transition: "background-color 0.3s ease",
     display: "flex",
-    alignItems: "center",
+    // alignItems: "center",
     justifyContents: "space-between",
-    height: isScrolled ? "65px" : "65px",
-    borderBottom: isScrolled ? "none" : "1px solid snow",
+    height: isScrolled ? "65px" : "110px",
+    borderBottom: isScrolled ? "none" : ".2px solid snow",
   };
 
   return (
@@ -46,92 +49,121 @@ function NavComp() {
         style={headerStyle}
         className={isScrolled ? "bg-white" : "bg-transparent"}
       >
-        <Navbar expand="lg" fixed="top">
-          <Container fluid="sm">
-            <Navbar.Brand
-              href="/"
-              className={
-                isScrolled ? "text-black fw-bold" : "text-white fw-bold"
-              }
-            >
-              Feliciano
-            </Navbar.Brand>
-            <Navbar.Toggle
-              aria-controls="basic-navbar-nav"
-              className="shadow-none d-none border-2 border-primary "
-              variant="secondary"
-            />
+        <div
+          id="first_most_section"
+          className={isScrolled ? "d-md-block " : "d-md-block d-sm-none"}
+        >
+          <div className="first_most_inner">
+            <div className="phone_no d-flex justify-content-between text-white-50">
+              <p>
+                <IoCallSharp size={25} /> &nbsp;+234-903-090-239
+              </p>
+            </div>
+            <div className="mailing_address d-flex align-items-center text-white-50">
+              <p>
+                <SiMinutemailer size={25} /> &nbsp;feliciano@hotmail.com
+              </p>
+            </div>
+            <div className="open_hrs d-flex align-items-center text-white-50">
+              <p>
+                <MdAccessTime size={25} />
+                &nbsp;Open Hours: Monday - Sunday 8:00am - 9:00pm
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="second_inner_in">
+          <Navbar
+            expand="lg"
+            fixed="top"
+            className={isScrolled ? "mt-sm-0" : "mt-md-5"}
+          >
+            <Container fluid="sm">
+              <Navbar.Brand
+                href="/"
+                className={
+                  isScrolled ? "text-black fw-bold" : "text-white fw-bold"
+                }
+              >
+                Feliciano
+              </Navbar.Brand>
+              <Navbar.Toggle
+                aria-controls="basic-navbar-nav"
+                className="shadow-none d-none border-2 border-primary "
+                variant="secondary"
+              />
 
-            <Navbar.Collapse id="basic-navbar-nav shadow-none">
-              <Nav className="ms-auto align-items-md-center justify-content-md-between">
-                <Nav.Link
-                  href="/"
-                  className={
-                    isScrolled
-                      ? "text-black fw-normal fs-6 me-4"
-                      : "text-white fw-normal fs-6 me-4"
-                  }
-                >
-                  Home
-                </Nav.Link>
-                <Nav.Link
-                  href="/about"
-                  className={
-                    isScrolled
-                      ? "text-black fw-normal fs-6 me-4"
-                      : "text-white fw-normal fs-6 me-4"
-                  }
-                >
-                  About
-                </Nav.Link>
-                <Nav.Link
-                  href="/menu"
-                  className={
-                    isScrolled
-                      ? "text-black fw-normal fs-6 me-4"
-                      : "text-white fw-normal fs-6 me-4"
-                  }
-                >
-                  Menu
-                </Nav.Link>
-                <Nav.Link
-                  href="/stories"
-                  className={
-                    isScrolled
-                      ? "text-black fw-normal fs-6 me-4"
-                      : "text-white fw-normal fs-6 me-4"
-                  }
-                >
-                  Stories
-                </Nav.Link>
-                <Nav.Link
-                  href="/contact"
-                  className={
-                    isScrolled
-                      ? "text-black fw-normal fs-6 me-4"
-                      : "text-white fw-normal fs-6 me-4"
-                  }
-                >
-                  Contact
-                </Nav.Link>
-                <div
-                  className={
-                    isScrolled ? "text-black fw-bold" : "text-white fw-bold"
-                  }
-                >
-                  <ButtonComp text="Book a Table" />
-                </div>
-              </Nav>
-            </Navbar.Collapse>
-            <Button
-              className="d-lg-none d-sm-block shadow-none border-0 rounded-5 menu_iconn "
-              variant="secondary"
-              onClick={toggleMenu}
-            >
-              {isMenuVisible ? "X" : "Menu"}
-            </Button>
-          </Container>
-        </Navbar>
+              <Navbar.Collapse id="basic-navbar-nav shadow-none">
+                <Nav className="ms-auto align-items-md-center justify-content-md-between">
+                  <Nav.Link
+                    href="/"
+                    className={
+                      isScrolled
+                        ? "text-black fw-normal fs-6 me-4"
+                        : "text-white fw-normal fs-6 me-4"
+                    }
+                  >
+                    Home
+                  </Nav.Link>
+                  <Nav.Link
+                    href="/about"
+                    className={
+                      isScrolled
+                        ? "text-black fw-normal fs-6 me-4"
+                        : "text-white fw-normal fs-6 me-4"
+                    }
+                  >
+                    About
+                  </Nav.Link>
+                  <Nav.Link
+                    href="/menu"
+                    className={
+                      isScrolled
+                        ? "text-black fw-normal fs-6 me-4"
+                        : "text-white fw-normal fs-6 me-4"
+                    }
+                  >
+                    Menu
+                  </Nav.Link>
+                  <Nav.Link
+                    href="/stories"
+                    className={
+                      isScrolled
+                        ? "text-black fw-normal fs-6 me-4"
+                        : "text-white fw-normal fs-6 me-4"
+                    }
+                  >
+                    Stories
+                  </Nav.Link>
+                  <Nav.Link
+                    href="/contact"
+                    className={
+                      isScrolled
+                        ? "text-black fw-normal fs-6 me-4"
+                        : "text-white fw-normal fs-6 me-4"
+                    }
+                  >
+                    Contact
+                  </Nav.Link>
+                  <div
+                    className={
+                      isScrolled ? "text-black fw-bold" : "text-white fw-bold"
+                    }
+                  >
+                    <ButtonComp text="Book a Table" />
+                  </div>
+                </Nav>
+              </Navbar.Collapse>
+              <Button
+                className="d-lg-none d-sm-block shadow-none border-0 rounded-5 menu_iconn "
+                variant="secondary"
+                onClick={toggleMenu}
+              >
+                {isMenuVisible ? "X" : "Menu"}
+              </Button>
+            </Container>
+          </Navbar>
+        </div>
 
         {isMenuVisible && (
           <Container fluid className="menu_carrier">

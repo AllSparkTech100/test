@@ -1,5 +1,5 @@
 import "./pages.scss";
-// import {motion as m } from "framer-motion";
+// import { motion as m } from "framer-motion";
 // import { useState, useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
@@ -230,7 +230,7 @@ function Home() {
             </section>
           </Container>
         </Container>
-        
+
         {/* Form */}
         <Container fluid className="bg-image form_bg p-md-5">
           <div>

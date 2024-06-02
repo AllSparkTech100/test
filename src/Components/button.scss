@@ -167,8 +167,8 @@ img {
   }
 }
 
-@media screen and (max-width:320px) {
-   .captions {
+@media screen and (max-width: 320px) {
+  .captions {
     :nth-child(1) {
       color: $present;
       font-family: $fontFamily;
@@ -184,4 +184,3 @@ img {
     }
   }
 }
-
