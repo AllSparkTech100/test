@@ -40,7 +40,7 @@ function NavComp() {
     // alignItems: "center",
     justifyContents: "space-between",
     height: isScrolled ? "65px" : "110px",
-    borderBottom: isScrolled ? "none" : ".2px solid snow",
+    borderBottom: isScrolled ? "none" : "1px solid snow",
   };
 
   return (
@@ -51,7 +51,7 @@ function NavComp() {
       >
         <div
           id="first_most_section"
-          className={isScrolled ? "d-md-block " : "d-md-block d-sm-none"}
+          className={isScrolled ? "d-none" : "d-md-block d-sm-none"}
         >
           <div className="first_most_inner">
             <div className="phone_no d-flex justify-content-between text-white-50">
@@ -164,7 +164,7 @@ function NavComp() {
             </Container>
           </Navbar>
         </div>
-
+        <hr />
         {isMenuVisible && (
           <Container fluid className="menu_carrier">
             <div className="menu_inner">

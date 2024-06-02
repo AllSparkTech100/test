@@ -398,12 +398,7 @@ $apsFont: "Montagu Slab";
   }
 }
 
-@media screen and (max-width:320px) {
-  .form_bg {
-    height: 195vh;
-    padding: 0;
-  }
-}
+
 
 @media screen and (max-width: 480px) {
    .form_bg {
@@ -418,7 +413,7 @@ $apsFont: "Montagu Slab";
       gap: 9px;
       margin-left: -10px;
       img {
-        width: 223px;
+        width: 90vw;
         height: 300px;
       }
       .item_1 {
@@ -426,6 +421,7 @@ $apsFont: "Montagu Slab";
       }
       .item_2 {
         grid-column: auto;
+        display: none;
       }
     }
     .shop_time {
@@ -438,8 +434,8 @@ $apsFont: "Montagu Slab";
         font-size: 4rem;
       }
       .brand_name {
-        font-size: 2rem;
-        top: -4rem;
+        font-size: 1.8rem;
+        top: -3.5rem;
       }
     }
   }
@@ -546,8 +542,6 @@ $apsFont: "Montagu Slab";
     }
   }
 
-  .form_
-
   .contact_intro {
     .contact_text {
       text-align: center;
@@ -573,7 +567,7 @@ $apsFont: "Montagu Slab";
       gap: 9px;
       margin-left: -10px;
       img {
-        width: 140px;
+        width: 290px;
         height: 300px;
       }
     }
@@ -592,6 +586,10 @@ $apsFont: "Montagu Slab";
         top: -3.5rem;
       }
     }
+  }
+  .form_bg {
+    height: 195vh;
+    padding: 0;
   }
 }
 

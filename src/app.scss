@@ -7,6 +7,19 @@ header {
   justify-content: center;
 }
 
+hr{
+  border-top: 3px solid $pure;
+}
+.faint {
+  height: 1px;
+  position: relative;
+  top: 78px;
+  background: $pure;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+}
 #first_most_section {
   font-family: $font;
   background-color: $pure;
