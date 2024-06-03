@@ -4,6 +4,7 @@ import "./app.scss";
 import NavComp from "./Components/NavComp";
 import Footer from "./Components/Footer";
 
+
 function App() {
   return (
     <>

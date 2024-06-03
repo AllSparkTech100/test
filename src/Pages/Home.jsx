@@ -1,6 +1,6 @@
 import "./pages.scss";
 // import { motion as m } from "framer-motion";
-// import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
 import Test from "../Components/Test";
@@ -16,8 +16,17 @@ import bar2 from "../Photos/bar-2.jpg";
 import bar1 from "../Photos/wineee.jpg";
 import wine from "../Photos/wines.jpg";
 import chef from "../Photos/chef-1.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease",
+      once: false,
+    });
+  });
   return (
     <>
       <main className="my-5">
@@ -25,7 +34,7 @@ function Home() {
           <Slide />
         </div>
         {/* First Line */}
-        <Container fluid className="grill d-block">
+        <Container fluid data-aos="fade-up" className="grill d-block">
           <Row className="m-md-0 mt-3">
             <Col sm={3} md={3} className="mb-md-4 mb-4 good">
               <CircleImage
@@ -95,7 +104,7 @@ function Home() {
                   </div>
                 </Col>
                 <Col>
-                  <div className="shop_time">
+                  <div className="shop_time" data-aos="fade-up">
                     <h6 className="fw-normal brand_header">about</h6>
                     <h3 className="fw-medium brand_name ">
                       Feliciano Restaurant
@@ -118,7 +127,7 @@ function Home() {
           </div>
 
           {/* Personnel Count */}
-          <Row className="stat p-md-5 text-md-start text-center">
+          <Row data-aos="fade-up" className="stat p-md-5 text-md-start text-center">
             <Col md={2} sm={12} className="mb-4">
               <h3 className="fw-semibold">18</h3>
               <h6>YEARS OF EXPERIENCE</h6>
@@ -144,26 +153,26 @@ function Home() {
           </Row>
           {/* Services */}
           <section id="services">
-            <Col sm={12} md={12} className="text-center head">
+            <Col data-aos="fade-up" sm={12} md={12} className="text-center head">
               <h4>Services</h4>
               <h2 className="fw-bolder">Catering Services</h2>
             </Col>
             <Row>
-              <Col md={4} sm={12} className="mt-4">
+              <Col data-aos="fade-up" md={4} sm={12} className="mt-4">
                 <CardComp
                   icon={<FaBirthdayCake />}
                   subtitle="Birthday Party"
                   text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
                 />
               </Col>
-              <Col md={4} sm={12} className="mt-4">
+              <Col data-aos="fade-up" md={4} sm={12} className="mt-4">
                 <CardComp
                   icon={<FaBusinessTime />}
                   subtitle="Business Meeting"
                   text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
                 />
               </Col>
-              <Col md={4} sm={12} className="mt-4">
+              <Col data-aos="fade-up" md={4} sm={12} className="mt-4">
                 <CardComp
                   icon={<BiDish />}
                   subtitle="Wedding Party"
@@ -175,7 +184,7 @@ function Home() {
 
           {/* Special Menu */}
           <section id="menu">
-            <Col sm={12} md={12} className="text-center menu_head">
+            <Col data-aos="fade-up" sm={12} md={12} className="text-center menu_head">
               <h4>Specialties</h4>
               <h2 className="fw-bold">Our Menu</h2>
             </Col>
@@ -187,19 +196,19 @@ function Home() {
         <Container fluid>
           <Container fluid="md">
             <section className="chef">
-              <Col sm={12} md={12} className="text-center chef_head">
+              <Col data-aos="fade-up" sm={12} md={12} className="text-center chef_head">
                 <h4>Chef</h4>
                 <h2 className="fw-bold">Our Master Chef</h2>
               </Col>
               <Row id="imges">
-                <Col md={3} sm={12} className="mt-sm-5">
+                <Col data-aos="fade-up" md={3} sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={chef}
                     name={"John Smooth"}
                     text={"Restaurant Owner"}
                   />
                 </Col>
-                <Col md={3} sm={12} className="mt-sm-5">
+                <Col data-aos="fade-up" md={3} sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={
                       "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
@@ -208,7 +217,7 @@ function Home() {
                     text={"Head Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12} className="mt-sm-5">
+                <Col data-aos="fade-up" md={3} sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={
                       "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
@@ -217,7 +226,7 @@ function Home() {
                     text={"Chef"}
                   />
                 </Col>
-                <Col md={3} sm={12} className="mt-sm-5">
+                <Col data-aos="fade-up" md={3} sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={
                       "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"
@@ -240,7 +249,7 @@ function Home() {
 
         {/* Testimony */}
         <Container fluid className="testimony">
-          <Col sm={12} md={12} className="text-center infoo">
+          <Col data-aos="fade-up" sm={12} md={12} className="text-center infoo">
             <h4>Testimony</h4>
             <div className="infoo_inner text-center">
               <h2 className="fw-bold text-center">Happy Customers</h2>
@@ -254,7 +263,7 @@ function Home() {
         {/* Blog */}
         <Container fluid>
           <div className="blog">
-            <Col sm={12} md={12} className="text-center info">
+            <Col data-aos="fade-up" sm={12} md={12} className="text-center info">
               <h4>Blog</h4>
               <div className="info_inner">
                 <h2 className="fw-bold">Recent Post</h2>
@@ -262,7 +271,7 @@ function Home() {
             </Col>
             <Container>
               <Row>
-                <Col md={4} sm={12} className="mt-5">
+                <Col data-aos="fade-up" md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0">
                     <Card.Img
                       variant="top"
@@ -280,7 +289,7 @@ function Home() {
                     </Card.Footer>
                   </Card>
                 </Col>
-                <Col md={4} sm={12} className="mt-5">
+                <Col data-aos="fade-up" md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0">
                     <Card.Img
                       variant="top"
@@ -298,7 +307,7 @@ function Home() {
                     </Card.Footer>
                   </Card>
                 </Col>
-                <Col md={4} sm={12} className="mt-5">
+                <Col data-aos="fade-up" md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0 h-100">
                     <Card.Img
                       variant="top"
