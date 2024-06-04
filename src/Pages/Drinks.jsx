@@ -1,8 +1,18 @@
 import { Col, Row, Container, Card, Button } from "react-bootstrap";
 import Category from "./Category";
 import "./pages.scss";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Drinks() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease",
+      once: false,
+    });
+  });
   const menu = [
     {
       id: 1,
@@ -80,7 +90,7 @@ function Drinks() {
             <Row className="drinks">
               {menu.map((items) => {
                 return (
-                  <Col key={items.id} md={3} sm={12} className="mt-4">
+                  <Col data-aos="fade-up" key={items.id} md={3} sm={12} className="mt-4">
                     <Card className="border-0 h-100">
                       <Card.Img
                         variant="top"

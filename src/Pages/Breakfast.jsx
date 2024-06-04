@@ -77,34 +77,37 @@ function Breakfast() {
         <section>
           <Category />
           <Container>
-          <Row className="breakfast">
-            {menu.map((items) => {
-              return (
-                <Col key={items.id} md={3} sm={12} className="mt-4">
-                  <Card className="border-0 h-100">
-                    <Card.Img
-                      variant="top"
-                      className="img-fluid h-75"
-                      src={items.img}
-                    />
-                    <Card.Body className="mt-md-3">
-                      <Card.Title className="d-flex fs-6 align-items-center justify-content-between">
-                        {items.title} &nbsp;{" "}
-                        <span className="fw-bold" style={{ color: "#898989" }}>
-                          {items.price}
-                        </span>
-                      </Card.Title>
-                      <Card.Text style={{ color: "#787878" }}>
-                        {items.ingredients}
-                      </Card.Text>
-                    </Card.Body>
-                    <Button className="w-100 btn order_btn">Order Now</Button>
-                  </Card>
-                </Col>
-              );
-            })}
-          </Row>
-        </Container>
+            <Row className="breakfast">
+              {menu.map((items) => {
+                return (
+                  <Col data-aos="fade-up" key={items.id} md={3} sm={12} className="mt-4">
+                    <Card className="border-0 h-100">
+                      <Card.Img
+                        variant="top"
+                        className="img-fluid h-75"
+                        src={items.img}
+                      />
+                      <Card.Body className="mt-md-3">
+                        <Card.Title className="d-flex fs-6 align-items-center justify-content-between">
+                          {items.title} &nbsp;{" "}
+                          <span
+                            className="fw-bold"
+                            style={{ color: "#898989" }}
+                          >
+                            {items.price}
+                          </span>
+                        </Card.Title>
+                        <Card.Text style={{ color: "#787878" }}>
+                          {items.ingredients}
+                        </Card.Text>
+                      </Card.Body>
+                      <Button className="w-100 btn order_btn">Order Now</Button>
+                    </Card>
+                  </Col>
+                );
+              })}
+            </Row>
+          </Container>
         </section>
       </main>
     </div>

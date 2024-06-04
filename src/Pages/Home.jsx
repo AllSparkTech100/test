@@ -1,5 +1,4 @@
 import "./pages.scss";
-// import { motion as m } from "framer-motion";
 import { useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
 import Slide from "../Components/Slide";
@@ -25,6 +24,7 @@ function Home() {
       duration: 700,
       easing: "ease",
       once: false,
+      startEvent: 'DOMContentLoaded',
     });
   });
   return (

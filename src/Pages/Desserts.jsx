@@ -1,8 +1,18 @@
 import { Col, Row, Container, Card, Button } from "react-bootstrap";
 import Category from "./Category";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./pages.scss";
 
 function Dessert() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease",
+      once: false,
+    });
+  });
   const menu = [
     {
       id: 1,
@@ -76,11 +86,11 @@ function Dessert() {
         </div>
         <section>
           <Category />
-           <Container>
+          <Container>
             <Row className="desserts">
               {menu.map((items) => {
                 return (
-                  <Col key={items.id} md={4} lg={3} sm={12} className="mt-4">
+                  <Col data-aos="fade-up"  key={items.id} md={4} lg={3} sm={12} className="mt-4">
                     <Card className="border-0 h-100">
                       <Card.Img
                         variant="top"

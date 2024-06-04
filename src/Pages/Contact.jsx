@@ -1,9 +1,18 @@
 import { Container, Row, Col, Form } from "react-bootstrap";
 import "./pages.scss";
-import bike from "../Photos/bike.gif"
-
+import bike from "../Photos/bike.gif";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contact() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease",
+      once: false,
+    });
+  });
   return (
     <>
       <main className="">
@@ -22,7 +31,7 @@ function Contact() {
           <Row>
             <Col md={6} sm={12}>
               <div className="left_map ">
-              <img src={bike} alt="" />
+                <img src={bike} alt="" />
               </div>
             </Col>
             <Col md={6} sm={12}>
@@ -60,33 +69,33 @@ function Contact() {
                       <Form.Control
                         type="text"
                         className="shadow-none h-100 rounded-0 border-2 mb-4 p-3"
-                        placeholder="Message" as="textarea"
+                        placeholder="Message"
+                        as="textarea"
                         required
                       />
                     </Form.Group>
                   </Row>
                   <Col sm={6} lg={6} md={6}>
-                <div className="btn w-100 order_btn p-3 shadow-none">
-                Send Message
-              </div>
-                </Col>
+                    <div className="btn w-100 order_btn p-3 shadow-none">
+                      Send Message
+                    </div>
+                  </Col>
                 </Form>
-                
               </div>
             </Col>
           </Row>
         </Container>
         <Container fluid="sm" className="last_carrier">
-          <div className="inner_info">
+          <div data-aos="fade-up" className="inner_info">
             <h2>Contact Information</h2>
           </div>
           <Row className="last-contact-section" gap={1}>
-            <Col md={4} lg={4} sm={12}>
+            <Col data-aos="fade-up" md={4} lg={4} sm={12}>
               <p className="fs-5">
                 Address: 198 West 21th Street, Suite 721 New York NY 10016
               </p>
             </Col>
-            <Col md={4} lg={4} sm={12}>
+            <Col data-aos="fade-up" md={4} lg={4} sm={12}>
               <p className="fs-5">
                 Phone:&nbsp;
                 <span>
@@ -96,7 +105,7 @@ function Contact() {
                 </span>
               </p>
             </Col>
-            <Col md={4} lg={4} sm={12}>
+            <Col data-aos="fade-up" md={4} lg={4} sm={12}>
               <p className="fs-5">
                 Email:&nbsp;
                 <span>
@@ -109,7 +118,7 @@ function Contact() {
                 </span>
               </p>
             </Col>
-            <Col md={12} lg={12} sm={12}>
+            <Col data-aos="fade-up" md={12} lg={12} sm={12}>
               <p className="fs-5 d-md-flex align-items-center">
                 Website:&nbsp;
                 <span>

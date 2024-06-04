@@ -9,7 +9,6 @@ function Category() {
         <Row>
           <Col md={2} sm={12} className="mb-3 shadow-none mb-md-0">
             <NavLink
-              
               to="/breakfast"
               className="menu_selector w-100 shadow-none border-0 rounded-0"
             >
