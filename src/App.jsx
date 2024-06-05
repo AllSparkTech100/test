@@ -3,7 +3,7 @@ import Pages from "./Pages/Pages";
 import "./app.scss";
 import NavComp from "./Components/NavComp";
 import Footer from "./Components/Footer";
-
+import Loader from "./Components/Loader";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <NavComp />
       <Pages />
       <Footer />
+      <Loader />
     </>
   );
 }

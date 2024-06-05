@@ -18,6 +18,7 @@ import chef from "../Photos/chef-1.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 function Home() {
   useEffect(() => {
     AOS.init({
