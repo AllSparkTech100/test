@@ -4,8 +4,20 @@ import "@splidejs/react-splide/css";
 import man from "../Photos/man.png";
 import "./button.scss";
 import CircleImage from "./CircleImage";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 function Test() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease",
+      once: false,
+      startEvent: 'DOMContentLoaded',
+    });
+  });
   const UserTestimony = [
     {
       id: 1,
@@ -72,7 +84,7 @@ function Test() {
     },
   ];
   return (
-    <div className="testimonial">
+    <div className="testimonial" data-aos="fade-up" data-aos-offset="0">
       <Splide
         options={{
           perPage: 3,

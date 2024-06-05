@@ -27,13 +27,13 @@ function Footer() {
                 </p>
               </div>
               <div data-aos="fade-up" className="circle_socials">
-                <div data-aos="fade-up" className="circle_content">
+                <div data-aos="fade-up" data-aos-duration="500" className="circle_content">
                   <FaTwitter size={20} />
                 </div>
-                <div data-aos="fade-up" className="circle_content">
+                <div data-aos="fade-up" data-aos-duration="600" className="circle_content">
                   <FaFacebookF size={20} />
                 </div>
-                <div data-aos="fade-up" className="circle_content">
+                <div data-aos="fade-up" data-aos-duration="700" className="circle_content">
                   <FaInstagram size={20} />
                 </div>
               </div>

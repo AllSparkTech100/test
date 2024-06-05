@@ -1,14 +1,25 @@
 import "./button.scss";
 import { Col, Row, Form, Button } from "react-bootstrap";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function FormComp() {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      easing: "ease",
+      once: false,
+      startEvent: 'DOMContentLoaded',
+    });
+  });
   return (
     <>
       <div className="form_carrier">
         <div className="form-intro">
-          <h4 className="fw-medium">Book a Table</h4>
+          <h4 className="fw-medium" data-aos="fade-up" data-aos-offset="0" data-aos-duration="800">Book a Table</h4>
           <div className="intro_inner">
-            <h5 className="fw-bold">Make a Reservation</h5>
+            <h5 className="fw-bold" data-aos="fade-up" data-aos-offset="0" data-aos-duration="600">Make a Reservation</h5>
           </div>
         </div>
         <div className="main_form">

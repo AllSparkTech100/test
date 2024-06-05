@@ -271,7 +271,7 @@ function Home() {
             </Col>
             <Container>
               <Row>
-                <Col data-aos="fade-up" md={4} sm={12} className="mt-5">
+                <Col data-aos="fade-up" data-aos-duration="300" md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0">
                     <Card.Img
                       variant="top"
@@ -289,7 +289,7 @@ function Home() {
                     </Card.Footer>
                   </Card>
                 </Col>
-                <Col data-aos="fade-up" md={4} sm={12} className="mt-5">
+                <Col data-aos="fade-up" data-aos-duration="500" md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0">
                     <Card.Img
                       variant="top"
@@ -307,7 +307,7 @@ function Home() {
                     </Card.Footer>
                   </Card>
                 </Col>
-                <Col data-aos="fade-up" md={4} sm={12} className="mt-5">
+                <Col data-aos="fade-up" data-aos-duration="800" md={4} sm={12} className="mt-5">
                   <Card className="shadow-none border-0 h-100">
                     <Card.Img
                       variant="top"

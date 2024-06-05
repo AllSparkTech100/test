@@ -4,7 +4,7 @@ import bar2 from "../Photos/bar-2.jpg";
 import bar1 from "../Photos/wineee.jpg";
 import wine from "../Photos/wines.jpg";
 import { MdMarkUnreadChatAlt } from "react-icons/md";
-import Paginator from "../Components/Pagination";
+// import Paginator from "../Components/Pagination";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +12,6 @@ import "aos/dist/aos.css";
 function Stories() {
   useEffect(() => {
     AOS.init({
-      // duration: 700,
       easing: "ease",
       once: false,
       startEvent: "DOMContentLoaded",
@@ -264,9 +263,9 @@ function Stories() {
             </Container>
           </div>
         </Container>
-        <div className="align-items-center">
+        {/* <div className="align-items-center d-flex justify-contents-center">
           <Paginator />
-        </div>
+        </div> */}
       </main>
     </>
   );
