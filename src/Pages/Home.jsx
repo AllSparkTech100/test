@@ -17,9 +17,20 @@ import wine from "../Photos/wines.jpg";
 import chef from "../Photos/chef-1.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useSpring, animated } from "react-spring";
+
+  function Number ({n}){
+    const {number} = useSpring({
+      from: {number:0},
+      number:n,
+      delay:200,
+      config:{mass:1, tension:20, friction:10}
+    });
+  }
 
 
 function Home() {
+
   useEffect(() => {
     AOS.init({
       duration: 700,
