@@ -18,26 +18,26 @@ function Counterr() {
           <Col md={2} sm={12} className="mb-4">
             <h3 className="fw-semibold">
               {counterState && (
-                <CountUp start={0} end={18} duration={1.75}></CountUp>
+                <CountUp start={0} end={18} duration={2.75}></CountUp>
               )}
             </h3>
             <h6>YEARS OF EXPERIENCE</h6>
           </Col>
           <Col md={2} sm={12} className="mb-4">
             <h3 className="fw-semibold"> {counterState && (
-                <CountUp start={0} end={100} duration={1.75}></CountUp>
+                <CountUp start={0} end={100} duration={2.75}></CountUp>
               )}</h3>
             <h6>MENUS / DISHES</h6>
           </Col>
           <Col md={2} sm={12} className="mb-4">
             <h3 className="fw-semibold"> {counterState && (
-                <CountUp start={0} end={50} duration={1.75}></CountUp>
+                <CountUp start={0} end={50} duration={2.75}></CountUp>
               )}</h3>
             <h6>STAFFS</h6>
           </Col>
           <Col md={2} sm={12} className="mb-4">
             <h3 className="fw-semibold"> {counterState && (
-                <CountUp start={0} end={15000} duration={0.75}></CountUp>
+                <CountUp start={0} end={15000} duration={2.75}></CountUp>
               )}</h3>
             <h6>HAPPY CUSTOMERS</h6>
           </Col>
