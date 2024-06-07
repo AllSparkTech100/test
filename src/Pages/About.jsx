@@ -3,6 +3,7 @@ import ImgCard from "../Components/ImgCard";
 import CardComp from "../Components/Card";
 import FormComp from "../Components/Form";
 import Test from "../Components/Test";
+import Counterr from "../Components/Counter"
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
 import { BiDish } from "react-icons/bi";
@@ -80,33 +81,7 @@ function About() {
           </div>
 
           {/* Personnel Count */}
-          <Row
-            data-aos="fade-up"
-            className="stat p-md-5 text-md-start text-center"
-          >
-            <Col md={2} sm={12} className="mb-4">
-              <h3 className="fw-semibold">18</h3>
-              <h6>YEARS OF EXPERIENCE</h6>
-            </Col>
-            <Col md={2} sm={12} className="mb-4">
-              <h3 className="fw-semibold">100</h3>
-              <h6>MENUS / DISHES</h6>
-            </Col>
-            <Col md={2} sm={12} className="mb-4">
-              <h3 className="fw-semibold">50</h3>
-              <h6>STAFFS</h6>
-            </Col>
-            <Col md={2} sm={12} className="mb-4">
-              <h3 className="fw-semibold">15,000</h3>
-              <h6>HAPPY CUSTOMERS</h6>
-            </Col>
-            <Col md={4} sm={12} className="mb-4">
-              <p className="fs-5 text-center text-md-start ">
-                A small river named Duden flows by their place and supplies it
-                with the necessary regelialia.
-              </p>
-            </Col>
-          </Row>
+         <Counterr/>
           {/* Services */}
           <section id="services">
             <Col

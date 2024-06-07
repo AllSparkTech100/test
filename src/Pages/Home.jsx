@@ -1,6 +1,7 @@
 import "./pages.scss";
 import { useEffect } from "react";
 import ImgCard from "../Components/ImgCard";
+import Counterr from "../Components/Counter"
 import Slide from "../Components/Slide";
 import Test from "../Components/Test";
 import CircleImage from "../Components/CircleImage";
@@ -17,26 +18,14 @@ import wine from "../Photos/wines.jpg";
 import chef from "../Photos/chef-1.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useSpring, animated } from "react-spring";
-
-  function Number ({n}){
-    const {number} = useSpring({
-      from: {number:0},
-      number:n,
-      delay:200,
-      config:{mass:1, tension:20, friction:10}
-    });
-  }
-
 
 function Home() {
-
   useEffect(() => {
     AOS.init({
       duration: 700,
       easing: "ease",
       once: false,
-      startEvent: 'DOMContentLoaded',
+      startEvent: "DOMContentLoaded",
     });
   });
   return (
@@ -139,33 +128,15 @@ function Home() {
           </div>
 
           {/* Personnel Count */}
-          <Row data-aos="fade-up" className="stat p-md-5 text-md-start text-center">
-            <Col md={2} sm={12} className="mb-4">
-              <h3 className="fw-semibold">18</h3>
-              <h6>YEARS OF EXPERIENCE</h6>
-            </Col>
-            <Col md={2} sm={12} className="mb-4">
-              <h3 className="fw-semibold">100</h3>
-              <h6>MENUS / DISHES</h6>
-            </Col>
-            <Col md={2} sm={12} className="mb-4">
-              <h3 className="fw-semibold">50</h3>
-              <h6>STAFFS</h6>
-            </Col>
-            <Col md={2} sm={12} className="mb-4">
-              <h3 className="fw-semibold">15,000</h3>
-              <h6>HAPPY CUSTOMERS</h6>
-            </Col>
-            <Col md={4} sm={12} className="mb-4">
-              <p className="fs-5 text-center text-md-start ">
-                A small river named Duden flows by their place and supplies it
-                with the necessary regelialia.
-              </p>
-            </Col>
-          </Row>
+          <Counterr />
           {/* Services */}
           <section id="services">
-            <Col data-aos="fade-up" sm={12} md={12} className="text-center head">
+            <Col
+              data-aos="fade-up"
+              sm={12}
+              md={12}
+              className="text-center head"
+            >
               <h4>Services</h4>
               <h2 className="fw-bolder">Catering Services</h2>
             </Col>
@@ -196,7 +167,12 @@ function Home() {
 
           {/* Special Menu */}
           <section id="menu">
-            <Col data-aos="fade-up" sm={12} md={12} className="text-center menu_head">
+            <Col
+              data-aos="fade-up"
+              sm={12}
+              md={12}
+              className="text-center menu_head"
+            >
               <h4>Specialties</h4>
               <h2 className="fw-bold">Our Menu</h2>
             </Col>
@@ -208,7 +184,12 @@ function Home() {
         <Container fluid>
           <Container fluid="md">
             <section className="chef">
-              <Col data-aos="fade-up" sm={12} md={12} className="text-center chef_head">
+              <Col
+                data-aos="fade-up"
+                sm={12}
+                md={12}
+                className="text-center chef_head"
+              >
                 <h4>Chef</h4>
                 <h2 className="fw-bold">Our Master Chef</h2>
               </Col>
@@ -275,7 +256,12 @@ function Home() {
         {/* Blog */}
         <Container fluid>
           <div className="blog">
-            <Col data-aos="fade-up" sm={12} md={12} className="text-center info">
+            <Col
+              data-aos="fade-up"
+              sm={12}
+              md={12}
+              className="text-center info"
+            >
               <h4>Blog</h4>
               <div className="info_inner">
                 <h2 className="fw-bold">Recent Post</h2>
@@ -283,7 +269,13 @@ function Home() {
             </Col>
             <Container>
               <Row>
-                <Col data-aos="fade-up" data-aos-duration="300" md={4} sm={12} className="mt-5">
+                <Col
+                  data-aos="fade-up"
+                  data-aos-duration="300"
+                  md={4}
+                  sm={12}
+                  className="mt-5"
+                >
                   <Card className="shadow-none border-0">
                     <Card.Img
                       variant="top"
@@ -301,7 +293,13 @@ function Home() {
                     </Card.Footer>
                   </Card>
                 </Col>
-                <Col data-aos="fade-up" data-aos-duration="500" md={4} sm={12} className="mt-5">
+                <Col
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  md={4}
+                  sm={12}
+                  className="mt-5"
+                >
                   <Card className="shadow-none border-0">
                     <Card.Img
                       variant="top"
@@ -319,7 +317,13 @@ function Home() {
                     </Card.Footer>
                   </Card>
                 </Col>
-                <Col data-aos="fade-up" data-aos-duration="800" md={4} sm={12} className="mt-5">
+                <Col
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                  md={4}
+                  sm={12}
+                  className="mt-5"
+                >
                   <Card className="shadow-none border-0 h-100">
                     <Card.Img
                       variant="top"
