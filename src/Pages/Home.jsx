@@ -89,7 +89,7 @@ function Home() {
         </Container>
 
         {/* Info Sect */}
-        <Container fluid className="rest_carrier h-100">
+        <Container fluid className="rest_carrier p-md-5 h-100">
           {/* About */}
           <div className="container-fluid mt-5">
             <div className="container-sm-fluid">

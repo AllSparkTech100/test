@@ -4,7 +4,7 @@ import "./button.scss";
 function Loader() {
   return (
     <div className="preloader">
-      <Spinner animation="border" variant="primary" />
+      <Spinner animation="border" variant="warning" size="lg"/>
     </div>
   );
 }

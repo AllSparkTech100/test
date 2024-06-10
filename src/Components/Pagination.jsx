@@ -1,25 +1,32 @@
-import Pagination from 'react-bootstrap/Pagination';
+// // src/PaginationComponent.js
+// import { Pagination } from 'react-bootstrap';
 
-function Paginator() {
-  return (
-    <Pagination>
-      <Pagination.First />
-      <Pagination.Prev />
-      <Pagination.Item>{1}</Pagination.Item>
-      <Pagination.Ellipsis />
+// function Paginator ({ totalItems, itemsPerPage, currentPage, onPageChange }) {
+//   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-      <Pagination.Item>{10}</Pagination.Item>
-      <Pagination.Item>{11}</Pagination.Item>
-      <Pagination.Item active>{12}</Pagination.Item>
-      <Pagination.Item>{13}</Pagination.Item>
-      <Pagination.Item disabled>{14}</Pagination.Item>
+//   const handlePageChange = (pageNumber) => {
+//     onPageChange(pageNumber);
+//   };
 
-      <Pagination.Ellipsis />
-      <Pagination.Item>{20}</Pagination.Item>
-      <Pagination.Next />
-      <Pagination.Last />
-    </Pagination>
-  );
-}
+//   const renderPaginationItems = () => {
+//     let items = [];
+//     for (let number = 1; number <= totalPages; number++) {
+//       items.push(
+//         <Pagination.Item key={number} active={number === currentPage} onClick={() => handlePageChange(number)}>
+//           {number}
+//         </Pagination.Item>
+//       );
+//     }
+//     return items;
+//   };
 
-export default Paginator;
+//   return (
+//     <Pagination>
+//       <Pagination.Prev disabled={currentPage === 1} onClick={() => handlePageChange(currentPage - 1)} />
+//       {renderPaginationItems()}
+//       <Pagination.Next disabled={currentPage === totalPages} onClick={() => handlePageChange(currentPage + 1)} />
+//     </Pagination>
+//   );
+// };
+
+// export default Paginator;
