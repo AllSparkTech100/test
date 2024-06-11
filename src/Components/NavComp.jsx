@@ -47,11 +47,11 @@ function NavComp() {
     <>
       <header
         style={headerStyle}
-        className={isScrolled ? "bg-white" : "bg-transparent"}
+        className={isScrolled ? "bg-white " : "bg-transparent"}
       >
         <div
           id="first_most_section"
-          className={isScrolled ? "d-none" : "d-md-block d-sm-none"}
+          className={isScrolled ? "d-none" : "d-lg-block d-md-none d-sm-none"}
         >
           <div className="first_most_inner">
             <div className="phone_no d-flex justify-content-between text-white-50">
@@ -76,7 +76,7 @@ function NavComp() {
           <Navbar
             expand="lg"
             fixed="top"
-            className={isScrolled ? "mt-sm-0" : "mt-md-5"}
+            className={isScrolled ? "mt-sm-0" : "mt-lg-5"}
           >
             <Container fluid="sm">
               <Navbar.Brand

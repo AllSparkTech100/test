@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 function Lunch() {
   useEffect(() => {
     AOS.init({
@@ -91,7 +90,14 @@ function Lunch() {
             <Row className="lunch">
               {menu.map((items) => {
                 return (
-                  <Col data-aos="fade-up" key={items.id} md={3} sm={12} className="mt-4">
+                  <Col
+                    data-aos="fade-up"
+                    key={items.id}
+                    md={6}
+                    lg={3}
+                    sm={12}
+                    className="mt-4"
+                  >
                     <Card className="border-0 h-100">
                       <Card.Img
                         variant="top"

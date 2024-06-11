@@ -96,11 +96,11 @@ function Home() {
               <Row className=" show_case">
                 <Col>
                   <div className="double_images">
-                    <div className="item_1">
-                      <Image src={chef} alt="" />
+                    <div className="item_1 w-100">
+                      <Image src={chef}  alt="" />
                     </div>
                     <div className="item_2">
-                      <Image src={barr} alt="" />
+                      <Image src={barr}  alt="" />
                     </div>
                   </div>
                 </Col>
@@ -194,14 +194,18 @@ function Home() {
                 <h2 className="fw-bold">Our Master Chef</h2>
               </Col>
               <Row id="imges">
-                <Col data-aos="fade-up" md={3} sm={12} className="mt-sm-5">
+                <Col data-aos="fade-up"  md={6}
+                lg={3}
+                sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={chef}
                     name={"John Smooth"}
                     text={"Restaurant Owner"}
                   />
                 </Col>
-                <Col data-aos="fade-up" md={3} sm={12} className="mt-sm-5">
+                <Col data-aos="fade-up"  md={6}
+                lg={3}
+                sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={
                       "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
@@ -210,7 +214,9 @@ function Home() {
                     text={"Head Chef"}
                   />
                 </Col>
-                <Col data-aos="fade-up" md={3} sm={12} className="mt-sm-5">
+                <Col data-aos="fade-up"  md={6}
+                lg={3}
+                sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={
                       "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
@@ -219,7 +225,9 @@ function Home() {
                     text={"Chef"}
                   />
                 </Col>
-                <Col data-aos="fade-up" md={3} sm={12} className="mt-sm-5">
+                <Col data-aos="fade-up" md={6}
+                lg={3}
+                sm={12} className="mt-sm-5">
                   <ImgCard
                     imgUrl={
                       "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"

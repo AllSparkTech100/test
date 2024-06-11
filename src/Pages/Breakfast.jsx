@@ -80,7 +80,14 @@ function Breakfast() {
             <Row className="breakfast">
               {menu.map((items) => {
                 return (
-                  <Col data-aos="fade-up" key={items.id} md={3} sm={12} className="mt-4">
+                  <Col
+                    data-aos="fade-up"
+                    key={items.id}
+                    md={6}
+                    lg={3}
+                    sm={12}
+                    className="mt-4"
+                  >
                     <Card className="border-0 h-100">
                       <Card.Img
                         variant="top"

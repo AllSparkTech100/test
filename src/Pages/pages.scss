@@ -182,9 +182,8 @@ main {
   .about_text {
     text-align: center;
     h3 {
-      height: 30px;
       position: absolute;
-      top: 75%;
+      top: 0;
       bottom: 0;
       left: 0;
       right: 0;
@@ -209,6 +208,7 @@ main {
     }
   }
 }
+
 .about_intro {
   background-image: linear-gradient(rgba(0, 0, 0, 0.552), rgba(0, 0, 0, 0.665)),
     url("../Photos/wineee.jpg");
@@ -265,6 +265,14 @@ main {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .first-contact-section{
+    .left_map{
+      margin-top: -2rem;
+      height: 50vh;
+    }
+  }
+}
 @media screen and (max-width: 480px) {
   main {
     .stat {
@@ -307,13 +315,12 @@ main {
     }
     .blog {
       .info {
-        
         h4 {
           font-size: 3.5rem;
         }
         .info_inner {
           position: relative;
-          top:30px;
+          top: 30px;
           h2 {
             font-size: 2rem;
           }
@@ -356,7 +363,7 @@ main {
   .story_intro {
     .about_text {
       h3 {
-        top: 75%;
+        top: 80%;
         font-weight: bolder;
       }
     }
@@ -389,9 +396,9 @@ main {
     }
   }
 
-  .testimony{
-    .infoo{
-      h4{
+  .testimony {
+    .infoo {
+      h4 {
         top: 4px;
       }
     }
@@ -406,8 +413,55 @@ main {
     isolation: none;
     .about_text {
       h3 {
-        top: 78%;
-        font-weight: bolder;
+        position: absolute;
+        top: 80% !important;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      p {
+        position: relative;
+        top: 40px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .first-contact-section {
+    margin-top: -4rem;
+    font-family: $font;
+  
+    .left_map {
+      height: 80vh !important;
+      width: 100%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about_intro,
+  .menu_intro,
+  .contact_intro,
+  .story_intro {
+    .about_text {
+      text-align: center;
+      h3 {
+        position: absolute;
+        top: 85%;
+      }
+
+      p {
+        position: relative;
+        top: -40px;
+        bottom: 0;
+        right: 0;
+        left: 0;
       }
     }
   }

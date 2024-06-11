@@ -123,15 +123,20 @@ $apsFont: "Montagu Slab";
 .show_case {
   width: 100%;
   padding: 9px;
+  display: grid;
+  grid-template-columns: auto auto;
   .double_images {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
-    img {
-      width: 300px;
-      height: 500px;
-      min-height: 50dvh;
-      object-fit: cover;
+    .item_1,
+    .item_2 {
+      img {
+        width: 300px;
+        height: 500px;
+        min-height: 50dvh;
+        object-fit: cover;
+      }
     }
     .item_1 {
       grid-column: auto;
@@ -216,11 +221,11 @@ $apsFont: "Montagu Slab";
     :nth-child(1) {
       color: $present;
       font-family: $fontFamily;
-      font-size: 3rem;
+      font-size: 5rem;
     }
     .trust {
       position: relative;
-      top: -8%;
+      top: -0.5rem;
       p {
         font-family: $font;
         font-size: 3rem;
@@ -230,13 +235,13 @@ $apsFont: "Montagu Slab";
     }
   }
   .form_bg {
-    height: 165vh;
+    height: 90vh;
     padding: 0;
   }
   .form_carrier {
     width: 70%;
     position: relative;
-    top: 30px;
+    top: 10px;
     right: 0;
     margin-left: 0;
     left: 0;
@@ -272,16 +277,22 @@ $apsFont: "Montagu Slab";
     }
   }
   .show_case {
+    display: grid;
+    grid-template-columns: auto auto;
     .double_images {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       gap: 9px;
       margin-left: -10px;
-      img {
-        width: 200px;
-        height: 450px;
+      .item_1,
+      .item_2 {
+        img {
+          width: 100px;
+          height: 750px !important;
+        }
       }
+
       .item_1 {
         grid-column: auto;
       }
@@ -295,6 +306,9 @@ $apsFont: "Montagu Slab";
       p {
         margin-top: -70px;
       }
+      .thime {
+        font-size: 28px !important;
+      }
       .brand_header {
         font-size: 4rem;
       }
@@ -303,6 +317,10 @@ $apsFont: "Montagu Slab";
         top: -4rem;
       }
     }
+  }
+
+  #first_most_section {
+    display: none;
   }
 }
 
@@ -354,11 +372,14 @@ $apsFont: "Montagu Slab";
       display: grid;
       grid-template-columns: auto auto;
       grid-gap: 20px;
-      img {
-        width: 300px;
-        height: 500px;
-        min-height: 50dvh;
-        object-fit: cover;
+      .item_1,
+      .item_2 {
+        img {
+          width: 300px;
+          height: 500px !important;
+          min-height: 50dvh;
+          object-fit: cover;
+        }
       }
       .item_1 {
         grid-column: auto;
@@ -399,22 +420,24 @@ $apsFont: "Montagu Slab";
 }
 
 
-
 @media screen and (max-width: 480px) {
-   .form_bg {
-    height: 150vh;
+  .form_bg {
+    height: 130vh;
     padding: 0;
   }
   .show_case {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column !important;
     .double_images {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-      gap: 9px;
       margin-left: -10px;
-      img {
-        width: 90vw;
-        height: 300px;
+      .item_1,
+      .items_2 {
+        img {
+          width: 90vw !important;
+          height: 300px;
+        }
       }
       .item_1 {
         grid-column: auto;
@@ -429,12 +452,14 @@ $apsFont: "Montagu Slab";
       grid-column: auto;
       p {
         margin-top: -50px;
+        width: 90vw !important;
       }
       .brand_header {
         font-size: 4rem;
       }
       .brand_name {
-        font-size: 1.8rem;
+        text-wrap: nowrap !important;
+        font-size: 2rem;
         top: -3.5rem;
       }
     }
@@ -479,7 +504,7 @@ $apsFont: "Montagu Slab";
   }
   .captions {
     position: absolute;
-    top: 40%;
+    top: 45% !important;
     bottom: 0;
     left: 0;
     right: 0;
@@ -493,7 +518,7 @@ $apsFont: "Montagu Slab";
       top: -8%;
       p {
         font-family: $font;
-        font-size: 4rem;
+        font-size: 24px !important;
         text-wrap: nowrap;
         font-weight: bold;
         color: $pure;
@@ -566,9 +591,12 @@ $apsFont: "Montagu Slab";
       justify-content: space-evenly;
       gap: 9px;
       margin-left: -10px;
-      img {
-        width: 290px;
-        height: 300px;
+      .item_1,
+      .item_2 {
+        img {
+          width: 290px;
+          height: 300px;
+        }
       }
     }
     .shop_time {
@@ -577,6 +605,7 @@ $apsFont: "Montagu Slab";
       width: 84dvw;
       p {
         margin-top: -50px;
+        width: 270px !important;
       }
       .brand_header {
         font-size: 4rem;
@@ -620,10 +649,6 @@ $apsFont: "Montagu Slab";
 }
 
 @media screen and (min-width: 576px) {
-  // .form_bg {
-  //   height: 150vh;
-  //   padding: 0;
-  // }
   .show_case {
     .double_images {
       display: flex;
@@ -631,9 +656,12 @@ $apsFont: "Montagu Slab";
       justify-content: space-evenly;
       gap: 9px;
       margin-left: -10px;
-      img {
-        width: 223px;
-        height: 300px;
+      .item_1,
+      .item_2 {
+        img {
+          width: 223px;
+          height: 300px;
+        }
       }
       .item_1 {
         grid-column: auto;
@@ -657,7 +685,6 @@ $apsFont: "Montagu Slab";
       }
     }
   }
- 
 }
 
 @media screen and (min-width: 991px) {
@@ -668,11 +695,14 @@ $apsFont: "Montagu Slab";
       display: grid;
       grid-template-columns: auto auto;
       grid-gap: 20px;
-      img {
-        width: 300px;
-        height: 500px;
-        min-height: 50dvh;
-        object-fit: cover;
+      .item_1,
+      .item_2 {
+        img {
+          width: 300px;
+          height: 500px;
+          min-height: 50dvh;
+          object-fit: cover;
+        }
       }
       .item_1 {
         grid-column: auto;
