@@ -12,10 +12,10 @@ Welcome to the repository for the **Feliciano Restaurant Website**! This project
 
 ## Screenshots
 
-![Home Page](../src/Photos/home.jpg)
-![Menu Page](../src/Photos/menu.jpg)
-![Contact Page](../src/Photos/contact.jpg)
-![Story Page](../src/Photos/stories.jpg)
+![Home Page](./src/Photos/home.jpg)
+![Menu Page](./src/Photos/menu.jpg)
+![Contact Page](./src/Photos/contact.jpg)
+![Story Page](./src/Photos/stories.jpg)
 
 ## Installation
 
