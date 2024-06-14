@@ -1,4 +1,4 @@
-#Feliciano Restaurant Website
+##Feliciano Restaurant Website
 
 Welcome to the repository for the **Feliciano Restaurant Website**! This project is a modern, responsive website built using React.js, Bootstrap, CSS, Framer-Motion, AOS,. It aims to provide a seamless and engaging experience for users looking to explore the restaurant's menu, make reservations, and learn more about the restaurant.
 
@@ -17,38 +17,6 @@ Welcome to the repository for the **Feliciano Restaurant Website**! This project
 ![Contact Page](./src/Photos/contact.jpg)
 ![Story Page](./src/Photos/stories.jpg)
 
-## Installation
-
-To get a local copy up and running, follow these simple steps:
-
-### Prerequisites
-
-Make sure you have the following installed on your system:
-- Node.js
-- npm (Node Package Manager)
-
-### Installation Steps
-
-1. **Clone the repository**
-
-   ```sh
-   git clone https://github.com/AllSparkTech100/Feliciano_restaurant_design
-   cd restaurant-website
-   ```
-
-2. **Install NPM packages**
-
-   ```sh
-   npm install
-   ```
-
-3. **Start the development server**
-
-   ```sh
-   npm start
-   ```
-
-   The application will open automatically in your browser at `http://localhost:3000`.
 
 ## Usage
 
