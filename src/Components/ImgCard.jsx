@@ -19,7 +19,7 @@ function ImgCard(props) {
         <Card.Img
           variant="top"
           src={props.imgUrl}
-          className="h-100 object-fit-cover h-md-50"
+          className="h-100 object-fit-cover cooking h-md-50"
         />
         <Card.Body>
           <Card.Title className="fw-bold fs-6">{props.name}</Card.Title>

@@ -108,21 +108,43 @@ $apsFont: "Montagu Slab";
   }
 }
 
-.captions {
-  :nth-child(1) {
-    color: $present;
-    font-family: $fontFamily;
+.slide-carry {
+  object-fit: cover;
+  .slide-images {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    img {
+      object-fit: cover;
+    }
   }
-  .trust {
-    font-family: $font;
-    font-weight: bold;
-    color: $pure;
+}
+
+.back-drop {
+  background-color: rgba(0, 0, 0, 0.765);
+  backdrop-filter: drop-shadow(3px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .captions {
+    :nth-child(1) {
+      color: $present;
+      font-family: $fontFamily;
+    }
+    .trust {
+      p {
+        font-family: $font;
+        font-weight: bold;
+        color: $pure;
+      }
+    }
   }
 }
 
 .show_case {
   width: 100%;
-  padding: 9px;
   display: grid;
   grid-template-columns: auto auto;
   .double_images {
@@ -147,7 +169,7 @@ $apsFont: "Montagu Slab";
     }
   }
   .shop_time {
-    margin-left: 1rem;
+    // margin-left: 1rem;
     grid-column: auto;
     margin-top: 40px;
     p {
@@ -290,6 +312,7 @@ $apsFont: "Montagu Slab";
         img {
           width: 100px;
           height: 750px !important;
+          object-position: 50% 100%;
         }
       }
 
@@ -366,7 +389,6 @@ $apsFont: "Montagu Slab";
   }
   .show_case {
     width: 100%;
-    padding: 9px;
     margin-top: -12rem;
     .double_images {
       display: grid;
@@ -390,7 +412,7 @@ $apsFont: "Montagu Slab";
       }
     }
     .shop_time {
-      margin-left: 1rem;
+      // margin-left: 1rem;
       grid-column: auto;
       margin-top: 40px;
       p {
@@ -419,7 +441,6 @@ $apsFont: "Montagu Slab";
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .form_bg {
     height: 145vh;
@@ -435,8 +456,9 @@ $apsFont: "Montagu Slab";
       .item_1,
       .items_2 {
         img {
-          width: 90vw !important;
+          width: 93vw !important;
           height: 300px;
+          object-position: 50% 100%;
         }
       }
       .item_1 {
@@ -452,7 +474,6 @@ $apsFont: "Montagu Slab";
       grid-column: auto;
       p {
         margin-top: -50px;
-        width: 90vw !important;
       }
       .brand_header {
         font-size: 4rem;

@@ -76,7 +76,7 @@ function NavComp() {
           <Navbar
             expand="lg"
             fixed="top"
-            className={isScrolled ? "mt-sm-0" : "mt-lg-5"}
+            className={isScrolled ? "mt-sm-0" : "mt-lg-5 mt-md-4"}
           >
             <Container fluid="sm">
               <Navbar.Brand
@@ -163,8 +163,7 @@ function NavComp() {
               </Button>
             </Container>
           </Navbar>
-        </div>
-        <hr />
+        </div>  
         {isMenuVisible && (
           <Container fluid className="menu_carrier">
             <div className="menu_inner">

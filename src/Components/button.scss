@@ -164,6 +164,7 @@ img {
   visibility: hidden;
 }
 
+
 @media screen and (max-width: 480px) {
   .btn {
     padding: 0.5rem 1rem;
@@ -179,22 +180,27 @@ img {
       object-fit: cover;
     }
   }
+
+  .slide-images {
+    object-position: 50% 50%;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  .captions {
-    :nth-child(1) {
-      color: $present;
-      font-family: $fontFamily;
-    }
-    .trust {
-      font-family: $font;
-      font-weight: bold;
-      color: $pure;
-      p {
-        color: $pure;
-        font-size: 1.5rem;
-      }
-    }
-  }
+  // .captions {
+  //   :nth-child(1) {
+  //     color: $present;
+  //     font-family: $fontFamily;
+  //   }
+  //   .trust {
+  //     font-family: $font;
+  //     font-weight: bold;
+  //     color: $pure;
+  //     p {
+  //       color: $pure;
+  //       font-size: 1.5rem;
+  //     }
+  //   }
+  // }
 }
