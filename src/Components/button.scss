@@ -46,9 +46,30 @@ img {
   margin-top: 10rem;
 }
 
+#course_card {
+  border: none;
+  &:hover{
+    position: relative;
+    top: -5px;
+  }
+  .course_btn {
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    box-shadow: 2px 3px 4px #bfbdbd;
+    &:hover {
+      background-color: $primary;
+      a {
+        color: $bgColor;
+      }
+    }
+  }
+}
+
 .event-up {
-  margin-top: 15rem;
-  h3{
+  margin-top: 10rem;
+  h3 {
     font-family: $fontFamily;
   }
   .event-carrier {
@@ -96,9 +117,6 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .btn {
-    padding: 0.5rem 1rem;
-  }
 }
 
 @media screen and (max-width: 320px) {

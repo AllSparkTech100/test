@@ -5,6 +5,7 @@ import student from "/images/study.jpg";
 import autumn from "/images/autumn.webp";
 import airport from "/images/airport.jpg";
 import Counterr from "../Components/Counter";
+import Courses from "../Components/Courses";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import { GrCertificate } from "react-icons/gr";
 import { FaChild } from "react-icons/fa";
@@ -229,11 +230,7 @@ function Home() {
         {/* Events */}
         <Container fluid className="event-up bg-image">
           <Col>
-            <h3
-              data-aos="fade-up"
-              data-aos-duration="500"
-              className="text-center fw-bold fs-2 text-primary"
-            >
+            <h3 className="text-center fw-bold fs-2 text-primary">
               Educational Events
             </h3>
           </Col>
@@ -273,14 +270,24 @@ function Home() {
           </div>
         </Container>
 
+        {/* School Courses */}
+        <div>
+          <Courses />
+        </div>
+
         {/* Customer Support */}
         <Container className="support">
           <h3 className="text-center mb-5 fw-bold fs-2 text-primary">
             Student Support Center
           </h3>
           <Row className="mt-5">
-            <Col md={6} lg={6} sm={12} data-aos="fade-right"
-              data-aos-duration="500">
+            <Col
+              md={6}
+              lg={6}
+              sm={12}
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <h2 className="my-4 fw-normal">
                 Provide Excellent{" "}
                 <span className="fw-bold fs-1">

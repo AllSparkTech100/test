@@ -8,7 +8,7 @@ function Counterr() {
   const [counterState, setCounterState] = useState(false);
   return (
     <>
-      <Container className=" count_carrier bg-dark text-white" fluid>
+      <Container className=" count_carrier p-4 bg-dark text-white" fluid>
         <ScrollTrigger
           onEnter={() => setCounterState(true)}
           onExit={() => setCounterState(false)}
