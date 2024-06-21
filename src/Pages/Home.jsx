@@ -1,21 +1,18 @@
+import { Container, Row, Col } from "react-bootstrap";
 import "./pages.scss";
+import graduate from "/images/high.jpg";
+import student from "/images/study.jpg";
+import autumn from "/images/autumn.webp";
+import airport from "/images/airport.jpg";
+import Counterr from "../Components/Counter";
+import { IoShieldCheckmarkOutline } from "react-icons/io5";
+import { GrCertificate } from "react-icons/gr";
+import { FaChild } from "react-icons/fa";
+import { GiWorld } from "react-icons/gi";
 import { useEffect } from "react";
-import ImgCard from "../Components/ImgCard";
-import Counterr from "../Components/Counter"
-import Slide from "../Components/Slide";
-import Test from "../Components/Test";
-import CircleImage from "../Components/CircleImage";
-import CardComp from "../Components/Card";
-import FormComp from "../Components/Form";
-import { Container, Row, Col, Image, Card } from "react-bootstrap";
-import Data from "../Components/data";
-import { FaBirthdayCake, FaBusinessTime } from "react-icons/fa";
-import { BiDish } from "react-icons/bi";
-import barr from "../Photos/chef-2.jpg";
-import bar2 from "../Photos/bar-2.jpg";
-import bar1 from "../Photos/wineee.jpg";
-import wine from "../Photos/wines.jpg";
-import chef from "../Photos/chef-1.jpg";
+import SchoolEvent from "../Components/Card";
+import { FaHeadphonesAlt } from "react-icons/fa";
+import { FaMessage } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -25,333 +22,293 @@ function Home() {
       duration: 700,
       easing: "ease",
       once: false,
-      startEvent: "DOMContentLoaded",
     });
   });
   return (
     <>
-      <main className="my-5">
-        <div className="absolutes">
-          <Slide />
-        </div>
-        {/* First Line */}
-        <Container fluid data-aos="fade-up" className="grill d-block">
-          <Row className="m-md-0 mt-3">
-            <Col sm={3} md={3} className="mb-md-4 mb-4 good">
-              <CircleImage
-                imageUrl={
-                  "https://www.eatingwell.com/thmb/ngkEIo8XHdZxLcmY-Se-yk3uGjc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(959x678:961x680)/is-grilled-meat-bad-for-you-ba946756dae3432592d0b463941b1917.jpg"
-                }
-              />
-              <div className="under-text">
-                <h5 className="fw-semibold mt-2">Grilled Meat With Tomatoes</h5>
-                <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
-              </div>
-            </Col>
-            <Col sm={3} md={3} className="good mb-4 ">
-              <CircleImage
-                imageUrl={
-                  "https://hips.hearstapps.com/hmg-prod/images/delish-grilled-potatoes-jpg-1526061594.jpg?crop=1xw:0.9968354430379747xh;center,top"
-                }
-              />
-              <div className="under-text">
-                <h5 className="fw-semibold mt-2">
-                  Grilled Potatoes With Tomatoes
-                </h5>
-                <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
-              </div>
-            </Col>
-            <Col sm={3} md={3} className="good mb-4 ">
-              <CircleImage
-                imageUrl={
-                  "https://img.taste.com.au/pQppG_f4/taste/2016/11/barbecued-japanese-rice-cakes-onigiri-110057-1.jpeg"
-                }
-              />
-              <div className="under-text">
-                <h5 className="fw-semibold mt-2">Grilled Rice With Tomatoes</h5>
-                <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
-              </div>
-            </Col>
-            <Col sm={3} md={3} className="mb-4 good">
-              <CircleImage
-                imageUrl={
-                  "https://www.feastingathome.com/wp-content/uploads/2023/06/Grilled-Tomatoes-12.jpg"
-                }
-              />
-              <div className="under-text">
-                <h5 className="fw-semibold mt-2">
-                  Grilled Tomato With Tomatoes
-                </h5>
-                <p className="fw-medium mt-2">Meat, Potatoes, Rice, Tomato</p>
-              </div>
+      <main>
+        {/* Hero_intro */}
+        <Container className="hero bg-image" fluid>
+          <Row data-aos-startEvent="DOMContentLoad" className="hero_inner">
+            <Col lg={8} sm={12} md={6}>
+              <p
+                className="text-white-50"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                Welcome to
+              </p>
+              <h2
+                className="text-uppercase text-white"
+                data-aos="fade-right"
+                data-aos-duration="500"
+              >
+                nerissa academy
+              </h2>
+              <p
+                className="text-white-50"
+                data-aos="fade-left"
+                data-aos-duration="500"
+              >
+                Making an Impact in the{" "}
+                <span className="fw-bold text-white">Education Sector</span>
+              </p>
             </Col>
           </Row>
         </Container>
-
-        {/* Info Sect */}
-        <Container fluid className="rest_carrier p-md-5 h-100">
-          {/* About */}
-          <div className="container-fluid mt-5">
-            <div className="container-sm-fluid">
-              <Row className=" show_case">
-                <Col>
-                  <div className="double_images">
-                    <div className="item_1 w-100">
-                      <Image src={chef}  alt="" />
-                    </div>
-                    <div className="item_2">
-                      <Image src={barr}  alt="" />
-                    </div>
-                  </div>
-                </Col>
-                <Col>
-                  <div className="shop_time" data-aos="fade-up">
-                    <h6 className="fw-normal brand_header">about</h6>
-                    <h3 className="fw-medium brand_name ">
-                      Feliciano Restaurant
-                    </h3>
-                    <p className="fw-normal fs-4 ">
-                      A small river named Duden flows by their place and
-                      supplies it with the necessary regelialia. It is a
-                      paradisematic country, in which roasted parts of sentences
-                      fly into your mouth.
-                    </p>
-                    <p className="fw-normal fs-4 mt-4">
-                      Mon -Fri &nbsp;{" "}
-                      <span className="fw-bold">8AM - 11PM</span>
-                    </p>
-                    <h4 className="fw-bold thime fs-1">+234-9027-91057</h4>
-                  </div>
-                </Col>
-              </Row>
-            </div>
-          </div>
-
-          {/* Personnel Count */}
-          <Counterr />
-          {/* Services */}
-          <section id="services">
+        {/* Application Procedures */}
+        <Container className="applications">
+          <Row className="gx-5">
             <Col
-              data-aos="fade-up"
               sm={12}
-              md={12}
-              className="text-center head"
+              md={6}
+              lg={6}
+              data-aos="fade-right"
+              data-aos-duration="500"
+              className="mt-5"
             >
-              <h4>Services</h4>
-              <h2 className="fw-bolder">Catering Services</h2>
+              <h4 className="mb-3 text-left">Application Processes</h4>
+              <h5 className="fw-bold text-primary">
+                Applications are open for all classes
+              </h5>
+              <p className="my-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                quo natus quae distinctio dolorum, explicabo ipsum obcaecati
+                porro sunt, officiis eveniet facilis laboriosam odit earum in
+                amet itaque? Eius aliquam quae, necessitatibus fugit iure veniam
+                quod rerum natus. Error, nulla. Provident incidunt veniam et
+                corrupti qui accusamus numquam, quod similique.
+              </p>
+              <p className="my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+                architecto ullam, laudantium impedit inventore tempora corporis
+                facere natus deleniti quisquam, facilis fugiat quae culpa
+                asperiores.
+              </p>
+              <button
+                data-aos="fade-right"
+                data-aos-duration="500"
+                className="btn_primary buttons my-3"
+              >
+                <a href="" className="text-decoration-none text-white">
+                  Register Here
+                </a>
+              </button>
             </Col>
-            <Row>
-              <Col data-aos="fade-up" md={4} sm={12} className="mt-4">
-                <CardComp
-                  icon={<FaBirthdayCake />}
-                  subtitle="Birthday Party"
-                  text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
-                />
+            <Col className="d-none d-md-block d-lg-block" md={6} lg={6}>
+              <img
+                data-aos="fade-left"
+                data-aos-duration="500"
+                src={graduate}
+                alt=""
+                className="img-fluid h-100 rounded-5"
+              />
+            </Col>
+          </Row>
+        </Container>
+        {/* Scroll Counter */}
+        <Counterr />
+
+        {/* Services */}
+        <Container fluid>
+          <section className="service">
+            <Col>
+              <h5
+                data-aos="fade-down"
+                data-aos-duration="500"
+                className="text-uppercase fw-bold text-primary serve_title"
+              >
+                What we offer
+              </h5>
+            </Col>
+            <Row className="mt-3 p-lg-2 p-md-2 p-0">
+              <Col
+                data-aos="fade-down"
+                data-aos-duration="500"
+                sm={12}
+                md={6}
+                lg={6}
+                className="mb-3"
+              >
+                <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center justify-contents-between">
+                  <div>
+                    <IoShieldCheckmarkOutline size={90} />
+                  </div>
+                  <p className="fw-normal ms-lg-5 ms-md-2">
+                    <h4 className="fw-semibold text-uppercase mt-4 mb-3">
+                      safety first
+                    </h4>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veniam officia, ipsam quasi enim libero obcaecati
+                    repellendus inventore molestiae et perspiciatis dolor,
+                    adipisci laudantium facilis at fugiat iure nulla commodi sed
+                    numquam, eveniet dolorem consequuntur exercitationem eos
+                    velit? Nemo, quia! Corporis.
+                  </p>
+                </div>
               </Col>
-              <Col data-aos="fade-up" md={4} sm={12} className="mt-4">
-                <CardComp
-                  icon={<FaBusinessTime />}
-                  subtitle="Business Meeting"
-                  text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
-                />
+              <Col
+                data-aos="fade-up"
+                data-aos-duration="500"
+                sm={12}
+                md={6}
+                lg={6}
+                className="mb-3"
+              >
+                <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center justify-contents-between">
+                  <div>
+                    <FaChild size={90} />
+                  </div>
+                  <p className="fw-normal ms-lg-5 ms-md-2">
+                    <h4 className="fw-semibold text-uppercase mt-4 mb-3">
+                      infant care
+                    </h4>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veniam officia, ipsam quasi enim libero obcaecati
+                    repellendus inventore molestiae et perspiciatis dolor,
+                    adipisci laudantium facilis at fugiat iure nulla commodi sed
+                    numquam, eveniet dolorem consequuntur exercitationem eos
+                    velit? Nemo, quia! Corporis.
+                  </p>
+                </div>
               </Col>
-              <Col data-aos="fade-up" md={4} sm={12} className="mt-4">
-                <CardComp
-                  icon={<BiDish />}
-                  subtitle="Wedding Party"
-                  text="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
-                />
+              <Col
+                data-aos="fade-down"
+                data-aos-duration="500"
+                sm={12}
+                md={6}
+                lg={6}
+                className="mb-3"
+              >
+                <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center justify-contents-between">
+                  <div>
+                    <GiWorld size={90} />
+                  </div>
+                  <p className="fw-normal ms-lg-5 ms-md-2">
+                    <h4 className="fw-semibold text-uppercase mt-4 mb-3">
+                      happy environment
+                    </h4>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veniam officia, ipsam quasi enim libero obcaecati
+                    repellendus inventore molestiae et perspiciatis dolor,
+                    adipisci laudantium facilis at fugiat iure nulla commodi sed
+                    numquam, eveniet dolorem consequuntur exercitationem eos
+                    velit? Nemo, quia! Corporis.
+                  </p>
+                </div>
+              </Col>
+              <Col
+                data-aos="fade-up"
+                data-aos-duration="500"
+                sm={12}
+                md={6}
+                lg={6}
+                className="mb-3"
+              >
+                <div className="d-flex flex-column flex-lg-row flex-md-row align-items-center justify-contents-between">
+                  <div>
+                    <GrCertificate size={90} />
+                  </div>
+                  <p className="fw-normal ms-lg-5 ms-md-2">
+                    <h4 className="fw-semibold text-uppercase mt-4 mb-3">
+                      certified teachers
+                    </h4>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veniam officia, ipsam quasi enim libero obcaecati
+                    repellendus inventore molestiae et perspiciatis dolor,
+                    adipisci laudantium facilis at fugiat iure nulla commodi sed
+                    numquam, eveniet dolorem consequuntur exercitationem eos
+                    velit? Nemo, quia! Corporis.
+                  </p>
+                </div>
               </Col>
             </Row>
           </section>
+        </Container>
 
-          {/* Special Menu */}
-          <section id="menu">
-            <Col
+        {/* Events */}
+        <Container fluid className="event-up bg-image">
+          <Col>
+            <h3
               data-aos="fade-up"
-              sm={12}
-              md={12}
-              className="text-center menu_head"
+              data-aos-duration="500"
+              className="text-center fw-bold fs-2 text-primary"
             >
-              <h4>Specialties</h4>
-              <h2 className="fw-bold">Our Menu</h2>
-            </Col>
-            <Data />
-          </section>
-        </Container>
-
-        {/* Chefs */}
-        <Container fluid>
-          <Container fluid="md">
-            <section className="chef">
-              <Col
-                data-aos="fade-up"
-                sm={12}
-                md={12}
-                className="text-center chef_head"
-              >
-                <h4>Chef</h4>
-                <h2 className="fw-bold">Our Master Chef</h2>
-              </Col>
-              <Row id="imges">
-                <Col data-aos="fade-up"  md={6}
-                lg={3}
-                sm={12} className="mt-sm-5">
-                  <ImgCard
-                    imgUrl={chef}
-                    name={"John Smooth"}
-                    text={"Restaurant Owner"}
-                  />
-                </Col>
-                <Col data-aos="fade-up"  md={6}
-                lg={3}
-                sm={12} className="mt-sm-5">
-                  <ImgCard
-                    imgUrl={
-                      "https://www.shutterstock.com/image-photo/cooking-culinary-people-concept-happy-600nw-2136448507.jpg"
-                    }
-                    name={"Rebecca Welson"}
-                    text={"Head Chef"}
-                  />
-                </Col>
-                <Col data-aos="fade-up"  md={6}
-                lg={3}
-                sm={12} className="mt-sm-5">
-                  <ImgCard
-                    imgUrl={
-                      "https://dg1xqmhtoint1.cloudfront.net/img/ihm/blog/ihm-12.webp?mtime=20220519155503&focal=none"
-                    }
-                    name={"Kharl Bryant"}
-                    text={"Chef"}
-                  />
-                </Col>
-                <Col data-aos="fade-up" md={6}
-                lg={3}
-                sm={12} className="mt-sm-5">
-                  <ImgCard
-                    imgUrl={
-                      "https://www.ecpi.edu/sites/default/files/Aug%2022%20CIV.png"
-                    }
-                    name={"Luke Simon"}
-                    text={"Chef"}
-                  />
-                </Col>
-              </Row>
-            </section>
-          </Container>
-        </Container>
-
-        {/* Form */}
-        <Container fluid className="bg-image form_bg p-md-5">
-          <div>
-            <FormComp />
+              Educational Events
+            </h3>
+          </Col>
+          <Row className="mt-5">
+            <SchoolEvent
+              img={autumn}
+              title="Eduma Autumn 2024"
+              date="29th May, 2024"
+              time="08:00 - 14:00"
+              venue="Mainland Street NG, Rivers State"
+              text="  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam."
+            />
+            <SchoolEvent
+              img={student}
+              title="Spelling Bee Competition"
+              date="29th July, 2024"
+              time="10:00 - 16:00"
+              venue="12 Ajeokuta Street NG, Ondo State"
+              text="  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam."
+            />
+            <SchoolEvent
+              img={airport}
+              title="Excursion to the PortHarcourt International Airport"
+              date="29th June, 2024"
+              time="10:00 - 16:00"
+              venue="POrtHarcourt Airport, Rivers State"
+              text="  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quisquam."
+            />
+          </Row>
+          <div className="mt-5 mb-5 d-flex align-items-center justify-content-center">
+            <button className=" fw-medium buttons btn_secondary">
+              <a href="/">View More</a>
+            </button>
           </div>
         </Container>
 
-        {/* Testimony */}
-        <Container fluid className="testimony">
-          <Col data-aos="fade-up" sm={12} md={12} className="text-center infoo">
-            <h4>Testimony</h4>
-            <div className="infoo_inner text-center">
-              <h2 className="fw-bold text-center">Happy Customers</h2>
-            </div>
-          </Col>
-          <Container fluid>
-            <Test />
-          </Container>
-        </Container>
+        {/* Customer Support */}
+        <Container className="support">
+          <h3 className="text-center mb-5 fw-bold fs-2 text-primary">
+            Student Support Center
+          </h3>
+          <Row className="mt-5">
+            <Col md={6} lg={6} sm={12} data-aos="fade-right"
+              data-aos-duration="500">
+              <h2 className="my-4 fw-normal">
+                Provide Excellent{" "}
+                <span className="fw-bold fs-1">
+                  Customer Service & Implement
+                </span>
+              </h2>
 
-        {/* Blog */}
-        <Container fluid>
-          <div className="blog">
-            <Col
-              data-aos="fade-up"
-              sm={12}
-              md={12}
-              className="text-center info"
-            >
-              <h4>Blog</h4>
-              <div className="info_inner">
-                <h2 className="fw-bold">Recent Post</h2>
+              <p className="mt-5 mb-5 text-justify">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laborum ratione repellat quia laboriosam fuga aspernatur saepe
+                maxime, magnam ipsa, culpa, est id labore Debitis, tempora.
+                Sapiente, enim pariatur.
+              </p>
+
+              <div className=" d-flex align-items-center gap-3">
+                <FaHeadphonesAlt size={50} className="text-primary" />
+                <div className="my-5">
+                  <h4 className="fw-medium fs-5">HELPLINE:</h4>
+                  <p className="fs-3 fw-medium text-primary">(234)90389289</p>
+                </div>
               </div>
             </Col>
-            <Container>
-              <Row>
-                <Col
-                  data-aos="fade-up"
-                  data-aos-duration="300"
-                  md={4}
-                  sm={12}
-                  className="mt-5"
-                >
-                  <Card className="shadow-none border-0">
-                    <Card.Img
-                      variant="top"
-                      className="img fluid h-50"
-                      src={wine}
-                    />
-                    <Card.Body>
-                      <Card.Text style={{ color: "#787878" }}>
-                        Sept. 06 2019 Admin
-                      </Card.Text>
-                      <Card.Title>Taste the Delicious foods in Asia</Card.Title>
-                    </Card.Body>
-                    <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
-                    </Card.Footer>
-                  </Card>
-                </Col>
-                <Col
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                  md={4}
-                  sm={12}
-                  className="mt-5"
-                >
-                  <Card className="shadow-none border-0">
-                    <Card.Img
-                      variant="top"
-                      className="h-auto img-fluid"
-                      src={bar2}
-                    />
-                    <Card.Body>
-                      <Card.Text style={{ color: "#787878" }}>
-                        Sept. 06 2019 Admin
-                      </Card.Text>
-                      <Card.Title>Taste the Delicious foods in Asia</Card.Title>
-                    </Card.Body>
-                    <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
-                    </Card.Footer>
-                  </Card>
-                </Col>
-                <Col
-                  data-aos="fade-up"
-                  data-aos-duration="800"
-                  md={4}
-                  sm={12}
-                  className="mt-5"
-                >
-                  <Card className="shadow-none border-0 h-100">
-                    <Card.Img
-                      variant="top"
-                      className="h-75 img fluid"
-                      src={bar1}
-                    />
-                    <Card.Body>
-                      <Card.Text style={{ color: "#787878" }}>
-                        Sept. 06 2019 Admin
-                      </Card.Text>
-                      <Card.Title>Taste the Delicious foods in Asia</Card.Title>
-                    </Card.Body>
-                    <Card.Footer className="border-0">
-                      <small className="text-muted">Read More</small>
-                    </Card.Footer>
-                  </Card>
-                </Col>
-              </Row>
-            </Container>
-          </div>
+            <Col data-aos="fade-left" data-aos-duration="500">
+              <div className="message d-md-block d-lg-flex d-none">
+                <FaMessage size={150} className="text-white" />
+              </div>
+            </Col>
+          </Row>
         </Container>
       </main>
     </>
