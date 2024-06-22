@@ -1,5 +1,6 @@
 @import "../_variable";
 
+// Styles for the Home page
 .carrier_error {
   background-image: url("/public/images/mini.png");
   background-repeat: no-repeat;
@@ -30,9 +31,9 @@
       rgba(0, 0, 0, 0.696),
       rgba(0, 0, 0, 0.696)
     ),
-    url("/public/images/student.jpg");
+    url("/public/images/high.jpg");
   background-position: center;
-  font-family: $font;
+  font-family: $fontFamily;
   .hero_inner {
     padding: 3rem;
     position: relative;
@@ -42,7 +43,7 @@
     top: 10rem;
     line-height: 1;
     p {
-      font-size: 20px;
+      font-size: 1.3rem;
       span {
         color: $primary;
       }
@@ -71,16 +72,21 @@
   }
 }
 
-.support {
+.courses {
   margin-top: 10rem;
+}
+
+.support {
+  margin-top: 15rem;
   h3 {
     font-family: $fontFamily;
+    margin: 8rem;
   }
   p {
     font-size: 1.12rem;
   }
 
-  .message{
+  .message {
     border-radius: 20px;
     height: 100%;
     background-color: $secondary;
@@ -89,5 +95,43 @@
     justify-content: center;
   }
 }
+
+// Styles for About Section
+.about_intro {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.792)),
+    url("/public/images/library.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center center;
+  h2 {
+    color: $accent;
+    font-size: 3rem;
+    font-family: $font;
+    font-weight: bold;
+  }
+}
+
+.duties, .learns{
+  margin-top:10rem;
+}
+
+.learns{
+  h3{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: $fontFamily;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  img{
+    position: relative;
+    top: 3rem;
+  }
+}
+
+
 @media screen and (max-widt: 320px) {
 }

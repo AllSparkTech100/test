@@ -48,6 +48,7 @@ img {
 
 #course_card {
   border: none;
+  cursor: pointer;
   &:hover{
     position: relative;
     top: -5px;

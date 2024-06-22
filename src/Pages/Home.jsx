@@ -271,13 +271,27 @@ function Home() {
         </Container>
 
         {/* School Courses */}
-        <div>
-          <Courses />
-        </div>
+        <Container fluid="sm" className="courses">
+          <h2 className="text-center fw-bold">Our Curriculums</h2>
+          <p className="text-center fs-4">
+            We Offer all British and European Standard Courses{" "}
+          </p>
+          <div>
+            <Courses />
+          </div>
+          {/* this button takes you to the course page */}
+          <div className="mt-5 d-flex justify-content-center">
+            <button className="buttons btn_primary">
+              <a href="" className="text-white">
+                View All Courses
+              </a>
+            </button>
+          </div>
+        </Container>
 
         {/* Customer Support */}
         <Container className="support">
-          <h3 className="text-center mb-5 fw-bold fs-2 text-primary">
+          <h3 className="text-center fw-bold fs-2 text-primary text-uppercase">
             Student Support Center
           </h3>
           <Row className="mt-5">
