@@ -30,32 +30,36 @@ function Home() {
       <main>
         {/* Hero_intro */}
         <Container className="hero bg-image" fluid>
-          <Row data-aos-startEvent="DOMContentLoad" className="hero_inner">
-            <Col lg={8} sm={12} md={6}>
-              <p
-                className="text-white-50"
-                data-aos="fade-up"
-                data-aos-duration="500"
-              >
-                Welcome to
-              </p>
-              <h2
-                className="text-uppercase text-white"
-                data-aos="fade-right"
-                data-aos-duration="500"
-              >
-                nerissa academy
-              </h2>
-              <p
-                className="text-white-50"
-                data-aos="fade-left"
-                data-aos-duration="500"
-              >
-                Making an Impact in the{" "}
-                <span className="fw-bold text-white">Education Sector</span>
-              </p>
-            </Col>
-          </Row>
+          <Col
+            lg={8}
+            sm={12}
+            md={6}
+            data-aos-startEvent="DOMContentLoad"
+            className="hero_inner"
+          >
+            <p
+              className="text-white-50"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
+              Welcome to
+            </p>
+            <h2
+              className="text-uppercase text-white"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
+              nerissa high school
+            </h2>
+            <p
+              className="text-white-50"
+              data-aos="fade-left"
+              data-aos-duration="500"
+            >
+              Making an Impact in the{" "}
+              <span className="fw-bold text-white">Education Sector</span>
+            </p>
+          </Col>
         </Container>
         {/* Application Procedures */}
         <Container className="applications">
@@ -237,30 +241,27 @@ function Home() {
           <Row className="mt-5">
             <SchoolEvent
               img={autumn}
-              title="Eduma Autumn 2024"
-              date="29th May, 2024"
-              time="08:00 - 14:00"
-              venue="Mainland Street NG, Rivers State"
-              text="  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quisquam."
+              title={"Eduma Autumn 2024"}
+              date={"29th May, 2024"}
+              time={"08:00 - 14:00"}
+              venue={"Mainland Street NG, Rivers State"}
+              text={" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam."}
             />
             <SchoolEvent
               img={student}
-              title="Spelling Bee Competition"
-              date="29th July, 2024"
-              time="10:00 - 16:00"
-              venue="12 Ajeokuta Street NG, Ondo State"
-              text="  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quisquam."
+              title={"Spelling Bee Competition"}
+              date={"29th July, 2024"}
+              time={"10:00 - 16:00"}
+              venue={"12 Ajeokuta Street NG, Ondo State"}
+              text={"Lorem ipsum dolor sit amet consectetur adipisicing elit.  Quisquam."}
             />
             <SchoolEvent
               img={airport}
-              title="Excursion to the PortHarcourt International Airport"
-              date="29th June, 2024"
-              time="10:00 - 16:00"
-              venue="POrtHarcourt Airport, Rivers State"
-              text="  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quisquam."
+              title={"Excursion to the PortHarcourt International Airport"}
+              date={"29th June, 2024"}
+              time={"10:00 - 16:00"}
+              venue={"PortHarcourt Airport, Rivers State"}
+              text={"  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam."}
             />
           </Row>
           <div className="mt-5 mb-5 d-flex align-items-center justify-content-center">

@@ -7,7 +7,9 @@ import { GrCertificate } from "react-icons/gr";
 import { FaGlobe } from "react-icons/fa6";
 import { GoTriangleRight } from "react-icons/go";
 import { GiWorld } from "react-icons/gi";
+import TeachersCard from "../Components/TeachersCard";
 import meet from "/public/images/meet.svg";
+import Parents from "../Components/Parents";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -38,7 +40,7 @@ function About() {
                 className="d-flex flex-column my-4 mx-4  align-items-center justify-content-center"
               >
                 <FaGlobe className="text-primary" size={90} />
-                <h4>Our Programs</h4>
+                <h4 className="mt-3">Our Programs</h4>
               </div>
             </Col>
             <Col md={4} lg={4} sm={6}>
@@ -48,7 +50,7 @@ function About() {
                 className="d-flex flex-column  my-4 mx-4 align-items-center justify-content-center"
               >
                 <RiSchoolLine className="text-primary" size={90} />
-                <h4>Our History</h4>
+                <h4 className="mt-3">Our History</h4>
               </div>
             </Col>
             <Col md={4} lg={4} sm={6}>
@@ -58,7 +60,7 @@ function About() {
                 className="d-flex flex-column my-4 mx-4  align-items-center justify-content-center"
               >
                 <ImBooks className="text-primary" size={90} />
-                <h4>Research</h4>
+                <h4 className="mt-3">Research</h4>
               </div>
             </Col>
             <Col md={4} lg={4} sm={6}>
@@ -68,7 +70,7 @@ function About() {
                 className="d-flex flex-column my-4 mx-4  align-items-center justify-content-center"
               >
                 <PiStudentLight className="text-primary" size={90} />
-                <h4>Students</h4>
+                <h4 className="mt-3">Students</h4>
               </div>
             </Col>
             <Col md={4} lg={4} sm={6}>
@@ -78,7 +80,7 @@ function About() {
                 className="d-flex flex-column my-4 mx-4  align-items-center justify-content-center"
               >
                 <GiWorld className="text-primary" size={90} />
-                <h4>Suitable Environment</h4>
+                <h4 className="mt-3">Suitable Environment</h4>
               </div>
             </Col>
             <Col md={4} lg={4} sm={6}>
@@ -88,7 +90,7 @@ function About() {
                 className="d-flex flex-column my-4 mx-4  align-items-center justify-content-center"
               >
                 <GrCertificate className="text-primary" size={90} />
-                <h4>High QUality</h4>
+                <h4 className="mt-3">High QUality</h4>
               </div>
             </Col>
           </Row>
@@ -139,11 +141,69 @@ function About() {
               </button>
             </Col>
 
-            <Col md={6} lg={6} sm={12}    data-aos="fade-left"
-                data-aos-duration="500">
+            <Col
+              md={6}
+              lg={6}
+              sm={12}
+              data-aos="fade-left"
+              data-aos-duration="500"
+              className="d-none d-md-block d-lg-block"
+            >
               <img src={meet} className="img-fluid" alt="" />
             </Col>
           </Row>
+        </Container>
+
+        {/* staffs */}
+        <Container className="staffs">
+          <Col>
+            <h3 className="fw-bold m-5 text-primary text-center">
+              Our Experienced Staff
+            </h3>
+          </Col>
+          <Row>
+            <Col md={4} lg={3} sm={12}>
+              <TeachersCard
+                imgUrl={
+                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                name={"Michael john"}
+                text={"Professor"}
+              />
+            </Col>
+
+            <Col md={4} lg={3} sm={12}>
+              <TeachersCard
+                imgUrl={
+                  "https://plus.unsplash.com/premium_photo-1661505218403-c684557a824d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                name={"Favour Peters"}
+                text={"Physics Teacher"}
+              />
+            </Col>
+            <Col md={4} lg={3} sm={12}>
+              <TeachersCard
+                imgUrl={
+                  "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                name={"James Effiong"}
+                text={"Social Science Teacher"}
+              />
+            </Col>
+            <Col md={4} lg={3} sm={12}>
+              <TeachersCard
+                imgUrl={
+                  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                name={"Musa Habib"}
+                text={"Eucationist"}
+              />
+            </Col>
+          </Row>
+        </Container>
+        {/* Testimony */}
+        <Container className="parents-discuss">
+          <Parents />
         </Container>
       </main>
     </>

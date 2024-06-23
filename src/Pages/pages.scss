@@ -34,14 +34,11 @@
     url("/public/images/high.jpg");
   background-position: center;
   font-family: $fontFamily;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   .hero_inner {
-    padding: 3rem;
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 10rem;
-    line-height: 1;
     p {
       font-size: 1.3rem;
       span {
@@ -113,25 +110,47 @@
   }
 }
 
-.duties, .learns{
-  margin-top:10rem;
+.duties,
+.learns {
+  margin-top: 10rem;
 }
 
-.learns{
-  h3{
+.learns {
+  h3 {
     font-size: 2rem;
     font-weight: bold;
     font-family: $fontFamily;
   }
-  p{
+  p {
     font-size: 1.2rem;
   }
-  img{
+  img {
     position: relative;
     top: 3rem;
   }
 }
 
+.staffs {
+  margin-top: 10rem;
+}
+
+// Styles for Contact Section
+.contact_intro {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.529)),
+    url("/public/images/high.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    color: $accent;
+    font-family: $font;
+    font-size: 3rem;
+  }
+
+  // .contact_carrier {
+  // }
+}
 
 @media screen and (max-widt: 320px) {
 }

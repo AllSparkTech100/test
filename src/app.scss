@@ -6,41 +6,19 @@ header {
   align-items: center;
   justify-content: center;
   background-color: $primary;
-  height: 4rem;
-  position: sticky;
-  top: 0;
+  height: 5rem;
+  width: 100%;
   z-index: 999;
+  position: fixed;
+  top: 0;
 
   .heading {
     font-family: $fontFamily;
     font-size: 1.5rem;
   }
-}
 
-#first_most_section {
-  font-family: $font;
-  background-color: $primary;
-  width: 100%;
-
-  .first_most_inner {
-    background-color: rgba(185, 182, 182, 0.182);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2.5rem;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-    text-align: center;
-    .phone_no,
-    .mailing_address,
-    .open_hrs {
-      margin-top: 10px;
-    }
+  .nav_heading{
+    margin-left: 7rem;
   }
 }
 
@@ -60,7 +38,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: $primary;
-    height: 80dvh;
+    height: 85dvh;
     ul {
       margin-top: 1rem;
       a {
@@ -75,13 +53,6 @@ header {
         display: block;
         align-items: flex-start;
         justify-content: left;
-        &:last-child {
-          margin-top: 20px;
-          .btn {
-            padding: 0.2rem 1rem;
-            text-align: left;
-          }
-        }
       }
     }
   }

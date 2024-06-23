@@ -5,11 +5,6 @@ img {
   width: 100vw;
 }
 
-.socials {
-  color: $primary;
-  letter-spacing: 10px;
-}
-
 .carrier_in {
   text-align: center;
 }
@@ -49,7 +44,7 @@ img {
 #course_card {
   border: none;
   cursor: pointer;
-  &:hover{
+  &:hover {
     position: relative;
     top: -5px;
   }
@@ -115,6 +110,44 @@ img {
       }
     }
   }
+}
+
+// About Page
+.circle_image{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.teaching_staff {
+  cursor: pointer;
+  border: none;
+  margin-top: 3rem;
+  .social_carrier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin: 0 30px 0 30px;
+    gap: 5px;
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: $accent;
+      color: $primary;
+      height: 40px;
+      width: 40px;
+      border: none;
+      border-radius: 50px;
+      &:hover {
+        background: $primary;
+        color: $bgColor;
+      }
+    }
+  }
+}
+.parents-discuss{
+margin-top: 25rem;
 }
 
 @media screen and (max-width: 480px) {
