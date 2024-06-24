@@ -18,7 +18,7 @@ function Pages() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/updates" element={<Updates />} />
         <Route path="/admission" element={<Admission />} />
-        <Route path="/admission" element={<Rules />} />
+        <Route path="/rules" element={<Rules />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Error />} />
       </Routes>

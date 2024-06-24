@@ -292,7 +292,7 @@ function Home() {
 
         {/* Customer Support */}
         <Container className="support">
-          <h3 className="text-center fw-bold fs-2 text-primary text-uppercase">
+          <h3 className="text-center fw-bold fs-4 text-primary text-uppercase">
             Student Support Center
           </h3>
           <Row className="mt-5">

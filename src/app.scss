@@ -6,7 +6,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: $primary;
-  height: 5rem;
+  height: 4rem;
   width: 100%;
   z-index: 999;
   position: fixed;
@@ -16,8 +16,12 @@ header {
     font-family: $fontFamily;
     font-size: 1.5rem;
   }
-
-  .nav_heading{
+  a {
+    &:hover {
+      color: $accent !important;
+    }
+  }
+  .nav_heading {
     margin-left: 7rem;
   }
 }
@@ -78,7 +82,7 @@ header {
 @media screen and (max-width: 320px) {
   .menu_carrier {
     .menu_inner {
-      height: 80dvh;
+      height: 85dvh;
       ul {
         margin-top: 1rem;
         a {
@@ -95,9 +99,11 @@ header {
     }
   }
 
-  #first_most_section {
-    display: none;
+header{
+  .heading{
+    font-size: 1.2rem;
   }
+}
 }
 
 @media screen and (max-width: 480px) {

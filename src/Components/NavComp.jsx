@@ -28,23 +28,10 @@ function NavComp() {
   //   };
   // }, []);
 
-  // const headerStyle = {
-  //   position: "fixed",
-  //   top: "0",
-  //   zIndex: "9999",
-  //   width: "100vw",
-  //   transition: "background-color 0.3s ease",
-  //   display: "flex",
-  //   alignItems: "center",
-  //   justifyContents: "space-between",
-  //   height: "5rem",
-  //   backgroundColor: "#034A7F",
-  // };
-
-  return (
+ return (
     <>
       <header>
-        <Navbar expand="lg" fixed="top" className="mt-2">
+        <Navbar expand="lg" fixed="top" >
           <Container fluid="sm">
             <Navbar.Brand href="/" className="heading text-white fw-bold">
               Nerissa High School

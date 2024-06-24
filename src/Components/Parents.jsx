@@ -108,7 +108,7 @@ function Parents() {
         {UserTestimony.map((testimony) => {
           return (
             <SplideSlide key={testimony.id}>
-              <Card className="border-0 justify-content-center d-flex align-items-center  text-center">
+              <Card className="border-0 bg-transparent justify-content-center d-flex align-items-center  text-center">
                 <Card.Img
                   variant="top"
                   src={man}
