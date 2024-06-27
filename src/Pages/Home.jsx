@@ -33,7 +33,7 @@ function Home() {
           <Col
             lg={8}
             sm={12}
-            md={6}
+            md={10}
             data-aos-startEvent="DOMContentLoad"
             className="hero_inner"
           >
@@ -63,13 +63,13 @@ function Home() {
         </Container>
         {/* Application Procedures */}
         <Container className="applications">
-          <Row className="">
+          <Row>
             {/* Procedures */}
             <Col
               sm={12}
               md={6}
               lg={6}
-              data-aos="fade-up"
+              data-aos="fade-right"
               data-aos-duration="500"
               className="mt-5"
             >
@@ -130,7 +130,7 @@ function Home() {
                 data-aos="fade-down"
                 data-aos-duration="500"
                 sm={12}
-                md={6}
+                md={12}
                 lg={6}
                 className="mb-5"
               >
@@ -158,7 +158,7 @@ function Home() {
                 data-aos="fade-up"
                 data-aos-duration="500"
                 sm={12}
-                md={6}
+                md={12}
                 lg={6}
                 className="mb-5"
               >
@@ -186,7 +186,7 @@ function Home() {
                 data-aos="fade-down"
                 data-aos-duration="500"
                 sm={12}
-                md={6}
+                md={12}
                 lg={6}
                 className="mb-5"
               >
@@ -214,7 +214,7 @@ function Home() {
                 data-aos="fade-up"
                 data-aos-duration="500"
                 sm={12}
-                md={6}
+                md={12}
                 lg={6}
                 className="mb-5"
               >
@@ -290,7 +290,7 @@ function Home() {
         {/* School Courses */}
         <Container fluid="sm" className="courses">
           <h2 className="text-center fw-bold">Our Curriculums</h2>
-          <p className="text-center fs-4">
+          <p className="text-center fs-5">
             We Offer all British and European Standard Courses{" "}
           </p>
           <div>
@@ -344,10 +344,10 @@ function Home() {
             </Col>
             {/* message icon */}
             <Col data-aos="fade-left" data-aos-duration="500">
-              <div className="message d-none d-md-none d-lg-block">
+              <div className="message d-none d-md-block d-lg-block">
                 <FaMessage
                   size={150}
-                  className=" d-none d-md-none d-lg-block text-white"
+                  className=" d-none d-md-block d-lg-block text-white"
                 />
               </div>
             </Col>

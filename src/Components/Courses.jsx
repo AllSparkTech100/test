@@ -62,7 +62,7 @@ function Courses() {
       <Row className="g-2">
         {courseList.map((course) => {
           return (
-            <Col key={course.id} md={4} lg={4} sm={12} data-aos="fade-up"
+            <Col key={course.id} md={6} lg={4} sm={12} data-aos="fade-up"
           data-aos-duration="500">
               <Card id="course_card"  className="bg-white my-3 mx-1 h-100">
                 <Card.Img variant="top" className="h-50" src={course.imgurl} />

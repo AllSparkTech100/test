@@ -29,7 +29,7 @@
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.696),
-      rgba(0, 0, 0, 0.696)
+      rgba(0, 0, 0, 0.735)
     ),
     url("/public/images/high.jpg");
   background-position: center;
@@ -55,6 +55,9 @@
 .applications {
   margin-top: 10rem;
   margin-bottom: 4rem;
+  p {
+    text-align: justify;
+  }
 }
 .service {
   margin-top: 14rem;
@@ -78,7 +81,7 @@
   margin-top: 15rem;
   h3 {
     font-family: $fontFamily;
-    font-size:1.5rem;
+    font-size: 1.5rem;
   }
   p {
     font-size: 1.12rem;
@@ -221,34 +224,47 @@
     h5 {
       font-size: 1.3rem;
     }
-    p{
+    p {
       font-size: 1.2rem;
       text-align: justify;
     }
   }
-  .service{
-    p{
+  .service {
+    p {
       text-align: justify;
     }
   }
-  .support{
-    p{
+  .support {
+    p {
       text-align: justify;
     }
-    .message{
+    .message {
       display: none;
     }
   }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px) {
   .hero {
     .hero_inner {
       p {
-        font-size: 1.3rem;
+        font-size: 1rem;
       }
       h2 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    .hero_inner {
+      p {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 2rem;
       }
     }
   }
