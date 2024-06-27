@@ -10,6 +10,7 @@ function Courses() {
     AOS.init({
       duration: 700,
       easing: "ease",
+      offset:"0",
       once: false,
     });
   });

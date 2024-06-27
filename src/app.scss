@@ -15,12 +15,7 @@ header {
   .heading {
     font-family: $fontFamily;
     font-size: 1.5rem;
-  }
-  a {
-    &:hover {
-      color: $accent !important;
     }
-  }
   .nav_heading {
     margin-left: 7rem;
   }

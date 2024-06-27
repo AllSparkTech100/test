@@ -24,7 +24,7 @@ function Contact() {
           <Row className="contact-inner">
           {/* First container information */}
             <Col
-              md={6}
+              md={12}
               lg={6}
               sm={12}
               className="p-3 p-md-5 p-lg-5 bg-secondary"
@@ -141,7 +141,7 @@ function Contact() {
 
             
             {/* Form Container */}
-            <Col md={6} lg={6} sm={12} className="bg-white p-3 p-md-5 p-lg-5">
+            <Col md={12} lg={6} sm={12} className="bg-white p-3 p-md-5 p-lg-5">
               <h2 className="fw-bold text-dark mt-3 mt-md-0 mt-lg-0">Get in touch</h2>
               <p className="fw-normal">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem

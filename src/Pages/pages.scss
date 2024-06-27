@@ -120,6 +120,11 @@
 }
 
 .learns {
+ .row{
+  :nth-child(2){
+    text-align: justify;
+  }
+ }
   h3 {
     font-size: 2rem;
     font-weight: bold;
@@ -171,6 +176,12 @@
           align-items: center;
           justify-content: center;
         }
+      }
+    }
+
+    form{
+      textarea{
+        height: 12rem;;
       }
     }
   }
