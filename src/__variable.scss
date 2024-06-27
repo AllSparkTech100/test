@@ -22,14 +22,13 @@ $fontFamily: "Montserrat";
   padding: 0;
   text-decoration: none !important;
 }
-body {
+html,body {
   font-family: $font;
   background-color: $bgColor;
 }
 .bg-image {
   background-repeat: no-repeat;
   background-size: cover;
-  // height: 100vh;
   width: 100%;
 }
 

@@ -65,6 +65,7 @@
     font-family: $fontFamily;
   }
   p {
+    text-align: justify;
     font-size: 1.12rem;
   }
 }
@@ -77,6 +78,7 @@
   margin-top: 15rem;
   h3 {
     font-family: $fontFamily;
+    font-size:1.5rem;
   }
   p {
     font-size: 1.12rem;
@@ -86,9 +88,9 @@
     border-radius: 20px;
     height: 100%;
     background-color: $secondary;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 
@@ -141,15 +143,113 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
   h3 {
     color: $accent;
     font-family: $font;
     font-size: 3rem;
   }
+}
+.contact_carrier {
+  .contact-inner {
+    // height: 100vh !important;
+    .contacts {
+      .contact-info {
+        display: flex;
+        align-items: center;
+        .contact_images {
+          color: $primary;
+          background-color: $bgColor;
+          height: 50px;
+          width: 50px;
+          border: none;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
 
-  // .contact_carrier {
-  // }
+  //icon style
+  .more_socials {
+    width: 100%;
+    .icons {
+      .icon-carrier {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        a {
+          color: white;
+        }
+        &:first-child {
+          margin: 0;
+        }
+        .first_icon {
+          height: 40px;
+          width: 40px;
+          border: none;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  // icon style end
 }
 
-@media screen and (max-widt: 320px) {
+@media screen and (max-width: 320px) {
+  .hero {
+    .hero_inner {
+      p {
+        font-size: 1rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .applications {
+    h4 {
+      font-size: 1.5rem;
+    }
+    h5 {
+      font-size: 1.3rem;
+    }
+    p{
+      font-size: 1.2rem;
+      text-align: justify;
+    }
+  }
+  .service{
+    p{
+      text-align: justify;
+    }
+  }
+  .support{
+    p{
+      text-align: justify;
+    }
+    .message{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width:480px){
+  .hero {
+    .hero_inner {
+      p {
+        font-size: 1.3rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  }
 }

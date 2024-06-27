@@ -21,7 +21,7 @@ function Parents() {
       id: 1,
       image: man,
       name: "Ian Boner",
-      position: "Customer",
+      position: "Parent",
       description:
         " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
@@ -29,15 +29,15 @@ function Parents() {
       id: 2,
       image: man,
       name: "Rose Henderson",
-      position: "Customer",
+      position: "Teacher",
       description:
         " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
     {
       id: 3,
       image: man,
-      name: "Jackson McClean",
-      position: "Customer",
+      name: "Jame Paul",
+      position: "Principal",
       description:
         " A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
@@ -45,7 +45,7 @@ function Parents() {
       id: 4,
       image: man,
       name: "Mark Stevenson",
-      position: "Customer",
+      position: "Teacher",
       description:
         "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
@@ -53,14 +53,14 @@ function Parents() {
       id: 5,
       image: man,
       name: "Art Leonard",
-      position: "Customer",
+      position: "Cashier",
       description:
         "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
     {
       id: 6,
       image: man,
-      position: "Customer",
+      position: "Parent",
       description:
         "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
@@ -68,7 +68,7 @@ function Parents() {
       id: 7,
       image: man,
       name: "Henry Ferguson",
-      position: "Customer",
+      position: "Parent",
       description:
         "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
@@ -76,7 +76,7 @@ function Parents() {
       id: 8,
       image: man,
       name: "Peter Rose",
-      position: "Customer",
+      position: "Parent",
       description:
         "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.",
     },
