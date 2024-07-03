@@ -1,281 +1,96 @@
-@import "../_variable";
+@import "../_variable.scss";
 
-// Styles for the Home page
-.carrier_error {
-  background-image: url("/public/images/mini.png");
-  background-repeat: no-repeat;
+.hero {
+  background-image: linear-gradient(40deg, #100f17cb, #10101086),
+    url("/src/Images/hero-bg.jpg");
   height: 100vh;
-  width: 100%;
-  background-position: 30% 50%;
-  .error_inner {
+  @include flex;
+  h5 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 5rem;
+  }
+  .under-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    p {
+      color: $clear;
+    }
+  }
+}
+
+.content {
+  background-color: #1f1e24;
+  padding: 100px 0 100px 0;
+  .yellow-box {
+    height: 40rem;
+    background-color: $headColor;
+    width: 80%;
+    padding: 30px;
+    // display: inline-flex;
+    .yellow-box-inner {
+      background-color: $clear;
+      height: 100%;
+      h3 {
+        color: transparent;
+        -webkit-text-stroke: 2px solid $secret;
+      }
+    }
+  }
+  .right-box {
+    height: 250px;
+    border-radius: 10px;
+    width: 120px;
     position: relative;
-    top: 12rem;
-    left: 0;
+    left: 535px;
+    right: 0;
+    top: -17rem;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
     h4 {
-      font-size: 3rem;
-      font-weight: bolder;
-    }
-  }
-}
-
-.hero {
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.696),
-      rgba(0, 0, 0, 0.735)
-    ),
-    url("/public/images/high.jpg");
-  background-position: center;
-  font-family: $fontFamily;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  .hero_inner {
-    p {
-      font-size: 1.3rem;
-      span {
-        color: $primary;
-      }
-    }
-    h2 {
-      font-weight: 700;
-      font-size: 55px;
-    }
-  }
-}
-
-.applications {
-  margin-top: 10rem;
-  margin-bottom: 4rem;
-  p {
-    text-align: justify;
-  }
-}
-.service {
-  margin-top: 14rem;
-  .serve_title {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1rem 0 3rem 0;
-    font-family: $fontFamily;
-  }
-  p {
-    text-align: justify;
-    font-size: 1.12rem;
-  }
-}
-
-.courses {
-  margin-top: 10rem;
-}
-
-.support {
-  margin-top: 15rem;
-  h3 {
-    font-family: $fontFamily;
-    font-size: 1.5rem;
-  }
-  p {
-    font-size: 1.12rem;
-  }
-
-  .message {
-    border-radius: 20px;
-    height: 100%;
-    background-color: $secondary;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-}
-
-// Styles for About Section
-.about_intro {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.792)),
-    url("/public/images/library.jpg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-position: center center;
-  h2 {
-    color: $accent;
-    font-size: 3rem;
-    font-family: $font;
-    font-weight: bold;
-  }
-}
-
-.duties,
-.learns {
-  margin-top: 10rem;
-}
-
-.learns {
- .row{
-  :nth-child(2){
-    text-align: justify;
-  }
- }
-  h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: $fontFamily;
-  }
-  p {
-    font-size: 1.2rem;
-  }
-  img {
-    position: relative;
-    top: 3rem;
-  }
-}
-
-.staffs {
-  margin-top: 10rem;
-}
-
-// Styles for Contact Section
-.contact_intro {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.529), rgba(0, 0, 0, 0.529)),
-    url("/public/images/high.jpg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
-  h3 {
-    color: $accent;
-    font-family: $font;
-    font-size: 3rem;
-  }
-}
-.contact_carrier {
-  .contact-inner {
-    // height: 100vh !important;
-    .contacts {
-      .contact-info {
-        display: flex;
-        align-items: center;
-        .contact_images {
-          color: $primary;
-          background-color: $bgColor;
-          height: 50px;
-          width: 50px;
-          border: none;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-    }
-
-    form{
-      textarea{
-        height: 12rem;;
-      }
-    }
-  }
-
-  //icon style
-  .more_socials {
-    width: 100%;
-    .icons {
-      .icon-carrier {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        color: white;
-        a {
-          color: white;
-        }
-        &:first-child {
-          margin: 0;
-        }
-        .first_icon {
-          height: 40px;
-          width: 40px;
-          border: none;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-  // icon style end
-}
-
-@media screen and (max-width: 320px) {
-  .hero {
-    .hero_inner {
-      p {
-        font-size: 1rem;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
-    }
-  }
-  .applications {
-    h4 {
-      font-size: 1.5rem;
-    }
-    h5 {
-      font-size: 1.3rem;
-    }
-    p {
-      font-size: 1.2rem;
-      text-align: justify;
-    }
-  }
-  .service {
-    p {
-      text-align: justify;
-    }
-  }
-  .support {
-    p {
-      text-align: justify;
-    }
-    .message {
-      display: none;
+      transform: rotate(90deg);
     }
   }
 }
 
 @media screen and (max-width: 480px) {
-  .hero {
-    .hero_inner {
-      p {
-        font-size: 1rem;
-      }
-      h2 {
-        font-size: 1.3rem;
+  .content {
+    background-color: #1f1e24;
+    padding: 100px 0 100px 0;
+    .yellow-box {
+      height: 30rem;
+      background-color: $headColor;
+      width: 100%;
+      padding: 20px;
+
+      .yellow-box-inner {
+        background-color: $clear;
+        height: 100%;
+        h3 {
+          color: transparent;
+          -webkit-text-stroke: 2px solid $secret;
+        }
       }
     }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    .hero_inner {
-      p {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 2rem;
+    .right-box {
+      height: 250px;
+      border-radius: 10px;
+      width: 120px;
+      position: relative;
+      left: 246px;
+      right: 0;
+      top: -17rem;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h4 {
+        transform: rotate(90deg);
       }
     }
   }
