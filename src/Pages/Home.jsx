@@ -61,11 +61,9 @@ function Home() {
 
                     <img src={clown} alt="" />
 
-                    <div>
-                      <h3 className="top-text text-uppercase">
-                        Hd 4k
-                      </h3>
-                      <h4 className="text-center fw-bold">Resolution!</h4>
+                    <div className="text-below">
+                      <h3 className="text-uppercase">Hd 4k</h3>
+                      <h4 className="">Resolution!</h4>
                     </div>
                   </div>
                 </div>
@@ -83,7 +81,40 @@ function Home() {
                   </h4>
                 </div>
               </Col>
-              <Col md={6} lg={6} sm={12} xxl={6}></Col>
+              <Col md={6} lg={6} sm={12} xxl={6}>
+                <div className="right-carriage">
+                  <h4 className="text-uppercase d-flex align-items-center text-white">
+                    <span className="line-dash me-2"></span>our services
+                  </h4>
+
+                  <div className="second-text">
+                    <h4 className="mt-4 mb-4 ">
+                      Download your shows watch offline.
+                    </h4>
+                    <p className="my-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolore ipsa reiciendis enim rerum vitae ratione aspernatur
+                      non aperiam voluptatibus consequatur? Atque voluptas sed
+                      animi quas velit facere sunt consectetur a est asperiores
+                      unde perspiciatis magni, aperiam, expedita impedit facilis
+                      maiores!
+                    </p>
+                  </div>
+                  <div className="d-flex my-5 align-items-center watch-section">
+                    <div className="circulars">
+                      <div className="circular-inner">
+                        john
+                      </div>
+                    </div>
+                    <div className="inner-text ms-5">
+                    <h4>
+                      Enjoy on your Tv
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nulla.</p>
+                    </div>
+                  </div>
+                </div>
+              </Col>
             </Row>
           </section>
         </Container>
