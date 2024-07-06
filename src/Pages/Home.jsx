@@ -4,6 +4,8 @@ import { FaCalendarAlt, FaPlay } from "react-icons/fa";
 import { IoMdTime } from "react-icons/io";
 import { RxDownload } from "react-icons/rx";
 import Category from "./Category";
+import { PiTelevisionDuotone } from "react-icons/pi";
+import { BsCameraReelsFill } from "react-icons/bs";
 import clown from "../Images/clown.png";
 
 function Home() {
@@ -54,7 +56,7 @@ function Home() {
             </div>
 
             <Row className="mt-5 content">
-              <Col md={6} lg={6} sm={12} xxl={6}>
+              <Col md={6} lg={6} sm={12} xxl={6} className="h-100">
                 <div className="yellow-box">
                   <div className="yellow-box-inner p-5">
                     <p className="float-end fw-bold">Only $3.99</p>
@@ -66,23 +68,23 @@ function Home() {
                       <h4 className="">Resolution!</h4>
                     </div>
                   </div>
-                </div>
-                <div className="right-box bg-warning">
+                </div>{" "}
+                <a
+                  href=""
+                  className="text-uppercase right-box bg-warning text-dark"
+                >
                   <h4>
-                    <a href="" className="text-uppercase text-dark fs-6">
-                      download &nbsp;{" "}
-                      <span>
-                        <RxDownload
-                          style={{ transform: "rotate(270deg)" }}
-                          size={20}
-                        />
-                      </span>
-                    </a>
+                    download{" "}
+                    <RxDownload
+                      style={{ transform: "rotate(270deg)" }}
+                      size={25}
+                      className="ms-2"
+                    />
                   </h4>
-                </div>
+                </a>
               </Col>
-              <Col md={6} lg={6} sm={12} xxl={6}>
-                <div className="right-carriage">
+              <Col md={6} lg={6} sm={12} xxl={6} className="h-100">
+                <div className="right-carriage h-75">
                   <h4 className="text-uppercase d-flex align-items-center text-white">
                     <span className="line-dash me-2"></span>our services
                   </h4>
@@ -100,24 +102,49 @@ function Home() {
                       maiores!
                     </p>
                   </div>
-                  <div className="d-flex my-5 align-items-center watch-section">
-                    <div className="circulars">
-                      <div className="circular-inner">
-                        john
+                  {/* watch-section */}
+                  <div className="watch-section">
+                    <div className="d-flex my-3 align-items-center justify-content-center">
+                      <div className="circular p-3 rounded-circle">
+                        <div className="circular-inner rounded-circle">
+                          <PiTelevisionDuotone size={50} />
+                        </div>
+                      </div>
+                      <div className="inner-text ms-5">
+                        <h4>Enjoy on your Tv</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sed, nulla.
+                        </p>
                       </div>
                     </div>
-                    <div className="inner-text ms-5">
-                    <h4>
-                      Enjoy on your Tv
-                    </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nulla.</p>
+                  </div>
+                  <hr />
+    {/* <div className="division-line mb-4"></div> */}
+                  <div className="watch-section">
+                    <div className="d-flex my-3  align-items-center justify-content-center">
+                      <div className="circular p-3 rounded-circle">
+                        <div className="circular-inner rounded-circle">
+                          <BsCameraReelsFill size={50} />
+                        </div>
+                      </div>
+                      <div className="inner-text ms-5">
+                        <h4>Watch Everywhere</h4>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sed, nulla.
+                        </p>
+                      </div>
                     </div>
                   </div>
+                  {/* watch sections */}
                 </div>
               </Col>
             </Row>
           </section>
         </Container>
+
+        <Container fluid></Container>
       </main>
     </>
   );
