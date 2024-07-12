@@ -86,7 +86,7 @@
   }
 
   .right-carriage {
-    padding: 20px;
+    padding: 10px 20px;
     h4 {
       font-size: 1rem;
       .line-dash {
@@ -104,17 +104,8 @@
       }
     }
 
-    .division-line {
-      width: 300px;
-      border: .2px dashed $clear;
-      // text-align: center;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-    }
-
-    hr{
-border: 2px solid white;
+    hr {
+      border: 0.9px solid white;
     }
 
     .watch-section {
@@ -160,6 +151,14 @@ border: 2px solid white;
   }
 }
 
+.tab_nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  // position: static;
+  // top: 0;
+}
 @media screen and (max-width: 480px) {
   .content {
     background-color: #1f1e24;

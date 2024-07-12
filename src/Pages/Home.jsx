@@ -3,9 +3,10 @@ import { Container, Col, Row } from "react-bootstrap";
 import { FaCalendarAlt, FaPlay } from "react-icons/fa";
 import { IoMdTime } from "react-icons/io";
 import { RxDownload } from "react-icons/rx";
-import Category from "./Category";
 import { PiTelevisionDuotone } from "react-icons/pi";
 import { BsCameraReelsFill } from "react-icons/bs";
+import Tablets from "../Components/Tabs";
+// import Movies from "../Components/Movies";
 import clown from "../Images/clown.png";
 
 function Home() {
@@ -52,12 +53,12 @@ function Home() {
             </h5>
             <div className="d-flex align-items-center justify-content-between">
               <h2 className="fw-bold text-white fs-1">Upcoming Movies</h2>
-              <Category />
             </div>
 
             <Row className="mt-5 content">
-              <Col md={6} lg={6} sm={12} xxl={6} className="h-100">
-                <div className="yellow-box">
+              {/* left column */}
+              <Col md={6} lg={6} sm={12} xxl={6}>
+                <div className="yellow-box h-75">
                   <div className="yellow-box-inner p-5">
                     <p className="float-end fw-bold">Only $3.99</p>
 
@@ -83,8 +84,11 @@ function Home() {
                   </h4>
                 </a>
               </Col>
-              <Col md={6} lg={6} sm={12} xxl={6} className="h-100">
-                <div className="right-carriage h-75">
+              {/* left column */}
+
+              {/* right column */}
+              <Col md={6} lg={6} sm={12} xxl={6} className="h-50">
+                <div className="right-carriage">
                   <h4 className="text-uppercase d-flex align-items-center text-white">
                     <span className="line-dash me-2"></span>our services
                   </h4>
@@ -104,8 +108,8 @@ function Home() {
                   </div>
                   {/* watch-section */}
                   <div className="watch-section">
-                    <div className="d-flex my-3 align-items-center justify-content-center">
-                      <div className="circular p-3 rounded-circle">
+                    <div className="d-flex mt-2 align-items-center justify-content-center">
+                      <div className="circular rounded-circle">
                         <div className="circular-inner rounded-circle">
                           <PiTelevisionDuotone size={50} />
                         </div>
@@ -120,10 +124,9 @@ function Home() {
                     </div>
                   </div>
                   <hr />
-    {/* <div className="division-line mb-4"></div> */}
                   <div className="watch-section">
                     <div className="d-flex my-3  align-items-center justify-content-center">
-                      <div className="circular p-3 rounded-circle">
+                      <div className="circular rounded-circle">
                         <div className="circular-inner rounded-circle">
                           <BsCameraReelsFill size={50} />
                         </div>
@@ -140,11 +143,29 @@ function Home() {
                   {/* watch sections */}
                 </div>
               </Col>
+              {/* right column */}
             </Row>
           </section>
         </Container>
 
-        <Container fluid></Container>
+        {/* Movies */}
+        <Container fluid>
+          {/* MOvies heading */}
+          <div className="mt-5 p-3">
+            <h6 className="text-center fw-medium text-uppercase text-warning">
+              Online streaming
+            </h6>
+            <h3 className="text-center fs-1 fw-bold text-white">
+              Top Rated Movies
+            </h3>
+          </div>
+          {/* Heading end */}
+          {/* navigation */}
+          <Col sm={6} md={6} lg={6} className="tab_nav" fixed='top'>
+            <Tablets />
+          </Col>
+          {/* navigatio */}
+        </Container>
       </main>
     </>
   );
