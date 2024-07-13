@@ -151,14 +151,7 @@
   }
 }
 
-.tab_nav{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3rem auto;
-  // position: static;
-  // top: 0;
-}
+
 @media screen and (max-width: 480px) {
   .content {
     background-color: #1f1e24;

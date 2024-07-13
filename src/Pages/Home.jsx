@@ -160,11 +160,11 @@ function Home() {
             </h3>
           </div>
           {/* Heading end */}
-          {/* navigation */}
-          <Col sm={6} md={6} lg={6} className="tab_nav" fixed='top'>
+          {/* navigation Tabs */}
+          <section>
             <Tablets />
-          </Col>
-          {/* navigatio */}
+          </section>
+          {/* navigation Tabs */}
         </Container>
       </main>
     </>

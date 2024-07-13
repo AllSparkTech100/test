@@ -56,22 +56,17 @@ $secret: black;
     border: none;
   }
 }
-// .black_btn {
-//   // padding: 1rem 1rem;
-//   border-radius: 10px;
-//   width: 150px;
-//   height: 50px;
-//   background-color: $secret;
-//   border: none;
-//   color: $clear;
-//   text-align: center;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   &:active {
-//     border: 0 2px 0 2px solid white;
-//   }
-// }
+
+.medium_trans_btn{
+  background-color: transparent;
+  padding: 0.1rem 1rem;
+  width:60px;
+  height: 30px;
+  color: $clear;
+  border: 3px solid $clear;
+  cursor: text;
+}
+
 // en buttons
 
 .bg-image {

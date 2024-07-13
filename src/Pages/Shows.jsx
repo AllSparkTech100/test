@@ -1,11 +1,23 @@
-function Shows(){
-    return(
-        <>
-            <div>
+import useState from "react";
 
-            </div>
-        </>
-    )
+function Shows() {
+  const [activeTab, setActiveTab] = useState("tab1");
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+  return (
+    <>
+      <div>
+        <button
+          onClick={() => handleTabClick("tab1")}
+          className={activeTab === "tab1" ? "active" : ""}
+        >
+          Home
+        </button>
+      </div>
+    </>
+  );
 }
 
 export default Shows;

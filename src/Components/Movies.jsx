@@ -1,4 +1,5 @@
-import { Col, Row, Card } from "react-bootstrap";
+import { Container, Col, Row, Card } from "react-bootstrap";
+import { FaThumbsUp } from "react-icons/fa";
 
 function Movies() {
   const movies = [
@@ -15,7 +16,52 @@ function Movies() {
       id: 2,
       title: "The Beekeper",
       rating: "3.5",
-      img: "",
+      img: "https://m.media-amazon.com/images/M/MV5BYjZmODc5YmQtNjA2Mi00OTIwLWI5OWMtMzgwNGI2NDczNWZlXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
+      year: "2023",
+      movieType: "HD",
+      duration: 120,
+    },
+    {
+      id: 2,
+      title: "The Beekeper",
+      rating: "3.5",
+      img: "https://m.media-amazon.com/images/M/MV5BYjZmODc5YmQtNjA2Mi00OTIwLWI5OWMtMzgwNGI2NDczNWZlXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
+      year: "2023",
+      movieType: "HD",
+      duration: 120,
+    },
+    {
+      id: 2,
+      title: "The Beekeper",
+      rating: "3.5",
+      img: "https://m.media-amazon.com/images/M/MV5BYjZmODc5YmQtNjA2Mi00OTIwLWI5OWMtMzgwNGI2NDczNWZlXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
+      year: "2023",
+      movieType: "HD",
+      duration: 120,
+    },
+    {
+      id: 2,
+      title: "The Beekeper",
+      rating: "3.5",
+      img: "https://m.media-amazon.com/images/M/MV5BYjZmODc5YmQtNjA2Mi00OTIwLWI5OWMtMzgwNGI2NDczNWZlXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
+      year: "2023",
+      movieType: "HD",
+      duration: 120,
+    },
+    {
+      id: 2,
+      title: "The Beekeper",
+      rating: "3.5",
+      img: "https://m.media-amazon.com/images/M/MV5BYjZmODc5YmQtNjA2Mi00OTIwLWI5OWMtMzgwNGI2NDczNWZlXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
+      year: "2023",
+      movieType: "HD",
+      duration: 120,
+    },
+    {
+      id: 2,
+      title: "The Beekeper",
+      rating: "3.5",
+      img: "https://m.media-amazon.com/images/M/MV5BYjZmODc5YmQtNjA2Mi00OTIwLWI5OWMtMzgwNGI2NDczNWZlXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
       year: "2023",
       movieType: "HD",
       duration: 120,
@@ -23,32 +69,44 @@ function Movies() {
   ];
 
   return (
-    <Row>
-      {movies.map((movies) => {
-        return (
-          <Col key={movies.id}>
-            <Card className="bg-transparent">
-              <Card.Img variant="top" src={movies.img} />
-              <Card.Body>
-                <div className="d-flex align-items-center justify-content-center">
-                  <h5 className="text-white">{movies.title}</h5>{" "}
-                  <div className="float-end">
-                    <p className="text-warning fw-bold">{movies.year}</p>
+    <Container fluid className='mt-5'>
+      <Row>
+        {movies.map((movies) => {
+          return (
+            <Col md={3} lg={3} sm={12} key={movies.id}>
+              <Card className="bg-transparent">
+                <Card.Img
+                  variant="top"
+                  className="img-fluid h-75"
+                  src={movies.img}
+                />
+                <Card.Body>
+                  <div className="d-flex align-items-center justify-content-between">
+                    <h5 className="text-white fw-bold">{movies.title}</h5>{" "}
+                    <div className="float-end">
+                      <p className="text-warning fw-semibold">{movies.year}</p>
+                    </div>
                   </div>
-                </div>
-                {/* <Card.Title className>{movies.title}</Card.Title> */}
-                <Card.Text>
-                  {" "}
-                  <div className="trans_btn">
-                    {movies.movieType}
-                  </div> &nbsp; {movies.rating}
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        );
-      })}
-    </Row>
+
+                  <Card.Text className="text-white">
+                    {" "}
+                    <div className="medium_trans_btn">
+                      {movies.movieType}
+                    </div>{" "}
+                    &nbsp;
+                    <div className="float-end">
+                      <p className="text-warning d-flex align-items-center">
+                        <FaThumbsUp size={20} /> &nbsp; {movies.rating}
+                      </p>
+                    </div>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          );
+        })}
+      </Row>
+    </Container>
   );
 }
 
