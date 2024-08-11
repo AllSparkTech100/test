@@ -1,41 +1,35 @@
 {
-  "name": "react-app",
+  "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@splidejs/react-splide": "^0.7.12",
-    "@splidejs/splide": "^4.1.4",
-    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
-    "aos": "^3.0.0-beta.6",
-    "bootstrap": "^5.3.2",
-    "framer-motion": "^10.16.16",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.9.2",
-    "react-countup": "^6.5.3",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.12.0",
-    "react-router-dom": "^6.23.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.26.0",
     "react-scroll-trigger": "^0.6.14",
-    "styled-components": "^6.1.6"
+    "sass": "^1.77.8"
   },
   "devDependencies": {
-    "@tsconfig/vite-react": "^3.0.2",
-    "@types/node": "^20.12.8",
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
+    "@eslint/js": "^9.8.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "sass": "^1.69.6",
-    "vite": "^5.0.8"
+    "eslint": "^9.8.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "vite": "^5.4.0"
   }
 }

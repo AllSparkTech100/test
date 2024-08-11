@@ -1,172 +1,123 @@
+import { Container, Row, Col } from "react-bootstrap";
 import "./pages.scss";
-import { Container, Col, Row } from "react-bootstrap";
-import { FaCalendarAlt, FaPlay } from "react-icons/fa";
-import { IoMdTime } from "react-icons/io";
-import { RxDownload } from "react-icons/rx";
-import { PiTelevisionDuotone } from "react-icons/pi";
-import { BsCameraReelsFill } from "react-icons/bs";
-import Tablets from "../Components/Tabs";
-// import Movies from "../Components/Movies";
-import clown from "../Images/clown.png";
-
+// import counseling from "../Images/counsel.jpeg";
 function Home() {
   return (
     <>
-      <main>
-        <Container fluid className="bg-image hero">
-          <Col md={12} lg={8} sm={12} className="mt-5 ms-lg-3">
-            <div className="">
-              <h5 className="text-warning fw-semibold">Movfix</h5>
-              <h3 className="text-white fw-bold">
-                Unlimited <span className="text-warning">Movie,</span>
-                <br /> TV Shows & More
+      <Container className="hero-carrier" fluid>
+        <Row>
+          <Col lg={6} md={6} sm={12}>
+            <section className="mt-5 p-lg-3 p-sm-0">
+              <h4 className="text-warning text-uppercase">
+                mental health plus and saner ltd.
+              </h4>
+
+              <h3 className="mt-3">
+                A healthy Mind is <br /> a Wealthy Soul
               </h3>
-              <div className="under-text">
-                <button className="white_btn fw-bold">PG 18</button>
-                <button className="trans_btn fw-bold">HD</button>
-                <p className="mt-3 fw-medium">Romance, Drama</p>
-                <p className="mt-3 fw-medium d-flex align-items-center justify-content-center">
-                  <FaCalendarAlt className="text-warning" size={15} /> &nbsp;
-                  2024
-                </p>
-                <p className="mt-3 fw-medium d-flex align-items-center justify-content-center">
-                  <IoMdTime className="text-warning" size={15} /> &nbsp; 120 min
+              <p className="mt-3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+                ullam delectus quas distinctio adipisci sint cumque? Et quod
+                natus iusto!
+              </p>
+              <div className="btn-carrier mt-4">
+                <button className="btn-yellow fw-medium text-uppercase">
+                  <a href="#">Get Started</a>
+                </button>
+                <button className="btn-transparent  fw-medium text-uppercase">
+                  <a href="#">Contact Us</a>
+                </button>
+              </div>
+            </section>
+            <hr />
+            <div className="counter mt-1 p-lg-3 p-md-3 p-sm-0">
+              <div>
+                <h3 className="fw-medium">25+</h3>
+                <p>Years Experience</p>
+              </div>
+              <div>
+                <h3 className="fw-medium">7.8k+</h3>
+                <p>Active Members</p>
+              </div>
+              <div>
+                <h3 className="fw-medium">99%</h3>
+                <p>Satisfied Clients</p>
+              </div>
+            </div>
+          </Col>
+
+          {/* rigth image column*/}
+          <Col
+            lg={6}
+            md={6}
+            sm={12}
+            className="right-hero-image bg-image"
+          ></Col>
+        </Row>
+      </Container>
+
+      {/* Middle section */}
+      <Container className="middle-holder" fluid>
+        <Col md={6} sm={12} lg={6}>
+        <section>
+          <div className="mid-intro">
+            <h5>Who We Are</h5>
+            <h3 className="text-capitalize">
+              Mental Health is a human Right Not a Privilage
+            </h3>
+          </div>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
+            debitis, illo natus quam, magnam architecto aliquid dignissimos
+            suscipit dolorem, assumenda incidunt eaque iure inventore placeat
+            numquam enim reprehenderit? Reiciendis soluta architecto fugiat
+            culpa recusandae, numquam labore eos deserunt pariatur at.
+          </p>
+          {/* Different Therapies */}
+          <div className="mid-options">
+            <div className="option">
+              <div className="option-icon"></div>
+              <div className="option-text">
+                <h5 className="text-capitalize">Children therapy</h5>
+
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  debitis iste quisquam, dolorum assumenda fuga odit eligendi
+                  accusamus blanditiis impedit officiis, natus quis laboriosam
+                  quasi itaque animi soluta et! Aut.
                 </p>
               </div>
             </div>
+            <div className="option">
+              <div className="option-icon"></div>
+              <div className="option-text">
+                <h5 className="text-capitalize">Individual coaching</h5>
 
-            <button className="trans_yel_btn mt-4  ">
-              <span className="mx-2">
-                <FaPlay size={15} />
-              </span>
-              <a className="fs-5 fw-medium" href="">
-                Watch Now
-              </a>
-            </button>
-          </Col>
-        </Container>
-
-        <Container fluid>
-          <section className="mt-5 ms-lg-3">
-            <h5 className="text-warning fs-6 text-uppercase fw-semibold">
-              Online Streaming
-            </h5>
-            <div className="d-flex align-items-center justify-content-between">
-              <h2 className="fw-bold text-white fs-1">Upcoming Movies</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  debitis iste quisquam, dolorum assumenda fuga odit eligendi
+                  accusamus blanditiis impedit officiis, natus quis laboriosam
+                  quasi itaque animi soluta et! Aut.
+                </p>
+              </div>
             </div>
+            <div className="option">
+              <div className="option-icon"></div>
+              <div className="option-text">
+                <h5 className="text-capitalize">Group therapy</h5>
 
-            <Row className="mt-5 content">
-              {/* left column */}
-              <Col md={6} lg={6} sm={12} xxl={6}>
-                <div className="yellow-box h-75">
-                  <div className="yellow-box-inner p-5">
-                    <p className="float-end fw-bold">Only $3.99</p>
-
-                    <img src={clown} alt="" />
-
-                    <div className="text-below">
-                      <h3 className="text-uppercase">Hd 4k</h3>
-                      <h4 className="">Resolution!</h4>
-                    </div>
-                  </div>
-                </div>{" "}
-                <a
-                  href=""
-                  className="text-uppercase right-box bg-warning text-dark"
-                >
-                  <h4>
-                    download{" "}
-                    <RxDownload
-                      style={{ transform: "rotate(270deg)" }}
-                      size={25}
-                      className="ms-2"
-                    />
-                  </h4>
-                </a>
-              </Col>
-              {/* left column */}
-
-              {/* right column */}
-              <Col md={6} lg={6} sm={12} xxl={6} className="h-50">
-                <div className="right-carriage">
-                  <h4 className="text-uppercase d-flex align-items-center text-white">
-                    <span className="line-dash me-2"></span>our services
-                  </h4>
-
-                  <div className="second-text">
-                    <h4 className="mt-4 mb-4 ">
-                      Download your shows watch offline.
-                    </h4>
-                    <p className="my-4">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Dolore ipsa reiciendis enim rerum vitae ratione aspernatur
-                      non aperiam voluptatibus consequatur? Atque voluptas sed
-                      animi quas velit facere sunt consectetur a est asperiores
-                      unde perspiciatis magni, aperiam, expedita impedit facilis
-                      maiores!
-                    </p>
-                  </div>
-                  {/* watch-section */}
-                  <div className="watch-section">
-                    <div className="d-flex mt-2 align-items-center justify-content-center">
-                      <div className="circular rounded-circle">
-                        <div className="circular-inner rounded-circle">
-                          <PiTelevisionDuotone size={50} />
-                        </div>
-                      </div>
-                      <div className="inner-text ms-5">
-                        <h4>Enjoy on your Tv</h4>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Sed, nulla.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <hr />
-                  <div className="watch-section">
-                    <div className="d-flex my-3  align-items-center justify-content-center">
-                      <div className="circular rounded-circle">
-                        <div className="circular-inner rounded-circle">
-                          <BsCameraReelsFill size={50} />
-                        </div>
-                      </div>
-                      <div className="inner-text ms-5">
-                        <h4>Watch Everywhere</h4>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Sed, nulla.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  {/* watch sections */}
-                </div>
-              </Col>
-              {/* right column */}
-            </Row>
-          </section>
-        </Container>
-
-        {/* Movies */}
-        <Container fluid>
-          {/* MOvies heading */}
-          <div className="mt-5 p-3">
-            <h6 className="text-center fw-medium text-uppercase text-warning">
-              Online streaming
-            </h6>
-            <h3 className="text-center fs-1 fw-bold text-white">
-              Top Rated Movies
-            </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                  debitis iste quisquam, dolorum assumenda fuga odit eligendi
+                  accusamus blanditiis impedit officiis, natus quis laboriosam
+                  quasi itaque animi soluta et! Aut.
+                </p>
+              </div>
+            </div>
           </div>
-          {/* Heading end */}
-          {/* navigation Tabs */}
-          <section>
-            <Tablets />
-          </section>
-          {/* navigation Tabs */}
-        </Container>
-      </main>
+        </section>
+        </Col>
+      </Container>
     </>
   );
 }

@@ -1,29 +1,84 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import Pages from "./Pages/Pages";
-import "./app.scss";
-import NavComp from "./Components/NavComp";
-// import Footer from "./Components/Footer"; 
-// import Loader from "./Components/Loader";
-// import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "./Pages/pages.scss";
+import { useState } from "react";
+import { TiThMenu } from "react-icons/ti";
+import { IoClose } from "react-icons/io5";
 
 function App() {
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 3000);
-  //   return () => clearTimeout(timer);
-  // }, []);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
-      {/* {loading && <Loader />}
-      {!loading && ( */}
-        <div>
-          <NavComp />
-          <Pages />
-          {/* <Footer /> */}
+      <header>
+        <div className="company-logo">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiOhqb-J6znS_ToviHSl85R9OEI3UV8Cn9gg&s" alt="" />
         </div>
-      {/* )} */}
+
+        <nav className="large_screen">
+          <ul>
+            <li>
+              <Link to={"/"}> Home</Link>
+            </li>
+            <li>
+              <Link to={"/contact"}> Contact</Link>
+            </li>
+            <li>
+              <Link to={"/about"}> About</Link>
+            </li>
+            <li>
+              <Link to={"/services"}> Services</Link>
+            </li>
+            <li>
+              <Link to={"/events"}> Events</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <button className="appoint ms-5">
+          <h5>Appointment</h5>
+        </button>
+        <button
+          className="d-lg-none d-sm-block menu-icon"
+          onClick={() => {
+            menuToggle();
+          }}
+        >
+          {" "}
+          {isMenuOpen ? (
+            <IoClose size={30} className="text-black" />
+          ) : (
+            <TiThMenu size={30} className="text-white" />
+          )}
+        </button>
+        {isMenuOpen && (
+          <nav className="small_screen">
+            {/* <div className="small-inner"> */}
+              <ul>
+                <li>
+                  <Link to={"/"}> Home</Link>
+                </li>
+                <li>
+                  <Link to={"/contact"}> Contact</Link>
+                </li>
+                <li>
+                  <Link to={"/about"}> About</Link>
+                </li>
+                <li>
+                  <Link to={"/services"}> Services</Link>
+                </li>
+                <li>
+                  <Link to={"/events"}> Events</Link>
+                </li>
+              </ul>
+            {/* </div> */}
+          </nav>
+        )}
+      </header>
+      <Pages />
     </>
   );
 }

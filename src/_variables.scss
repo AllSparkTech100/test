@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  text-decoration: none !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+$primary: black;
+$secondary: snow;
+$header: #0a1d25;
+$Sofia: "Sofia Sans Extra Condensed, sans-serif";
+
+header {
+  height: 5rem;
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: space-around;
+  .menu-icon {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: all ease-in-out 2s;
+  }
+  .company-logo {
+    height: 60px;
+    width: 60px;
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .appoint {
+    background-color: yellow;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    .large_screen {
+      display: none;
+    }
+    .small_screen {
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      ul {
+        li {
+          a {
+            color: $primary;
+          }
+        }
+      }
+    }
+    .appoint {
+      padding: 0.3rem 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      li {
+        list-style: none;
+        margin: 3px;
+      }
+    }
+  }
+}
+
+.btn-yellow {
+  border-radius: 50px;
+  background: yellow;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  a {
+    font-size: clamp(1rem, 2.5vw, 1rem);
+    color: $primary;
+  }
+  &:hover {
+    background-color: $secondary;
+    a {
+      color: $primary;
+    }
+  }
+}
+.btn-transparent {
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid $secondary;
+  a {
+    font-size: clamp(1rem, 2.5vw, 1rem);
+    color: $secondary;
+  }
+  &:hover {
+    background-color: $secondary;
+    a {
+      color: $primary;
+    }
+  }
+}
+
+.bg-image {
+  background-position: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

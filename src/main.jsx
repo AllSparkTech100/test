@@ -1,19 +1,14 @@
-import React from "react";
-import "./app.scss";
-import ReactDOM from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "react-bootstrap";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
     <BrowserRouter>
-      <ThemeProvider
-        breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}
-        minBreakpoint="xxs"
-      >
-        <App />
-      </ThemeProvider>
+      <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>
 );
