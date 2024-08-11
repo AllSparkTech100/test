@@ -51,7 +51,7 @@ function Home() {
             lg={6}
             md={6}
             sm={12}
-            className="right-hero-image bg-image"
+            className="right-hero-image d-lg-block d-md-block d-sm-none bg-image"
           ></Col>
         </Row>
       </Container>
