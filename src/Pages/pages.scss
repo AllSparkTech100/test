@@ -1,9 +1,10 @@
 @import "../_variables.scss";
 
+// Styles for home page
 .hero-carrier {
   background-color: $header;
   color: $secondary;
-  // border-bottom: 1px solid $secondary;
+
   h3 {
     font-size: 5rem;
     font-weight: normal;
@@ -34,7 +35,37 @@
   }
 }
 
-
-.middle-holder{
+.middle-holder {
   margin-top: 20rem;
+  .middle-right-hero-image {
+    background-color: #fff;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.2)),
+      url("../Images/child counsel.jpeg");
+    height: 100vh;
+    border-radius: 30px;
+    background-size: cover;
+  }
+  .mid-intro {
+    h5 {
+      font-size: 2rem;
+    }
+  }
+  .mid-options {
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      .option-icon {
+        height: 55px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: green;
+        color: $secondary;
+        border-radius: 5px;
+      }
+    }
+  }
 }

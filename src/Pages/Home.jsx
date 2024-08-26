@@ -1,9 +1,14 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./pages.scss";
+import { FaChildren, FaUserSecret } from "react-icons/fa6";
+import { MdOutlineGroupAdd } from "react-icons/md";
+import ServiceCard from "../Components/ServiceCard";
 // import counseling from "../Images/counsel.jpeg";
+
 function Home() {
   return (
     <>
+      {/* Hero */}
       <Container className="hero-carrier" fluid>
         <Row>
           <Col lg={6} md={6} sm={12}>
@@ -57,67 +62,101 @@ function Home() {
       </Container>
 
       {/* Middle section */}
-      <Container className="middle-holder" fluid>
-        <Col md={6} sm={12} lg={6}>
-        <section>
-          <div className="mid-intro">
-            <h5>Who We Are</h5>
-            <h3 className="text-capitalize">
-              Mental Health is a human Right Not a Privilage
-            </h3>
-          </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
-            debitis, illo natus quam, magnam architecto aliquid dignissimos
-            suscipit dolorem, assumenda incidunt eaque iure inventore placeat
-            numquam enim reprehenderit? Reiciendis soluta architecto fugiat
-            culpa recusandae, numquam labore eos deserunt pariatur at.
-          </p>
-          {/* Different Therapies */}
-          <div className="mid-options">
-            <div className="option">
-              <div className="option-icon"></div>
-              <div className="option-text">
-                <h5 className="text-capitalize">Children therapy</h5>
-
+      <section className="middle-holder">
+        <Container className="p-lg-5 p-sm-0 p-md-5" fluid>
+          <Row>
+            <Col md={6} sm={12} lg={6}>
+              <section>
+                <div className="mid-intro">
+                  <h5 className="fw-bold">Who We Are</h5>
+                  <h3 className="text-sentence fw-medium">
+                    Mental Health is a human Right <br /> Not a Privilage
+                  </h3>
+                </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  debitis iste quisquam, dolorum assumenda fuga odit eligendi
-                  accusamus blanditiis impedit officiis, natus quis laboriosam
-                  quasi itaque animi soluta et! Aut.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatum debitis, illo natus quam, magnam architecto aliquid
+                  dignissimos suscipit dolorem, assumenda incidunt eaque iure
+                  inventore placeat numquam enim reprehenderit? Reiciendis
+                  soluta architecto fugiat culpa recusandae, numquam labore eos
+                  deserunt pariatur at.
                 </p>
-              </div>
-            </div>
-            <div className="option">
-              <div className="option-icon"></div>
-              <div className="option-text">
-                <h5 className="text-capitalize">Individual coaching</h5>
+                {/* Different Therapies */}
+                <div className="mid-options">
+                  <div className="option">
+                    <div className="option-icon">
+                    <FaChildren size={30}/></div>
+                    <div className="option-text">
+                      <h5 className="text-capitalize">Children therapy</h5>
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  debitis iste quisquam, dolorum assumenda fuga odit eligendi
-                  accusamus blanditiis impedit officiis, natus quis laboriosam
-                  quasi itaque animi soluta et! Aut.
-                </p>
-              </div>
-            </div>
-            <div className="option">
-              <div className="option-icon"></div>
-              <div className="option-text">
-                <h5 className="text-capitalize">Group therapy</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Magni debitis iste quisquam, dolorum assumenda fuga odit
+                        eligendi accusamus blanditiis impedit officiis, natus
+                        quis laboriosam quasi itaque animi soluta et! Aut.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="option">
+                    <div className="option-icon">
+                      <FaUserSecret size={30}/>
+                    </div>
+                    <div className="option-text">
+                      <h5 className="text-capitalize">Individual coaching</h5>
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                  debitis iste quisquam, dolorum assumenda fuga odit eligendi
-                  accusamus blanditiis impedit officiis, natus quis laboriosam
-                  quasi itaque animi soluta et! Aut.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        </Col>
-      </Container>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Magni debitis iste quisquam, dolorum assumenda fuga odit
+                        eligendi accusamus blanditiis impedit officiis, natus
+                        quis laboriosam quasi itaque animi soluta et! Aut.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="option">
+                    <div className="option-icon">
+                      <MdOutlineGroupAdd size={30}/>
+                    </div>
+                    <div className="option-text">
+                      <h5 className="text-capitalize">Group therapy</h5>
+
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Magni debitis iste quisquam, dolorum assumenda fuga odit
+                        eligendi accusamus blanditiis impedit officiis, natus
+                        quis laboriosam quasi itaque animi soluta et! Aut.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </Col>
+            <Col md={6} sm={12} lg={6} >
+              <section>
+                <div className="middle-right-hero-image bg-image">
+                  {/* <h5 className="fw-bold">Who We Are</h5>
+                  <h3 className="text-sentence fw-medium">
+                    Mental Health is a human Right <br /> Not a Privilage
+                  </h3> */}
+                </div>
+              </section>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+{/* services */}
+      <section className='mt-5'>
+      <Container>
+        {/* Services */}
+          <Row>
+            <Col sm={12} md={4} lg={4}>
+          <ServiceCard text="Vivamus nec class taciti magna donec est tempor maximus suspendisse efficitur ipsum."/>
+              <button className="btn-black">
+                <a href="#">Learn More</a>
+              </button>
+            </Col>
+                      </Row>
+                      </Container>
+      </section>
     </>
   );
 }
