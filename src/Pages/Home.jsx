@@ -145,16 +145,53 @@ function Home() {
         </Container>
       </section>
       {/* services */}
-      <section className="mt-5 p-5 container-fluid service-container">
+      <section className="service-container container-fluid">
         {/* Services */}
-        <Container fluid>
+        <Container className="mt-5 p-md-5 p-lg-5 py-3" fluid>
           <ServiceCard />
         </Container>
-        
-        <div className="better bg-image">
-<h3>Knoiwindn gjoaubobfobfaoueubwnnoaweo</h3>
+      </section>
+      {/* Image with Circle */}
+      <section className="better bg-image">
+        <div className="circle p-5 text-center">
+          <h2 className="text-warning text-uppercase mb-3 fs-5">Our Value</h2>
+          <h4 className="text-capitalize fs-2 mb-3 mt-3">
+            Bringing Therapy to <br /> the Common Man
+          </h4>
+          <p className="my-3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
+            laboriosam. Itaque, officia. Incidunt esse aut officiis odit qui!
+            Illum facere repellendus porro tempora velit vero?
+          </p>
+          <button className="bg-dark btn rounded-5 my-3">
+            <a href="#" className="text-white">
+              Discover More
+            </a>
+          </button>
         </div>
       </section>
+      {/* What you get */}
+      <Container className="mt-5" fluid>
+        <section className="bg-white mx-md-5 mx-lg-5">
+          <Row>
+            <Col sm={12} md={6} lg={6}>
+              <h3>Professional Services</h3>
+              <h5>We want you to get the care you deserve</h5>
+              <p className="my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                nam repudiandae molestiae, similique totam ad?
+              </p>
+              <ul>
+                <li>Individuals with high stress</li>
+                <li>People with Anxiety or Depression</li>
+                <li>Busy Professionals</li>
+                <li>COmmunities in need of Emotional Support</li>
+                <li>Individuals Seeking Personal Growth</li>
+              </ul>
+            </Col>
+          </Row>
+        </section>
+      </Container>
     </>
   );
 }
