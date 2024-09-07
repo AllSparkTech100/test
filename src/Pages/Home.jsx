@@ -85,7 +85,8 @@ function Home() {
                 <div className="mid-options">
                   <div className="option">
                     <div className="option-icon">
-                    <FaChildren size={30}/></div>
+                      <FaChildren size={30} />
+                    </div>
                     <div className="option-text">
                       <h5 className="text-capitalize">Children therapy</h5>
 
@@ -99,7 +100,7 @@ function Home() {
                   </div>
                   <div className="option">
                     <div className="option-icon">
-                      <FaUserSecret size={30}/>
+                      <FaUserSecret size={30} />
                     </div>
                     <div className="option-text">
                       <h5 className="text-capitalize">Individual coaching</h5>
@@ -114,7 +115,7 @@ function Home() {
                   </div>
                   <div className="option">
                     <div className="option-icon">
-                      <MdOutlineGroupAdd size={30}/>
+                      <MdOutlineGroupAdd size={30} />
                     </div>
                     <div className="option-text">
                       <h5 className="text-capitalize">Group therapy</h5>
@@ -130,7 +131,7 @@ function Home() {
                 </div>
               </section>
             </Col>
-            <Col md={6} sm={12} lg={6} >
+            <Col md={6} sm={12} lg={6}>
               <section>
                 <div className="middle-right-hero-image bg-image">
                   {/* <h5 className="fw-bold">Who We Are</h5>
@@ -143,19 +144,16 @@ function Home() {
           </Row>
         </Container>
       </section>
-{/* services */}
-      <section className='mt-5'>
-      <Container>
+      {/* services */}
+      <section className="mt-5 p-5 container-fluid service-container">
         {/* Services */}
-          <Row>
-            <Col sm={12} md={4} lg={4}>
-          <ServiceCard text="Vivamus nec class taciti magna donec est tempor maximus suspendisse efficitur ipsum."/>
-              <button className="btn-black">
-                <a href="#">Learn More</a>
-              </button>
-            </Col>
-                      </Row>
-                      </Container>
+        <Container fluid>
+          <ServiceCard />
+        </Container>
+        
+        <div className="better bg-image">
+<h3>Knoiwindn gjoaubobfobfaoueubwnnoaweo</h3>
+        </div>
       </section>
     </>
   );

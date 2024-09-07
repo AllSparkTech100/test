@@ -2,7 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
 
-
 *,
 ::after,
 ::before {
@@ -131,30 +130,7 @@ header {
   background-repeat: no-repeat;
 }
 
-.service-btn {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $header;
-  padding: 8px 10px;
-  border-radius: 50px;
+.btn {
   border: none;
-  a {
-    color: $secondary;
-    font-size: 1rem;
-  }
-}
-
-
-.service-card{
-  display: 
-  flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 500px;
-  min-height: 250px;
-  background-color: red;
-
+  border-radius: 50px;
 }
