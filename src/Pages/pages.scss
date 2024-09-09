@@ -94,3 +94,62 @@
     justify-content: center;
   }
 }
+.offer-carrier {
+  margin-top: 14rem;
+  .offers {
+    .prof-serve-head {
+      font-size: 3rem;
+      font-family: $Sofia;
+    }
+    p {
+      font-size: 1rem;
+    }
+    ul {
+      li {
+        list-style: disc;
+        font-size: 1.5rem;
+      }
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px;
+      .image-item-1 {
+        grid-row: 1/3;
+        object-position: center;
+      }
+      .image-item {
+        overflow: hidden;
+        border-radius: 15px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contian;
+          border-radius: 15px;
+        }
+      }
+      .text-item {
+        background-color: #00695c;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .experience-text {
+          text-align: center;
+          color: #ffffff;
+          .years {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffa000;
+          }
+
+          .description {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

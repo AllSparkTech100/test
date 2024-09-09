@@ -3,6 +3,8 @@ import "./pages.scss";
 import { FaChildren, FaUserSecret } from "react-icons/fa6";
 import { MdOutlineGroupAdd } from "react-icons/md";
 import ServiceCard from "../Components/ServiceCard";
+import therapist from "../Images/therapist.jpeg";
+import therapy from "../Images/therap2.jpeg";
 // import counseling from "../Images/counsel.jpeg";
 
 function Home() {
@@ -171,12 +173,12 @@ function Home() {
         </div>
       </section>
       {/* What you get */}
-      <Container className="mt-5" fluid>
-        <section className="bg-white mx-md-5 mx-lg-5">
+      <Container className="offer-carrier" fluid>
+        <section className="bg-white offers mx-md-5 mx-lg-5">
           <Row>
             <Col sm={12} md={6} lg={6}>
-              <h3>Professional Services</h3>
-              <h5>We want you to get the care you deserve</h5>
+              <h3 className="prof-serv-head">Professional Services</h3>
+              <h5 className="">We want you to get the care you deserve</h5>
               <p className="my-3">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
                 nam repudiandae molestiae, similique totam ad?
@@ -185,12 +187,42 @@ function Home() {
                 <li>Individuals with high stress</li>
                 <li>People with Anxiety or Depression</li>
                 <li>Busy Professionals</li>
-                <li>COmmunities in need of Emotional Support</li>
+                <li>Communities in need of Emotional Support</li>
                 <li>Individuals Seeking Personal Growth</li>
               </ul>
             </Col>
+
+            <Col sm={12} md={6} lg={6}>
+              <div className="grid-container">
+                <div className="grid-item image-item image-item-1">
+                  <img src={therapist} loading='lazy' alt="Therapy Session" />
+                </div>
+                <div className="grid-item image-item">
+                  <img
+                    src={therapy} loading="lazy"
+                    alt="Therapy Session "
+                  />
+                </div>
+                <div className="grid-item text-item">
+                  <div className="experience-text">
+                    <span className="text-warning years">25+</span>
+                    <div className="description">Years of Experience</div>
+                  </div>
+                </div>
+              </div>
+            </Col>
           </Row>
         </section>
+      </Container>
+
+      <Container fluid>
+        <div className="service-container">
+          <Row>
+            <Col sm={12} md={3} lg={3}>
+              <img src="" loading="lazy" alt="" />
+            </Col>
+          </Row>
+        </div>
       </Container>
     </>
   );
