@@ -1,12 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./components.scss";
-import {
-  FaWhatsapp,
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedIn,
-} from "react-icons/fa6";
+import { FaTwitter, FaInstagram,FaLinkedinIn } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -56,7 +51,7 @@ function Footer() {
                 </div>
                 <div className="link">
                   <a href="" className="text-white">
-                    <FaLinkedIn size={30} />
+                    <FaLinkedinIn size={30} />
                   </a>
                 </div>
               </div>
