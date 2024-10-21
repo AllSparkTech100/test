@@ -164,17 +164,40 @@
   margin-top: 10rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.682)),
     url("https://images.squarespace-cdn.com/content/v1/5fcb8b6187f5a174fa2e1093/4355cf93-56fe-412d-806b-fafb24c24a8a/005_Designed+By+Thrive+-+Get+more+clients+for+your+private+practice+-+hero+image.jpg");
-  background-position: top center !important;
-  height: 70vh;
-  display: block;
-  align-items: center;
+  background-position: center center !important;
+  // height: 70vh;
+  // display: block;
+  // align-items: center;
   padding: 8rem 0;
   .container-inner {
-    width: 70rem;
+    // width: 70rem;
 
     h3 {
       font-size: 3rem;
       font-family: $Sofia;
     }
+    @media screen and (max-width: 480px) {
+      text-align: center;
+      h3 {
+        font-size: 1.5rem;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.call-volunteers {
+  margin-top: 4rem;
+  text-align: center;
+  background-color: red;
+  
+  h4 {
+    color: $primary;
+  }
+  p {
+    font-family: $Sofia;
+    font-size: 2rem;
   }
 }

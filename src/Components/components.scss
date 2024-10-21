@@ -19,11 +19,45 @@
   }
 }
 
-
-footer{
-margin-top: 20rem;
-padding: 50px 0;
-  height: 50dvh;
+.footer {
+  margin-top: 20rem;
+  padding: 10px 50px;
+  // height: 75vh;
   background-color: $header;
   color: $secondary;
+  .foot-inner {
+    margin-top: 5rem;
+    .serve-inner {
+      .serv-type {
+        cursor: pointer;
+      }
+    }
+    .link-section {
+      .quick {
+        a {
+          color: $secondary;
+          &:hover {
+            color: $socials;
+          }
+        }
+      }
+    }
+    .social-links {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .icon-carrier {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: $socials;
+      }
+    }
+  }
 }

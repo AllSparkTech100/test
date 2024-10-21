@@ -216,20 +216,23 @@ function Home() {
       </Container>
 
       <Container className="offer-container bg-image" fluid>
-        <div className="container-inner ms-md-5 ms-lg-5 ms-0">
-          <h3 className="text-white">
+        <div className="container-inner  ms-md-5 ms-lg-5 ms-0">
+          <h3 className="text-white d-none d-md-block d-lg-block">
             Take the firts step towards wellness <br /> with Mental Health Plus
             and Saner Ltd.
           </h3>
-          <p className="text-white">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-            ipsa, culpa corrupti repellendus et totam? Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Labore ipsa, culpa corrupti
-            repellendus et totam? Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Labore ipsa, culpa corrupti repellendus et totam?
-          </p>
+          <h3 className="text-white d-md-none d-lg-none mt-3 mb-4 d-block">
+            Take the firts step towards wellness with Mental Health Plus and
+            Saner Ltd.
+          </h3>
           <div>
-            <button className="btn-white ">
+            <p className="text-white text-justify mt-4 mb-4">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+              ipsa, culpa corrupti repellendus et totam?
+            </p>
+          </div>
+          <div>
+            <button className="btn-white mt-3  ">
               <a href="#" className="text-black fw-medium">
                 Get Started
               </a>
@@ -238,8 +241,16 @@ function Home() {
         </div>
       </Container>
 
-      <Container>
-        
+      <Container className="call-volunteers">
+       <Col md={12} lg={12} sm={12}>
+       <div className="">
+          <h4>Join Us</h4>
+          <p className="fs-3 mt-4">
+            The Professional Licensed and <br /> Vetted Psychologist Who you can
+            Trust
+          </p>
+        </div>
+       </Col>
       </Container>
     </>
   );
