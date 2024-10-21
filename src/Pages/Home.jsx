@@ -176,12 +176,15 @@ function Home() {
       <Container className="offer-carrier" fluid>
         <section className="bg-white offers mx-md-5 mx-lg-5">
           <Row>
-            <Col sm={12} md={6} lg={6}>
+            <Col sm={12} md={6} lg={6} className="left-prof">
               <h3 className="prof-serv-head">Professional Services</h3>
               <h5 className="">We want you to get the care you deserve</h5>
               <p className="my-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-                nam repudiandae molestiae, similique totam ad?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremnam repudiandae molestiae, similique totam ad?nam
+                repudiandae molestiae, similique totam ad?nam repudiandae
+                molestiae, similique totam ad? nam repudiandae molestiae,
+                similique totam ad?
               </p>
               <ul>
                 <li>Individuals with high stress</li>
@@ -195,13 +198,10 @@ function Home() {
             <Col sm={12} md={6} lg={6}>
               <div className="grid-container">
                 <div className="grid-item image-item image-item-1">
-                  <img src={therapist} loading='lazy' alt="Therapy Session" />
+                  <img src={therapy} loading="lazy" alt="Therapy Session" />
                 </div>
                 <div className="grid-item image-item">
-                  <img
-                    src={therapy} loading="lazy"
-                    alt="Therapy Session "
-                  />
+                  <img src={therapist} loading="lazy" alt="Therapy Session " />
                 </div>
                 <div className="grid-item text-item">
                   <div className="experience-text">
@@ -215,14 +215,31 @@ function Home() {
         </section>
       </Container>
 
-      <Container fluid>
-        <div className="service-container">
-          <Row>
-            <Col sm={12} md={3} lg={3}>
-              <img src="" loading="lazy" alt="" />
-            </Col>
-          </Row>
+      <Container className="offer-container bg-image" fluid>
+        <div className="container-inner ms-md-5 ms-lg-5 ms-0">
+          <h3 className="text-white">
+            Take the firts step towards wellness <br /> with Mental Health Plus
+            and Saner Ltd.
+          </h3>
+          <p className="text-white">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+            ipsa, culpa corrupti repellendus et totam? Lorem ipsum, dolor sit
+            amet consectetur adipisicing elit. Labore ipsa, culpa corrupti
+            repellendus et totam? Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Labore ipsa, culpa corrupti repellendus et totam?
+          </p>
+          <div>
+            <button className="btn-white ">
+              <a href="#" className="text-black fw-medium">
+                Get Started
+              </a>
+            </button>
+          </div>
         </div>
+      </Container>
+
+      <Container>
+        
       </Container>
     </>
   );
