@@ -6,6 +6,10 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
+  // const [isHover, setIsHover] = useState(null);
+  // useEffect(()=>{
+
+  // });
   const [year, setYear] = useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -54,10 +58,10 @@ function Footer() {
             </Col>
           </Row>
 
-          <div className="col-sm-12">
+          <div className="col-12">
             <hr />
             <div className="social-links ">
-              <div className="d-flex align-items-center  mb-md-0 mb-lg-0 mb-4">
+              <div className="d-flex align-items-center mb-md-0 mb-lg-0 mb-4">
                 <div className="mt-3 icon-carrier">
                   <a href="" className="text-dark">
                     <FaWhatsapp size={25} />

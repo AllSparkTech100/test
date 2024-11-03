@@ -181,23 +181,59 @@
       h3 {
         font-size: 1.5rem;
       }
-      p{
+      p {
         font-size: 14px;
       }
     }
   }
 }
 
-.call-volunteers {
-  margin-top: 4rem;
-  text-align: center;
-  background-color: red;
-  
-  h4 {
-    color: $primary;
+// .call-volunteers {
+//   margin-top: 4rem;
+//   text-align: center;
+//   background-color: red;
+
+//   h4 {
+//     color: $primary;
+//   }
+//   p {
+//     font-family: $Sofia;
+//     font-size: 2rem;
+//   }
+// }
+
+// Contact Page
+
+.contact-section-hero {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.689), rgba(0, 0, 0, 0.418)),
+    url("../Images/counsel.jpeg");
+  padding: 3rem;
+  .contact-hero-inner {
+    text-align: center;
+    // margin: auto;
+    h4 {
+      font-size: 3rem;
+      font-weight: medium;
+    }
+    p {
+      font-size: 1.5rem;
+    }
   }
-  p {
-    font-family: $Sofia;
-    font-size: 2rem;
+}
+
+.message-section {
+  margin-top: 10rem;
+  .form-section {
+    margin-top: 4rem;
+    input {
+      background-color: $Pink;
+      border: none;
+      border-radius: 10px !important;
+      &:focus {
+        background-color: $secondary;
+        border: 1px solid orange;
+      }
+    }
   }
 }

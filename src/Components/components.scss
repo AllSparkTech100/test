@@ -57,6 +57,9 @@
         padding: 10px;
         border-radius: 50%;
         background-color: $socials;
+        &:hover {
+          background-color: $primary;
+        }
       }
     }
   }

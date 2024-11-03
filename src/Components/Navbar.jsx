@@ -41,7 +41,7 @@ function Navbar() {
         </nav>
 
         <button className="appoint ms-5">
-          <h5>Appointment</h5>
+          <h5>Book a Session</h5>
         </button>
         <button
           className="d-lg-none d-sm-block menu-icon"

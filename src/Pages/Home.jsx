@@ -241,17 +241,16 @@ function Home() {
         </div>
       </Container>
 
-      <Container className="call-volunteers">
+      {/* <Container className="call-volunteers">
        <Col md={12} lg={12} sm={12}>
        <div className="">
           <h4>Join Us</h4>
           <p className="fs-3 mt-4">
-            The Professional Licensed and <br /> Vetted Psychologist Who you can
-            Trust
+            The Professional Licensed and <br /> Vetted Psychologist Who you can Trust
           </p>
         </div>
        </Col>
-      </Container>
+      </Container> */}
     </>
   );
 }
