@@ -17,6 +17,16 @@
     justify-content: center;
     align-items: center;
   }
+
+  .square {
+    height: 50px;
+    width: 50px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
 }
 
 .footer {

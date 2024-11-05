@@ -5,7 +5,7 @@ import { MdOutlineGroupAdd } from "react-icons/md";
 import ServiceCard from "../Components/ServiceCard";
 import therapist from "../Images/therapist.jpeg";
 import therapy from "../Images/therap2.jpeg";
-// import counseling from "../Images/counsel.jpeg";
+
 
 function Home() {
   return (

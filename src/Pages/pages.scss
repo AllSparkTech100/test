@@ -205,7 +205,7 @@
 // Contact Page
 
 .contact-section-hero {
-  height: 80vh;
+  height: 75vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.689), rgba(0, 0, 0, 0.418)),
     url("../Images/counsel.jpeg");
   padding: 3rem;
@@ -235,5 +235,31 @@
         border: 1px solid orange;
       }
     }
+
+    .text-area {
+      height: 130px;
+      // padding: 1rem;
+      background-color: $Pink;
+      border: none;
+      border-radius: 10px !important;
+      &:focus {
+        background-color: $secondary;
+        border: 1px solid orange;
+      }
+      &::placeholder {
+        position: absolute;
+        top: 1rem;
+      }
+    }
+  }
+}
+
+.contact-foot {
+  margin-top: 10rem;
+  h4 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 2rem;
   }
 }

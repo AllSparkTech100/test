@@ -1,0 +1,1 @@
+export {default as Counsel } from 'Images/therap2.jpeg'

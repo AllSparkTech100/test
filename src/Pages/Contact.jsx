@@ -1,6 +1,15 @@
 import { Container, Col, Row, Form } from "react-bootstrap";
+import workout from "../Images/work.svg";
+import ContactCard from "../Components/ContactCard";
+// import { useState } from "react";
 
 function Contact() {
+  // const [phone, setPhone] = useState("");
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   alert(`Submitted phone number: ${phone}`);
+  // };
   return (
     <>
       <div className="contact-section-hero bg-image">
@@ -31,25 +40,24 @@ function Contact() {
             </div>
             <div className="form-section">
               <Form>
-                {/* Name and Email */}
                 <Row className="mb-3">
                   <Form.Group as={Col} md={12} controlId="formGridName">
                     <Form.Label>Name</Form.Label>
                     <Form.Control
                       type="text"
-                      className="shadow-none p-2"
+                      className="shadow-none p-3"
                       placeholder="Name"
                       required
                     />
                   </Form.Group>
                 </Row>
                 <Row className="my-3">
-                  <Form.Group as={Col} md={6} sm={6} controlId="formGridEmail">
+                  <Form.Group as={Col} md={6} sm={6} controlId="formGridPhone">
                     <Form.Label>Phone</Form.Label>
                     <Form.Control
-                      type="tel"
-                      className="shadow-none p-2"
-                      placeholder="Input your phone number"
+                      type="text"
+                      className="shadow-none p-3"
+                      placeholder="Enter number"
                       required
                     />
                   </Form.Group>
@@ -57,16 +65,52 @@ function Contact() {
                     <Form.Label>Email</Form.Label>
                     <Form.Control
                       type="email"
-                      className="shadow-none p-2"
-                      placeholder="Name"
+                      className="shadow-none p-3"
+                      placeholder="Enter Email"
                       required
                     />
                   </Form.Group>
                 </Row>
+
+                <Row className="my-3">
+                  <Form.Group as={Col} controlId="formGridMessage">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control
+                      type="text"
+                      className="shadow-none text-area"
+                      placeholder="Send us a message"
+                      required
+                    />
+                  </Form.Group>
+                </Row>
+
+                <div className="my-5">
+                  <button className="bg-dark w-100 rounded-2 border-0 py-2 px-4 text-white">
+                    Submit
+                  </button>
+                </div>
               </Form>
             </div>
           </Col>
+          <Col md={6} sm={12} lg={6}>
+            <img
+              src={workout}
+              className="ms-5"
+              width={"90%"}
+              height={"90%"}
+              alt="Healthy Life"
+            />
+          </Col>
         </Row>
+      </Container>
+
+      <Container className="contact-foot">
+        <div className="text-center">
+          <h4 className="text-warning text-uppercase ">Get in touch</h4>
+          <h6>Seamless communication, global impact</h6>
+        </div>
+
+        <ContactCard />
       </Container>
     </>
   );
