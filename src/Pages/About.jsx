@@ -2,6 +2,9 @@ import { Container, Col, Row, Card } from "react-bootstrap";
 import { FaChildren, FaUserSecret } from "react-icons/fa6";
 import { MdOutlineGroupAdd } from "react-icons/md";
 import ServiceCard from "../Components/ServiceCard";
+import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { TbBrandLinktree } from "react-icons/tb";
+import CEO from "../Images/comfort.jpg";
 import "./pages.scss";
 
 function About() {
@@ -130,35 +133,92 @@ function About() {
           </div>
         </section>
 
-        <Container fluid className="portfolio">
+        <Container className="portfolio">
           <div className="introduction">
-            <h4 className="fw-bold text-uppercase">meet our ceo</h4>
+            <h4 className="fw-bold text-uppercase text-underline">
+              meet our ceo
+            </h4>
           </div>
 
-          <Row className="mt-5">
+          <Row className="mt-5 gx-5">
             <Col sm={12} md={4} lg={4} className="mt-3 mb-3">
-              <Card>
+              <Card className="border-0 h-100 carrd">
                 <Card.Img
                   variant="top"
-                  src=""
+                  src={CEO}
                   loading="lazy"
                   alt="Alexander Comfort"
                 />
-                <Card.Body>
-                  <Card.Title>Miss Alexander Comfort</Card.Title>
-                  <Card.Text>CEO Mental Health Plus and Saner LTD.</Card.Text>
+                <Card.Body className="p-3 border-0 bg-dark text-white text-center rounded-bottom-5">
+                  <Card.Title className="my-3 fw-bold">
+                    Miss Alexander Comfort
+                  </Card.Title>
+                  <Card.Text className="my-3">
+                    CEO Mental Health Plus and Saner LTD.
+                  </Card.Text>
                 </Card.Body>
+                <div className="social-likes">
+                  <div className="likes">
+                    <div>
+                      <a href="http://" className="text-dark">
+                        <FaLinkedinIn size={20} />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://www.instagram.com/cognitherapist/" className="text-dark">
+                        <FaInstagram size={20} />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="http://" className="text-dark">
+                        <FaTwitter size={20} />
+                      </a>
+                    </div>
+                    <div>
+                      <a
+                        href="https://linktr.ee/alexandercomfort?fbclid=IwY2xjawGXHzRleHRuA2FlbQIxMAABHXZcpw-IWCNMDL5ZHdvdoEhPvKHae8LuTVyvOJItmXfR7RKVt7CinYZwkQ_aem_rxzbBEAA7gl_r03ZfQvW9g"
+                        className="text-dark"
+                      >
+                        <TbBrandLinktree size={20} />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </Card>
             </Col>
-            <Col sm={12} md={8} lg={8} className="mt-3 mb-3 ms-3">
-              <p className="fw-normal">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam, quis doloremque? Ratione necessitatibus nihil omnis
-                voluptate nisi magni quo repudiandae amet soluta, eum nulla.
-                Minima ducimus, aliquid laudantium, vero a saepe sequi ab eius
-                magni consequatur voluptates odio quis corporis cum aut animi
-                beatae adipisci fuga qui sunt! Vitae, tempora.
-              </p>
+            <Col sm={12} md={8} lg={8} className="mt-3 mb-3">
+              <div className="mt-4 texts">
+                <p className="fw-normal my-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam, quis doloremque? Ratione necessitatibus nihil
+                  omnis voluptate nisi magni quo repudiandae amet soluta, eum
+                  nulla. Minima ducimus, aliquid laudantium, vero a saepe sequi
+                  ab eius magni consequatur voluptates odio quis corporis cum
+                  aut animi beatae adipisci fuga qui sunt! Vitae, tempora.
+                </p>
+                <p className="fw-normal my-4">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
+                  porro veritatis ducimus nesciunt a necessitatibus minus
+                  officia cumque asperiores deserunt sapiente aliquam explicabo
+                  at excepturi, numquam incidunt eos, inventore saepe
+                  reprehenderit. Eveniet, inventore voluptatum? Optio cupiditate
+                  quis non corrupti voluptatibus totam veritatis nulla sint
+                  ducimus tenetur alias vel illum quo atque nam autem
+                  consectetur animi, magnam vero architecto consequuntur
+                  dolores?
+                </p>
+                <p className="fw-normal my-4">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
+                  porro veritatis ducimus nesciunt a necessitatibus minus
+                  officia cumque asperiores deserunt sapiente aliquam explicabo
+                  at excepturi, numquam incidunt eos, inventore saepe
+                  reprehenderit. Eveniet, inventore voluptatum? Optio cupiditate
+                  quis non corrupti voluptatibus totam veritatis nulla sint
+                  ducimus tenetur alias vel illum quo atque nam autem
+                  consectetur animi, magnam vero architecto consequuntur
+                  dolores?
+                </p>
+              </div>
             </Col>
           </Row>
         </Container>

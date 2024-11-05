@@ -282,12 +282,40 @@
   background-position: 60% 20% !important;
 }
 
-.portfolio{
+.portfolio {
   margin-top: 15rem;
-  .introduction{
+  .introduction {
     text-align: center;
-    h4{
+    h4 {
       font-size: 2rem;
+    }
+  }
+  .texts {
+    text-align: justify;
+  }
+  .carrd {
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: center;
+
+    .social-likes {
+      position: absolute;
+      background-color: $secondary;
+      left: 280px;
+      top: 40px;
+      height: 9rem;
+      width: 3rem;
+      border-radius: 40px;
+
+      .likes {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        flex-direction: column;
+      }
     }
   }
 }
