@@ -24,7 +24,8 @@ function ContactCard() {
               <GoMail size={30} />
             </div>
             <h3 className="mb-3">Email Us</h3>
-            <p className="">mentalhealthpus24@gmail.com</p>
+            <p className=""><a href="mailto:mentalhealthpus24@gmail.com" className="text-decoration-none text-white">mentalhealthpus24@gmail.com</a></p>
+            <p className=""><a href="mailto:comfortikangenyin@gmail.com" className="text-decoration-none text-white">comfortikangenyin@gmail.com</a></p>
           </div>
         </Col>
 

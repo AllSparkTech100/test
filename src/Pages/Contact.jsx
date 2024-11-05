@@ -1,7 +1,7 @@
 import { Container, Col, Row, Form } from "react-bootstrap";
 import workout from "../Images/work.svg";
 import ContactCard from "../Components/ContactCard";
-// import "./pages.scss";
+import "./pages.scss";
 // import { useState } from "react";
 
 function Contact() {
@@ -13,18 +13,18 @@ function Contact() {
   // };
   return (
     <>
-      <div className="contact-section-hero bg-image">
+      <Container fluid className="contact-section-hero bg-image">
         <div className="contact-hero-inner">
           <h4 className="text-white">Contact Us</h4>
-          <div>
+          <div className="mt-4">
             {" "}
-            <p className="text-white mt-4">
+            <p className="text-white">
               start a conversation to establish <br /> good relationship and
               healthy well-being!
             </p>
           </div>
         </div>
-      </div>
+      </Container>
 
       <Container className="message-section">
         <Row>
@@ -103,15 +103,18 @@ function Contact() {
               width={"90%"}
               height={"90%"}
               alt="Healthy Life"
+              loading="lazy"
             />
           </Col>
         </Row>
       </Container>
 
-      <Container className="contact-foot">
+      <Container className="contact-foot p-0 p-md-5 p-lg-5" fluid>
         <div className="text-center">
           <h4 className="text-warning text-uppercase ">Get in touch</h4>
-          <h6>Seamless communication, global impact</h6>
+          <h6>
+            Seamless communication, <br /> global impact
+          </h6>
         </div>
 
         <ContactCard />

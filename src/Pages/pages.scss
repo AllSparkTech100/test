@@ -203,18 +203,20 @@
 
 // Contact Page
 
+.about-section-hero,
 .contact-section-hero {
   height: 75vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.689), rgba(0, 0, 0, 0.418)),
     url("../Images/counsel.jpeg");
   padding: 3rem;
-
+  border-radius: 0 0 30px 30px;
   .contact-hero-inner {
     text-align: center;
     display: inline-block;
     position: relative;
     top: 30%;
     left: 33%;
+    isolation: isolate;
     h4 {
       font-size: 4rem;
       font-weight: medium;
@@ -261,10 +263,31 @@
 
 .contact-foot {
   margin-top: 10rem;
+
   h4 {
     font-size: 1rem;
   }
   h6 {
-    font-size: 2rem;
+    font-size: 2.3rem;
+  }
+}
+
+// about
+.about-section-hero {
+  background-image: linear-gradient(
+      rgba(13, 14, 42, 0.782),
+      rgba(29, 7, 7, 0.674)
+    ),
+    url("../Images/therapist.jpeg");
+  background-position: 60% 20% !important;
+}
+
+.portfolio{
+  margin-top: 15rem;
+  .introduction{
+    text-align: center;
+    h4{
+      font-size: 2rem;
+    }
   }
 }
