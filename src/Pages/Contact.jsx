@@ -1,6 +1,7 @@
 import { Container, Col, Row, Form } from "react-bootstrap";
 import workout from "../Images/work.svg";
 import ContactCard from "../Components/ContactCard";
+// import "./pages.scss";
 // import { useState } from "react";
 
 function Contact() {
@@ -13,12 +14,15 @@ function Contact() {
   return (
     <>
       <div className="contact-section-hero bg-image">
-        <div className="contact-hero-inner mt-5">
+        <div className="contact-hero-inner">
           <h4 className="text-white">Contact Us</h4>
-          <p className="text-white mt-4">
-            start a conversation to establish <br /> good relationship and
-            healthy well-being
-          </p>
+          <div>
+            {" "}
+            <p className="text-white mt-4">
+              start a conversation to establish <br /> good relationship and
+              healthy well-being!
+            </p>
+          </div>
         </div>
       </div>
 

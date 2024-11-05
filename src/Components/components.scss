@@ -6,7 +6,7 @@
   justify-content: center;
   flex-direction: column;
   height: 330px;
-  background-color: red;
+  background-color: $card;
   border-radius: 20px;
   border: none;
   box-shadow: 1px 1px -2px #f9f9f9, 1px 1px -3px #f9f9f9;
@@ -17,20 +17,14 @@
     justify-content: center;
     align-items: center;
   }
-
-  .square {
-    height: 50px;
-    width: 50px;
-    background-color: $green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
+  &.dark-card {
+    background-color: $Card;
   }
 }
 
 .footer {
-  margin-top: 20rem;
+  margin-top: 15rem;
+  border-radius: 40px 40px 0 0;
   padding: 10px 50px;
   // height: 75vh;
   background-color: $header;
@@ -72,5 +66,30 @@
         }
       }
     }
+  }
+}
+
+.contact-carrier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+
+  background-color: $card;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 1px -2px #f9f9f9, 1px 1px -3px #f9f9f9;
+  .square {
+    height: 65px;
+    width: 65px;
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  &.dark-card {
+    background-color: $Card;
   }
 }
