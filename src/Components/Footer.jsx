@@ -63,7 +63,7 @@ function Footer() {
             <div className="social-links ">
               <div className="d-flex align-items-center mb-md-0 mb-lg-0 mb-4">
                 <div className="mt-3 icon-carrier">
-                  <a href="" className="text-dark">
+                  <a href="https://wa.link/xx840x" className="text-dark">
                     <FaWhatsapp size={25} />
                   </a>
                 </div>

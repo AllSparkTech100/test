@@ -164,9 +164,6 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.682)),
     url("https://images.squarespace-cdn.com/content/v1/5fcb8b6187f5a174fa2e1093/4355cf93-56fe-412d-806b-fafb24c24a8a/005_Designed+By+Thrive+-+Get+more+clients+for+your+private+practice+-+hero+image.jpg");
   background-position: center center !important;
-  // height: 70vh;
-  // display: block;
-  // align-items: center;
   padding: 8rem 0;
   .container-inner {
     // width: 70rem;
@@ -313,7 +310,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 10px;
+        gap: 5px;
         flex-direction: column;
       }
     }

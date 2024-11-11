@@ -135,7 +135,7 @@ function About() {
 
         <Container className="portfolio">
           <div className="introduction">
-            <h4 className="fw-bold text-uppercase text-underline">
+            <h4 className="fw-bold text-uppercase text-decoration-underline">
               meet our ceo
             </h4>
           </div>

@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import "../Pages/pages.scss";
+import { Nav } from "react-bootstrap";
 import { useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
@@ -23,19 +23,19 @@ function Navbar() {
         <nav className="large_screen">
           <ul>
             <li>
-              <Link to={"/"}> Home</Link>
+              <Nav.Link href="/"> Home</Nav.Link>
             </li>
             <li>
-              <Link to={"/contact"}> Contact</Link>
+              <Nav.Link href="/contact"> Contact</Nav.Link>
             </li>
             <li>
-              <Link to={"/about"}> About</Link>
+              <Nav.Link href="/about"> About</Nav.Link>
             </li>
             <li>
-              <Link to={"/services"}> Services</Link>
+              <Nav.Link href="/services"> Services</Nav.Link>
             </li>
             <li>
-              <Link to={"/events"}> Events</Link>
+              <Nav.Link href="/events"> Events</Nav.Link>
             </li>
           </ul>
         </nav>
