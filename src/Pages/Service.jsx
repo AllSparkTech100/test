@@ -1,13 +1,14 @@
-import { Container , Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import ServiceCard from "../Components/ServiceCard";
 import therapist from "../Images/therapist.jpeg";
 import therapy from "../Images/therap2.jpeg";
-import './pages.scss'
+import Feedback from "../Components/Feedback";
+import "./pages.scss";
 
 function Service() {
   return (
     <>
-     <Container fluid className="about-section-hero bg-image">
+      <Container fluid className="about-section-hero bg-image">
         <div className="contact-hero-inner">
           <h4 className="text-white">Our Services</h4>
           <div className="mt-4">
@@ -37,52 +38,52 @@ function Service() {
           </button>
         </div>
       </section>
-    
-      <Container className="offer-carrier" fluid>
-          <section className="bg-white offers mx-md-5 mx-lg-5">
-            <Row>
-              <Col sm={12} md={6} lg={6} className="left-prof">
-                <h3 className="prof-serv-head">Professional Services</h3>
-                <h5 className="">We want you to get the care you deserve</h5>
-                <p className="my-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Doloremnam repudiandae molestiae, similique totam ad?nam
-                  repudiandae molestiae, similique totam ad?nam repudiandae
-                  molestiae, similique totam ad? nam repudiandae molestiae,
-                  similique totam ad?
-                </p>
-                <ul>
-                  <li>Individuals with high stress</li>
-                  <li>People with Anxiety or Depression</li>
-                  <li>Busy Professionals</li>
-                  <li>Communities in need of Emotional Support</li>
-                  <li>Individuals Seeking Personal Growth</li>
-                </ul>
-              </Col>
 
-              <Col sm={12} md={6} lg={6}>
-                <div className="grid-container">
-                  <div className="grid-item image-item image-item-1">
-                    <img src={therapy} loading="lazy" alt="Therapy Session" />
-                  </div>
-                  <div className="grid-item image-item">
-                    <img
-                      src={therapist}
-                      loading="lazy"
-                      alt="Therapy Session "
-                    />
-                  </div>
-                  <div className="grid-item text-item">
-                    <div className="experience-text">
-                      <span className="text-warning years">25+</span>
-                      <div className="description">Years of Experience</div>
-                    </div>
+      <Container className="offer-carrier" fluid>
+        <section className="bg-white offers mx-md-5 mx-lg-5">
+          <Row>
+            <Col sm={12} md={6} lg={6} className="left-prof">
+              <h3 className="prof-serv-head">Professional Services</h3>
+              <h5 className="">We want you to get the care you deserve</h5>
+              <p className="my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloremnam repudiandae molestiae, similique totam ad?nam
+                repudiandae molestiae, similique totam ad?nam repudiandae
+                molestiae, similique totam ad? nam repudiandae molestiae,
+                similique totam ad?
+              </p>
+              <ul>
+                <li>Individuals with high stress</li>
+                <li>People with Anxiety or Depression</li>
+                <li>Busy Professionals</li>
+                <li>Communities in need of Emotional Support</li>
+                <li>Individuals Seeking Personal Growth</li>
+              </ul>
+            </Col>
+
+            <Col sm={12} md={6} lg={6}>
+              <div className="grid-container">
+                <div className="grid-item image-item image-item-1">
+                  <img src={therapy} loading="lazy" alt="Therapy Session" />
+                </div>
+                <div className="grid-item image-item">
+                  <img src={therapist} loading="lazy" alt="Therapy Session " />
+                </div>
+                <div className="grid-item text-item">
+                  <div className="experience-text">
+                    <span className="text-warning years">25+</span>
+                    <div className="description">Years of Experience</div>
                   </div>
                 </div>
-              </Col>
-            </Row>
-          </section>
-        </Container>
+              </div>
+            </Col>
+          </Row>
+        </section>
+      </Container>
+
+      <Container fluid>
+        <Feedback />
+      </Container>
     </>
   );
 }
