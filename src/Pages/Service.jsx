@@ -81,7 +81,8 @@ function Service() {
         </section>
       </Container>
 
-      <Container fluid>
+      <Container className="feedback-scroll ">
+        <h2 className="mt-5 mb-5 text-uppercase fw-semibold text-decoration-underline text-center">testimonies</h2>
         <Feedback />
       </Container>
     </>

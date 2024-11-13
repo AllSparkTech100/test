@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
 
 *,
@@ -18,10 +22,13 @@ $secondary: snow;
 $header: #0a1d25;
 $Pink: #efefef;
 $socials: yellow;
-$green: #FF9444;
-$card:#F1F1F1;
-$Card: #005F59;
+$green: #ff9444;
+$card: #f1f1f1;
+$Card: #005f59;
 $Sofia: "Sofia Sans Extra Condensed, sans-serif";
+$Courgette: "Courgette sans";
+$Sour: "Sour Gummy";
+
 
 header {
   height: 5rem;

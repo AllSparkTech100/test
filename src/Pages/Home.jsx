@@ -223,7 +223,7 @@ function Home() {
         </Container>
 
         <Container className="offer-container bg-image" fluid>
-          <div className="container-inner  ms-md-5 ms-lg-5 ms-0">
+          <div className="container-inner ms-md-5 ms-lg-5 ms-0">
             <h3 className="text-white d-none d-md-block d-lg-block">
               Take the firts step towards wellness <br /> with Mental Health
               Plus and Saner Ltd.
@@ -240,7 +240,10 @@ function Home() {
             </div>
             <div>
               <button className="btn-white mt-3  ">
-                <a href="#" className="text-black fw-medium">
+                <a
+                  href="mailto:mentalhealthplus24@gmail.com"
+                  className="text-black fw-medium"
+                >
                   Get Started
                 </a>
               </button>
@@ -248,17 +251,6 @@ function Home() {
           </div>
         </Container>
       </Container>
-
-      {/* <Container className="call-volunteers">
-       <Col md={12} lg={12} sm={12}>
-       <div className="">
-          <h4>Join Us</h4>
-          <p className="fs-3 mt-4">
-            The Professional Licensed and <br /> Vetted Psychologist Who you can Trust
-          </p>
-        </div>
-       </Col>
-      </Container> */}
     </>
   );
 }

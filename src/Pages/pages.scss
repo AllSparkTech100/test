@@ -166,8 +166,6 @@
   background-position: center center !important;
   padding: 8rem 0;
   .container-inner {
-    // width: 70rem;
-
     h3 {
       font-size: 3rem;
       font-family: $Sofia;
@@ -183,20 +181,6 @@
     }
   }
 }
-
-// .call-volunteers {
-//   margin-top: 4rem;
-//   text-align: center;
-//   background-color: red;
-
-//   h4 {
-//     color: $primary;
-//   }
-//   p {
-//     font-family: $Sofia;
-//     font-size: 2rem;
-//   }
-// }
 
 // Contact Page
 
@@ -241,18 +225,12 @@
     }
 
     .text-area {
-      height: 130px;
-      // padding: 1rem;
       background-color: $Pink;
       border: none;
       border-radius: 10px !important;
       &:focus {
         background-color: $secondary;
         border: 1px solid orange;
-      }
-      &::placeholder {
-        position: absolute;
-        top: 1rem;
       }
     }
   }
@@ -314,5 +292,12 @@
         flex-direction: column;
       }
     }
+  }
+}
+
+.feedback-scroll {
+  margin-top: 10rem;
+  h2 {
+    font-family: $Sour;
   }
 }
