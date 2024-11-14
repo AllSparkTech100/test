@@ -5,6 +5,8 @@ import { MdOutlineGroupAdd } from "react-icons/md";
 import ServiceCard from "../Components/ServiceCard";
 import therapist from "../Images/therapist.jpeg";
 import therapy from "../Images/therap2.jpeg";
+import counsel from "../Images/counsel.jpeg";
+import Counsel from "../Images/child counsel.jpeg";
 
 function Home() {
   return (
@@ -27,12 +29,16 @@ function Home() {
                 natus iusto!
               </p>
               <div className="btn-carrier mt-4">
-                <button className="btn-yellow fw-medium text-uppercase">
-                  <a href="#">Get Started</a>
-                </button>
-                <button className="btn-transparent  fw-medium text-uppercase">
-                  <a href="#">Contact Us</a>
-                </button>
+                <div className="">
+                  <button className="btn-yellow fw-medium text-uppercase">
+                    <a href="#">Get Started</a>
+                  </button>
+                </div>
+                <div className="">
+                  <button className="btn-transparent  fw-medium text-uppercase">
+                    <a href="#">Contact Us</a>
+                  </button>
+                </div>
               </div>
             </section>
             <hr />
@@ -57,8 +63,10 @@ function Home() {
             lg={6}
             md={6}
             sm={12}
-            className="right-hero-image d-lg-block d-md-block d-sm-none bg-image"
-          ></Col>
+            className="right-hero-image d-lg-block d-md-block d-none"
+          >
+            <img src={counsel} alt="" loading="lazy" />
+          </Col>
         </Row>
       </Container>
 
@@ -74,22 +82,23 @@ function Home() {
                     <h3 className="text-sentence fw-medium">
                       Mental Health is a human Right <br /> Not a Privilage
                     </h3>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Voluptatum debitis, illo natus quam, magnam architecto
+                      aliquid dignissimos suscipit dolorem, assumenda incidunt
+                      eaque iure inventore placeat numquam enim reprehenderit?
+                      Reiciendis soluta architecto fugiat culpa recusandae,
+                      numquam labore eos deserunt pariatur at.
+                    </p>
                   </div>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Voluptatum debitis, illo natus quam, magnam architecto
-                    aliquid dignissimos suscipit dolorem, assumenda incidunt
-                    eaque iure inventore placeat numquam enim reprehenderit?
-                    Reiciendis soluta architecto fugiat culpa recusandae,
-                    numquam labore eos deserunt pariatur at.
-                  </p>
+
                   {/* Different Therapies */}
-                  <div className="mid-options">
+                  <div className="mid-options mt-5">
                     <div className="option">
                       <div className="option-icon">
                         <FaChildren size={30} />
                       </div>
-                      <div className="option-text">
+                      <div className="option-text ">
                         <h5 className="text-capitalize">Children therapy</h5>
 
                         <p>
@@ -138,11 +147,8 @@ function Home() {
               </Col>
               <Col md={6} sm={12} lg={6}>
                 <section>
-                  <div className="middle-right-hero-image bg-image">
-                    {/* <h5 className="fw-bold">Who We Are</h5>
-                  <h3 className="text-sentence fw-medium">
-                    Mental Health is a human Right <br /> Not a Privilage
-                  </h3> */}
+                  <div className=" d-md-block d-lg-block d-none middle-right-hero-image">
+                    <img src={Counsel} alt="Child Counselling" loading="lazy" />
                   </div>
                 </section>
               </Col>
@@ -159,11 +165,13 @@ function Home() {
         {/* Image with Circle */}
         <section className="better bg-image">
           <div className="circle p-5 text-center">
-            <h2 className="text-warning text-uppercase mb-3 fs-5">Our Value</h2>
-            <h4 className="text-capitalize fs-2 mb-3 mt-3">
+            <h2 className="text-warning text-uppercase mb-md-3 mb-1">
+              Our Value
+            </h2>
+            <h4 className="text-capitalize mb-md-3 mb-1 mt-md-3 mt-1">
               Bringing Therapy to <br /> the Common Man
             </h4>
-            <p className="my-3">
+            <p className="my-md-3 my-2">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
               laboriosam. Itaque, officia. Incidunt esse aut officiis odit qui!
               Illum facere repellendus porro tempora velit vero?
@@ -181,13 +189,11 @@ function Home() {
             <Row>
               <Col sm={12} md={6} lg={6} className="left-prof">
                 <h3 className="prof-serv-head">Professional Services</h3>
-                <h5 className="">We want you to get the care you deserve</h5>
+                <h5 className="">We want you to get the care you deserve !!!</h5>
                 <p className="my-3">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Doloremnam repudiandae molestiae, similique totam ad?nam
-                  repudiandae molestiae, similique totam ad?nam repudiandae
-                  molestiae, similique totam ad? nam repudiandae molestiae,
-                  similique totam ad?
+                  repudiandae molestiae, similique totam ad?
                 </p>
                 <ul>
                   <li>Individuals with high stress</li>
