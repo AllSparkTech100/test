@@ -6,10 +6,9 @@
   color: $secondary;
 
   h3 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: normal;
     text-transform: capitalize;
-    font-family: $Sofia;
   }
   p {
     text-align: justify;
@@ -25,7 +24,6 @@
     align-items: center;
     justify-content: space-between;
     h3 {
-      font-family: $Sofia;
       font-size: 3rem;
     }
   }
@@ -64,9 +62,6 @@
       text-transform: capitalize;
     }
 
-    h3 {
-      font-family: $Sour;
-    }
     p {
       text-align: justify;
     }
@@ -127,7 +122,6 @@
     }
     h4 {
       font-size: 2.5rem;
-      font-family: $Sour;
     }
     p {
       font-size: 14px;
@@ -141,11 +135,9 @@
       margin-top: 6rem;
       .prof-serv-head {
         font-size: 3rem;
-        font-family: $Sofia;
       }
       h5 {
         font-size: 1.5rem;
-        font-family: $Sour;
       }
       p {
         font-size: 1rem;
@@ -205,12 +197,12 @@
   margin-top: 10rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.682)),
     url("https://images.squarespace-cdn.com/content/v1/5fcb8b6187f5a174fa2e1093/4355cf93-56fe-412d-806b-fafb24c24a8a/005_Designed+By+Thrive+-+Get+more+clients+for+your+private+practice+-+hero+image.jpg");
-  background-position: center center !important;
+  background-position: top center;
   padding: 8rem 0;
-  .container-inner {
+  border-radius: 50px;
+  .contaner-inner {
     h3 {
       font-size: 3rem;
-      font-family: $Sofia;
     }
     @media screen and (max-width: 480px) {
       text-align: center;
@@ -243,7 +235,6 @@
     h4 {
       font-size: 4rem;
       font-weight: medium;
-      font-family: $Sofia;
     }
     p {
       font-size: 1.5rem;
@@ -339,9 +330,6 @@
 
 .feedback-scroll {
   margin-top: 10rem;
-  h2 {
-    font-family: $Sour;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -378,7 +366,6 @@
           width: 80px;
         }
         .option-text {
-          font-family: $Sour;
           h5 {
             font-size: 1.3rem;
           }
@@ -437,16 +424,20 @@
 @media screen and (max-width: 480px) {
   .hero-carrier {
     h4 {
-      font-size: 14px;
+      font-size: 16px;
     }
     h3 {
-      font-size: 2.4rem;
+      font-size: 2.7rem;
     }
 
     .btn-carrier {
       width: 100%;
     }
     .counter {
+      // display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 9px;
       h3 {
         font-size: 2.5rem;
       }
@@ -454,9 +445,16 @@
   }
 
   .middle-holder {
+
     .mid-intro {
+      h5{
+        font-size: 2rem;
+      }
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+      }
+      p{
+        font-size: 14px;
       }
     }
 
@@ -468,9 +466,8 @@
           width: 80px;
         }
         .option-text {
-          font-family: $Sour;
           h5 {
-            font-size: 1.3rem;
+            font-size: 2rem;
           }
         }
       }
@@ -478,6 +475,7 @@
   }
 
   .better {
+    
     .circle {
       padding: 20px;
       height: 230px;
@@ -501,10 +499,13 @@
         margin-top: -4rem;
         .prof-serv-head {
           font-size: 2rem;
+          font-weight: bold;
         }
         ul {
           li {
             font-size: 1rem;
+            list-style: america;
+            font-size: 19px;
           }
         }
       }
