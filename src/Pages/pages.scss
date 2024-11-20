@@ -5,7 +5,7 @@
   background-color: $header;
   color: $secondary;
   overflow: hidden;
-  height: 100vh;
+  height: 100vh !important;
   h3 {
     font-size: 4rem;
     font-weight: bold !important;
@@ -34,7 +34,7 @@
     }
   }
   .right-hero-image {
-    height: 100vh;
+    height: 100vh !important;
     overflow: hidden;
     img {
       width: 100%;
@@ -113,10 +113,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // padding: 4rem;
   .circle {
     box-sizing: content-box;
-    height: 400px;
-    width: 400px;
+    height: 400px !important;
+    width: 400px !important;
     background-color: $secondary;
     border-radius: 50%;
     display: flex;
@@ -124,13 +125,13 @@
     align-items: center;
     justify-content: center;
     h2 {
-      font-size: 2rem;
+      font-size: 2rem !important;
     }
     h4 {
-      font-size: 2.5rem;
+      font-size: 2.5rem !important;
     }
     p {
-      font-size: 14px;
+      font-size: 14px !important;
     }
   }
 }
@@ -626,7 +627,142 @@
           line-height: 2;
           li {
             font-size: 1rem;
-            list-style:circle;
+            list-style: circle;
+            list-style-type: square;
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .grid-container {
+        .text-item {
+          .experience-text {
+            .years {
+              font-size: 4rem;
+            }
+            .description {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .offer-container {
+    .container-inner {
+      line-height-step: 2;
+      h3 {
+        font-size: 2.4rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-carrier {
+    height: 85vh !important;
+
+    h4 {
+      font-size: 22px;
+    }
+    h3 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+
+    .btn-carrier {
+      width: 55%;
+    }
+    .counter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+    .right-hero-image {
+      height: 85vh;
+    }
+  }
+
+  .middle-holder {
+    .middle-right-hero-image {
+      height: 75vh;
+      background-position: top center;
+    }
+    .mid-intro {
+      h5 {
+        font-size: 4rem;
+      }
+      h3 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    .mid-options {
+      .option {
+        text-align: center;
+        flex-direction: column;
+
+        .option-icon {
+          height: 80px;
+          width: 80px;
+        }
+        .option-text {
+          h5 {
+            font-size: 3rem;
+          }
+          p{
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  .better {
+    margin-top: 10rem;
+    padding: 5rem;
+    .circle {
+      padding: 20px;
+      height: 600px !important;
+      width: 600px !important;
+
+      h2 {
+        font-size: 2rem !important;
+      }
+      h4 {
+        font-size: 3rem !important;
+        font-weight: bold;
+      }
+      p {
+        font-size: 20px !important;
+      }
+    }
+  }
+
+  .offer-carrier {
+    .offers {
+      .left-prof {
+        margin-top: -4rem;
+        .prof-serv-head {
+          font-size: 3rem;
+          font-weight: bold;
+        }
+        ul {
+          line-height: 2;
+          li {
+            font-size: 1rem;
+            list-style: circle;
             list-style-type: square;
             font-size: 1.4rem;
           }

@@ -74,15 +74,15 @@ function Home() {
 
       <section className="middle-holder">
         <Container className="p-lg-5 p-sm-0 p-md-5" fluid>
-          <Row className="flex-sm-reverse">
-            <Col md={12} sm={12} lg={6} className="mb-0 mb-md-5 mb-lg-5">
+          <Row className="">
+            <Col md={12} sm={12} lg={12} className="mb-0 mb-md-5 mb-lg-5">
               <section>
                 <div className=" d-md-block d-lg-block d-none middle-right-hero-image">
                   <img src={Counsel} alt="Child Counselling" loading="lazy" />
                 </div>
               </section>
             </Col>
-            <Col md={12} sm={12} lg={6}>
+            <Col md={12} sm={12} lg={12}>
               <section>
                 <div className="mid-intro">
                   <h5 className="fw-bold">Who We Are</h5>

@@ -8,8 +8,8 @@ function ServiceCard() {
   return (
     <>
       <Row className="mt-5">
-        <Col sm={12} md={12} lg={4}>
-          <div className="service-carrier carde py-0 px-3 mt-3 mb-3 mx-2 text-center">
+        <Col sm={12} md={12} lg={6}>
+          <div className="service-carrier h-100 carde py-0 px-3 mt-3 mb-3 mx-2 text-center">
             <div className="my-3 fw-normal text-warning">
               <FaChildren size={60} />
             </div>
@@ -26,8 +26,8 @@ function ServiceCard() {
           </div>
         </Col>
 
-        <Col sm={12} md={12} lg={4}>
-          <div className="service-carrier py-0 px-3 mt-3 mb-3 mx-2 dark-card text-white text-center">
+        <Col sm={12} md={12} lg={6}>
+          <div className="service-carrier h-100 py-0 px-3 mt-3 mb-3 mx-2 dark-card text-white text-center">
             <div className="my-3 fw-normal text-warning">
               <TbPhysotherapist size={50} />
             </div>
@@ -44,8 +44,8 @@ function ServiceCard() {
           </div>
         </Col>
 
-        <Col sm={12} md={12} lg={4}>
-          <div className="service-carrier carde py-0 px-3 mt-3 mb-3 mx-2 text-center">
+        <Col sm={12} md={12} lg={12}>
+          <div className="service-carrier h-100 carde py-0 px-3 mt-3 mt-lg-5 mb-lg-5 mb-3 mx-2 text-center">
             <div className="my-3 fw-normal text-warning">
               <PiBrainLight size={50} className="text-warning" />
             </div>
