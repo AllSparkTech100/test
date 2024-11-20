@@ -4,15 +4,14 @@ import { FaChildren } from "react-icons/fa6";
 import { PiBrainLight } from "react-icons/pi";
 import { TbPhysotherapist } from "react-icons/tb";
 
-
 function ServiceCard() {
   return (
     <>
       <Row className="mt-5">
-        <Col sm={12} md={4} lg={4}>
-          <div className="service-carrier py-0 px-3 mt-3 mb-3 mx-2 text-center">
+        <Col sm={12} md={12} lg={4}>
+          <div className="service-carrier carde py-0 px-3 mt-3 mb-3 mx-2 text-center">
             <div className="my-3 fw-normal text-warning">
-              <FaChildren size={50} />
+              <FaChildren size={60} />
             </div>
             <h3 className="mt-3 mb-0">Counseling Therapy</h3>
             <p className="my-3">
@@ -27,7 +26,7 @@ function ServiceCard() {
           </div>
         </Col>
 
-        <Col sm={12} md={4} lg={4}>
+        <Col sm={12} md={12} lg={4}>
           <div className="service-carrier py-0 px-3 mt-3 mb-3 mx-2 dark-card text-white text-center">
             <div className="my-3 fw-normal text-warning">
               <TbPhysotherapist size={50} />
@@ -45,8 +44,8 @@ function ServiceCard() {
           </div>
         </Col>
 
-        <Col sm={12} md={4} lg={4}>
-          <div className="service-carrier py-0 px-3 mt-3 mb-3 mx-2 ext-center">
+        <Col sm={12} md={12} lg={4}>
+          <div className="service-carrier carde py-0 px-3 mt-3 mb-3 mx-2 text-center">
             <div className="my-3 fw-normal text-warning">
               <PiBrainLight size={50} className="text-warning" />
             </div>

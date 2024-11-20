@@ -4,10 +4,11 @@
 .hero-carrier {
   background-color: $header;
   color: $secondary;
-
+  overflow: hidden;
+  height: 100vh;
   h3 {
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: bold !important;
     text-transform: uppercase;
   }
   p {
@@ -23,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: auto;
     h3 {
       font-size: 4rem;
       font-weight: bold;
@@ -329,6 +331,7 @@
 
 @media screen and (max-width: 320px) {
   .hero-carrier {
+    height: 100vh !important;
     h4 {
       font-size: 14px;
     }
@@ -418,6 +421,7 @@
 
 @media screen and (max-width: 480px) {
   .hero-carrier {
+    height: 75vh;
     h4 {
       font-size: 16px;
     }
@@ -520,13 +524,137 @@
 
   .offer-container {
     .container-inner {
-      
       line-height-step: 2;
       h3 {
         font-size: 2rem;
       }
       p {
         font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-carrier {
+    height: 60vh;
+
+    h4 {
+      font-size: 16px;
+    }
+    h3 {
+      font-size: 2.3rem;
+    }
+
+    .btn-carrier {
+      width: 100%;
+    }
+    .counter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        font-size: 2.5rem;
+      }
+    }
+    .right-hero-image {
+      height: 60vh;
+    }
+  }
+
+  .middle-holder {
+    .middle-right-hero-image {
+      height: 60vh;
+    }
+    .mid-intro {
+      h5 {
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .mid-options {
+      .option {
+        text-align: center;
+        flex-direction: column;
+        .option-icon {
+          height: 80px;
+          width: 80px;
+        }
+        .option-text {
+          h5 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .better {
+    .circle {
+      padding: 20px;
+      height: 600px;
+      width: 600px;
+
+      h2 {
+        font-size: 2rem;
+      }
+      h4 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .offer-carrier {
+    .offers {
+      .left-prof {
+        margin-top: -4rem;
+        .prof-serv-head {
+          font-size: 3rem;
+          font-weight: bold;
+        }
+        ul {
+          line-height: 2;
+          li {
+            font-size: 1rem;
+            list-style:circle;
+            list-style-type: square;
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .grid-container {
+        .text-item {
+          .experience-text {
+            .years {
+              font-size: 4rem;
+            }
+            .description {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .offer-container {
+    .container-inner {
+      line-height-step: 2;
+      h3 {
+        font-size: 2.4rem;
+      }
+      p {
+        font-size: 1.4rem;
       }
     }
   }
