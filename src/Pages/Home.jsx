@@ -44,15 +44,15 @@ function Home() {
             <hr />
             <div className="counter mt-1 p-lg-3 p-md-3 p-sm-0">
               <div>
-                <h3 className="fw-medium">25+</h3>
+                <h3 className="">25+</h3>
                 <p>Years Experience</p>
               </div>
               <div>
-                <h3 className="fw-medium">7.8k+</h3>
+                <h3 className="">7.8k+</h3>
                 <p>Active Members</p>
               </div>
               <div>
-                <h3 className="fw-medium">99%</h3>
+                <h3 className="">99%</h3>
                 <p>Satisfied Clients</p>
               </div>
             </div>
