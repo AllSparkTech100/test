@@ -220,7 +220,7 @@ function Home() {
           </Row>
         </section>
       </Container>
-      <Container className="offer-container bg-image" fluid>
+      <Container className="offer-container bg-image" >
         <div className="container-inner ms-md-5 ms-lg-5 ms-0">
           <h3 className="text-white d-none d-md-block d-lg-block">
             Take the firts step towards wellness <br /> with Mental Health Plus

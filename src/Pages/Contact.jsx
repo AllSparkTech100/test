@@ -29,11 +29,11 @@ function Contact() {
       <Container className="message-section">
         <Row>
           <Col md={6} sm={12} lg={6}>
-            <div className="message-form">
+            <div>
               <h6 className="form-intro text-warning text-uppercase">
                 send us a message
               </h6>
-              <div className="fs-5 text-capitaize">
+              <div className="fs-3 text-capitalize">
                 Book a session or make an enquiry
               </div>
               <p className="mt-3">
