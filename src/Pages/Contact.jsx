@@ -79,11 +79,11 @@ function Contact() {
                 <Row className="my-3">
                   <Form.Group as={Col} controlId="formGridMessage">
                     <Form.Label>Message</Form.Label>
-                    <Form.Control
-                      type="text"
-                      className="shadow-none text-area"
-                      placeholder="Send us a message"
-                      required
+                  </Form.Group>
+                  <Form.Group Col={12}>
+                    <textArea
+                      className="shadow-none p-3 w-100 text-area"
+                      placeholder="Send Us a Message"
                     />
                   </Form.Group>
                 </Row>
@@ -99,7 +99,7 @@ function Contact() {
           <Col md={6} sm={12} lg={6}>
             <img
               src={workout}
-              className="ms-5"
+              className="ms-5 d-none d-md-block d-lg-block"
               width={"90%"}
               height={"90%"}
               alt="Healthy Life"
