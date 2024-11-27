@@ -16,7 +16,7 @@ function Contact() {
       <Container fluid className="contact-section-hero bg-image">
         <div className="contact-hero-inner">
           <h4 className="text-white">Contact Us</h4>
-          <div className="mt-4">
+          <div className="mt-3">
             {" "}
             <p className="text-white">
               start a conversation to establish <br /> good relationship and
@@ -28,7 +28,7 @@ function Contact() {
 
       <Container className="message-section">
         <Row>
-          <Col md={6} sm={12} lg={6}>
+          <Col md={12} sm={12} lg={6}>
             <div>
               <h6 className="form-intro text-warning text-uppercase">
                 send us a message
@@ -49,7 +49,7 @@ function Contact() {
                     <Form.Label>Name</Form.Label>
                     <Form.Control
                       type="text"
-                      className="shadow-none p-3"
+                      className="shadow-none p-3 p-lg-3 p-md-4"
                       placeholder="Name"
                       required
                     />
@@ -60,7 +60,7 @@ function Contact() {
                     <Form.Label>Phone</Form.Label>
                     <Form.Control
                       type="text"
-                      className="shadow-none p-3"
+                      className="shadow-none p-3 p-lg-3 p-md-4"
                       placeholder="Enter number"
                       required
                     />
@@ -69,7 +69,7 @@ function Contact() {
                     <Form.Label>Email</Form.Label>
                     <Form.Control
                       type="email"
-                      className="shadow-none p-3"
+                      className="shadow-none p-3 p-lg-3 p-md-4"
                       placeholder="Enter Email"
                       required
                     />
@@ -89,14 +89,14 @@ function Contact() {
                 </Row>
 
                 <div className="my-5">
-                  <button className="bg-dark w-100 rounded-2 border-0 py-2 px-4 text-white">
+                  <button className="bg-dark w-100 rounded-2 border-0 py-2 py-lg-2 px-lg-4 py-md-4 px-md-5 px-4 text-white">
                     Submit
                   </button>
                 </div>
               </Form>
             </div>
           </Col>
-          <Col md={6} sm={12} lg={6}>
+          <Col md={12} sm={12} lg={6}>
             <img
               src={workout}
               className="ms-5 d-none d-md-block d-lg-block"

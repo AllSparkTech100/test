@@ -224,11 +224,12 @@
   padding: 3rem;
   .contact-hero-inner {
     text-align: center;
-    display: inline-block;
-    position: relative;
-    top: 30%;
-    left: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     isolation: isolate;
+    margin-top: 90px;
     h4 {
       font-size: 4rem;
       font-weight: medium;
@@ -242,9 +243,7 @@
 
 .message-section {
   margin-top: 10rem;
-  //  .form-intro{
 
-  //  }
   .form-section {
     margin-top: 4rem;
     input {
@@ -575,41 +574,39 @@
       }
     }
   }
-    // Contact Style
-    .about-section-hero,
-    .contact-section-hero {
-      height: 50dvh;
-      .contact-hero-inner {
-        text-align: center;
-        top: 0;
-        left: 0;
-        h4 {
-          font-size: 3rem !important;
-        }
-        p {
-          font-size: 18px;
-        }
-      }
-    }
-    .message-section {
-      .form-intro {
-        font-size: 1.2rem;
+  // Contact Style
+  .about-section-hero,
+  .contact-section-hero {
+    height: 50dvh !important;
+    .contact-hero-inner {
+      text-align: center;
+      h4 {
+        font-size: 3rem !important;
       }
       p {
-        font-size: 1rem;
-        text-align: justify !important;
-      }
-      .form-section {
-        label {
-          font-size: 1.5rem !important;
-        }
+        font-size: 18px;
       }
     }
-    .contact-foot {
-      h6 {
-        font-size: 1.2rem;
+  }
+  .message-section {
+    .form-intro {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+      text-align: justify !important;
+    }
+    .form-section {
+      label {
+        font-size: 1.5rem !important;
       }
     }
+  }
+  .contact-foot {
+    h6 {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -733,6 +730,48 @@
       p {
         font-size: 1.4rem;
       }
+    }
+  }
+
+  .about-section-hero,
+  .contact-section-hero {
+    height: 45dvh !important;
+    .contact-hero-inner {
+      text-align: center;
+      h4 {
+        font-size: 4rem !important;
+      }
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+  .message-section {
+    .form-intro {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+      text-align: justify !important;
+    }
+    .form-section {
+      label {
+        font-size: 1.5rem !important;
+      }
+      input,
+      .text-area {
+        &::placeholder {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .contact-foot {
+    h4 {
+      font-size: 1.5rem;
+    }
+    h6 {
+      font-size: 2rem;
     }
   }
 }
@@ -868,6 +907,48 @@
       p {
         font-size: 1.4rem;
       }
+    }
+  }
+  .about-section-hero,
+  .contact-section-hero {
+    height: 100dvh !important;
+    .contact-hero-inner {
+      text-align: center;
+      margin-top: 10px !important;
+      h4 {
+        font-size: 4rem !important;
+      }
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+  .message-section {
+    .form-intro {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+      text-align: justify !important;
+    }
+    .form-section {
+      label {
+        font-size: 1.5rem !important;
+      }
+      input,
+      .text-area {
+        &::placeholder {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  .contact-foot {
+    h4 {
+      font-size: 1.5rem;
+    }
+    h6 {
+      font-size: 2rem;
     }
   }
 }
