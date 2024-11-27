@@ -78,6 +78,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 10px;
+      text-align: center !important;
       .option-icon {
         height: 55px;
         width: 200px;
@@ -357,13 +358,14 @@
   .middle-holder {
     .mid-intro {
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
       }
     }
 
     .mid-options {
       .option {
         flex-direction: column;
+
         .option-icon {
           height: 80px;
           width: 80px;
@@ -427,10 +429,10 @@
   // Contact Style
   .about-section-hero,
   .contact-section-hero {
+    height: 55vh !important;
     .contact-hero-inner {
       text-align: center;
-      top: 0;
-      left: 0;
+      margin-top: 30px !important;
       h4 {
         font-size: 3rem !important;
       }
@@ -458,6 +460,8 @@
       font-size: 1.2rem;
     }
   }
+
+  // About
 }
 
 @media screen and (max-width: 480px) {
@@ -485,6 +489,11 @@
   }
 
   .middle-holder {
+    .middle-right-hero-image {
+      height: 40vh;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
     .mid-intro {
       h5 {
         font-size: 2rem;
@@ -516,18 +525,18 @@
   .better {
     .circle {
       padding: 20px;
-      height: 300px;
-      width: 300px;
+      height: 300px !important;
+      width: 300px !important;
 
       h2 {
-        font-size: 16px;
+        font-size: 16px !important;
       }
       h4 {
-        font-size: 1.4rem;
+        font-size: 1.4rem !important;
         font-weight: bold;
       }
       p {
-        font-size: 14px;
+        font-size: 14px !important;
       }
     }
   }
@@ -911,21 +920,21 @@
   }
   .about-section-hero,
   .contact-section-hero {
-    height: 100dvh !important;
+    height: 75dvh !important;
     .contact-hero-inner {
       text-align: center;
-      margin-top: 10px !important;
+      margin-top: 125px !important;
       h4 {
         font-size: 4rem !important;
       }
       p {
-        font-size: 22px;
+        font-size: 26px;
       }
     }
   }
   .message-section {
     .form-intro {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
     p {
       font-size: 1rem;
