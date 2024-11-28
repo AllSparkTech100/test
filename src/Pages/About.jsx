@@ -23,15 +23,15 @@ function About() {
 
       <section className="middle-holder">
         <Container className="p-lg-5 p-sm-0 p-md-5" fluid>
-          <Row className="">
-            <Col md={6} sm={12} lg={12} className="mb-0 mb-md-5 mb-lg-5">
+          <Row className="flex-md-column flex-lg-column">
+            <Col md={12} sm={12} lg={12} className="mb-0 mb-md-5 mb-lg-5">
               <section>
                 <div className=" d-md-block d-lg-block middle-right-hero-image">
                   <img src={Counsel} alt="Child Counselling" loading="lazy" />
                 </div>
               </section>
             </Col>
-            <Col md={6} sm={12} lg={12}>
+            <Col md={12} sm={12} lg={12}>
               <section>
                 <div className="mid-intro">
                   <h5 className="fw-bold">Who We Are</h5>
@@ -138,14 +138,15 @@ function About() {
           </h4>
         </div>
 
-        <Row className="mt-5 gx-5">
-          <Col sm={12} md={4} lg={4} className="mt-3 mb-3">
-            <Card className="border-0 h-100 carrd">
+        <Row className="mt-5 gx-5 flex-md-column flex-lg-row">
+          <Col sm={12} md={6} lg={4} className="mt-3 mb-3">
+            <Card className="border-0 h-100 h-md-75 carrd">
               <Card.Img
                 variant="top"
                 src={CEO}
                 loading="lazy"
                 alt="Alexander Comfort"
+               
               />
               <Card.Body className="p-3 border-0 bg-dark text-white text-center rounded-bottom-5">
                 <Card.Title className="my-3 fw-bold">
@@ -197,7 +198,7 @@ function About() {
               </div>
             </Card>
           </Col>
-          <Col sm={12} md={8} lg={8} className="mt-3 mb-3">
+          <Col sm={12} md={12} lg={8} className="mt-3 mb-3">
             <div className="mt-4 texts">
               <p className="fw-normal my-2">
                 Alexander Comfort is a practicing counseling psychologist
@@ -216,7 +217,13 @@ function About() {
                 cultivate a holistic wellbeing.
               </p>
               <p className="fw-normal my-4">
-              One of her notable achievements includes training over a thousand staff members of the Niger Delta Development Commission on &ldquo;The Psychology of Debt.&ldquo; This empowering discussion explored the profound impact of our relationship with money on overall well-being and mental health, providing valuable insights into how mindset shapes financial behaviors and mental health outcomes.
+                One of her notable achievements includes training over a
+                thousand staff members of the Niger Delta Development Commission
+                on &ldquo;The Psychology of Debt.&ldquo; This empowering
+                discussion explored the profound impact of our relationship with
+                money on overall well-being and mental health, providing
+                valuable insights into how mindset shapes financial behaviors
+                and mental health outcomes.
               </p>
             </div>
           </Col>

@@ -336,7 +336,7 @@
 @media screen and (max-width: 320px) {
   // Home Style
   .hero-carrier {
-    height: 98vh !important;
+    height: 100dvh !important;
     h4 {
       font-size: 14px;
     }
@@ -491,8 +491,7 @@
 
 @media screen and (max-width: 480px) {
   .hero-carrier {
-    height: 68vh !important
-     ;
+    height: 70vh !important;
     h4 {
       font-size: 16px;
     }
@@ -515,6 +514,7 @@
   }
 
   .middle-holder {
+    margin-top: 10rem;
     .middle-right-hero-image {
       height: 40vh !important;
       border-radius: 10px;
@@ -549,6 +549,7 @@
   }
 
   .better {
+    margin-top: 10rem;
     .circle {
       padding: 20px;
       height: 300px !important;
@@ -571,6 +572,7 @@
     .offers {
       .left-prof {
         margin-top: -4rem;
+        margin-bottom: 20px;
         .prof-serv-head {
           font-size: 2rem;
           font-weight: bold;
@@ -642,11 +644,22 @@
       font-size: 1.2rem;
     }
   }
+
+  // About
+
+  .portfolio {
+    .carrd {
+      .social-likes {
+        left: 330px;
+        top: 20px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
   .hero-carrier {
-    height: 60vh;
+    height: 60vh !important;
 
     h4 {
       font-size: 16px;
@@ -706,9 +719,9 @@
 
   .better {
     .circle {
-      padding: 20px;
-      height: 600px;
-      width: 600px;
+      padding: 20px !important;
+      height: 600px !important;
+      width: 600px !important;
 
       h2 {
         font-size: 2rem;
@@ -757,6 +770,7 @@
   }
 
   .offer-container {
+    border-radius: 20px;
     .container-inner {
       line-height-step: 2;
       h3 {
@@ -809,6 +823,15 @@
       font-size: 2rem;
     }
   }
+
+  .portfolio {
+    .carrd {
+      margin-top: 10rem;
+      .social-likes {
+        left: 250px;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -845,6 +868,7 @@
     .middle-right-hero-image {
       height: 75vh;
       background-position: top center;
+      border-radius: 10px !important;
     }
     .mid-intro {
       h5 {
@@ -984,6 +1008,15 @@
     }
     h6 {
       font-size: 2rem;
+    }
+  }
+
+  .portfolio {
+    .carrd {
+      margin-top: 0;
+      .social-likes {
+        left: 250px;
+      }
     }
   }
 }
