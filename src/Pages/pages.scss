@@ -356,6 +356,11 @@
 
   .middle-holder {
     margin-top: 10rem !important;
+    .middle-right-hero-image{
+      height: 40vh !important;
+      border-radius: 10px !important;
+      margin-bottom: 20px;
+    }
     .mid-intro {
       h3 {
         font-size: 1.2rem !important;
@@ -382,8 +387,8 @@
   .better {
     .circle {
       padding: 20px !important;
-      height: 230px !important;
-      width: 230px !important;
+      height: 270px !important;
+      width: 270px !important;
 
       h2 {
         font-size: 1rem !important;

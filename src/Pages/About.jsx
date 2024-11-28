@@ -35,7 +35,7 @@ function About() {
               <section>
                 <div className="mid-intro">
                   <h5 className="fw-bold">Who We Are</h5>
-                  <h3 className="my-3 fw-medium">
+                  <h3 className="text-sentence my-3 fw-medium">
                     Mental Health is a human Right <br /> Not a Privilage
                   </h3>
                   <p>
@@ -158,7 +158,11 @@ function About() {
               <div className="social-likes">
                 <div className="likes">
                   <div>
-                    <a href="http://" className="text-dark">
+                    <a
+                      href="https://ng.linkedin.com/in/alexandercomfort?trk=public_post_feed-actor-name"
+                      className="text-dark"
+                      target="_blank"
+                    >
                       <FaLinkedinIn size={20} />
                     </a>
                   </div>
@@ -166,18 +170,24 @@ function About() {
                     <a
                       href="https://www.instagram.com/cognitherapist/"
                       className="text-dark"
+                      target="_blank"
                     >
                       <FaInstagram size={20} />
                     </a>
                   </div>
                   <div>
-                    <a href="http://" className="text-dark">
+                    <a
+                      href="https://x.com/Cognitherapist"
+                      className="text-dark"
+                      target="_blank"
+                    >
                       <FaTwitter size={20} />
                     </a>
                   </div>
                   <div>
                     <a
                       href="https://linktr.ee/alexandercomfort?fbclid=IwY2xjawGXHzRleHRuA2FlbQIxMAABHXZcpw-IWCNMDL5ZHdvdoEhPvKHae8LuTVyvOJItmXfR7RKVt7CinYZwkQ_aem_rxzbBEAA7gl_r03ZfQvW9g"
+                      target="_blank"
                       className="text-dark"
                     >
                       <TbBrandLinktree size={20} />
@@ -190,32 +200,23 @@ function About() {
           <Col sm={12} md={8} lg={8} className="mt-3 mb-3">
             <div className="mt-4 texts">
               <p className="fw-normal my-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laboriosam, quis doloremque? Ratione necessitatibus nihil omnis
-                voluptate nisi magni quo repudiandae amet soluta, eum nulla.
-                Minima ducimus, aliquid laudantium, vero a saepe sequi ab eius
-                magni consequatur voluptates odio quis corporis cum aut animi
-                beatae adipisci fuga qui sunt! Vitae, tempora.
+                Alexander Comfort is a practicing counseling psychologist
+                specializing in Clinical and Mental Health Counseling. With a
+                strong commitment to advancing mental health awareness and
+                education, Alexander has spearheaded various initiatives across
+                Nigeria, bringing critical mental health discussions to diverse
+                audiences.
               </p>
               <p className="fw-normal my-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
-                porro veritatis ducimus nesciunt a necessitatibus minus officia
-                cumque asperiores deserunt sapiente aliquam explicabo at
-                excepturi, numquam incidunt eos, inventore saepe reprehenderit.
-                Eveniet, inventore voluptatum? Optio cupiditate quis non
-                corrupti voluptatibus totam veritatis nulla sint ducimus tenetur
-                alias vel illum quo atque nam autem consectetur animi, magnam
-                vero architecto consequuntur dolores?
+                She parades herself in telling Mental health stories the African
+                way. Her mission is clear - it is to inspire a widespread shift
+                towards proactive mental health practices, fostering healthier
+                and sounder lives for all, equipping individuals with the tools
+                to navigate Mental health challenges, prevent triggers and
+                cultivate a holistic wellbeing.
               </p>
               <p className="fw-normal my-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
-                porro veritatis ducimus nesciunt a necessitatibus minus officia
-                cumque asperiores deserunt sapiente aliquam explicabo at
-                excepturi, numquam incidunt eos, inventore saepe reprehenderit.
-                Eveniet, inventore voluptatum? Optio cupiditate quis non
-                corrupti voluptatibus totam veritatis nulla sint ducimus tenetur
-                alias vel illum quo atque nam autem consectetur animi, magnam
-                vero architecto consequuntur dolores?
+              One of her notable achievements includes training over a thousand staff members of the Niger Delta Development Commission on &ldquo;The Psychology of Debt.&ldquo; This empowering discussion explored the profound impact of our relationship with money on overall well-being and mental health, providing valuable insights into how mindset shapes financial behaviors and mental health outcomes.
               </p>
             </div>
           </Col>
