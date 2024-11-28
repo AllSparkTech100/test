@@ -112,16 +112,18 @@ function About() {
       {/* Image with Circle */}
       <section className="better bg-image">
         <div className="circle p-5 text-center">
-          <h2 className="text-warning text-uppercase mb-3 fs-5">Our Value</h2>
-          <h4 className="text-capitalize fs-2 mb-3 mt-3">
+          <h2 className="text-warning text-uppercase mb-md-3 mb-1">
+            Our Value
+          </h2>
+          <h4 className="text-capitalize mb-md-3 mb-1 mt-md-3 mt-1">
             Bringing Therapy to <br /> the Common Man
           </h4>
-          <p className="my-3">
+          <p className="my-md-3 my-2">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
             laboriosam. Itaque, officia. Incidunt esse aut officiis odit qui!
             Illum facere repellendus porro tempora velit vero?
           </p>
-          <button className="bg-dark btn rounded-5 my-3">
+          <button className="bg-dark btn rounded-5 my-3 py-md-4 px-md-5">
             <a href="#" className="text-white">
               Discover More
             </a>

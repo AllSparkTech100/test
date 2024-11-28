@@ -207,7 +207,6 @@
     url("https://images.squarespace-cdn.com/content/v1/5fcb8b6187f5a174fa2e1093/4355cf93-56fe-412d-806b-fafb24c24a8a/005_Designed+By+Thrive+-+Get+more+clients+for+your+private+practice+-+hero+image.jpg");
   background-position: top center;
   padding: 8rem 0;
-  border-radius: 50px;
   .contaner-inner {
     h3 {
       font-size: 3rem;
@@ -337,12 +336,12 @@
 @media screen and (max-width: 320px) {
   // Home Style
   .hero-carrier {
-    height: 100vh !important;
+    height: 98vh !important;
     h4 {
       font-size: 14px;
     }
     h3 {
-      font-size: 2.4rem;
+      font-size: 2rem !important;
     }
 
     .btn-carrier {
@@ -356,6 +355,7 @@
   }
 
   .middle-holder {
+    margin-top: 10rem !important;
     .mid-intro {
       h3 {
         font-size: 1.2rem !important;
@@ -365,14 +365,14 @@
     .mid-options {
       .option {
         flex-direction: column;
-
+        margin-top: 10px;
         .option-icon {
           height: 80px;
           width: 80px;
         }
         .option-text {
           h5 {
-            font-size: 1.3rem;
+            font-size: 1.5rem !important;
           }
         }
       }
@@ -381,7 +381,7 @@
 
   .better {
     .circle {
-      padding: 20px;
+      padding: 20px !important;
       height: 230px !important;
       width: 230px !important;
 
@@ -398,15 +398,18 @@
   }
 
   .offer-carrier {
+    margin-top: 5rem !important;
     .offers {
       .left-prof {
         margin-top: -4rem;
         .prof-serv-head {
-          font-size: 2rem;
+          font-size: 1.5rem !important;
+          margin: 0 0 12px 0 !important;
         }
         ul {
+          line-height: 2 !important;
           li {
-            font-size: 1rem;
+            font-size: 16px !important;
           }
         }
       }
@@ -414,13 +417,21 @@
         .text-item {
           .experience-text {
             .years {
-              font-size: 2rem;
+              font-size: 2.5rem !important;
             }
             .description {
-              font-size: 1rem;
+              font-size: 1.2rem !important;
             }
           }
         }
+      }
+    }
+  }
+
+  .offer-container {
+    .container-inner {
+      h3 {
+        font-size: 20px !important;
       }
     }
   }
@@ -429,15 +440,15 @@
   // Contact Style
   .about-section-hero,
   .contact-section-hero {
-    height: 55vh !important;
+    height: 65vh !important;
     .contact-hero-inner {
       text-align: center;
-      margin-top: 30px !important;
+      margin-top: 6px !important;
       h4 {
         font-size: 3rem !important;
       }
       p {
-        font-size: 18px;
+        font-size: 18px !important;
       }
     }
   }
@@ -462,502 +473,511 @@
   }
 
   // About
-}
 
-@media screen and (max-width: 480px) {
-  .hero-carrier {
-    height: 75vh;
-    h4 {
-      font-size: 16px;
-    }
-    h3 {
-      font-size: 2.3rem;
-    }
-
-    .btn-carrier {
-      width: 100%;
-    }
-    .counter {
-      // display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 9px;
-      h3 {
-        font-size: 2.5rem;
-      }
-    }
-  }
-
-  .middle-holder {
-    .middle-right-hero-image {
-      height: 40vh;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    .mid-intro {
-      h5 {
-        font-size: 2rem;
-      }
-      h3 {
-        font-size: 1.4rem;
-      }
-      p {
-        font-size: 14px;
+  .portfolio {
+    .carrd {
+      .social-likes {
+        left: 78%;
+        top: 20px;
       }
     }
 
-    .mid-options {
-      .option {
-        flex-direction: column;
-        .option-icon {
-          height: 80px;
-          width: 80px;
+    @media screen and (max-width: 480px) {
+      .hero-carrier {
+        height: 75vh;
+        h4 {
+          font-size: 16px;
         }
-        .option-text {
+        h3 {
+          font-size: 2.3rem;
+        }
+
+        .btn-carrier {
+          width: 100%;
+        }
+        .counter {
+          // display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 9px;
+          h3 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      .middle-holder {
+        .middle-right-hero-image {
+          height: 40vh;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+        .mid-intro {
           h5 {
             font-size: 2rem;
           }
+          h3 {
+            font-size: 1.4rem;
+          }
+          p {
+            font-size: 14px;
+          }
         }
-      }
-    }
-  }
 
-  .better {
-    .circle {
-      padding: 20px;
-      height: 300px !important;
-      width: 300px !important;
-
-      h2 {
-        font-size: 16px !important;
-      }
-      h4 {
-        font-size: 1.4rem !important;
-        font-weight: bold;
-      }
-      p {
-        font-size: 14px !important;
-      }
-    }
-  }
-
-  .offer-carrier {
-    .offers {
-      .left-prof {
-        margin-top: -4rem;
-        .prof-serv-head {
-          font-size: 2rem;
-          font-weight: bold;
-        }
-        ul {
-          li {
-            font-size: 1rem;
-            list-style: america;
-            font-size: 19px;
+        .mid-options {
+          .option {
+            flex-direction: column;
+            .option-icon {
+              height: 80px;
+              width: 80px;
+            }
+            .option-text {
+              h5 {
+                font-size: 2rem;
+              }
+            }
           }
         }
       }
-      .grid-container {
-        .text-item {
-          .experience-text {
-            .years {
+
+      .better {
+        .circle {
+          padding: 20px;
+          height: 300px !important;
+          width: 300px !important;
+
+          h2 {
+            font-size: 16px !important;
+          }
+          h4 {
+            font-size: 1.4rem !important;
+            font-weight: bold;
+          }
+          p {
+            font-size: 14px !important;
+          }
+        }
+      }
+
+      .offer-carrier {
+        .offers {
+          .left-prof {
+            margin-top: -4rem;
+            .prof-serv-head {
               font-size: 2rem;
+              font-weight: bold;
             }
-            .description {
-              font-size: 1rem;
+            ul {
+              li {
+                font-size: 1rem;
+                list-style: america;
+                font-size: 19px;
+              }
+            }
+          }
+          .grid-container {
+            .text-item {
+              .experience-text {
+                .years {
+                  font-size: 2rem;
+                }
+                .description {
+                  font-size: 1rem;
+                }
+              }
             }
           }
         }
       }
-    }
-  }
 
-  .offer-container {
-    .container-inner {
-      line-height-step: 2;
-      h3 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: 1rem;
-      }
-    }
-  }
-  // Contact Style
-  .about-section-hero,
-  .contact-section-hero {
-    height: 50dvh !important;
-    .contact-hero-inner {
-      text-align: center;
-      h4 {
-        font-size: 3rem !important;
-      }
-      p {
-        font-size: 18px;
-      }
-    }
-  }
-  .message-section {
-    .form-intro {
-      font-size: 1.2rem;
-    }
-    p {
-      font-size: 1rem;
-      text-align: justify !important;
-    }
-    .form-section {
-      label {
-        font-size: 1.5rem !important;
-      }
-    }
-  }
-  .contact-foot {
-    h6 {
-      font-size: 1.2rem;
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero-carrier {
-    height: 60vh;
-
-    h4 {
-      font-size: 16px;
-    }
-    h3 {
-      font-size: 2.3rem;
-    }
-
-    .btn-carrier {
-      width: 100%;
-    }
-    .counter {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      h3 {
-        font-size: 2.5rem;
-      }
-    }
-    .right-hero-image {
-      height: 60vh;
-    }
-  }
-
-  .middle-holder {
-    .middle-right-hero-image {
-      height: 60vh;
-    }
-    .mid-intro {
-      h5 {
-        font-size: 2.5rem;
-      }
-      h3 {
-        font-size: 28px;
-      }
-      p {
-        font-size: 14px;
-      }
-    }
-
-    .mid-options {
-      .option {
-        text-align: center;
-        flex-direction: column;
-        .option-icon {
-          height: 80px;
-          width: 80px;
-        }
-        .option-text {
-          h5 {
+      .offer-container {
+        .container-inner {
+          line-height-step: 2;
+          h3 {
             font-size: 2rem;
           }
-        }
-      }
-    }
-  }
-
-  .better {
-    .circle {
-      padding: 20px;
-      height: 600px;
-      width: 600px;
-
-      h2 {
-        font-size: 2rem;
-      }
-      h4 {
-        font-size: 3rem;
-        font-weight: bold;
-      }
-      p {
-        font-size: 20px;
-      }
-    }
-  }
-
-  .offer-carrier {
-    .offers {
-      .left-prof {
-        margin-top: -4rem;
-        .prof-serv-head {
-          font-size: 3rem;
-          font-weight: bold;
-        }
-        ul {
-          line-height: 2;
-          li {
+          p {
             font-size: 1rem;
-            list-style: circle;
-            list-style-type: square;
+          }
+        }
+      }
+      // Contact Style
+      .about-section-hero,
+      .contact-section-hero {
+        height: 50dvh !important;
+        .contact-hero-inner {
+          text-align: center;
+          h4 {
+            font-size: 3rem !important;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+      .message-section {
+        .form-intro {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 1rem;
+          text-align: justify !important;
+        }
+        .form-section {
+          label {
+            font-size: 1.5rem !important;
+          }
+        }
+      }
+      .contact-foot {
+        h6 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .hero-carrier {
+        height: 60vh;
+
+        h4 {
+          font-size: 16px;
+        }
+        h3 {
+          font-size: 2.3rem;
+        }
+
+        .btn-carrier {
+          width: 100%;
+        }
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h3 {
+            font-size: 2.5rem;
+          }
+        }
+        .right-hero-image {
+          height: 60vh;
+        }
+      }
+
+      .middle-holder {
+        .middle-right-hero-image {
+          height: 60vh;
+        }
+        .mid-intro {
+          h5 {
+            font-size: 2.5rem;
+          }
+          h3 {
+            font-size: 28px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+
+        .mid-options {
+          .option {
+            text-align: center;
+            flex-direction: column;
+            .option-icon {
+              height: 80px;
+              width: 80px;
+            }
+            .option-text {
+              h5 {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+
+      .better {
+        .circle {
+          padding: 20px;
+          height: 600px;
+          width: 600px;
+
+          h2 {
+            font-size: 2rem;
+          }
+          h4 {
+            font-size: 3rem;
+            font-weight: bold;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .offer-carrier {
+        .offers {
+          .left-prof {
+            margin-top: -4rem;
+            .prof-serv-head {
+              font-size: 3rem;
+              font-weight: bold;
+            }
+            ul {
+              line-height: 2;
+              li {
+                font-size: 1rem;
+                list-style: circle;
+                list-style-type: square;
+                font-size: 1.4rem;
+              }
+            }
+          }
+          .grid-container {
+            .text-item {
+              .experience-text {
+                .years {
+                  font-size: 4rem;
+                }
+                .description {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .offer-container {
+        .container-inner {
+          line-height-step: 2;
+          h3 {
+            font-size: 2.4rem;
+          }
+          p {
             font-size: 1.4rem;
           }
         }
       }
-      .grid-container {
-        .text-item {
-          .experience-text {
-            .years {
-              font-size: 4rem;
-            }
-            .description {
-              font-size: 2rem;
+
+      .about-section-hero,
+      .contact-section-hero {
+        height: 45dvh !important;
+        .contact-hero-inner {
+          text-align: center;
+          h4 {
+            font-size: 4rem !important;
+          }
+          p {
+            font-size: 22px;
+          }
+        }
+      }
+      .message-section {
+        .form-intro {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 1rem;
+          text-align: justify !important;
+        }
+        .form-section {
+          label {
+            font-size: 1.5rem !important;
+          }
+          input,
+          .text-area {
+            &::placeholder {
+              font-size: 22px;
             }
           }
         }
       }
+      .contact-foot {
+        h4 {
+          font-size: 1.5rem;
+        }
+        h6 {
+          font-size: 2rem;
+        }
+      }
     }
-  }
 
-  .offer-container {
-    .container-inner {
-      line-height-step: 2;
-      h3 {
-        font-size: 2.4rem;
-      }
-      p {
-        font-size: 1.4rem;
-      }
-    }
-  }
+    @media screen and (min-width: 1200px) {
+      .hero-carrier {
+        height: 85vh !important;
 
-  .about-section-hero,
-  .contact-section-hero {
-    height: 45dvh !important;
-    .contact-hero-inner {
-      text-align: center;
-      h4 {
-        font-size: 4rem !important;
-      }
-      p {
-        font-size: 22px;
-      }
-    }
-  }
-  .message-section {
-    .form-intro {
-      font-size: 1.2rem;
-    }
-    p {
-      font-size: 1rem;
-      text-align: justify !important;
-    }
-    .form-section {
-      label {
-        font-size: 1.5rem !important;
-      }
-      input,
-      .text-area {
-        &::placeholder {
+        h4 {
           font-size: 22px;
         }
-      }
-    }
-  }
-  .contact-foot {
-    h4 {
-      font-size: 1.5rem;
-    }
-    h6 {
-      font-size: 2rem;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-carrier {
-    height: 85vh !important;
-
-    h4 {
-      font-size: 22px;
-    }
-    h3 {
-      font-size: 4rem;
-    }
-    p {
-      font-size: 1rem;
-    }
-
-    .btn-carrier {
-      width: 55%;
-    }
-    .counter {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      h3 {
-        font-size: 2.5rem;
-      }
-    }
-    .right-hero-image {
-      height: 85vh;
-    }
-  }
-
-  .middle-holder {
-    .middle-right-hero-image {
-      height: 75vh;
-      background-position: top center;
-    }
-    .mid-intro {
-      h5 {
-        font-size: 4rem;
-      }
-      h3 {
-        font-size: 3rem;
-      }
-      p {
-        font-size: 1.4rem;
-      }
-    }
-
-    .mid-options {
-      .option {
-        text-align: center;
-        flex-direction: column;
-
-        .option-icon {
-          height: 80px;
-          width: 80px;
+        h3 {
+          font-size: 4rem;
         }
-        .option-text {
+        p {
+          font-size: 1rem;
+        }
+
+        .btn-carrier {
+          width: 55%;
+        }
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h3 {
+            font-size: 2.5rem;
+          }
+        }
+        .right-hero-image {
+          height: 85vh;
+        }
+      }
+
+      .middle-holder {
+        .middle-right-hero-image {
+          height: 75vh;
+          background-position: top center;
+        }
+        .mid-intro {
           h5 {
+            font-size: 4rem;
+          }
+          h3 {
             font-size: 3rem;
           }
           p {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
+          }
+        }
+
+        .mid-options {
+          .option {
+            text-align: center;
+            flex-direction: column;
+
+            .option-icon {
+              height: 80px;
+              width: 80px;
+            }
+            .option-text {
+              h5 {
+                font-size: 3rem;
+              }
+              p {
+                font-size: 1.5rem;
+              }
+            }
           }
         }
       }
-    }
-  }
 
-  .better {
-    margin-top: 10rem;
-    padding: 5rem;
-    .circle {
-      padding: 20px;
-      height: 600px !important;
-      width: 600px !important;
+      .better {
+        margin-top: 10rem;
+        padding: 5rem;
+        .circle {
+          padding: 20px;
+          height: 600px !important;
+          width: 600px !important;
 
-      h2 {
-        font-size: 2rem !important;
-      }
-      h4 {
-        font-size: 3rem !important;
-        font-weight: bold;
-      }
-      p {
-        font-size: 20px !important;
-      }
-    }
-  }
-
-  .offer-carrier {
-    .offers {
-      .left-prof {
-        margin-top: 10rem !important;
-        .prof-serv-head {
-          font-size: 3rem;
-          font-weight: bold;
+          h2 {
+            font-size: 2rem !important;
+          }
+          h4 {
+            font-size: 3rem !important;
+            font-weight: bold;
+          }
+          p {
+            font-size: 20px !important;
+          }
         }
-        ul {
-          line-height: 2;
-          li {
-            font-size: 1rem;
-            list-style: circle;
-            list-style-type: square;
+      }
+
+      .offer-carrier {
+        .offers {
+          .left-prof {
+            margin-top: 10rem !important;
+            .prof-serv-head {
+              font-size: 3rem;
+              font-weight: bold;
+            }
+            ul {
+              line-height: 2;
+              li {
+                font-size: 1rem;
+                list-style: circle;
+                list-style-type: square;
+                font-size: 1.4rem;
+              }
+            }
+          }
+          .grid-container {
+            .text-item {
+              .experience-text {
+                .years {
+                  font-size: 4rem;
+                }
+                .description {
+                  font-size: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .offer-container {
+        .container-inner {
+          line-height-step: 2;
+          h3 {
+            font-size: 2.4rem;
+          }
+          p {
             font-size: 1.4rem;
           }
         }
       }
-      .grid-container {
-        .text-item {
-          .experience-text {
-            .years {
-              font-size: 4rem;
-            }
-            .description {
-              font-size: 2rem;
+      .about-section-hero,
+      .contact-section-hero {
+        height: 75dvh !important;
+        .contact-hero-inner {
+          text-align: center;
+          margin-top: 125px !important;
+          h4 {
+            font-size: 4rem !important;
+          }
+          p {
+            font-size: 26px;
+          }
+        }
+      }
+      .message-section {
+        .form-intro {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+          text-align: justify !important;
+        }
+        .form-section {
+          label {
+            font-size: 1.5rem !important;
+          }
+          input,
+          .text-area {
+            &::placeholder {
+              font-size: 22px;
             }
           }
         }
       }
-    }
-  }
-
-  .offer-container {
-    .container-inner {
-      line-height-step: 2;
-      h3 {
-        font-size: 2.4rem;
-      }
-      p {
-        font-size: 1.4rem;
-      }
-    }
-  }
-  .about-section-hero,
-  .contact-section-hero {
-    height: 75dvh !important;
-    .contact-hero-inner {
-      text-align: center;
-      margin-top: 125px !important;
-      h4 {
-        font-size: 4rem !important;
-      }
-      p {
-        font-size: 26px;
-      }
-    }
-  }
-  .message-section {
-    .form-intro {
-      font-size: 1.5rem;
-    }
-    p {
-      font-size: 1rem;
-      text-align: justify !important;
-    }
-    .form-section {
-      label {
-        font-size: 1.5rem !important;
-      }
-      input,
-      .text-area {
-        &::placeholder {
-          font-size: 22px;
+      .contact-foot {
+        h4 {
+          font-size: 1.5rem;
+        }
+        h6 {
+          font-size: 2rem;
         }
       }
-    }
-  }
-  .contact-foot {
-    h4 {
-      font-size: 1.5rem;
-    }
-    h6 {
-      font-size: 2rem;
     }
   }
 }

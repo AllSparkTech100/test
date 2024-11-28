@@ -16,7 +16,7 @@ function Contact() {
       <Container fluid className="contact-section-hero bg-image">
         <div className="contact-hero-inner">
           <h4 className="text-white">Contact Us</h4>
-          <div className="mt-3">
+          <div className="mt-2">
             {" "}
             <p className="text-white">
               start a conversation to establish <br /> good relationship and
