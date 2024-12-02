@@ -2,9 +2,22 @@ import { Container, Col, Row, Form } from "react-bootstrap";
 import workout from "../Images/work.svg";
 import ContactCard from "../Components/ContactCard";
 import "./pages.scss";
-// import { useState } from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Contact() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      delay: 50,
+      offset: 200,
+      startEvent: "DOMContentLoaded",
+    });
+  });
+  AOS.refresh();
   // const [phone, setPhone] = useState("");
 
   // const handleSubmit = (e) => {
@@ -14,11 +27,11 @@ function Contact() {
   return (
     <>
       <Container fluid className="contact-section-hero bg-image">
-        <div className="contact-hero-inner">
+        <div className="contact-hero-inner" data-aos="fade-up">
           <h4 className="text-white">Contact Us</h4>
           <div className="mt-2">
             {" "}
-            <p className="text-white">
+            <p className="text-white" data-aos="fade-down">
               start a conversation to establish <br /> good relationship and
               healthy well-being!
             </p>
@@ -29,7 +42,7 @@ function Contact() {
       <Container className="message-section">
         <Row>
           <Col md={12} sm={12} lg={6}>
-            <div>
+            <div data-aos="fade-up">
               <h6 className="form-intro text-warning text-uppercase">
                 send us a message
               </h6>
@@ -96,7 +109,7 @@ function Contact() {
               </Form>
             </div>
           </Col>
-          <Col md={12} sm={12} lg={6}>
+          <Col md={12} sm={12} lg={6} data-aos="fade-right">
             <img
               src={workout}
               className="ms-5 d-none d-md-block d-lg-block"

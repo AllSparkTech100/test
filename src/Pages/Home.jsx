@@ -7,14 +7,28 @@ import therapist from "../Images/therapist.jpeg";
 import therapy from "../Images/therap2.jpeg";
 import counsel from "../Images/counsel.jpeg";
 import Counsel from "../Images/child counsel.jpeg";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      delay: 50,
+      offset: 200,
+      startEvent: "DOMContentLoaded",
+    });
+  });
+  AOS.refresh();
   return (
     <>
       {/* Hero */}
       <Container className="hero-carrier" fluid>
         <Row>
-          <Col lg={6} md={6} sm={12}>
+          <Col lg={6} md={6} sm={12} data-aos="fade-left">
             <section className="mt-5 p-lg-3 p-sm-0">
               <h4 className="text-warning text-uppercase">
                 mental health plus and saner ltd.
@@ -77,7 +91,14 @@ function Home() {
           <Row className="flex-md-column flex-lg-column">
             <Col md={12} sm={12} lg={12} className="mb-0 mb-md-5 mb-lg-5">
               <section>
-                <div className=" d-md-block d-lg-block middle-right-hero-image">
+                <div
+                  className=" d-md-block d-lg-block middle-right-hero-image"
+                  data-aos="zoom-in"
+                  data-aos-offset="200"
+                  data-aos-delay="10"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
                   <img src={Counsel} alt="Child Counselling" loading="lazy" />
                 </div>
               </section>
@@ -85,11 +106,16 @@ function Home() {
             <Col md={12} sm={12} lg={12}>
               <section>
                 <div className="mid-intro">
-                  <h5 className="fw-bold">Who We Are</h5>
-                  <h3 className="text-sentence my-3 fw-medium">
+                  <h5 className="fw-bold" data-aos="fade-up">
+                    Who We Are
+                  </h5>
+                  <h3
+                    className="text-sentence my-3 fw-medium"
+                    data-aos="fade-up"
+                  >
                     Mental Health is a human Right <br /> Not a Privilage
                   </h3>
-                  <p>
+                  <p data-aos="fade-up">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Voluptatum debitis, illo natus quam, magnam architecto
                     aliquid dignissimos suscipit dolorem, assumenda incidunt
@@ -101,7 +127,7 @@ function Home() {
 
                 {/* Different Therapies */}
                 <div className="mid-options mt-5">
-                  <div className="option">
+                  <div className="option" data-aos="fade-up">
                     <div className="option-icon">
                       <FaChildren size={30} />
                     </div>
@@ -116,7 +142,7 @@ function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="option">
+                  <div className="option" data-aos="fade-up">
                     <div className="option-icon">
                       <FaUserSecret size={30} />
                     </div>
@@ -131,7 +157,7 @@ function Home() {
                       </p>
                     </div>
                   </div>
-                  <div className="option">
+                  <div className="option" data-aos="fade-up">
                     <div className="option-icon">
                       <MdOutlineGroupAdd size={30} />
                     </div>
@@ -160,7 +186,7 @@ function Home() {
         </Container>
       </section>
       {/* Image with Circle */}
-      <section className="better bg-image">
+      <section className="better bg-image" data-aos="zoom-in">
         <div className="circle p-5 text-center">
           <h2 className="text-warning text-uppercase mb-md-3 mb-1">
             Our Value
@@ -184,32 +210,47 @@ function Home() {
       <Container className="offer-carrier" fluid>
         <section className="bg-white offers mx-md-5 mx-lg-5">
           <Row>
-            <Col sm={12} md={12} lg={6} className="left-prof">
+            <Col
+              sm={12}
+              md={12}
+              lg={6}
+              className="left-prof"
+              data-aos="fade-up"
+            >
               <h3 className="prof-serv-head">Professional Services</h3>
-              <h5 className="">We want you to get the care you deserve !!!</h5>
-              <p className="my-3">
+              <h5 className="" data-aos="fade-left">
+                We want you to get the care you deserve !!!
+              </h5>
+              <p className="my-3" data-aos="fade-up">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremnam repudiandae molestiae, similique totam ad?nam
                 repudiandae molestiae, similique totam ad?
               </p>
               <ul>
-                <li>Individuals with high stress</li>
-                <li>People with Anxiety or Depression</li>
-                <li>Busy Professionals</li>
-                <li>Communities in need of Emotional Support</li>
-                <li>Individuals Seeking Personal Growth</li>
+                <li data-aos="fade-left">Individuals with high stress</li>
+                <li data-aos="fade-right">People with Anxiety or Depression</li>
+                <li data-aos="fade-left">Busy Professionals</li>
+                <li data-aos="fade-right">
+                  Communities in need of Emotional Support
+                </li>
+                <li data-aos="fade-left">
+                  Individuals Seeking Personal Growth
+                </li>
               </ul>
             </Col>
 
             <Col sm={12} md={12} lg={6}>
               <div className="grid-container mt-md-5">
-                <div className="grid-item image-item image-item-1">
+                <div
+                  className="grid-item image-item image-item-1"
+                  data-aos="flip-up"
+                >
                   <img src={therapy} loading="lazy" alt="Therapy Session" />
                 </div>
-                <div className="grid-item image-item">
+                <div className="grid-item image-item" data-aos="flip-down">
                   <img src={therapist} loading="lazy" alt="Therapy Session " />
                 </div>
-                <div className="grid-item text-item">
+                <div className="grid-item text-item" data-aos="flip-left">
                   <div className="experience-text">
                     <span className="text-warning years">25+</span>
                     <div className="description">Years of Experience</div>
@@ -220,10 +261,10 @@ function Home() {
           </Row>
         </section>
       </Container>
-      <Container className="offer-container bg-image" >
+      <Container className="offer-container bg-image" data-aos="zoom-in-down">
         <div className="container-inner ms-md-5 ms-lg-5 ms-0">
           <h3 className="text-white d-none d-md-block d-lg-block">
-            Take the firts step towards wellness <br /> with Mental Health Plus
+            Take the first step towards wellness <br /> with Mental Health Plus
             and Saner Ltd.
           </h3>
           <h3 className="text-white d-md-none d-lg-none mt-3 mb-4 d-block">

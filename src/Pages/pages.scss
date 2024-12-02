@@ -336,7 +336,8 @@
 @media screen and (max-width: 320px) {
   // Home Style
   .hero-carrier {
-    height: 100dvh !important;
+    height: 90vh !important;
+
     h4 {
       font-size: 14px;
     }
@@ -348,8 +349,13 @@
       width: 100%;
     }
     .counter {
+      // display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px !important;
+      text-align: left !important;
       h3 {
-        font-size: 2.5rem;
+        font-size: 2rem !important;
       }
     }
   }
@@ -491,7 +497,7 @@
 
 @media screen and (max-width: 480px) {
   .hero-carrier {
-    height: 70vh !important;
+    height: 90vh !important;
     h4 {
       font-size: 16px;
     }
@@ -506,7 +512,8 @@
       // display: flex;
       align-items: center;
       justify-content: center;
-      margin: 9px;
+      margin-top: 30px !important;
+      text-align: center;
       h3 {
         font-size: 2.5rem;
       }
@@ -656,7 +663,6 @@
     }
   }
 }
-
 @media screen and (min-width: 768px) {
   .hero-carrier {
     height: 60vh !important;
