@@ -1,11 +1,11 @@
 import Pages from "./Pages/Pages";
-import Navbar from "./Components/Navbar";
+import NavHead from "./Components/NavHead";
 import Footer from "./Components/Footer";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <NavHead />
       <Pages />
       <Footer />
     </>

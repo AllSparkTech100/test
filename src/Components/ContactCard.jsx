@@ -3,13 +3,30 @@ import { Row, Col } from "react-bootstrap";
 import { FaLocationDot } from "react-icons/fa6";
 import { GoMail } from "react-icons/go";
 import { IoCall } from "react-icons/io5";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ContactCard() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      delay: 50,
+      offset: 200,
+      startEvent: "DOMContentLoaded",
+    });
+  });
+  AOS.refresh();
   return (
     <>
       <Row className="mt-5">
         <Col sm={12} md={6} lg={4}>
-          <div className="contact-carrier py-0 px-3 mt-3 mb-3 mx-2 text-center">
+          <div
+            className="contact-carrier py-0 px-3 mt-3 mb-3 mx-2 text-center"
+            data-aos="flip-right"
+          >
             <div className="my-3 square fw-normal p-3 text-white">
               <FaLocationDot size={30} />
             </div>
@@ -19,18 +36,38 @@ function ContactCard() {
         </Col>
 
         <Col sm={12} md={6} lg={4}>
-          <div className="contact-carrier py-0 px-3 mt-3 mb-3 mx-2 dark-card text-white text-center">
+          <div
+            className="contact-carrier py-0 px-3 mt-3 mb-3 mx-2 dark-card text-white text-center"
+            data-aos="flip-left"
+          >
             <div className="my-3 square fw-normal text-white">
               <GoMail size={30} />
             </div>
             <h3 className="mb-3">Email Us</h3>
-            <p className=""><a href="mailto:mentalhealthpus24@gmail.com" className="text-decoration-none text-white">mentalhealthpus24@gmail.com</a></p>
-            <p className=""><a href="mailto:comfortikangenyin@gmail.com" className="text-decoration-none text-white">comfortikangenyin@gmail.com</a></p>
+            <p className="">
+              <a
+                href="mailto:mentalhealthpus24@gmail.com"
+                className="text-decoration-none text-white"
+              >
+                mentalhealthpus24@gmail.com
+              </a>
+            </p>
+            <p className="">
+              <a
+                href="mailto:comfortikangenyin@gmail.com"
+                className="text-decoration-none text-white"
+              >
+                comfortikangenyin@gmail.com
+              </a>
+            </p>
           </div>
         </Col>
 
         <Col sm={12} md={12} lg={4}>
-          <div className="contact-carrier py-0 px-3 mt-3 mb-3 mx-2 text-center">
+          <div
+            className="contact-carrier py-0 px-3 mt-3 mb-3 mx-2 text-center"
+            data-aos="flip-up"
+          >
             <div className="my-3  square fw-normal text-warning">
               <IoCall size={30} className="text-white" />
             </div>

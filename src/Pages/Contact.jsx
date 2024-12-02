@@ -27,8 +27,10 @@ function Contact() {
   return (
     <>
       <Container fluid className="contact-section-hero bg-image">
-        <div className="contact-hero-inner" data-aos="fade-up">
-          <h4 className="text-white">Contact Us</h4>
+        <div className="contact-hero-inner">
+          <h4 className="text-white" data-aos="fade-up">
+            Contact Us
+          </h4>
           <div className="mt-2">
             {" "}
             <p className="text-white" data-aos="fade-down">
@@ -56,7 +58,7 @@ function Contact() {
               </p>
             </div>
             <div className="form-section">
-              <Form>
+              <Form data-aos="fade-left">
                 <Row className="mb-3">
                   <Form.Group as={Col} md={12} controlId="formGridName">
                     <Form.Label>Name</Form.Label>
@@ -124,8 +126,10 @@ function Contact() {
 
       <Container className="contact-foot p-0 p-md-5 p-lg-5" fluid>
         <div className="text-center">
-          <h4 className="text-warning text-uppercase ">Get in touch</h4>
-          <h6>
+          <h4 className="text-warning text-uppercase " data-aos="fade-up">
+            Get in touch
+          </h4>
+          <h6 data-aos="fade-up">
             Seamless communication, <br /> global impact
           </h6>
         </div>

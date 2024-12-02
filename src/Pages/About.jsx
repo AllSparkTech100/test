@@ -7,16 +7,34 @@ import { TbBrandLinktree } from "react-icons/tb";
 import CEO from "../Images/comfort.jpg";
 import Counsel from "../Images/child counsel.jpeg";
 import "./pages.scss";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      delay: 50,
+      offset: 200,
+      startEvent: "DOMContentLoaded",
+    });
+  });
+  AOS.refresh();
   return (
     <>
       <Container fluid className="about-section-hero bg-image">
         <div className="contact-hero-inner">
-          <h4 className="text-white">About Us</h4>
+          <h4 className="text-white" data-aos="fade-up">
+            About Us
+          </h4>
           <div className="mt-2 mt-md-4 mt-lg-4">
             {" "}
-            <p className="text-white">A healthier Choice for a heathier you!</p>
+            <p className="text-white" data-aos="fade-left">
+              A healthier Choice for a heathier you!
+            </p>
           </div>
         </div>
       </Container>
@@ -26,7 +44,14 @@ function About() {
           <Row className="flex-md-column flex-lg-column">
             <Col md={12} sm={12} lg={12} className="mb-0 mb-md-5 mb-lg-5">
               <section>
-                <div className=" d-md-block d-lg-block middle-right-hero-image">
+                <div
+                  className=" d-md-block d-lg-block middle-right-hero-image"
+                  data-aos="zoom-in"
+                  data-aos-offset="200"
+                  data-aos-delay="10"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                >
                   <img src={Counsel} alt="Child Counselling" loading="lazy" />
                 </div>
               </section>
@@ -34,11 +59,16 @@ function About() {
             <Col md={12} sm={12} lg={12}>
               <section>
                 <div className="mid-intro">
-                  <h5 className="fw-bold">Who We Are</h5>
-                  <h3 className="text-sentence my-3 fw-medium">
+                  <h5 className="fw-bold" data-aos="fade-up">
+                    Who We Are
+                  </h5>
+                  <h3
+                    className="text-sentence my-3 fw-medium"
+                    data-aos="fade-up"
+                  >
                     Mental Health is a human Right <br /> Not a Privilage
                   </h3>
-                  <p>
+                  <p data-aos="fade-up">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Voluptatum debitis, illo natus quam, magnam architecto
                     aliquid dignissimos suscipit dolorem, assumenda incidunt
@@ -50,7 +80,7 @@ function About() {
 
                 {/* Different Therapies */}
                 <div className="mid-options mt-5">
-                  <div className="option">
+                  <div className="option" data-aos="fade-up">
                     <div className="option-icon">
                       <FaChildren size={30} />
                     </div>
@@ -65,7 +95,7 @@ function About() {
                       </p>
                     </div>
                   </div>
-                  <div className="option">
+                  <div className="option" data-aos="fade-up">
                     <div className="option-icon">
                       <FaUserSecret size={30} />
                     </div>
@@ -80,7 +110,7 @@ function About() {
                       </p>
                     </div>
                   </div>
-                  <div className="option">
+                  <div className="option" data-aos="fade-up">
                     <div className="option-icon">
                       <MdOutlineGroupAdd size={30} />
                     </div>
@@ -102,15 +132,14 @@ function About() {
         </Container>
       </section>
 
-      {/* services */}
+      {/* Image with Circle */}
       <section className="service-container container-fluid">
-        {/* Services */}
         <Container className="mt-5 p-md-5 p-lg-5 py-3" fluid>
           <ServiceCard />
         </Container>
       </section>
       {/* Image with Circle */}
-      <section className="better bg-image">
+      <section className="better bg-image" data-aos="zoom-in">
         <div className="circle p-5 text-center">
           <h2 className="text-warning text-uppercase mb-md-3 mb-1">
             Our Value
@@ -133,20 +162,22 @@ function About() {
 
       <Container className="portfolio">
         <div className="introduction">
-          <h4 className="fw-bold text-uppercase text-decoration-underline">
+          <h4
+            className="fw-bold text-uppercase text-decoration-underline"
+            data-aos="fade-up"
+          >
             meet our ceo
           </h4>
         </div>
 
         <Row className="mt-5 gx-5 flex-md-column flex-lg-row">
           <Col sm={12} md={6} lg={4} className="mt-3 mb-3">
-            <Card className="border-0 h-100 h-md-75 carrd">
+            <Card className="border-0 h-100 h-md-75 carrd" data-aos="fade-up">
               <Card.Img
                 variant="top"
                 src={CEO}
                 loading="lazy"
                 alt="Alexander Comfort"
-               
               />
               <Card.Body className="p-3 border-0 bg-dark text-white text-center rounded-bottom-5">
                 <Card.Title className="my-3 fw-bold">
@@ -156,7 +187,7 @@ function About() {
                   CEO Mental Health Plus and Saner LTD.
                 </Card.Text>
               </Card.Body>
-              <div className="social-likes">
+              <div className="social-likes" data-aos="flip-right">
                 <div className="likes">
                   <div>
                     <a
@@ -199,7 +230,7 @@ function About() {
             </Card>
           </Col>
           <Col sm={12} md={12} lg={8} className="mt-3 mb-3">
-            <div className="mt-4 texts">
+            <div className="mt-4 texts" data-aos="zoom-in">
               <p className="fw-normal my-2">
                 Alexander Comfort is a practicing counseling psychologist
                 specializing in Clinical and Mental Health Counseling. With a
@@ -232,5 +263,6 @@ function About() {
     </>
   );
 }
+
 
 export default About;
