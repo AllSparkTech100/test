@@ -24,6 +24,7 @@ header {
   position: sticky !important;
   top: 0;
   height: 4rem;
+  width: 100%;
   z-index: 999;
   background-color: $primary;
   color: $secondary;
@@ -42,6 +43,7 @@ header {
     height: 100vh;
     text-align: left;
     background-color: $header;
+    display: none;
     .menu-inner {
       transition: all ease-in-out 2s;
       position: absolute;

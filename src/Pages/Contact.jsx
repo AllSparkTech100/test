@@ -1,8 +1,10 @@
 import { Container, Col, Row, Form } from "react-bootstrap";
 import workout from "../Images/work.svg";
 import ContactCard from "../Components/ContactCard";
+import { IoIosSend } from "react-icons/io";
 import "./pages.scss";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,7 +20,27 @@ function Contact() {
     });
   });
   AOS.refresh();
-   return (
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_rethcdh", "template_nhlmm65", form.current, {
+        publicKey: "YA_tpjQuKZB7pXaRv",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        },
+        e.target.reset()
+      );
+  };
+  return (
     <>
       <Container fluid className="contact-section-hero bg-image">
         <div className="contact-hero-inner">
@@ -52,7 +74,7 @@ function Contact() {
               </p>
             </div>
             <div className="form-section">
-              <Form data-aos="fade-left">
+              <Form ref={form} onSubmit={sendEmail} data-aos="fade-left">
                 <Row className="mb-3">
                   <Form.Group as={Col} md={12} controlId="formGridName">
                     <Form.Label>Name</Form.Label>
@@ -60,6 +82,7 @@ function Contact() {
                       type="text"
                       className="shadow-none p-3 p-lg-3 p-md-4"
                       placeholder="Name"
+                      name="user_name"
                       required
                     />
                   </Form.Group>
@@ -71,6 +94,7 @@ function Contact() {
                       type="text"
                       className="shadow-none p-3 p-lg-3 p-md-4"
                       placeholder="Enter number"
+                      name="user_phone"
                       required
                     />
                   </Form.Group>
@@ -80,6 +104,7 @@ function Contact() {
                       type="email"
                       className="shadow-none p-3 p-lg-3 p-md-4"
                       placeholder="Enter Email"
+                      name="user_email"
                       required
                     />
                   </Form.Group>
@@ -93,13 +118,14 @@ function Contact() {
                     <textArea
                       className="shadow-none p-3 w-100 text-area"
                       placeholder="Send Us a Message"
+                      name="subject"
                     />
                   </Form.Group>
                 </Row>
 
                 <div className="my-5">
                   <button className="bg-dark w-100 rounded-2 border-0 py-2 py-lg-2 px-lg-4 py-md-4 px-md-5 px-4 text-white">
-                    Submit
+                    <IoIosSend size={30} /> Submit
                   </button>
                 </div>
               </Form>
