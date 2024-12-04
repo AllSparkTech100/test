@@ -13,22 +13,42 @@ function NavHead() {
   return (
     <>
       <header>
-        <Navbar>
+        <Navbar className="menu-insight" expand="md">
           <Container fluid>
-            <Navbar.Brand href="/">
-              Mental Health <span className="fw-bold">+</span>
+            <Navbar.Brand
+              href="/"
+              className="d-flex align-items-center justify-content-center text-white text-uppercase"
+            >
+              Mental Health{" "}
+              <span className="fw-bold text-warning fs-2 ms-2">+</span>
             </Navbar.Brand>
 
             <Navbar.Collapse id="basic-navbar-nav d-md-block shadow-none">
-              <Nav className="ms-auto large-nav me-auto align-items-md-center justify-content-md-between">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/about">About</Nav.Link>
-                <Nav.Link href="/contact">Contact</Nav.Link>
-                <Nav.Link href="/services">Services</Nav.Link>
+              <Nav className="ms-auto large-nav me-auto align-items-md-center justify-content-md-between ">
+                <Nav.Link href="/" className="text-white">
+                  Home
+                </Nav.Link>
+                <Nav.Link href="/about" className="text-white">
+                  About Us
+                </Nav.Link>
+                <Nav.Link href="/contact" className="text-white">
+                  Contact Us
+                </Nav.Link>
+                <Nav.Link href="/services" className="text-white">
+                  Our Services
+                </Nav.Link>
               </Nav>
+              <button className="btn-yellow d-none d-md-block d-lg-block ms-auto mb-3 me-4 ">
+                <a
+                  href="mailto:mentalhealthplus24@gmail.com"
+                  className="text-dark"
+                >
+                  Book a Session
+                </a>
+              </button>
             </Navbar.Collapse>
             <div
-              className="d-lg-none d-sm-block shadow-none border-0"
+              className="d-lg-none d-md-none menu-insight d-sm-block shadow-none border-0"
               onClick={menuToggle}
             >
               {isMenuOpen ? <IoClose size={30} /> : <TiThMenu size={30} />}
@@ -40,18 +60,30 @@ function NavHead() {
             fluid
             className="hamburger-menu d-md-none d-lg-none d-block"
           >
-            <div>
+            <div className="menu-inner">
               <ul>
                 <Nav.Link href="/" className="">
                   Home
                 </Nav.Link>
                 <Nav.Link href="/about" className="">
-                  About
+                  About Us
                 </Nav.Link>
 
                 <Nav.Link href="/contact" className="">
-                  Contact
+                  Contact Us
                 </Nav.Link>
+                <Nav.Link href="/services" className="">
+                  Our Services
+                </Nav.Link>
+
+                <div className="btn bg-warning w-100 rounded-2">
+                  <a
+                    href="mailto:mentalhealthplus24@gmail.com"
+                    className="text-dark"
+                  >
+                    Book a Session
+                  </a>
+                </div>
               </ul>
             </div>
           </Container>

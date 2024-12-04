@@ -30,10 +30,11 @@ function About() {
           <h4 className="text-white" data-aos="fade-up">
             About Us
           </h4>
-          <div className="mt-2 mt-md-4 mt-lg-4">
+          <div className="mt-1 mt-md-4 w-70 w-md-50 w-lg-50 mt-lg-4 justify-contents-center d-flex align-items-center">
             {" "}
-            <p className="text-white" data-aos="fade-left">
-               A healthier Choice for a heathier you!
+            <p className="text-white " data-aos="fade-left">
+              Helping organizations, employees and citizens maintain a safe
+              working place and a good mental health{" "}
             </p>
           </div>
         </div>
@@ -263,6 +264,5 @@ function About() {
     </>
   );
 }
-
 
 export default About;
