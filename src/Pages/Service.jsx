@@ -36,8 +36,8 @@ function Service() {
         </Container>
       </section>
       {/* Image with Circle */}
-      <section className="better bg-image" data-aos="zoom-in">
-        <div className="circle p-5 text-center">
+      <section className="better bg-image" >
+        <div className="circle p-5 text-center" data-aos="zoom-in">
           <h2 className="text-warning text-uppercase mb-md-3 mb-1">
             Our Value
           </h2>

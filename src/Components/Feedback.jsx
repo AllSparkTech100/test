@@ -65,10 +65,29 @@ function Feedback() {
       <Splide
         options={{
           perPage: 3,
+          breakpoints: {
+            480: {
+              perPage: 1,
+            },
+            640: {
+              perPage: 1,
+            },
+            320: {
+              perPage: 1,
+            },
+            360: {
+              perPage: 1,
+            },
+            768: {
+              perPage: 2,
+            },
+          },
           arrows: true,
           type: "loop",
           gap: "10px",
           rewind: true,
+          focus: "center",
+          drag: "free",
           pagination: false,
           lazyLoading: "sequential",
         }}

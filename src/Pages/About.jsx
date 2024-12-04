@@ -70,12 +70,9 @@ function About() {
                     Mental Health is a human Right <br /> Not a Privilage
                   </h3>
                   <p data-aos="fade-up">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Voluptatum debitis, illo natus quam, magnam architecto
-                    aliquid dignissimos suscipit dolorem, assumenda incidunt
-                    eaque iure inventore placeat numquam enim reprehenderit?
-                    Reiciendis soluta architecto fugiat culpa recusandae,
-                    numquam labore eos deserunt pariatur at.
+                    We want to break down the barriers in recieving effective
+                    treatment and care for anxiety, stress and mental health
+                    related issues.
                   </p>
                 </div>
 
@@ -140,8 +137,8 @@ function About() {
         </Container>
       </section>
       {/* Image with Circle */}
-      <section className="better bg-image" data-aos="zoom-in">
-        <div className="circle p-5 text-center">
+      <section className="better bg-image">
+        <div className="circle p-5 text-center" data-aos="zoom-in">
           <h2 className="text-warning text-uppercase mb-md-3 mb-1">
             Our Value
           </h2>

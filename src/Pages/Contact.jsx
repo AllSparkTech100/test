@@ -18,13 +18,7 @@ function Contact() {
     });
   });
   AOS.refresh();
-  // const [phone, setPhone] = useState("");
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   alert(`Submitted phone number: ${phone}`);
-  // };
-  return (
+   return (
     <>
       <Container fluid className="contact-section-hero bg-image">
         <div className="contact-hero-inner">
