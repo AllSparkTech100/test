@@ -33,7 +33,7 @@ function About() {
           <div className="mt-2 mt-md-4 mt-lg-4">
             {" "}
             <p className="text-white" data-aos="fade-left">
-              A healthier Choice for a heathier you!
+               A healthier Choice for a heathier you!
             </p>
           </div>
         </div>

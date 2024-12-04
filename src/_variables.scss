@@ -131,11 +131,11 @@ header {
     left: -3rem;
     right: 0;
     bottom: 0;
-    // font-family: $font;
+    
     padding: 30px;
     align-items: center;
     justify-content: center;
-    // background-color: $foot;
+    
     height: 80dvh;
     ul {
       margin-top: 1rem;
@@ -144,7 +144,7 @@ header {
         padding: 20px 0;
         text-align: left;
         transition: font-weight 0.2s;
-        color: $pure;
+        // color: $pure;
         text-decoration: none;
         font-size: 1.2rem;
         font-weight: 500;
