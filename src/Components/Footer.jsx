@@ -21,10 +21,10 @@ function Footer() {
   return (
     <>
       <Container fluid className="footer">
-        <div className=" foot-inner">
+        <div className="foot-inner">
           <Row>
             <Col md={4} lg={4} sm={6} className="my-4">
-              <h4 className="fw-bold text-uppercase">
+              <h4 className="fw-bold ms-md-5 ms-lg-5 text-uppercase">
                 mental health Plus <br /> and saner ltd.
               </h4>
             </Col>
@@ -43,16 +43,16 @@ function Footer() {
               <h4 className="fw-bold text-uppercase ">quick links</h4>
               <div className="text-white mb-3 link-section">
                 <p className="quick">
-                  <Link to="/">Home</Link>
+                  <a href="/">Home</a>
                 </p>
                 <p className="quick">
-                  <Link to="/contact">Contact Us</Link>
+                  <a href="/contact">Contact Us</a>
                 </p>
                 <p className="quick">
-                  <Link to="/about">About Us</Link>
+                  <a href="/about">About Us</a>
                 </p>
                 <p className="quick">
-                  <Link to="">Gallery</Link>
+                  <a href="/services">Our Services</a>
                 </p>
               </div>
             </Col>
@@ -63,27 +63,36 @@ function Footer() {
             <div className="social-links ">
               <div className="d-flex align-items-center mb-md-0 mb-lg-0 mb-4">
                 <div className="mt-3 icon-carrier">
-                  <a href="https://wa.link/xx840x" className="text-dark">
+                  <a href="https://wa.link/1w05vq" target="_blank">
                     <FaWhatsapp size={25} />
                   </a>
                 </div>
                 <div className="mt-3 ms-2 icon-carrier">
-                  <a href="" className="text-dark">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100007594127802"
+                    target="_blank"
+                  >
                     <FaFacebook size={25} />
                   </a>
                 </div>
                 <div className="mt-3 ms-2 icon-carrier">
-                  <a href="" className="text-dark">
+                  <a href="https://x.com/Cognitherapist" target="_blank">
                     <FaTwitter size={25} />
                   </a>
                 </div>
                 <div className="mt-3 ms-2 icon-carrier">
-                  <a href="" className="text-dark">
+                  <a
+                    href="https://www.instagram.com/cognitherapist/"
+                    target="_blank"
+                  >
                     <FaInstagram size={25} />
                   </a>
                 </div>
                 <div className="mt-3 ms-2 icon-carrier">
-                  <a href="" className="text-dark">
+                  <a
+                    href="https://ng.linkedin.com/in/alexandercomfort?trk=public_post_feed-actor-name"
+                    target="_blank"
+                  >
                     <FaLinkedinIn size={25} />
                   </a>
                 </div>

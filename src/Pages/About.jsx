@@ -33,8 +33,8 @@ function About() {
           <div className="mt-1 mt-md-4 w-70 w-md-50 w-lg-50 mt-lg-4 justify-contents-center d-flex align-items-center">
             {" "}
             <p className="text-white " data-aos="fade-left">
-              Helping organizations, employees and citizens maintain a safe
-              working place and a good mental health{" "}
+              Helping organizations, employees and citizens <br /> maintain a
+              safe working place and a good mental health{" "}
             </p>
           </div>
         </div>
@@ -69,58 +69,79 @@ function About() {
                   >
                     Mental Health is a human Right <br /> Not a Privilage
                   </h3>
-                  <p data-aos="fade-up">
+                  <p
+                    data-aos="fade-up"
+                    className="w-70 w-md-50 w-lg-50 mt-lg-4 text-center"
+                  >
                     We want to break down the barriers in recieving effective
-                    treatment and care for anxiety, stress and mental health
-                    related issues.
+                    treatment and care for <br /> anxiety, stress and mental
+                    health related issues.
                   </p>
                 </div>
 
                 {/* Different Therapies */}
-                <div className="mid-options mt-5">
-                  <div className="option" data-aos="fade-up">
-                    <div className="option-icon">
-                      <FaChildren size={30} />
-                    </div>
-                    <div className="option-text ">
-                      <h5 className="text-capitalize">Children therapy</h5>
+                <div className="mid-options row mt-5">
+                  <div className="col-12 col-md-12 col-lg-4 mt-md-3 mt-lg-3 mt-3">
+                    <div
+                      className="option card border-5 border-dark  text-center p-md-4 h-100 rounded-5 p-4"
+                      data-aos="fade-up"
+                    >
+                      <div className="option-icon">
+                        <FaChildren size={30} />
+                      </div>
+                      <div className="option-text ">
+                        <h5 className="text-capitalize card-title fs-2">
+                          Children therapy
+                        </h5>
 
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Magni debitis iste quisquam, dolorum assumenda fuga odit
-                        eligendi accusamus blanditiis impedit officiis, natus
-                        quis laboriosam quasi itaque animi soluta et! Aut.
-                      </p>
+                        <p className="card-text fs-5">
+                          Uses age-appropriate techniques to help children
+                          process emotions, improve behavior, and build coping
+                          skills in a supportive environment.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div className="option" data-aos="fade-up">
-                    <div className="option-icon">
-                      <FaUserSecret size={30} />
-                    </div>
-                    <div className="option-text">
-                      <h5 className="text-capitalize">Individual coaching</h5>
+                  <div className="col-12 col-md-12 col-lg-4 mt-md-3 mt-lg-3 mt-3">
+                    <div
+                      className="option card border-5 border-dark  text-center p-md-4 h-100 rounded-5 p-4"
+                      data-aos="fade-up"
+                    >
+                      <div className="option-icon">
+                        <FaUserSecret size={30} />
+                      </div>
+                      <div className="option-text">
+                        <h5 className="text-capitalize card-title fs-2">
+                          Individual coaching
+                        </h5>
 
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Magni debitis iste quisquam, dolorum assumenda fuga odit
-                        eligendi accusamus blanditiis impedit officiis, natus
-                        quis laboriosam quasi itaque animi soluta et! Aut.
-                      </p>
+                        <p className="card-text fs-5">
+                          A one-on-one approach tailored to a person’s unique
+                          needs, offering personalized support to address
+                          emotional, psychological, or behavioral concerns.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div className="option" data-aos="fade-up">
-                    <div className="option-icon">
-                      <MdOutlineGroupAdd size={30} />
-                    </div>
-                    <div className="option-text">
-                      <h5 className="text-capitalize">Group therapy</h5>
+                  <div className="col-12 col-md-12 col-lg-4 mt-md-3 mt-lg-3 mt-3">
+                    <div
+                      className="option card border-5 border-dark  text-center p-md-4 h-100 rounded-5 p-4"
+                      data-aos="fade-up"
+                    >
+                      <div className="option-icon">
+                        <MdOutlineGroupAdd size={30} />
+                      </div>
+                      <div className="option-text">
+                        <h5 className="text-capitalize card-title fs-2">
+                          Group therapy
+                        </h5>
 
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Magni debitis iste quisquam, dolorum assumenda fuga odit
-                        eligendi accusamus blanditiis impedit officiis, natus
-                        quis laboriosam quasi itaque animi soluta et! Aut.
-                      </p>
+                        <p className="card-text fs-5">
+                          Provides a supportive group setting where individuals
+                          can share experiences, gain insights, and develop
+                          social skills while working towards common goals.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -146,9 +167,9 @@ function About() {
             Bringing Therapy to <br /> the Common Man
           </h4>
           <p className="my-md-3 my-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
-            laboriosam. Itaque, officia. Incidunt esse aut officiis odit qui!
-            Illum facere repellendus porro tempora velit vero?
+            Aims to help individuals explore career options, set professional
+            goals, <br /> and overcome workplace challenges, fostering personal
+            growth and fulfillment.
           </p>
           <button className="bg-dark btn rounded-5 my-3 py-md-4 px-md-5">
             <a href="#" className="text-white">

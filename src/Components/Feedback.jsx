@@ -6,58 +6,49 @@ import "./components.scss";
 function Feedback() {
   const Feeds = [
     {
-      name: "John David",
+      name: "Family Therapy Client",
       testify:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus distinctio nostrum accusantium, ad quod similique ipsa vitae commodi minima dolorum! Ex amet voluptatem sit in cumque esse laborum ea atque?F",
-      img: "https://imgcdn.stablediffusionweb.com/2024/5/22/4a9f61dc-746c-4eac-902e-752704442159.jpg",
+        "Our family dynamic has improved so much since working with Alexander Comfort. They helped us resolve long-standing conflicts and improve our communication.",
     },
     {
-      name: "Sarah Jones",
+      name: "Parent of a teen therapy client",
       testify:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus distinctio nostrum accusantium, ad quod similique ipsa vitae commodi minima dolorum! Ex amet voluptatem sit in cumque esse laborum ea atque?F",
-      img: "https://www.bellanaija.com/wp-content/uploads/2021/07/Miss-Imo-Chrystal-Mbazuigwe.jpg",
+        "My teenage daughter was initially resistant to therapy, but Alexander Comfort built a trusting bond with her. She’s now more open and emotionally resilient.",
     },
     {
-      name: "Friday David",
+      name: "Counseling Therapy Client",
       testify:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus distinctio nostrum accusantium, ad quod similique ipsa vitae commodi minima dolorum! Ex amet voluptatem sit in cumque esse laborum ea atque?F",
-      img: "https://imgcdn.stablediffusionweb.com/2024/4/6/938f331c-848b-4636-b73b-57fe49cc2292.jpg",
+        "Before counseling, I was overwhelmed by stress. Thanks to Alexander Comfort, I’ve learned coping mechanisms that allow me to thrive, even in challenging times.",
     },
     {
-      name: "John David",
+      name: "Individual Therapy Client",
       testify:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus distinctio nostrum accusantium, ad quod similique ipsa vitae commodi minima dolorum! Ex amet voluptatem sit in cumque esse laborum ea atque?F",
-      img: "https://imgcdn.stablediffusionweb.com/2024/5/22/4a9f61dc-746c-4eac-902e-752704442159.jpg",
+        "I’ve been to many therapists before, but Alexnader Comfort is the first to truly connect with me. Their insight and care have helped me heal from past trauma.",
     },
     {
-      name: "Sarah Jones",
+      name: "Group Therapy Participant",
       testify:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus distinctio nostrum accusantium, ad quod similique ipsa vitae commodi minima dolorum! Ex amet voluptatem sit in cumque esse laborum ea atque?F",
-      img: "https://www.bellanaija.com/wp-content/uploads/2021/07/Miss-Imo-Chrystal-Mbazuigwe.jpg",
+        "The group therapy sessions were a turning point for me. Hearing others’ experiences and sharing my own helped me feel less alone in my struggles.",
     },
     {
-      name: "Friday David",
+      name: "Career Therapy Client",
       testify:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus distinctio nostrum accusantium, ad quod similique ipsa vitae commodi minima dolorum! Ex amet voluptatem sit in cumque esse laborum ea atque?F",
-      img: "https://imgcdn.stablediffusionweb.com/2024/4/6/938f331c-848b-4636-b73b-57fe49cc2292.jpg",
+        "I came to Alexander Comfort feeling completely lost in my career. Now, I have a clear vision of my goals and the courage to pursue them.",
     },
     {
-      name: "John David",
+      name: "Parent of a Child Therapy Client",
       testify:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus distinctio nostrum accusantium, ad quod similique ipsa vitae commodi minima dolorum! Ex amet voluptatem sit in cumque esse laborum ea atque?F",
-      img: "https://imgcdn.stablediffusionweb.com/2024/5/22/4a9f61dc-746c-4eac-902e-752704442159.jpg",
+        "My child loves going to therapy sessions with Alexander Comfort. Their patience and creative methods have helped us manage his tantrums and build his confidence",
     },
     {
-      name: "Sarah Jones",
+      name: "Couples Therapy Client",
       testify:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus distinctio nostrum accusantium, ad quod similique ipsa vitae commodi minima dolorum! Ex amet voluptatem sit in cumque esse laborum ea atque?F",
-      img: "https://www.bellanaija.com/wp-content/uploads/2021/07/Miss-Imo-Chrystal-Mbazuigwe.jpg",
+        "After our sessions, I’ve been able to reconnect with my spouse on a deeper level. We now communicate better and truly understand each other’s needs",
     },
     {
-      name: "Friday David",
+      name: "Client Struggling with Anxiety",
       testify:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus distinctio nostrum accusantium, ad quod similique ipsa vitae commodi minima dolorum! Ex amet voluptatem sit in cumque esse laborum ea atque?F",
-      img: "https://imgcdn.stablediffusionweb.com/2024/4/6/938f331c-848b-4636-b73b-57fe49cc2292.jpg",
+        "Working with Alexander Comfort changed my life. I finally feel heard and understood, and I’ve gained tools to manage my anxiety effectively.",
     },
   ];
   return (
@@ -96,13 +87,12 @@ function Feedback() {
           return (
             <SplideSlide key={index}>
               <div className="feed-carrier">
-                <div className="card  p-4 border-2 rounded-3 text-center justify-content-center align-items-center">
-                  <div className="user-image">
-                    <img src={items.img} alt={items.name} loading="lazy" />
-                  </div>
+                <div className="card h-100  p-4 border-2 rounded-3 text-center justify-content-center align-items-center">
                   <div className="card-body">
-                    <h5 className="card-title fw-bold">{items.name}</h5>
                     <p className="card-text">{items.testify}</p>
+                    <h5 className="card-title fw-normal fst-italic">
+                      {items.name}
+                    </h5>
                   </div>
                 </div>
               </div>

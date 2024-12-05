@@ -27,18 +27,13 @@
 
 .footer {
   margin-top: 15rem;
-  border-radius: 40px 40px 0 0;
+  border-radius: 20px 20px 0 0;
   padding: 10px 50px;
   // height: 75vh;
   background-color: $header;
   color: $secondary;
   .foot-inner {
     margin-top: 5rem;
-    .serve-inner {
-      .serv-type {
-        cursor: pointer;
-      }
-    }
     .link-section {
       .quick {
         a {
@@ -64,8 +59,14 @@
         padding: 10px;
         border-radius: 50%;
         background-color: $socials;
+        a {
+          color: $primary;
+        }
         &:hover {
           background-color: $primary;
+          a {
+            color: $secondary;
+          }
         }
       }
     }
@@ -94,21 +95,6 @@
   }
   &.dark-card {
     background-color: $Card;
-  }
-}
-
-.feed-carrier {
-  .user-image {
-    overflow: hidden;
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: top;
-    }
   }
 }
 

@@ -36,7 +36,7 @@ function Service() {
         </Container>
       </section>
       {/* Image with Circle */}
-      <section className="better bg-image" >
+      <section className="better bg-image">
         <div className="circle p-5 text-center" data-aos="zoom-in">
           <h2 className="text-warning text-uppercase mb-md-3 mb-1">
             Our Value
@@ -45,9 +45,9 @@ function Service() {
             Bringing Therapy to <br /> the Common Man
           </h4>
           <p className="my-md-3 my-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
-            laboriosam. Itaque, officia. Incidunt esse aut officiis odit qui!
-            Illum facere repellendus porro tempora velit vero?
+            Aims to help individuals explore career options, set professional
+            goals, and overcome workplace challenges, fostering personal growth
+            and fulfillment.
           </p>
           <button className="bg-dark btn rounded-5 my-3 py-md-4 px-md-5">
             <a href="#" className="text-white">
@@ -72,9 +72,9 @@ function Service() {
                 We want you to get the care you deserve !!!
               </h5>
               <p className="my-3" data-aos="fade-up">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremnam repudiandae molestiae, similique totam ad?nam
-                repudiandae molestiae, similique totam ad?
+                Focusing on helping individuals address specific challenges,
+                such as stress, anxiety, or relationship issues, by providing a
+                safe space for open communication and guidance.
               </p>
               <ul>
                 <li data-aos="fade-left">Individuals with high stress</li>

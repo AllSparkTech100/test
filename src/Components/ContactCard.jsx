@@ -46,10 +46,10 @@ function ContactCard() {
             <h3 className="mb-3">Email Us</h3>
             <p className="">
               <a
-                href="mailto:mentalhealthpus24@gmail.com"
+                href="mailto:mentalhealthplus24@gmail.com"
                 className="text-decoration-none text-white"
               >
-                mentalhealthpus24@gmail.com
+                mentalhealthplus24@gmail.com
               </a>
             </p>
             <p className="">
@@ -73,10 +73,16 @@ function ContactCard() {
             </div>
             <h3 className="mb-3">Let&apos;s Talk</h3>
             <p className="my-1 fw-bold">
-              Phone: <span className="fw-normal">+2348071277101</span>
+              Phone:{" "}
+              <a href="tel:+2348149944531">
+                <span className="fw-normal">+2348071277101</span>
+              </a>
             </p>
             <p className="my-1 fw-bold">
-              WhatsApp: <span className="fw-normal">+2348149944531</span>
+              WhatsApp:{" "}
+              <a href="https://wa.link/1w05vq" target="_blank">
+                <span className="fw-normal">+2348149944531</span>
+              </a>
             </p>
           </div>
         </Col>

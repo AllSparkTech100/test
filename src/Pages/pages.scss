@@ -5,7 +5,7 @@
   background-color: $header;
   color: $secondary;
   overflow: hidden;
-  height: 100vh !important;
+  height: 120vh !important;
   @media screen and (max-width: 575px) {
     height: 120vh !important;
   }
@@ -253,8 +253,7 @@
   .form-section {
     margin-top: 4rem;
     input {
-      background-color: $Pink;
-      border: none;
+      border: $header 1px solid;
       border-radius: 10px !important;
       &:focus {
         background-color: $secondary;
@@ -263,10 +262,10 @@
     }
 
     .text-area {
-      background-color: $Pink;
+      border: $header 1px solid;
       height: 150px;
       padding: 10px;
-      border: none;
+
       border-radius: 10px !important;
       &:focus {
         background-color: $secondary;
@@ -345,7 +344,7 @@
 @media screen and (max-width: 320px) {
   // Home Style
   .hero-carrier {
-    height: 90vh !important;
+    max-height: 120vh !important;
 
     h4 {
       font-size: 14px;
@@ -506,7 +505,7 @@
 
 @media screen and (max-width: 480px) {
   .hero-carrier {
-    height: 85vh !important;
+    height: 95vh !important;
     h4 {
       font-size: 16px;
     }
@@ -518,13 +517,12 @@
       width: 100%;
     }
     .counter {
-      // display: flex;
       align-items: center;
       justify-content: center;
       margin-top: 30px !important;
       text-align: center;
       h3 {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
     }
   }
@@ -633,6 +631,7 @@
     height: 50dvh !important;
     .contact-hero-inner {
       text-align: center;
+      margin-top: 0;
       h4 {
         font-size: 3rem !important;
       }
@@ -674,7 +673,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero-carrier {
-    height: 60vh !important;
+    height: 75vh !important;
 
     h4 {
       font-size: 16px;
@@ -851,7 +850,7 @@
 
 @media screen and (min-width: 1200px) {
   .hero-carrier {
-    height: 85vh !important;
+    height: 100vh !important;
 
     h4 {
       font-size: 22px;

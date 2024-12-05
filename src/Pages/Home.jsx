@@ -38,9 +38,12 @@ function Home() {
                 A healthy Mind is <br /> a Wealthy Soul
               </h3>
               <p className="mt-3">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
-                ullam delectus quas distinctio adipisci sint cumque? Et quod
-                natus iusto!
+                Invest in your mental health through practices like mindfulness,
+                therapy, journaling, or simply taking time to rest. Remember,
+                when your mind is healthy, your soul flourishes—and that&apos;s
+                the true wealth we should all strive for. Take the first step
+                toward your mental wellness today, because a wealthy soul begins
+                with a healthy mind.
               </p>
               <div className="btn-carrier mt-4">
                 <div className="">
@@ -115,56 +118,79 @@ function Home() {
                   >
                     Mental Health is a human Right <br /> Not a Privilage
                   </h3>
-                  <p data-aos="fade-up">
-                   We want to break down the barriers in recieving effective treatment and care for anxiety, stress and mental health related issues.
+                  <p
+                    data-aos="fade-up"
+                    className="w-70 w-md-50 w-lg-50 mt-lg-4 text-center"
+                  >
+                    We want to break down the barriers in recieving effective
+                    treatment and care for <br /> anxiety, stress and mental
+                    health related issues.
                   </p>
                 </div>
 
                 {/* Different Therapies */}
-                <div className="mid-options mt-5">
-                  <div className="option" data-aos="fade-up">
-                    <div className="option-icon">
-                      <FaChildren size={30} />
-                    </div>
-                    <div className="option-text ">
-                      <h5 className="text-capitalize">Children therapy</h5>
+                <div className="mid-options row mt-5">
+                  <div className="col-12 col-md-12 col-lg-4 mt-md-3 mt-lg-3 mt-3">
+                    <div
+                      className="option card border-5 border-dark  text-center p-md-4 h-100 rounded-5 p-4"
+                      data-aos="fade-up"
+                    >
+                      <div className="option-icon">
+                        <FaChildren size={30} />
+                      </div>
+                      <div className="option-text ">
+                        <h5 className="text-capitalize card-title fs-2">
+                          Children therapy
+                        </h5>
 
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Magni debitis iste quisquam, dolorum assumenda fuga odit
-                        eligendi accusamus blanditiis impedit officiis, natus
-                        quis laboriosam quasi itaque animi soluta et! Aut.
-                      </p>
+                        <p className="card-text fs-5">
+                          Uses age-appropriate techniques to help children
+                          process emotions, improve behavior, and build coping
+                          skills in a supportive environment.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div className="option" data-aos="fade-up">
-                    <div className="option-icon">
-                      <FaUserSecret size={30} />
-                    </div>
-                    <div className="option-text">
-                      <h5 className="text-capitalize">Individual coaching</h5>
+                  <div className="col-12 col-md-12 col-lg-4 mt-md-3 mt-lg-3 mt-3">
+                    <div
+                      className="option card border-5 border-dark  text-center p-md-4 h-100 rounded-5 p-4"
+                      data-aos="fade-up"
+                    >
+                      <div className="option-icon">
+                        <FaUserSecret size={30} />
+                      </div>
+                      <div className="option-text">
+                        <h5 className="text-capitalize card-title fs-2">
+                          Individual coaching
+                        </h5>
 
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Magni debitis iste quisquam, dolorum assumenda fuga odit
-                        eligendi accusamus blanditiis impedit officiis, natus
-                        quis laboriosam quasi itaque animi soluta et! Aut.
-                      </p>
+                        <p className="card-text fs-5">
+                          A one-on-one approach tailored to a person’s unique
+                          needs, offering personalized support to address
+                          emotional, psychological, or behavioral concerns.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div className="option" data-aos="fade-up">
-                    <div className="option-icon">
-                      <MdOutlineGroupAdd size={30} />
-                    </div>
-                    <div className="option-text">
-                      <h5 className="text-capitalize">Group therapy</h5>
+                  <div className="col-12 col-md-12 col-lg-4 mt-md-3 mt-lg-3 mt-3">
+                    <div
+                      className="option card border-5 border-dark  text-center p-md-4 h-100 rounded-5 p-4"
+                      data-aos="fade-up"
+                    >
+                      <div className="option-icon">
+                        <MdOutlineGroupAdd size={30} />
+                      </div>
+                      <div className="option-text">
+                        <h5 className="text-capitalize card-title fs-2">
+                          Group therapy
+                        </h5>
 
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Magni debitis iste quisquam, dolorum assumenda fuga odit
-                        eligendi accusamus blanditiis impedit officiis, natus
-                        quis laboriosam quasi itaque animi soluta et! Aut.
-                      </p>
+                        <p className="card-text fs-5">
+                          Provides a supportive group setting where individuals
+                          can share experiences, gain insights, and develop
+                          social skills while working towards common goals.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -181,8 +207,8 @@ function Home() {
         </Container>
       </section>
       {/* Image with Circle */}
-      <section className="better bg-image" data-aos="zoom-in">
-        <div className="circle p-5 text-center">
+      <section className="better bg-image">
+        <div className="circle p-5 text-center" data-aos="zoom-in">
           <h2 className="text-warning text-uppercase mb-md-3 mb-1">
             Our Value
           </h2>
@@ -190,9 +216,9 @@ function Home() {
             Bringing Therapy to <br /> the Common Man
           </h4>
           <p className="my-md-3 my-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora,
-            laboriosam. Itaque, officia. Incidunt esse aut officiis odit qui!
-            Illum facere repellendus porro tempora velit vero?
+            Aims to help individuals explore career options, set professional
+            goals, <br /> and overcome workplace challenges, fostering personal
+            growth and fulfillment.
           </p>
           <button className="bg-dark btn rounded-5 my-3 py-md-4 px-md-5">
             <a href="#" className="text-white">
@@ -217,9 +243,9 @@ function Home() {
                 We want you to get the care you deserve !!!
               </h5>
               <p className="my-3" data-aos="fade-up">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremnam repudiandae molestiae, similique totam ad?nam
-                repudiandae molestiae, similique totam ad?
+                Focusing on helping individuals address specific challenges,
+                such as stress, anxiety, or relationship issues, by providing a
+                safe space for open communication and guidance.
               </p>
               <ul>
                 <li data-aos="fade-left">Individuals with high stress</li>
@@ -256,8 +282,11 @@ function Home() {
           </Row>
         </section>
       </Container>
-      <Container className="offer-container bg-image" data-aos="zoom-in-down">
-        <div className="container-inner ms-md-5 ms-lg-5 ms-0">
+      <Container className="offer-container bg-image">
+        <div
+          className="container-inner ms-md-5 ms-lg-5 ms-0"
+          data-aos="zoom-in-down"
+        >
           <h3 className="text-white d-none d-md-block d-lg-block">
             Take the first step towards wellness <br /> with Mental Health Plus
             and Saner Ltd.
@@ -268,8 +297,9 @@ function Home() {
           </h3>
           <div>
             <p className="text-white text-justify mt-4 mb-4">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-              ipsa, culpa corrupti repellendus et totam?
+              We provide a supportive group setting where individuals can share
+              experiences, gain insights, and develop social skills while
+              working towards common goals.
             </p>
           </div>
           <div>

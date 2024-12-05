@@ -32,10 +32,10 @@ function Contact() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          alert("Message Sent Successfully!");
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          alert("Message Sending Failed...", error.text);
         },
         e.target.reset()
       );
@@ -49,9 +49,9 @@ function Contact() {
           </h4>
           <div className="mt-2">
             {" "}
-            <p className="text-white" data-aos="fade-down">
-              start a conversation to establish <br /> good relationship and
-              healthy well-being!
+            <p className="text-white text-center" data-aos="fade-down">
+             Our Mental Health Services provides on-demand <br/>access  to a range of  psychologist 
+             and personal  wellness professionals across the world.
             </p>
           </div>
         </div>
@@ -68,9 +68,7 @@ function Contact() {
                 Book a session or make an enquiry
               </div>
               <p className="mt-3">
-                A aliquid quasi magni, ab minima nemo expedita reiciendis beatae
-                ducimus quas earum provident perferendis sunt quae optio ratione
-                excepturi tempora ipsa? Soluta numquam inventor.
+                Schedule a session with our highly qualified licensed practitioners. The consultation can be conducted from wherever you feel most comfortable. <span className="fw-bold text-dark fs-3 text-uppercase">no travel, no clinics</span>
               </p>
             </div>
             <div className="form-section">

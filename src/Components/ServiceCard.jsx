@@ -29,13 +29,14 @@ function ServiceCard() {
             className="service-carrier h-100 carde py-0 px-3 mt-3 mb-3 mx-2 text-center"
             data-aos="flip-right"
           >
-            <div className="my-3 fw-normal text-warning">
+            <div className="my-3 fw-normal text-dark text-warning">
               <FaChildren size={60} />
             </div>
             <h3 className="mt-3 mb-0">Counseling Therapy</h3>
             <p className="my-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quo
-              quasi et eligendi est reiciendis enim minima, voluptatum
+              Focuses on helping individuals address specific challenges, such
+              as stress, anxiety, or relationship issues, by providing a safe
+              space for open communication and guidance.
             </p>
             <button className="btn bg-dark dark-btn text-white">
               <a href="" className="text-white">
@@ -53,10 +54,11 @@ function ServiceCard() {
             <div className="my-3 fw-normal text-warning">
               <TbPhysotherapist size={50} />
             </div>
-            <h3 className="mb-3">Therapy Sessions</h3>
+            <h3 className="mb-3">Couples Therapy</h3>
             <p className="my-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quo
-              quasi et eligendi est reiciendis enim minima, voluptatum
+              Designed to enhance communication, resolve conflicts, and
+              strengthen relationships between partners through mutual
+              understanding and collaboration.
             </p>
             <button className="btn bg-white dark-btn">
               <a href="" className="text-dark">
@@ -77,12 +79,13 @@ function ServiceCard() {
             data-aos="fade-up"
           >
             <div className="my-3 fw-normal text-warning">
-              <PiBrainLight size={50} className="text-warning" />
+              <PiBrainLight size={50} className=" text-dark text-warning" />
             </div>
-            <h3 className="mb-3">Mindfulness Programs</h3>
+            <h3 className="mb-3">Career Therapy</h3>
             <p className="my-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis quo
-              quasi et eligendi est reiciendis enim minima, voluptatum
+              Aims to help individuals explore career options, set professional
+              goals, <br /> and overcome workplace challenges, fostering
+              personal growth and fulfillment.
             </p>
             <button className="btn bg-dark dark-btn text-white">
               <a href="" className="text-white">

@@ -12,12 +12,12 @@ function NavHead() {
   };
   return (
     <>
-      <header>
+      <header className="sticky-top">
         <Navbar className="menu-insight" expand="md">
           <Container fluid>
             <Navbar.Brand
               href="/"
-              className="d-flex align-items-center justify-content-center text-white fw-bold ms-3 ms-md-5 ms-lg-5 text-uppercase"
+              className="d-flex align-items-center justify-content-center text-white fw-bold ms-3  ms-lg-5 text-uppercase"
             >
               Mental Health{" "}
               <span className="fw-bold text-warning fs-2 ms-2">+</span>
