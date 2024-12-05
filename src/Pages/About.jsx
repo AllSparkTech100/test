@@ -15,7 +15,7 @@ function About() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      easing: "ease-in-out",
+      easing: "ease-in",
       once: false,
       delay: 50,
       offset: 200,
@@ -32,7 +32,7 @@ function About() {
           </h4>
           <div className="mt-1 mt-md-4 w-70 w-md-50 w-lg-50 mt-lg-4 justify-contents-center d-flex align-items-center">
             {" "}
-            <p className="text-white " data-aos="fade-left">
+            <p className="text-white " data-aos="fade-up">
               Helping organizations, employees and citizens <br /> maintain a
               safe working place and a good mental health{" "}
             </p>
@@ -40,18 +40,13 @@ function About() {
         </div>
       </Container>
 
-      <section className="middle-holder">
+      <section className="middle-holder container-fluid">
         <Container className="p-lg-5 p-sm-0 p-md-5" fluid>
-          <Row className="flex-md-column flex-lg-column">
+          <Row className="">
             <Col md={12} sm={12} lg={12} className="mb-0 mb-md-5 mb-lg-5">
               <section>
                 <div
                   className=" d-md-block d-lg-block middle-right-hero-image"
-                  data-aos="zoom-in"
-                  data-aos-offset="200"
-                  data-aos-delay="10"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
                 >
                   <img src={Counsel} alt="Child Counselling" loading="lazy" />
                 </div>
@@ -116,7 +111,7 @@ function About() {
                         </h5>
 
                         <p className="card-text fs-5">
-                          A one-on-one approach tailored to a person’s unique
+                          A one-on-one approach tailored to a person&apos;s unique
                           needs, offering personalized support to address
                           emotional, psychological, or behavioral concerns.
                         </p>
@@ -158,8 +153,8 @@ function About() {
         </Container>
       </section>
       {/* Image with Circle */}
-      <section className="better bg-image">
-        <div className="circle p-5 text-center" data-aos="zoom-in">
+      <section className="better bg-image container-fluid">
+        <div className="circle p-5 text-center" data-aos="fade-up">
           <h2 className="text-warning text-uppercase mb-md-3 mb-1">
             Our Value
           </h2>
@@ -172,14 +167,18 @@ function About() {
             growth and fulfillment.
           </p>
           <button className="bg-dark btn rounded-5 my-3 py-md-4 px-md-5">
-            <a href="#" className="text-white">
+            <a
+              href="https://linktr.ee/alexandercomfort?fbclid=IwY2xjawGXHzRleHRuA2FlbQIxMAABHXZcpw-IWCNMDL5ZHdvdoEhPvKHae8LuTVyvOJItmXfR7RKVt7CinYZwkQ_aem_rxzbBEAA7gl_r03ZfQvW9g"
+              target="_blank"
+              className="text-white"
+            >
               Discover More
             </a>
           </button>
         </div>
       </section>
 
-      <Container className="portfolio">
+      <Container className="portfolio" fluid>
         <div className="introduction">
           <h4
             className="fw-bold text-uppercase text-decoration-underline"
@@ -189,8 +188,8 @@ function About() {
           </h4>
         </div>
 
-        <Row className="mt-5 gx-5 flex-md-column flex-lg-row">
-          <Col sm={12} md={6} lg={4} className="mt-3 mb-3">
+        <Row className="mt-5 flex-md-column flex-lg-row flex-column">
+          <Col sm={12} md={6} lg={4} className="mt-3 align-items-md-center mb-3">
             <Card className="border-0 h-100 h-md-75 carrd" data-aos="fade-up">
               <Card.Img
                 variant="top"
@@ -206,7 +205,7 @@ function About() {
                   CEO Mental Health Plus and Saner LTD.
                 </Card.Text>
               </Card.Body>
-              <div className="social-likes" data-aos="flip-right">
+              <div className="social-likes" data-aos="flip-up">
                 <div className="likes">
                   <div>
                     <a
@@ -249,7 +248,7 @@ function About() {
             </Card>
           </Col>
           <Col sm={12} md={12} lg={8} className="mt-3 mb-3">
-            <div className="mt-4 texts" data-aos="zoom-in">
+            <div className="mt-4 texts" data-aos="fade-up">
               <p className="fw-normal my-2">
                 Alexander Comfort is a practicing counseling psychologist
                 specializing in Clinical and Mental Health Counseling. With a

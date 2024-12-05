@@ -3,7 +3,7 @@ import "./components.scss";
 import { FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp, FaFacebook } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 
 function Footer() {
   // const [isHover, setIsHover] = useState(null);

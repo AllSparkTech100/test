@@ -72,7 +72,7 @@ function Contact() {
               </p>
             </div>
             <div className="form-section">
-              <Form ref={form} onSubmit={sendEmail} data-aos="fade-left">
+              <Form ref={form} onSubmit={sendEmail} data-aos="fade-down">
                 <Row className="mb-3">
                   <Form.Group as={Col} md={12} controlId="formGridName">
                     <Form.Label>Name</Form.Label>
@@ -129,10 +129,10 @@ function Contact() {
               </Form>
             </div>
           </Col>
-          <Col md={12} sm={12} lg={6} data-aos="fade-right">
+          <Col md={12} sm={12} lg={6} data-aos="fade-up">
             <img
               src={workout}
-              className="ms-5 d-none d-md-block d-lg-block"
+              className="ms-5  d-md-block d-lg-block"
               width={"90%"}
               height={"90%"}
               alt="Healthy Life"

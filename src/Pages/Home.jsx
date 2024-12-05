@@ -7,9 +7,11 @@ import therapist from "../Images/therapist.jpeg";
 import therapy from "../Images/therap2.jpeg";
 import counsel from "../Images/counsel.jpeg";
 import Counsel from "../Images/child counsel.jpeg";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollTrigger from "react-scroll-trigger";
+import CountUp from "react-countup";
 
 function Home() {
   useEffect(() => {
@@ -23,18 +25,19 @@ function Home() {
     });
   });
   AOS.refresh();
+  const [counterState, setCounterState] = useState(false);
   return (
     <>
       {/* Hero */}
       <Container className="hero-carrier" fluid>
         <Row>
-          <Col lg={6} md={6} sm={12} data-aos="fade-left">
+          <Col lg={6} md={6} sm={12} data-aos="fade-up">
             <section className="mt-5 p-lg-3 p-sm-0">
-              <h4 className="text-warning text-uppercase">
+              <h4 className="text-warning text-center text-md-start text-lg-start text-uppercase">
                 mental health plus and saner ltd.
               </h4>
 
-              <h3 className="mt-3">
+              <h3 className="mt-3 text-center text-md-start text-lg-start">
                 A healthy Mind is <br /> a Wealthy Soul
               </h3>
               <p className="mt-3">
@@ -48,31 +51,56 @@ function Home() {
               <div className="btn-carrier mt-4">
                 <div className="">
                   <button className="btn-yellow fw-medium text-uppercase">
-                    <a href="#">Get Started</a>
+                    <a href="https://wa.link/1w05vq" target="_blank">
+                      Get Started
+                    </a>
                   </button>
                 </div>
                 <div className="">
                   <button className="btn-transparent  fw-medium text-uppercase">
-                    <a href="#">Contact Us</a>
+                    <a href="https://wa.link/1w05vq" target="_blank">
+                      Contact Us
+                    </a>
                   </button>
                 </div>
               </div>
             </section>
             <hr />
-            <div className="counter mt-1 p-lg-3 p-md-3 p-sm-0">
-              <div className="me-md-3 me-lg-3 m-1">
-                <h3 className="">25+</h3>
-                <p>Years Experience</p>
+            <ScrollTrigger
+              onEnter={() => setCounterState(true)}
+              onExit={() => setCounterState(false)}
+            >
+              <div className="counter mt-1 p-lg-3 p-md-3 p-sm-0">
+                <div className="me-md-3 me-lg-3 m-1">
+                  <h3 className="">
+                    {counterState && (
+                      <CountUp start={0} end={25} duration={2.75}></CountUp>
+                    )}{" "}
+                    +
+                  </h3>
+                  <p>Years Experience</p>
+                </div>
+                <div className="me-md-3 me-lg-3 m-1">
+                  <h3 className="">
+                    {counterState && (
+                      <CountUp start={0} end={7.5} duration={2.75}></CountUp>
+                    )}
+                    k+
+                  </h3>
+                  <p>Active Members</p>
+                </div>
+                <div className="ms-md-3 ms-lg-3 m-1">
+                  <h3 className="">
+                    {" "}
+                    {counterState && (
+                      <CountUp start={0} end={99} duration={2.75}></CountUp>
+                    )}
+                    %
+                  </h3>
+                  <p>Satisfied Clients</p>
+                </div>
               </div>
-              <div className="me-md-3 me-lg-3 m-1">
-                <h3 className="">7.8k+</h3>
-                <p>Active Members</p>
-              </div>
-              <div className="ms-md-3 ms-lg-3 m-1">
-                <h3 className="">99%</h3>
-                <p>Satisfied Clients</p>
-              </div>
-            </div>
+            </ScrollTrigger>
           </Col>
 
           {/* rigth image column*/}
@@ -89,19 +117,12 @@ function Home() {
 
       {/* Who we are */}
 
-      <section className="middle-holder">
+      <section className="middle-holder container-fluid">
         <Container className="p-lg-5 p-sm-0 p-md-5" fluid>
-          <Row className="flex-md-column flex-lg-column">
+          <Row className="">
             <Col md={12} sm={12} lg={12} className="mb-0 mb-md-5 mb-lg-5">
               <section>
-                <div
-                  className=" d-md-block d-lg-block middle-right-hero-image"
-                  data-aos="zoom-in"
-                  data-aos-offset="200"
-                  data-aos-delay="10"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                >
+                <div className=" d-md-block d-lg-block middle-right-hero-image">
                   <img src={Counsel} alt="Child Counselling" loading="lazy" />
                 </div>
               </section>
@@ -165,8 +186,8 @@ function Home() {
                         </h5>
 
                         <p className="card-text fs-5">
-                          A one-on-one approach tailored to a person’s unique
-                          needs, offering personalized support to address
+                          A one-on-one approach tailored to a person&apos;s
+                          unique needs, offering personalized support to address
                           emotional, psychological, or behavioral concerns.
                         </p>
                       </div>
@@ -207,7 +228,7 @@ function Home() {
         </Container>
       </section>
       {/* Image with Circle */}
-      <section className="better bg-image">
+      <section className="better bg-image container-fluid">
         <div className="circle p-5 text-center" data-aos="zoom-in">
           <h2 className="text-warning text-uppercase mb-md-3 mb-1">
             Our Value
@@ -221,7 +242,11 @@ function Home() {
             growth and fulfillment.
           </p>
           <button className="bg-dark btn rounded-5 my-3 py-md-4 px-md-5">
-            <a href="#" className="text-white">
+            <a
+              href="https://linktr.ee/alexandercomfort?fbclid=IwY2xjawGXHzRleHRuA2FlbQIxMAABHXZcpw-IWCNMDL5ZHdvdoEhPvKHae8LuTVyvOJItmXfR7RKVt7CinYZwkQ_aem_rxzbBEAA7gl_r03ZfQvW9g"
+              target="_blank"
+              className="text-white"
+            >
               Discover More
             </a>
           </button>
@@ -239,7 +264,7 @@ function Home() {
               data-aos="fade-up"
             >
               <h3 className="prof-serv-head">Professional Services</h3>
-              <h5 className="" data-aos="fade-left">
+              <h5 className="" data-aos="fade-up">
                 We want you to get the care you deserve !!!
               </h5>
               <p className="my-3" data-aos="fade-up">
@@ -248,15 +273,13 @@ function Home() {
                 safe space for open communication and guidance.
               </p>
               <ul>
-                <li data-aos="fade-left">Individuals with high stress</li>
-                <li data-aos="fade-right">People with Anxiety or Depression</li>
-                <li data-aos="fade-left">Busy Professionals</li>
-                <li data-aos="fade-right">
+                <li data-aos="fade-up">Individuals with high stress</li>
+                <li data-aos="fade-up">People with Anxiety or Depression</li>
+                <li data-aos="fade-up">Busy Professionals</li>
+                <li data-aos="fade-up">
                   Communities in need of Emotional Support
                 </li>
-                <li data-aos="fade-left">
-                  Individuals Seeking Personal Growth
-                </li>
+                <li data-aos="fade-up">Individuals Seeking Personal Growth</li>
               </ul>
             </Col>
 
@@ -307,6 +330,7 @@ function Home() {
               <a
                 href="mailto:mentalhealthplus24@gmail.com"
                 className="text-black fw-medium"
+                target="_blank"
               >
                 Get Started
               </a>

@@ -25,7 +25,7 @@ function ContactCard() {
         <Col sm={12} md={6} lg={4}>
           <div
             className="contact-carrier py-0 px-3 mt-3 mb-3 mx-2 text-center"
-            data-aos="flip-right"
+            data-aos="fade-up"
           >
             <div className="my-3 square fw-normal p-3 text-white">
               <FaLocationDot size={30} />
@@ -38,7 +38,7 @@ function ContactCard() {
         <Col sm={12} md={6} lg={4}>
           <div
             className="contact-carrier py-0 px-3 mt-3 mb-3 mx-2 dark-card text-white text-center"
-            data-aos="flip-left"
+            data-aos="fade-up"
           >
             <div className="my-3 square fw-normal text-white">
               <GoMail size={30} />
@@ -47,7 +47,7 @@ function ContactCard() {
             <p className="">
               <a
                 href="mailto:mentalhealthplus24@gmail.com"
-                className="text-decoration-none text-white"
+                className="text-decoration-none text-white" target="_blank"
               >
                 mentalhealthplus24@gmail.com
               </a>
@@ -55,7 +55,7 @@ function ContactCard() {
             <p className="">
               <a
                 href="mailto:comfortikangenyin@gmail.com"
-                className="text-decoration-none text-white"
+                className="text-decoration-none text-white" target="_blank"
               >
                 comfortikangenyin@gmail.com
               </a>
@@ -66,7 +66,7 @@ function ContactCard() {
         <Col sm={12} md={12} lg={4}>
           <div
             className="contact-carrier py-0 px-3 mt-3 mb-3 mx-2 text-center"
-            data-aos="flip-up"
+            data-aos="fade-up"
           >
             <div className="my-3  square fw-normal text-warning">
               <IoCall size={30} className="text-white" />
@@ -74,7 +74,7 @@ function ContactCard() {
             <h3 className="mb-3">Let&apos;s Talk</h3>
             <p className="my-1 fw-bold">
               Phone:{" "}
-              <a href="tel:+2348149944531">
+              <a href="tel:+2348149944531" target="_blank">
                 <span className="fw-normal">+2348071277101</span>
               </a>
             </p>

@@ -50,7 +50,11 @@ function Service() {
             and fulfillment.
           </p>
           <button className="bg-dark btn rounded-5 my-3 py-md-4 px-md-5">
-            <a href="#" className="text-white">
+            <a
+              href="https://linktr.ee/alexandercomfort?fbclid=IwY2xjawGXHzRleHRuA2FlbQIxMAABHXZcpw-IWCNMDL5ZHdvdoEhPvKHae8LuTVyvOJItmXfR7RKVt7CinYZwkQ_aem_rxzbBEAA7gl_r03ZfQvW9g"
+              target="_blank"
+              className="text-white"
+            >
               Discover More
             </a>
           </button>

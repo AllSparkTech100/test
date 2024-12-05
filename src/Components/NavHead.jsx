@@ -24,7 +24,7 @@ function NavHead() {
             </Navbar.Brand>
 
             <Navbar.Collapse id="basic-navbar-nav d-md-block shadow-none">
-              <Nav className="ms-auto large-nav me-auto align-items-md-center justify-content-md-between ">
+              <Nav className="ms-auto large-nav align-items-md-center justify-content-md-between ">
                 <Nav.Link href="/" className="text-white">
                   Home
                 </Nav.Link>
@@ -41,7 +41,7 @@ function NavHead() {
               <button className="btn-yellow d-none d-md-block d-lg-block ms-auto mb-3 me-4 ">
                 <a
                   href="mailto:mentalhealthplus24@gmail.com"
-                  className="text-dark"
+                  className="text-dark fw-medium"
                 >
                   Book a Session
                 </a>
