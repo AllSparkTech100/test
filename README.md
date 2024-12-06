@@ -1,8 +1,19 @@
-# React + Vite
+# Mental Health Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Mental Health Website repository! This platform is designed to provide a supportive and informative space for users seeking mental health resources, therapy options, and guidance for improving their mental well-being.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Therapy Descriptions**: Detailed information on various types of therapy, mindfulness, and more.
+- **Resource Library**: Articles, videos, and tools for mental health education.
+- **Interactive Tools**: Mental health assessments, journaling features, and relaxation exercises.
+
+
+## Tech Stack
+
+- **Frontend**: HTML5, CSS3, JavaScript, React.js
+- **Backend**:Email Js
+- **Hosting**: Used Vercel for Hosting
+- **Version Control**: GitHub

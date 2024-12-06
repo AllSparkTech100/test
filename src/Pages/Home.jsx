@@ -7,11 +7,10 @@ import therapist from "../Images/therapist.jpeg";
 import therapy from "../Images/therap2.jpeg";
 import counsel from "../Images/counsel.jpeg";
 import Counsel from "../Images/child counsel.jpeg";
-import { useEffect, useState } from "react";
+import Counter from "../Components/Counter";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ScrollTrigger from "react-scroll-trigger";
-import CountUp from "react-countup";
 
 function Home() {
   useEffect(() => {
@@ -25,7 +24,7 @@ function Home() {
     });
   });
   AOS.refresh();
-  const [counterState, setCounterState] = useState(false);
+
   return (
     <>
       {/* Hero */}
@@ -66,41 +65,7 @@ function Home() {
               </div>
             </section>
             <hr />
-            <ScrollTrigger
-              onEnter={() => setCounterState(true)}
-              onExit={() => setCounterState(false)}
-            >
-              <div className="counter mt-1 p-lg-3 p-md-3 p-sm-0">
-                <div className="me-md-3 me-lg-3 m-1">
-                  <h3 className="">
-                    {counterState && (
-                      <CountUp start={0} end={25} duration={2.75}></CountUp>
-                    )}{" "}
-                    +
-                  </h3>
-                  <p>Years Experience</p>
-                </div>
-                <div className="me-md-3 me-lg-3 m-1">
-                  <h3 className="">
-                    {counterState && (
-                      <CountUp start={0} end={7.5} duration={2.75}></CountUp>
-                    )}
-                    k+
-                  </h3>
-                  <p>Active Members</p>
-                </div>
-                <div className="ms-md-3 ms-lg-3 m-1">
-                  <h3 className="">
-                    {" "}
-                    {counterState && (
-                      <CountUp start={0} end={99} duration={2.75}></CountUp>
-                    )}
-                    %
-                  </h3>
-                  <p>Satisfied Clients</p>
-                </div>
-              </div>
-            </ScrollTrigger>
+            <Counter />
           </Col>
 
           {/* rigth image column*/}
