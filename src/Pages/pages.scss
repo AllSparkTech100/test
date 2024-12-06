@@ -6,13 +6,12 @@
   color: $secondary;
   overflow: hidden;
   height: 120vh !important;
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 575.98px) {
     height: 120vh !important;
   }
   h4 {
     @media screen and (max-width: 575.98px) {
       text-align: left !important;
-      
     }
   }
   h3 {
@@ -22,9 +21,13 @@
     @media screen and (max-width: 348px) {
       font-size: 2rem !important ;
     }
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 375px) {
+      font-size: 2rem !important ;
+    }
+
+    @media screen and (max-width: 575.98px) {
       text-align: left !important;
-      font-size: 3.4rem ;
+      font-size: 3.4rem;
     }
   }
   p {
@@ -369,10 +372,10 @@
     max-height: 120vh !important;
 
     h4 {
-      font-size: 14px;
+      font-size: 12px !important;
     }
     h3 {
-      font-size: 2rem !important;
+      font-size: 1.8rem !important;
     }
 
     .btn-carrier {
@@ -527,12 +530,12 @@
 
 @media screen and (max-width: 480px) {
   .hero-carrier {
-    height: 95vh !important;
+    height: 98vh !important;
     h4 {
       font-size: 16px;
     }
     h3 {
-      font-size: 2.3rem;
+      font-size: 2.5rem;
     }
 
     .btn-carrier {
@@ -707,7 +710,7 @@
     .btn-carrier {
       width: 100%;
     }
-   
+
     .right-hero-image {
       height: 110vh !important;
     }

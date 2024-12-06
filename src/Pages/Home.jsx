@@ -85,7 +85,13 @@ function Home() {
       <section className="middle-holder container-fluid">
         <Container className="p-lg-5 p-sm-0 p-md-5" fluid>
           <Row className="">
-            <Col md={12} sm={12} lg={12} className="mb-0 mb-md-5 mb-lg-5">
+            <Col
+              md={12}
+              sm={12}
+              lg={12}
+              data-aos="zoom-in"
+              className="mb-0 mb-md-5 mb-lg-5"
+            >
               <section>
                 <div className=" d-md-block d-lg-block middle-right-hero-image">
                   <img src={Counsel} alt="Child Counselling" loading="lazy" />
